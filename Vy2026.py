@@ -15,9 +15,9 @@ from openpyxl.utils import get_column_letter
 DATA_FILE = "data_vy2026.json"
 
 # Cấu hình trang Web
-st.set_page_config(page_title="App Thi đua Vy2026", page_icon="🏆", layout="wide")
+st.set_page_config(page_title="QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN", page_icon="🏆", layout="wide")
 
-st.title("🏆 Hệ thống Quản lý Thi đua Vy2026")
+st.title("🏆 QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN")
 st.caption("Ứng dụng theo dõi, đánh giá và báo cáo thi đua cán bộ, giáo viên, nhân viên - THPT Vĩnh Yên")
 
 
@@ -451,7 +451,7 @@ def get_default_rewards_tree():
 # -----------------------------------------------------------------------------
 
 def sync_teacher_accounts():
-    """Tự động tạo tài khoản đăng nhập cho giáo viên nếu chưa có"""
+    """Tự động tạo tài khoản đăng nhập cho giáo viên nếu chưa có và đồng bộ Email/SĐT từ danh sách nhân sự"""
     if "accounts" not in st.session_state or not isinstance(st.session_state.accounts, list):
         st.session_state.accounts = [
             {"username": "admin", "password": "123", "role": "Admin", "name": "BGH / Thư ký Thi đua",
@@ -461,17 +461,31 @@ def sync_teacher_accounts():
         ]
 
     if isinstance(st.session_state.get("users"), pd.DataFrame) and not st.session_state.users.empty:
-        existing_usernames = [str(a.get("username", "")).lower() for a in st.session_state.accounts]
-        existing_names = [str(a.get("name", "")) for a in st.session_state.accounts]
-
         for idx, row in st.session_state.users.iterrows():
             name = str(row["Họ và tên"]).strip()
             phone = str(row.get("SĐT", "")).strip()
+            if phone.lower() == "nan":
+                phone = ""
             email = str(row.get("Email", "")).strip()
+            if email.lower() == "nan":
+                email = ""
             user_id = str(row.get("ID", idx + 1))
             username = f"gv{user_id}"
 
-            if name not in existing_names and username not in existing_usernames:
+            # Tìm tài khoản đã tồn tại theo username hoặc họ tên
+            acc_match = None
+            for a in st.session_state.accounts:
+                if str(a.get("username", "")).lower() == username.lower() or str(a.get("name", "")).strip() == name:
+                    acc_match = a
+                    break
+
+            if acc_match:
+                # Đồng bộ/cập nhật Email và SĐT từ danh sách nhân sự nếu trong tài khoản đang bị rỗng hoặc 'nan'
+                if email and (not acc_match.get("email") or str(acc_match.get("email")).lower() == "nan"):
+                    acc_match["email"] = email
+                if phone and (not acc_match.get("phone") or str(acc_match.get("phone")).lower() == "nan"):
+                    acc_match["phone"] = phone
+            else:
                 st.session_state.accounts.append({
                     "username": username,
                     "password": "123456",
@@ -653,7 +667,7 @@ def build_email_html(teacher_name, event_type, date_str, content_str, points_val
             point_color = "#721C24"
     elif "vi phạm" in uni_type or "trừ" in uni_type:
         theme_color = "#D9534F"
-        badge_title = "THÔNG BÁO LỖI VI PHẠM THI ĐỦA"
+        badge_title = "THÔNG BÁO LỖI VI PHẠM"
         point_text = f"-{safe_float(points_val, 0.0):.1f} điểm"
         point_bg = "#F8D7DA"
         point_color = "#721C24"
@@ -662,7 +676,7 @@ def build_email_html(teacher_name, event_type, date_str, content_str, points_val
         score_val_str = f"{safe_float(calc_score, 100.0):.1f} điểm"
     else:  # Khen thưởng / Cộng điểm
         theme_color = "#28A745"
-        badge_title = "THÔNG BÁO KHEN THƯỞNG THI ĐỦA"
+        badge_title = "THÔNG BÁO ĐIỂM THI ĐUA"
         point_text = f"+{safe_float(points_val, 0.0):.1f} điểm"
         point_bg = "#D4EDDA"
         point_color = "#155724"
@@ -695,12 +709,12 @@ def build_email_html(teacher_name, event_type, date_str, content_str, points_val
 <body>
     <div class="card">
         <div class="header">
-            <h2>SỞ GD&ĐT PHÚ THỌ - TRƯỜNG THPT VĨNH YÊN</h2>
+            <h2>SỞ GD&ĐT PHÚ THỌ-TRƯỜNG THPT VĨNH YÊN</h2>
             <p>{badge_title}</p>
         </div>
         <div class="content">
             <div class="greeting">Kính gửi Thầy/Cô: {teacher_name}</div>
-            <p>Hệ thống Quản lý Thi đua Vy2026 trân trọng thông báo kết quả đánh giá vừa được ghi nhận như sau:</p>
+            <p>TRƯỜNG THPT VĨNH YÊN trân trọng thông báo kết quả đánh giá vừa được ghi nhận như sau:</p>
 
             <div class="point-box">
                 <div><b>Biến động điểm:</b></div>
@@ -727,8 +741,8 @@ def build_email_html(teacher_name, event_type, date_str, content_str, points_val
         </div>
         <div class="footer">
             <b>TRƯỜNG THPT VĨNH YÊN</b><br>
-            Đường Nguyễn Tất Thành, TP. Vĩnh Yên, Tỉnh Vĩnh Phúc<br>
-            Email công vụ: thptvinhyen@vinhphuc.edu.vn | Hotline: 0211.3861.234
+            Đường Trương Định, Phường Vĩnh Yên, Tỉnh Phú Thọ<br>
+            Email công vụ: c3.vinhyen.08707@phutho.edu.vn | Hotline: 0211.3861.234
         </div>
     </div>
 </body>
@@ -741,7 +755,7 @@ def send_email_notification(to_email, subject, html_content, email_config):
     smtp_port = int(email_config.get("smtp_port", 587))
     sender_email = email_config.get("sender_email", "thptvinhyen.thidua@gmail.com")
     sender_cred = email_config.get("sender_pass", "GMAIL_APP_KEY_2026")
-    sender_name = email_config.get("sender_name", "TRƯỜNG THPT VĨNH YÊN - HỆ THỐNG THI ĐỦA")
+    sender_name = email_config.get("sender_name", "TRƯỜNG THPT VĨNH YÊN")
 
     clean_email = str(to_email).strip()
     if not clean_email or "@" not in clean_email:
@@ -905,7 +919,7 @@ def convert_df_to_excel(df):
     return create_styled_excel_report({
         "BaoCao": {
             "df": df,
-            "title": "BÁO CÁO THI ĐỦA"
+            "title": "BÁO CÁO THI ĐUA"
         }
     })
 
@@ -986,16 +1000,16 @@ if st.session_state.get("current_user") is None:
 
     st.markdown("""
     <div style="text-align: center; padding: 20px; background: linear-gradient(135deg, #1F497D 0%, #17A2B8 100%); color: white; border-radius: 10px; margin-bottom: 25px;">
-        <h2 style="margin: 0; font-size: 22px; font-weight: bold;">SỞ GD&ĐT PHÚ THỌ - TRƯỜNG THPT VĨNH YÊN</h2>
-        <h3 style="margin: 8px 0 0 0; font-size: 18px; color: #FFD700;">CỔNG THÔNG TIN QUẢN LÝ THI ĐỦA VY2026</h3>
-        <p style="margin: 5px 0 0 0; font-size: 13px; opacity: 0.95;">Hệ thống Đăng nhập & Phân quyền Tập trung cho Cán bộ, Giáo viên (Phương án 1 - Web App)</p>
+        <h2 style="margin: 0; font-size: 22px; font-weight: bold;">SỞ GD&ĐT PHÚ THỌ-TRƯỜNG THPT VĨNH YÊN</h2>
+        <h3 style="margin: 8px 0 0 0; font-size: 18px; color: #FFD700;">QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN</h3>
+        <p style="margin: 5px 0 0 0; font-size: 13px; opacity: 0.95;">Hệ thống Đăng nhập & Phân quyền Tập trung cho Cán bộ, Giáo viên</p>
     </div>
     """, unsafe_allow_html=True)
 
     c_l1, c_l2, c_l3 = st.columns([1, 2, 1])
     with c_l2:
         with st.form("login_form", clear_on_submit=False):
-            st.subheader("🔑 Đăng nhập Hệ thống Web App")
+            st.subheader("🔑 Đăng nhập Hệ thống")
             user_input = st.text_input("Tên đăng nhập (Username / Mã GV):", placeholder="Ví dụ: admin, theodoi, gv1...")
             pass_input = st.text_input("Mật khẩu:", type="password", placeholder="Nhập mật khẩu...")
 
@@ -1021,10 +1035,10 @@ if st.session_state.get("current_user") is None:
 
         with st.expander("💡 📋 Hướng dẫn Đăng nhập Mặc định cho Các Vai trò"):
             st.markdown("""
-            * 🔴 **Tài khoản Admin (BGH / Thư ký Thi đua)**:
+            * 🔴 **Tài khoản Admin**:
               - **Tên đăng nhập**: `admin` | **Mật khẩu**: `123`
               - *Quyền hạn*: Cấu hình hệ thống, Quản lý tài khoản, Quản lý tiêu chí, Báo cáo toàn trường.
-            * 🟡 **Tài khoản Người theo dõi (Tổ trưởng / Cán bộ Cờ đỏ)**:
+            * 🟡 **Tài khoản Người theo dõi**:
               - **Tên đăng nhập**: `theodoi` | **Mật khẩu**: `123`
               - *Quyền hạn*: Nhập vi phạm, Khen thưởng & Đánh giá điểm KSCL hằng ngày.
             * 🟢 **Tài khoản Giáo viên (GV A, GV B...)**:
@@ -1076,20 +1090,20 @@ with col_sb2:
 
 if curr_u["role"] == "Admin":
     menu_options = [
-        "1. Admin (Nhập danh mục & Quản lý Tài khoản)",
-        "2. Người theo dõi (Nhập hằng ngày)",
-        "3. Báo cáo & Thông báo Email / Tammi",
-        "4. Bảng tin Thi đua Cá nhân (Giao diện GV)"
+        "1. ADMIN",
+        "2. NHẬP THÔNG TIN HẰNG NGÀY",
+        "3. BÁO CÁO",
+        "4. ĐIỂM CỦA CÁ NHÂN"
     ]
 elif curr_u["role"] == "Người theo dõi":
     menu_options = [
-        "2. Người theo dõi (Nhập hằng ngày)",
-        "3. Báo cáo & Thông báo Email / Tammi",
-        "4. Bảng tin Thi đua Cá nhân (Giao diện GV)"
+        "2. NHẬP THÔNG TIN HẰNG NGÀY",
+        "3. BÁO CÁO",
+        "4. ĐIỂM CỦA CÁ NHÂN"
     ]
 else:  # Giáo viên
     menu_options = [
-        "4. Bảng tin Thi đua Cá nhân (Giao diện GV)"
+        "4. ĐIỂM CỦA CÁ NHÂN"
     ]
 
 st.sidebar.header("📌 Menu Chức năng")
@@ -1098,17 +1112,18 @@ role = st.sidebar.radio("Chọn chức năng làm việc:", menu_options)
 # -----------------------------------------------------------------------------
 # CHỨC NĂNG 1: ADMIN - QUẢN LÝ DANH MỤC CƠ BẢN
 # -----------------------------------------------------------------------------
-if role.startswith("1. Admin"):
-    st.header("⚙️ 1. Quản lý Danh mục Cơ bản & Cấu hình Viettel Tammi (Dành cho Admin)")
+if role.startswith("1. ADMIN"):
+    st.header("⚙️ Quản lý Danh mục Cơ bản & Cấu hình gửi tin")
 
-    tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
+    tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
         "Quản lý Nhân sự",
         "Quản lý Tổ chuyên môn",
         "Tiêu chí đánh giá viên chức",
         "Tiêu chí điểm Thi đua khen thưởng",
         "📡 Cấu hình API Viettel Tammi & Email SMTP",
         "👥 Quản lý Tài khoản & Phân quyền",
-        "🔄 Reset Dữ liệu Thử nghiệm"
+        "💾 Sao lưu & Khôi phục Dữ liệu (data_vy2026.json)",
+        "🔄 Reset Dữ liệu"
     ])
 
     # --- TAB 1: NHÂN SỰ ---
@@ -1346,7 +1361,7 @@ if role.startswith("1. Admin"):
 
     # --- TAB 3: TIÊU CHÍ ĐÁNH GIÁ VIÊN CHỨC (CÂY THÔNG TIN THEO QĐ 292 / PHỤ LỤC 1) ---
     with tab3:
-        st.subheader("📋 Quản lý Danh mục Tiêu chí Đánh giá Viên chức (Chuẩn QĐ 292 - Tổng 100 điểm ban đầu)")
+        st.subheader("📋 Quản lý Tiêu chí Đánh giá Viên chức")
 
         filter_crit_group = st.selectbox("🌳 Lọc xem theo Nhóm tiêu chí lớn:",
                                          ["Tất cả các nhóm (3 Nhóm)"] + CRITERIA_GROUPS)
@@ -1453,7 +1468,7 @@ if role.startswith("1. Admin"):
 
     # --- TAB 4: TIÊU CHÍ ĐIỂM THI ĐỦA KHEN THƯỞNG (CÂY THÔNG TIN THEO PHỤ LỤC 2) ---
     with tab4:
-        st.subheader("⚖️ Quản lý Tiêu chí điểm Thi đua khen thưởng (Theo Cây Thông Tin Phụ lục 2)")
+        st.subheader("⚖️ Quản lý Tiêu chí điểm Thi đua")
 
         filter_cat = st.selectbox("🌳 Lọc xem theo Cây thông tin (Mục lớn):",
                                   ["Tất cả các mục (6 Mục lớn)"] + REWARD_CATEGORIES)
@@ -1712,7 +1727,7 @@ if role.startswith("1. Admin"):
 
     # --- TAB 7: QUAN LY TAI KHOAN & PHAN QUYEN ---
     with tab7:
-        st.subheader("👥 Quản lý Tài khoản Đăng nhập & Phân quyền Hệ thống Web App")
+        st.subheader("👥 Quản lý Tài khoản Đăng nhập & Phân quyền")
         st.info(
             "💡 **Admin có thể tạo mới, phân quyền (Admin / Người theo dõi / Giáo viên) hoặc Reset mật khẩu cho bất kỳ tài khoản nào.**")
 
@@ -1774,9 +1789,59 @@ if role.startswith("1. Admin"):
                         f"✅ Đã reset mật khẩu cho tài khoản `{target_a['username']}` thành `{new_reset_p.strip()}`!")
                     st.rerun()
 
-    # --- TAB 7: RESET DU LIEU THU NGHIEM ---
-    with tab6:
-        st.subheader("🔄 Reset / Xóa Dữ Liệu Thử Nghiệm (Chuẩn bị Vận hành Chính thức)")
+    # --- TAB 7: SAO LƯU & KHÔI PHỤC DỮ LIỆU ---
+    with tab7:
+        st.subheader("💾 Sao lưu & Khôi phục Dữ liệu Hệ thống ()")
+        st.info(
+            "💡 **Chức năng này giúp Admin chủ động tải về bản dữ liệu mới nhất để lưu giữ hoặc upload lên GitHub để đồng bộ vĩnh viễn trên Đám mây.**")
+
+        c_bk1, c_bk2 = st.columns(2)
+
+        with c_bk1:
+            st.markdown("##### 📥 1. Tải về Tệp Sao lưu Dữ liệu Hiện tại")
+            st.write(
+                "Tải tệp  bao gồm đầy đủ Nhân sự, Tiêu chí, Nhật ký đánh giá, Cấu hình và Danh sách Tài khoản hiện có trên hệ thống:")
+
+            save_data_to_disk()
+            json_export_data = "{}"
+            if os.path.exists(DATA_FILE):
+                try:
+                    with open(DATA_FILE, "r", encoding="utf-8") as f_exp:
+                        json_export_data = f_exp.read()
+                except Exception:
+                    pass
+
+            st.download_button(
+                label="📥 Tải tệp data_vy2026.json về máy",
+                data=json_export_data,
+                file_name="data_vy2026.json",
+                mime="application/json",
+                use_container_width=True
+            )
+            st.caption(
+                "👉 **Thao tác đồng bộ vĩnh viễn:** Bấm nút trên để tải tệp về, sau đó vào GitHub kho  bấm **Upload files** và **Commit changes**.")
+
+        with c_bk2:
+            st.markdown("##### 📤 2. Phục hồi Dữ liệu từ Tệp ")
+            st.write("Tải tệp sao lưu  từ máy tính lên để phục hồi lại toàn bộ dữ liệu trên hệ thống:")
+
+            uploaded_json = st.file_uploader("Chọn tệp data_vy2026.json:", type=["json"], key="json_backup_uploader")
+            if uploaded_json is not None:
+                if st.button("🚀 Xác nhận Khôi phục Dữ liệu này", key="btn_restore_json"):
+                    try:
+                        restored_data = json.load(uploaded_json)
+                        with open(DATA_FILE, "w", encoding="utf-8") as f_imp:
+                            json.dump(restored_data, f_imp, ensure_ascii=False, indent=4)
+
+                        load_data_from_disk()
+                        st.success("✅ **ĐÃ KHÔI PHỤC DỮ LIỆU THÀNH CÔNG!** Hệ thống đã được nạp lại dữ liệu đầy đủ.")
+                        st.rerun()
+                    except Exception as e_json:
+                        st.error(f"❌ Lỗi khi đọc tệp JSON: {e_json}")
+
+    # --- TAB 8: RESET DU LIEU THU NGHIEM ---
+    with tab8:
+        st.subheader("🔄 Reset Dữ Liệu")
         st.info(
             "💡 **Chức năng này phục vụ đưa ứng dụng về trạng thái sạch ban đầu trước khi đưa vào vận hành chính thức tại nhà trường.**")
 
@@ -1818,8 +1883,8 @@ if role.startswith("1. Admin"):
                     "✅ **ĐÃ RESET THÀNH CÔNG!** Toàn bộ dữ liệu vi phạm, điểm cộng và lịch sử tin nhắn thử nghiệm đã được làm sạch về trạng thái ban đầu.")
                 st.rerun()
 
-elif role.startswith("2. Người theo dõi"):
-    st.header("📝 2. Ghi nhận Thực hiện Nhiệm vụ Hằng ngày")
+elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
+    st.header("📝 Ghi nhận Thực hiện Nhiệm vụ Hằng ngày")
 
     if st.session_state.users.empty:
         st.warning("⚠️ Chưa có nhân sự chính thức nào trong hệ thống. Vui lòng thêm nhân sự ở mục Admin trước!")
@@ -1918,7 +1983,7 @@ elif role.startswith("2. Người theo dõi"):
                                               key="kscl_class_select")
                     kscl_subject = st.selectbox("Môn giảng dạy:",
                                                 ["Toán", "Ngữ văn", "Tiếng Anh", "Vật lý", "Hóa học", "Sinh học",
-                                                 "Lịch sử", "Địa lý", "GDCD", "Tin học", "Khác"],
+                                                 "Lịch sử", "Địa lý", "GDKTPL", "Tin học", "CNCN", "CNNN"],
                                                 key="kscl_subj_select")
 
                 baseline_key = f"{selected_staff}_{kscl_class.strip()}_{kscl_subject}"
@@ -1929,8 +1994,8 @@ elif role.startswith("2. Người theo dõi"):
                                     h.get("Lớp", "")).strip() == kscl_class.strip() and h.get("Môn") == kscl_subject]
                 k_count = len(kscl_matches)
 
-                ALL_KSCL_EXAMS = ["KSCL Lần 1", "KSCL Lần 2", "KSCL Học kỳ I", "KSCL Lần 3", "KSCL Học kỳ II",
-                                  "Thi thử TN THPT Lần 1", "Thi thử TN THPT Lần 2"]
+                ALL_KSCL_EXAMS = ["KSCL Lần 0", "KSCL Lần 1", "KSCL Lần 2", "KSCL Lần 3", "KSCL Lần 4",
+                                  "KSCL Lần 5", "KSCL Lần 6", "KSCL Lần 7", "KSCL Lần 8", "KSCL Lần 9", "KSCL Lần 10"]
                 if k_count < len(ALL_KSCL_EXAMS):
                     next_exam_name = ALL_KSCL_EXAMS[k_count]
                 else:
@@ -2161,13 +2226,13 @@ elif role.startswith("2. Người theo dõi"):
                     user_logs = [l for l in st.session_state.logs if l.get("Cán bộ") == selected_staff]
 
                     if type_label == "Điểm trừ":
-                        email_subject = f"[THPT VĨNH YÊN] Thông báo Lỗi vi phạm Thi đua ngày {date_formatted} - {selected_staff}"
+                        email_subject = f"[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày {date_formatted} - {selected_staff}"
                         tot_vc_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in user_logs if
                                           l.get("Loại") == "Điểm trừ" and not l.get("Nội dung", "").startswith(
                                               "[KSCL")])
                         calc_score = 100.0 - tot_vc_pen
                     else:
-                        email_subject = f"[THPT VĨNH YÊN] Thông báo Khen thưởng Thi đua ngày {date_formatted} - {selected_staff}"
+                        email_subject = f"[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày {date_formatted} - {selected_staff}"
                         tot_bon = sum(
                             [safe_float(l.get("Số điểm"), 0.0) for l in user_logs if l.get("Loại") == "Điểm cộng"])
                         tot_kscl_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in user_logs if
@@ -2196,15 +2261,15 @@ elif role.startswith("2. Người theo dõi"):
 
 # CHỨC NĂNG 4: BẢNG TIN THI ĐỦA CÁ NHÂN (DÀNH CHO GIÁO VIÊN VÀ XEM THỬ)
 # -----------------------------------------------------------------------------
-elif role.startswith("4. Bảng tin Thi đua Cá nhân"):
-    st.header("📊 Bảng tin Thi đua & Kết quả Đánh giá Cá nhân Trực tuyến")
+elif role.startswith("4. ĐIỂM CỦA CÁ NHÂN"):
+    st.header("📊 Thông tin điểm đánh giá viên chức và điểm Thi đua của cá nhân")
 
     curr_u = st.session_state.current_user if st.session_state.get("current_user") is not None else {"name": "Admin",
                                                                                                      "role": "Admin"}
     if curr_u["role"] == "Giáo viên":
         target_staff_name = curr_u["name"]
         st.info(
-            f"👋 Chào mừng Thầy/Cô **{target_staff_name}**! Dưới đây là kết quả đánh giá thi đua cá nhân trực tuyến được cập nhật theo thời gian thực.")
+            f"👋 Chào mừng Thầy/Cô **{target_staff_name}**! Dưới đây là điểm đánh giá viên chức và thi đua được cập nhật đến thời điểm hiện tại.")
     else:
         staff_list = st.session_state.users["Họ và tên"].tolist() if not st.session_state.users.empty else [
             curr_u["name"]]
@@ -2242,8 +2307,8 @@ elif role.startswith("4. Bảng tin Thi đua Cá nhân"):
 
     st.markdown("---")
     p_tab1, p_tab2, p_tab3 = st.tabs([
-        "📋 Lịch sử Lỗi vi phạm (Phụ lục 1)",
-        "🏆 Lịch sử Thành tích Khen thưởng (Phụ lục 2)",
+        "📋 Lịch sử Lỗi vi phạm",
+        "🏆 Lịch sử Thành tích Khen thưởng",
         "📈 Tiến trình & Điểm Khảo sát chất lượng (KSCL)"
     ])
 
@@ -2275,7 +2340,7 @@ elif role.startswith("4. Bảng tin Thi đua Cá nhân"):
 # CHỨC NĂNG 3 & 4: XỬ LÝ ĐIỂM TỰ ĐỘNG, XẾP LOẠI & XUẤT BÁO CÁO EXCEL
 # -----------------------------------------------------------------------------
 else:
-    st.header("📊 3 & 4. Xử lý Điểm tự động, Xếp loại Viên chức & Xuất Báo cáo Thi đua")
+    st.header("📊 Xử lý Điểm tự động, Xếp loại Viên chức & Xuất Báo cáo Thi đua")
 
     if st.session_state.users.empty:
         st.warning("⚠️ Chưa có dữ liệu nhân sự để lập báo cáo.")
@@ -2467,7 +2532,7 @@ else:
         df_gen_sum = pd.DataFrame(report_general)
 
         rep_tab1, rep_tab2, rep_tab3 = st.tabs([
-            "📋 Báo cáo 1: Tiêu chí Đánh giá Viên chức (Điểm max 100)",
+            "📋 Báo cáo 1: Tiêu chí Đánh giá Viên chức",
             "🏆 Báo cáo 2: Tiêu chí Thi đua Khen thưởng",
             "📊 Báo cáo 3: Tổng hợp Thi đua & Đánh giá Toàn diện"
         ])
@@ -2525,7 +2590,7 @@ else:
                 excel_gen_data = create_styled_excel_report({
                     "TongHop_ToanDien": {
                         "df": df_gen_sum,
-                        "title": f"BÁO CÁO TỔNG HỢP THI ĐỦA VÀ ĐÁNH GIÁ TOÀN DIỆN {time_suffix}"
+                        "title": f"BÁO CÁO TỔNG HỢP THI ĐUA VÀ ĐÁNH GIÁ TOÀN DIỆN {time_suffix}"
                     },
                     "TongHop_VienChuc": {
                         "df": df_vc_sum,
