@@ -1,0 +1,3609 @@
+{
+    "departments": [
+        "Tổ Toán-Tin-CN",
+        "Tổ Lý-Hóa-Sinh",
+        "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+        "Tổ Ngữ văn-Tiếng anh",
+        "Hành chính"
+    ],
+    "users": [
+        {
+            "ID": 1,
+            "Họ và tên": "Trần Xuân Hoà",
+            "Ngày sinh": "04/07/1975",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Lớp dạy": "12A8, 12A9",
+            "SĐT": "0976378739",
+            "Email": "Txh775@gmail.com"
+        },
+        {
+            "ID": 2,
+            "Họ và tên": "Lê Thị Hiền",
+            "Ngày sinh": "27/12/1974",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Lớp dạy": "10A1",
+            "SĐT": "0976376576",
+            "Email": "lehongthai.phtvinhyen@vinhphuc.edu.vn"
+        },
+        {
+            "ID": 3,
+            "Họ và tên": "Lê Hồng Thái",
+            "Ngày sinh": "02/09/1979",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Lớp dạy": "12A1",
+            "SĐT": "0969611811",
+            "Email": "thailh.c3.25@phutho.edu.vn"
+        },
+        {
+            "ID": 4,
+            "Họ và tên": "Nguyễn Thị Thanh Hải",
+            "Ngày sinh": "07/12/1976",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Lớp dạy": "10A2, 10A8, 11A5",
+            "SĐT": "0979867819",
+            "Email": NaN
+        },
+        {
+            "ID": 5,
+            "Họ và tên": "Nguyễn Thị Thanh Xuân",
+            "Ngày sinh": "24/10/1978",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Lớp dạy": "11A7, 12A7",
+            "SĐT": "0385929424",
+            "Email": "Xuan1978vp@gmail. com"
+        },
+        {
+            "ID": 6,
+            "Họ và tên": "Đỗ Mạnh Hà",
+            "Ngày sinh": "01/01/1979",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Lớp dạy": "10A5, 11A4, 11A9",
+            "SĐT": "0984578642",
+            "Email": NaN
+        },
+        {
+            "ID": 7,
+            "Họ và tên": "Nguyễn Ngọc Quý",
+            "Ngày sinh": "19/01/1974",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Lớp dạy": "10A6, 10A7",
+            "SĐT": "0975655847",
+            "Email": NaN
+        },
+        {
+            "ID": 8,
+            "Họ và tên": "Nguyễn Thị Lan Phương(T)",
+            "Ngày sinh": "06/07/1977",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Lớp dạy": "10A1, 10A4",
+            "SĐT": "0947172889",
+            "Email": NaN
+        },
+        {
+            "ID": 9,
+            "Họ và tên": "Đại Văn Hải",
+            "Ngày sinh": "25/12/1980",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Lớp dạy": "10A9, 12A2, 12A9",
+            "SĐT": "0972881520",
+            "Email": NaN
+        },
+        {
+            "ID": 10,
+            "Họ và tên": "Nguyễn Đức Thịnh",
+            "Ngày sinh": "23/05/1983",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Lớp dạy": "12A3, 12A8",
+            "SĐT": "0984490608",
+            "Email": NaN
+        },
+        {
+            "ID": 11,
+            "Họ và tên": "Nguyễn Thị Tuyết",
+            "Ngày sinh": "24/04/1985",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Lớp dạy": "11A6, 12A4, 12A5",
+            "SĐT": "0986246056",
+            "Email": NaN
+        },
+        {
+            "ID": 12,
+            "Họ và tên": "Nguyễn Thị Huyền",
+            "Ngày sinh": "25/09/1987",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Lớp dạy": "11A3, 11A8, 12A6",
+            "SĐT": "0387377705",
+            "Email": NaN
+        },
+        {
+            "ID": 13,
+            "Họ và tên": "Kim Thị Thu Hà",
+            "Ngày sinh": "02/04/2003",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Lớp dạy": "10A3, 11A1, 11A2",
+            "SĐT": "0963013895",
+            "Email": NaN
+        },
+        {
+            "ID": 14,
+            "Họ và tên": "Nguyễn Thị Yến",
+            "Ngày sinh": "25/10/1986",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Lớp dạy": "10A2, 10A3, 10A5",
+            "SĐT": "0868463546",
+            "Email": "yen678@gmail.com"
+        },
+        {
+            "ID": 15,
+            "Họ và tên": "Vũ Thị Hạnh",
+            "Ngày sinh": "22/11/1986",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Lớp dạy": "12A4, 12A5, 12A6",
+            "SĐT": "0383731541",
+            "Email": NaN
+        },
+        {
+            "ID": 16,
+            "Họ và tên": "Nguyễn Thị Hòa",
+            "Ngày sinh": "30/01/1988",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Lớp dạy": "12A1, 12A2",
+            "SĐT": "0976032320",
+            "Email": NaN
+        },
+        {
+            "ID": 17,
+            "Họ và tên": "Đỗ Anh Toản",
+            "Ngày sinh": "08/09/1984",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Lớp dạy": "11A8, 12A3, 12A7",
+            "SĐT": "0965142054",
+            "Email": NaN
+        },
+        {
+            "ID": 18,
+            "Họ và tên": "Nguyễn Thị Lan Phương(H)",
+            "Ngày sinh": "02/06/1981",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Lớp dạy": "10A5, 10A6, 10A9, 11A6",
+            "SĐT": "0983955526",
+            "Email": NaN
+        },
+        {
+            "ID": 19,
+            "Họ và tên": "Đào Thị Phương Lan",
+            "Ngày sinh": "30/06/1977",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Lớp dạy": "12A8, 12A9",
+            "SĐT": "0985570376",
+            "Email": NaN
+        },
+        {
+            "ID": 20,
+            "Họ và tên": "Nguyễn Thị Thuý",
+            "Ngày sinh": "21/05/1982",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Lớp dạy": "11A1, 11A9, 12A5, 12A7, 12A8, 12A9",
+            "SĐT": "0982552288",
+            "Email": NaN
+        },
+        {
+            "ID": 21,
+            "Họ và tên": "Nguyễn Thị Hồng Thanh",
+            "Ngày sinh": "03/11/1973",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Lớp dạy": "10A1, 10A2, 10A3, 10A4",
+            "SĐT": "0832299959",
+            "Email": NaN
+        },
+        {
+            "ID": 22,
+            "Họ và tên": "Nguyễn Thị Mai",
+            "Ngày sinh": "05/05/1979",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Lớp dạy": "12A3, 12A8, 12A9",
+            "SĐT": "0969468331",
+            "Email": NaN
+        },
+        {
+            "ID": 23,
+            "Họ và tên": "Nguyễn Thị Thu Hương(H)",
+            "Ngày sinh": "05/07/1976",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Lớp dạy": "11A7, 11A8, 11A9,12A4",
+            "SĐT": "0363541619",
+            "Email": NaN
+        },
+        {
+            "ID": 24,
+            "Họ và tên": "Nguyễn Thị Thu Hiền",
+            "Ngày sinh": "20/12/1982",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Lớp dạy": "11A5, 11A6, 12A1, 12A4, 12A6",
+            "SĐT": "0983821489",
+            "Email": NaN
+        },
+        {
+            "ID": 25,
+            "Họ và tên": "Nguyễn Thị Thu Hương(S)",
+            "Ngày sinh": "30/11/1977",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Lớp dạy": "10A8, 10A9, 112, 11A4, 11A8",
+            "SĐT": "0383211702",
+            "Email": NaN
+        },
+        {
+            "ID": 26,
+            "Họ và tên": "Nguyễn Thị Phương Khanh",
+            "Ngày sinh": "18/09/1976",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Lớp dạy": "10A5, 10A6, 10A7, 11A3, 11A7",
+            "SĐT": "0982726608",
+            "Email": NaN
+        },
+        {
+            "ID": 27,
+            "Họ và tên": "Kim Thị Thu Hương",
+            "Ngày sinh": "10/07/1977",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Lớp dạy": "10A4, 10A6, 11A1, 11A2, 11A3",
+            "SĐT": "0984080979",
+            "Email": NaN
+        },
+        {
+            "ID": 28,
+            "Họ và tên": "Nguyễn Thị Lành",
+            "Ngày sinh": "20/10/1977",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Lớp dạy": "12A1, 12A2, 12A4",
+            "SĐT": "0989884448",
+            "Email": NaN
+        },
+        {
+            "ID": 29,
+            "Họ và tên": "Lê Anh Tuấn",
+            "Ngày sinh": "12/12/1977",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Lớp dạy": "10A7, 10A8, 12A3",
+            "SĐT": "0972446488",
+            "Email": NaN
+        },
+        {
+            "ID": 30,
+            "Họ và tên": "Lê Văn Tuệ",
+            "Ngày sinh": "12/01/1983",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Lớp dạy": "10A5, 10A9, 11A6, 11A7",
+            "SĐT": "0977281084",
+            "Email": NaN
+        },
+        {
+            "ID": 31,
+            "Họ và tên": "Lê Thị Thuý Oanh",
+            "Ngày sinh": "06/09/1982",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Lớp dạy": "10A1, 10A2, 10A3, 10A4, 10A7, 10A8",
+            "SĐT": "0986054792",
+            "Email": NaN
+        },
+        {
+            "ID": 32,
+            "Họ và tên": "Nguyễn Tuyết Mai",
+            "Ngày sinh": "02/09/1977",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Lớp dạy": "12A2, 12A5, 12A6, 12A7",
+            "SĐT": "0392264986",
+            "Email": NaN
+        },
+        {
+            "ID": 33,
+            "Họ và tên": "Trần Thanh Long",
+            "Ngày sinh": "15/01/1985",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Lớp dạy": "12A5",
+            "SĐT": "0982566385",
+            "Email": "tranlonggdctk56@gmail.com"
+        },
+        {
+            "ID": 34,
+            "Họ và tên": "Đào Thị Huệ",
+            "Ngày sinh": "10/03/1979",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Lớp dạy": "12A1, 12A3, 12A4",
+            "SĐT": "0328380786",
+            "Email": NaN
+        },
+        {
+            "ID": 35,
+            "Họ và tên": "Lưu Thị Phương Loan",
+            "Ngày sinh": "10/02/1983",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Lớp dạy": "10A5, 10A6, 10A7, 10A8, 10A9, 11A1, 11A3, 11A4, 11A5",
+            "SĐT": "0978810283",
+            "Email": NaN
+        },
+        {
+            "ID": 36,
+            "Họ và tên": "Nguyễn Thị Thu",
+            "Ngày sinh": "22/01/1986",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Lớp dạy": "10A1, 10A2, 10A3, 10A4, 11A2, 11A6, 11A7, 11A8, 11A9",
+            "SĐT": "0938765286",
+            "Email": NaN
+        },
+        {
+            "ID": 37,
+            "Họ và tên": "Phan Thị Thu Hà",
+            "Ngày sinh": "11/04/1984",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Lớp dạy": "11A1, 11A2, 11A3, 11A4, 11A5",
+            "SĐT": "0989650636",
+            "Email": NaN
+        },
+        {
+            "ID": 38,
+            "Họ và tên": "Bùi Thị Thơm",
+            "Ngày sinh": "22/04/1984",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Lớp dạy": "12A1, 12A2, 12A7",
+            "SĐT": "0388104189",
+            "Email": NaN
+        },
+        {
+            "ID": 39,
+            "Họ và tên": "Nguyễn Quỳnh Trang",
+            "Ngày sinh": "04/11/1985",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Lớp dạy": "10A1, 10A2, 10A3, 10A4, 11A4, 11A5, 12A6, 12A7",
+            "SĐT": "0347881059",
+            "Email": NaN
+        },
+        {
+            "ID": 40,
+            "Họ và tên": "Lương Thị Bích Vân",
+            "Ngày sinh": "11/09/1976",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Lớp dạy": "11A1, 11A2, 11A3, 12A1, 12A2, 12A3, 12A4, 12A5",
+            "SĐT": "0982545976",
+            "Email": NaN
+        },
+        {
+            "ID": 41,
+            "Họ và tên": "Lê Hùng Cường",
+            "Ngày sinh": "02/09/1978",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Lớp dạy": "10A1, 10A2, 10A3, 10A4, 12A6, 12A7",
+            "SĐT": "0984742848",
+            "Email": NaN
+        },
+        {
+            "ID": 42,
+            "Họ và tên": "Nguyễn Hồng Quân",
+            "Ngày sinh": "11/11/1987",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Lớp dạy": "10A7, 10A8, 10A9, 11A4, 11A5, 11A6",
+            "SĐT": "0862468636",
+            "Email": NaN
+        },
+        {
+            "ID": 43,
+            "Họ và tên": "Phùng Ngọc Thưởng",
+            "Ngày sinh": "10/06/1995",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Lớp dạy": "12A8, 12A9",
+            "SĐT": "0974858200",
+            "Email": NaN
+        },
+        {
+            "ID": 44,
+            "Họ và tên": "Phùng Thị Yên Vui",
+            "Ngày sinh": "10/04/1997",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Lớp dạy": "12A1, 12A2, 12A3, 12A4",
+            "SĐT": "0332244019",
+            "Email": NaN
+        },
+        {
+            "ID": 46,
+            "Họ và tên": "Lê Thu Hà",
+            "Ngày sinh": "05/05/1974",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Lớp dạy": "10A3, 10A4, 10A5, 11A8",
+            "SĐT": "0963050574",
+            "Email": NaN
+        },
+        {
+            "ID": 47,
+            "Họ và tên": "Trịnh Thị Hoài Giang",
+            "Ngày sinh": "08/02/1981",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Lớp dạy": "12A5, 12A7",
+            "SĐT": "0945960159",
+            "Email": NaN
+        },
+        {
+            "ID": 48,
+            "Họ và tên": "Đỗ Thị Thu Hiền",
+            "Ngày sinh": "12/04/1976",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Lớp dạy": "12A2, 12A5",
+            "SĐT": "0982415039",
+            "Email": NaN
+        },
+        {
+            "ID": 49,
+            "Họ và tên": "Lưu Thị Thúy Hồng",
+            "Ngày sinh": "29/10/1974",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Lớp dạy": "11A3, 12A1, 12A6",
+            "SĐT": "0945080808",
+            "Email": NaN
+        },
+        {
+            "ID": 50,
+            "Họ và tên": "Phùng Thị Hồng Minh",
+            "Ngày sinh": "23/07/1978",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Lớp dạy": "11A5, 12A2, 12A3",
+            "SĐT": "0978481328",
+            "Email": NaN
+        },
+        {
+            "ID": 51,
+            "Họ và tên": "Nguyễn Thị Thu Huyền",
+            "Ngày sinh": "21/03/1980",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Lớp dạy": "10A2, 10A8, 12A4",
+            "SĐT": "0989206529",
+            "Email": NaN
+        },
+        {
+            "ID": 52,
+            "Họ và tên": "Nguyễn Quỳnh Ngân",
+            "Ngày sinh": "02/04/1985",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Lớp dạy": "11A2, 11A4, 12A8",
+            "SĐT": "0978493486",
+            "Email": NaN
+        },
+        {
+            "ID": 53,
+            "Họ và tên": "Đỗ Thị Hải Yến",
+            "Ngày sinh": "02/09/1989",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Lớp dạy": "11A1, 11A6, 11A7, 12A9",
+            "SĐT": "0397131178",
+            "Email": NaN
+        },
+        {
+            "ID": 54,
+            "Họ và tên": "Nguyễn Cẩm Chi",
+            "Ngày sinh": "17/09/2003",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Lớp dạy": "10A6, 10A7, 10A9, 11A9",
+            "SĐT": "0345631516",
+            "Email": NaN
+        },
+        {
+            "ID": 55,
+            "Họ và tên": "Phạm Minh Hằng",
+            "Ngày sinh": "17/12/1976",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Lớp dạy": "10A1, 10A5, 11A2, 11A3, 11A9",
+            "SĐT": "0346746681",
+            "Email": NaN
+        },
+        {
+            "ID": 56,
+            "Họ và tên": "Triệu Thị Hằng",
+            "Ngày sinh": "29/01/1977",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Lớp dạy": "10A6, 10A7, 12A3, 12A6",
+            "SĐT": "0982608908",
+            "Email": NaN
+        },
+        {
+            "ID": 57,
+            "Họ và tên": "Đỗ Thị Thu Minh",
+            "Ngày sinh": "13/06/1982",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Lớp dạy": "10A8, 10A9, 12A8",
+            "SĐT": "0989737567",
+            "Email": NaN
+        },
+        {
+            "ID": 58,
+            "Họ và tên": "Trần Thị Thùy Linh",
+            "Ngày sinh": "03/11/1983",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Lớp dạy": "12A1, 12A7",
+            "SĐT": "0837869345",
+            "Email": NaN
+        },
+        {
+            "ID": 59,
+            "Họ và tên": "Nguyễn Thị Trang",
+            "Ngày sinh": "06/08/1987",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Lớp dạy": "11A4, 11A8, 12A4, 12A9",
+            "SĐT": "0978606832",
+            "Email": NaN
+        },
+        {
+            "ID": 60,
+            "Họ và tên": "Khổng Thị Thảo",
+            "Ngày sinh": "12/12/1992",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Lớp dạy": "10A3, 11A5, 11A7",
+            "SĐT": "0986321883",
+            "Email": NaN
+        },
+        {
+            "ID": 61,
+            "Họ và tên": "Lê Thị Ánh Dương",
+            "Ngày sinh": "26/11/2001",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Lớp dạy": "10A2, 10A4, 11A1, 11A6",
+            "SĐT": "0982046902",
+            "Email": NaN
+        },
+        {
+            "ID": 62,
+            "Họ và tên": "Nguyễn Thị Thanh Huyền",
+            "Ngày sinh": "25/05/1978",
+            "Tổ chuyên môn": "Tổ Hành chính",
+            "Lớp dạy": "Không",
+            "SĐT": "0982284294",
+            "Email": NaN
+        },
+        {
+            "ID": 63,
+            "Họ và tên": "Kiều Thị Bích Hồng",
+            "Ngày sinh": "01/10/1983",
+            "Tổ chuyên môn": "Tổ Hành chính",
+            "Lớp dạy": "Không",
+            "SĐT": "0389290915",
+            "Email": NaN
+        },
+        {
+            "ID": 64,
+            "Họ và tên": "Nguyễn Thị Thu Quế",
+            "Ngày sinh": "15/09/1980",
+            "Tổ chuyên môn": "Tổ Hành chính",
+            "Lớp dạy": "Không",
+            "SĐT": "0982118306",
+            "Email": NaN
+        },
+        {
+            "ID": 65,
+            "Họ và tên": "Nguyễn Thị Đông",
+            "Ngày sinh": "08/12/1984",
+            "Tổ chuyên môn": "Tổ Hành chính",
+            "Lớp dạy": "Không",
+            "SĐT": "0985569744",
+            "Email": NaN
+        },
+        {
+            "ID": 66,
+            "Họ và tên": "Vũ Thị Hương",
+            "Ngày sinh": "20/10/1986",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Lớp dạy": "Không",
+            "SĐT": "0984847667",
+            "Email": "vuhuongvp@gmail.com"
+        }
+    ],
+    "criteria": [
+        {
+            "STT": 1,
+            "Nhóm tiêu chí": "1. Thực hiện văn hoá công sở (15 điểm)",
+            "Mã TC": "TC1.1.1",
+            "Nội dung Tiêu chí": "Trang phục khi đến trường làm việc trong giờ hành chính đúng theo quy định tại Khoản 4; 5-Điều 4-Thông tư số 06/2019/TT-BGDĐT. Đeo thẻ của CB, GV, NV khi đến trường làm việc.",
+            "Điểm tối đa": 8.0,
+            "Nội dung vi phạm": "Trang phục không đúng quy định",
+            "điểm trừ": 1.0
+        },
+        {
+            "STT": 2,
+            "Nhóm tiêu chí": "1. Thực hiện văn hoá công sở (15 điểm)",
+            "Mã TC": "TC1.1.2",
+            "Nội dung Tiêu chí": "Trang phục khi đến trường làm việc trong giờ hành chính đúng theo quy định tại Khoản 4; 5-Điều 4-Thông tư số 06/2019/TT-BGDĐT. Đeo thẻ của CB, GV, NV khi đến trường làm việc.",
+            "Điểm tối đa": 0.0,
+            "Nội dung vi phạm": "Không đeo thẻ",
+            "điểm trừ": 1.0
+        },
+        {
+            "STT": 3,
+            "Nhóm tiêu chí": "1. Thực hiện văn hoá công sở (15 điểm)",
+            "Mã TC": "TC1.2",
+            "Nội dung Tiêu chí": "Trang phục đúng quy định của nhà trường trong giờ sinh hoạt dưới cờ; của BTC trong các buổi Lễ, Hội nghị…",
+            "Điểm tối đa": 7.0,
+            "Nội dung vi phạm": "Trang phục không đúng quy định của BTC",
+            "điểm trừ": 1.0
+        },
+        {
+            "STT": 4,
+            "Nhóm tiêu chí": "2. Tham gia hội họp, sinh hoạt tập thể (15 điểm)",
+            "Mã TC": "TC2.1.1",
+            "Nội dung Tiêu chí": "Tham gia đầy đủ, đúng giờ các cuộc họp, sinh hoạt tập thể do BGH hoặc người đứng đầu các tổ chức, đoàn thể trong nhà trường tổ chức (xét các cá nhân thuộc thành phần phải tham gia).",
+            "Điểm tối đa": 5.0,
+            "Nội dung vi phạm": "Nghỉ Họp không báo cáo",
+            "điểm trừ": 2.0
+        },
+        {
+            "STT": 5,
+            "Nhóm tiêu chí": "2. Tham gia hội họp, sinh hoạt tập thể (15 điểm)",
+            "Mã TC": "TC2.1.2",
+            "Nội dung Tiêu chí": "Tham gia đầy đủ, đúng giờ các cuộc họp, sinh hoạt tập thể do BGH hoặc người đứng đầu các tổ chức, đoàn thể trong nhà trường tổ chức (xét các cá nhân thuộc thành phần phải tham gia).",
+            "Điểm tối đa": 0.0,
+            "Nội dung vi phạm": "Muộn Họp từ 10 phút trở lên",
+            "điểm trừ": 1.0
+        },
+        {
+            "STT": 6,
+            "Nhóm tiêu chí": "2. Tham gia hội họp, sinh hoạt tập thể (15 điểm)",
+            "Mã TC": "TC2.1.3",
+            "Nội dung Tiêu chí": "Tham gia đầy đủ, đúng giờ các cuộc họp, sinh hoạt tập thể do BGH hoặc người đứng đầu các tổ chức, đoàn thể trong nhà trường tổ chức (xét các cá nhân thuộc thành phần phải tham gia).",
+            "Điểm tối đa": 0.0,
+            "Nội dung vi phạm": "Muộn Họp dưới 10 phút",
+            "điểm trừ": 0.5
+        },
+        {
+            "STT": 7,
+            "Nhóm tiêu chí": "2. Tham gia hội họp, sinh hoạt tập thể (15 điểm)",
+            "Mã TC": "TC2.2.1",
+            "Nội dung Tiêu chí": "Nắm bắt, triển khai, đầy đủ, đúng thời gian nội dung các buổi họp, sinh hoạt tập thể.",
+            "Điểm tối đa": 10.0,
+            "Nội dung vi phạm": "Triển khai không đúng nội dung cuộc Họp",
+            "điểm trừ": 2.0
+        },
+        {
+            "STT": 8,
+            "Nhóm tiêu chí": "2. Tham gia hội họp, sinh hoạt tập thể (15 điểm)",
+            "Mã TC": "TC2.2.2",
+            "Nội dung Tiêu chí": "Nắm bắt, triển khai, đầy đủ, đúng thời gian nội dung các buổi họp, sinh hoạt tập thể.",
+            "Điểm tối đa": 0.0,
+            "Nội dung vi phạm": "Triển khai muộn nội dung cuộc Họp",
+            "điểm trừ": 1.0
+        },
+        {
+            "STT": 9,
+            "Nhóm tiêu chí": "3. Thực hiện quy chế chuyên môn (70 điểm)",
+            "Mã TC": "TC3.1.1",
+            "Nội dung Tiêu chí": "Sau hiệu lệnh trống muộn nhất 5 phút phải có mặt tại lớp. Đến đúng giờ trong buổi coi kiểm tra cuối kỳ theo phân công.",
+            "Điểm tối đa": 10.0,
+            "Nội dung vi phạm": "Muộn hơn 15 phút hoặc bỏ giờ dạy (coi kiểm tra)",
+            "điểm trừ": 4.0
+        },
+        {
+            "STT": 10,
+            "Nhóm tiêu chí": "3. Thực hiện quy chế chuyên môn (70 điểm)",
+            "Mã TC": "TC3.1.2",
+            "Nội dung Tiêu chí": "Sau hiệu lệnh trống muộn nhất 5 phút phải có mặt tại lớp. Đến đúng giờ trong buổi coi kiểm tra cuối kỳ theo phân công.",
+            "Điểm tối đa": 0.0,
+            "Nội dung vi phạm": "Muộn từ 11 đến 15 phút",
+            "điểm trừ": 2.0
+        },
+        {
+            "STT": 11,
+            "Nhóm tiêu chí": "3. Thực hiện quy chế chuyên môn (70 điểm)",
+            "Mã TC": "TC3.1.3",
+            "Nội dung Tiêu chí": "Sau hiệu lệnh trống muộn nhất 5 phút phải có mặt tại lớp. Đến đúng giờ trong buổi coi kiểm tra cuối kỳ theo phân công.",
+            "Điểm tối đa": 0.0,
+            "Nội dung vi phạm": "Muộn từ 6 đến 10 phút",
+            "điểm trừ": 1.0
+        },
+        {
+            "STT": 12,
+            "Nhóm tiêu chí": "3. Thực hiện quy chế chuyên môn (70 điểm)",
+            "Mã TC": "TC3.2",
+            "Nội dung Tiêu chí": "Đảm bảo duy trì và quản lý hoạt động học tập liên tục của học sinh trong giờ học: Không cho học sinh ngồi chơi khi chưa hết giờ (Trừ một số tình huống đặc biệt được sự đồng ý của BGH)",
+            "Điểm tối đa": 10.0,
+            "Nội dung vi phạm": "Để học sinh ngồi chơi khi chưa hết giờ",
+            "điểm trừ": 1.0
+        },
+        {
+            "STT": 13,
+            "Nhóm tiêu chí": "3. Thực hiện quy chế chuyên môn (70 điểm)",
+            "Mã TC": "TC3.3.1",
+            "Nội dung Tiêu chí": "Dạy đúng theo TKB của BGH. Khi đổi giờ, đổi ca, nhờ dạy thay (vì công việc cá nhân) phải báo cáo BGH và nhập đủ thông tin trên trang tính (Nghỉ dạy phải được Hiệu trưởng phê duyệt)",
+            "Điểm tối đa": 10.0,
+            "Nội dung vi phạm": "Dạy không đúng theo TKB (Không báo cáo)",
+            "điểm trừ": 1.0
+        },
+        {
+            "STT": 14,
+            "Nhóm tiêu chí": "3. Thực hiện quy chế chuyên môn (70 điểm)",
+            "Mã TC": "TC3.3.2",
+            "Nội dung Tiêu chí": "Dạy đúng theo TKB của BGH. Khi đổi giờ, đổi ca, nhờ dạy thay (vì công việc cá nhân) phải báo cáo BGH và nhập đủ thông tin trên trang tính (Nghỉ dạy phải được Hiệu trưởng phê duyệt)",
+            "Điểm tối đa": 0.0,
+            "Nội dung vi phạm": "Không nhập thông tin đổi giờ, dạy thay trên trang tính",
+            "điểm trừ": 1.0
+        },
+        {
+            "STT": 15,
+            "Nhóm tiêu chí": "3. Thực hiện quy chế chuyên môn (70 điểm)",
+            "Mã TC": "TC3.4.1",
+            "Nội dung Tiêu chí": "Ghi đầy đủ các nội dung trong Sổ đầu bài (Họ tên HS vắng, tiết theo PPCT, tên bài dạy) và ký xác nhận đã dạy",
+            "Điểm tối đa": 10.0,
+            "Nội dung vi phạm": "Không ghi tên bài dạy",
+            "điểm trừ": 1.0
+        },
+        {
+            "STT": 16,
+            "Nhóm tiêu chí": "3. Thực hiện quy chế chuyên môn (70 điểm)",
+            "Mã TC": "TC3.4.2",
+            "Nội dung Tiêu chí": "Ghi đầy đủ các nội dung trong Sổ đầu bài (Họ tên HS vắng, tiết theo PPCT, tên bài dạy) và ký xác nhận đã dạy",
+            "Điểm tối đa": 0.0,
+            "Nội dung vi phạm": "Không ghi số tiết theo PPCT",
+            "điểm trừ": 1.0
+        },
+        {
+            "STT": 17,
+            "Nhóm tiêu chí": "3. Thực hiện quy chế chuyên môn (70 điểm)",
+            "Mã TC": "TC3.4.3",
+            "Nội dung Tiêu chí": "Ghi đầy đủ các nội dung trong Sổ đầu bài (Họ tên HS vắng, tiết theo PPCT, tên bài dạy) và ký xác nhận đã dạy",
+            "Điểm tối đa": 0.0,
+            "Nội dung vi phạm": "Không ký xác nhận tiết dạy",
+            "điểm trừ": 1.0
+        },
+        {
+            "STT": 18,
+            "Nhóm tiêu chí": "3. Thực hiện quy chế chuyên môn (70 điểm)",
+            "Mã TC": "TC5.1.1",
+            "Nội dung Tiêu chí": "Đủ KH bài dạy khi lên lớp, được ký duyệt trên Edoc đúng thời gian. KH bài dạy thể hiện đầy đủ mục tiêu đầu ra; kiến thức cơ bản; cách thức tổ chức; nội dung tích hợp (nếu có)",
+            "Điểm tối đa": 10.0,
+            "Nội dung vi phạm": "Kế hoạch bài dạy không đạt yêu cầu",
+            "điểm trừ": 1.0
+        },
+        {
+            "STT": 19,
+            "Nhóm tiêu chí": "3. Thực hiện quy chế chuyên môn (70 điểm)",
+            "Mã TC": "TC5.1.2",
+            "Nội dung Tiêu chí": "Đủ KH bài dạy khi lên lớp, được ký duyệt trên Edoc đúng thời gian. KH bài dạy thể hiện đầy đủ mục tiêu đầu ra; kiến thức cơ bản; cách thức tổ chức; nội dung tích hợp (nếu có)",
+            "Điểm tối đa": 0.0,
+            "Nội dung vi phạm": "Thiếu Kế hoạch bài dạy",
+            "điểm trừ": 2.0
+        },
+        {
+            "STT": 20,
+            "Nhóm tiêu chí": "3. Thực hiện quy chế chuyên môn (70 điểm)",
+            "Mã TC": "TC6.1.1",
+            "Nội dung Tiêu chí": "Ra đề, phản biện khi được BGH phân công phải đảm bảo yêu cầu về nội dung, thời gian hoàn thành",
+            "Điểm tối đa": 10.0,
+            "Nội dung vi phạm": "Hoàn thành muộn (Phản biện)",
+            "điểm trừ": 0.15
+        },
+        {
+            "STT": 21,
+            "Nhóm tiêu chí": "3. Thực hiện quy chế chuyên môn (70 điểm)",
+            "Mã TC": "TC6.1.2",
+            "Nội dung Tiêu chí": "Ra đề, phản biện khi được BGH phân công phải đảm bảo yêu cầu về nội dung, thời gian hoàn thành",
+            "Điểm tối đa": 0.0,
+            "Nội dung vi phạm": "Hoàn thành muộn (Ra đề chính)",
+            "điểm trừ": 0.35
+        },
+        {
+            "STT": 22,
+            "Nhóm tiêu chí": "3. Thực hiện quy chế chuyên môn (70 điểm)",
+            "Mã TC": "TC6.1.3",
+            "Nội dung Tiêu chí": "Ra đề, phản biện khi được BGH phân công phải đảm bảo yêu cầu về nội dung, thời gian hoàn thành",
+            "Điểm tối đa": 0.0,
+            "Nội dung vi phạm": "Lỗi 1 nội dung (Ra đề chính)",
+            "điểm trừ": 0.7
+        },
+        {
+            "STT": 23,
+            "Nhóm tiêu chí": "3. Thực hiện quy chế chuyên môn (70 điểm)",
+            "Mã TC": "TC6.1.4",
+            "Nội dung Tiêu chí": "Ra đề, phản biện khi được BGH phân công phải đảm bảo yêu cầu về nội dung, thời gian hoàn thành",
+            "Điểm tối đa": 0.0,
+            "Nội dung vi phạm": "Lỗi 1 nội dung (Phản biện)",
+            "điểm trừ": 0.3
+        }
+    ],
+    "rewards": [
+        {
+            "STT": 1,
+            "Mục lớn": "1. Chất lượng giáo dục các môn văn hoá",
+            "Mã KT": "KT1.1A",
+            "Nội dung khen thưởng": "Chất lượng ôn thi TN THPT",
+            "Thành tích / Mức khen thưởng": "Xếp trong Top 30 toàn tỉnh",
+            "Số giải": 1,
+            "Điểm cộng": 100.0,
+            "Ghi chú": "Tính điểm cho GV dạy môn đó"
+        },
+        {
+            "STT": 2,
+            "Mục lớn": "1. Chất lượng giáo dục các môn văn hoá",
+            "Mã KT": "KT1.1B",
+            "Nội dung khen thưởng": "Chất lượng ôn thi TN THPT",
+            "Thành tích / Mức khen thưởng": "Xếp trong Top 35 toàn tỉnh",
+            "Số giải": 1,
+            "Điểm cộng": 70.0,
+            "Ghi chú": "Tính điểm cho GV dạy môn đó"
+        },
+        {
+            "STT": 3,
+            "Mục lớn": "1. Chất lượng giáo dục các môn văn hoá",
+            "Mã KT": "KT1.1C",
+            "Nội dung khen thưởng": "Chất lượng ôn thi TN THPT",
+            "Thành tích / Mức khen thưởng": "Xếp trong Top 40 toàn tỉnh",
+            "Số giải": 1,
+            "Điểm cộng": 50.0,
+            "Ghi chú": "Tính điểm cho GV dạy môn đó"
+        },
+        {
+            "STT": 4,
+            "Mục lớn": "1. Chất lượng giáo dục các môn văn hoá",
+            "Mã KT": "KT1.1D",
+            "Nội dung khen thưởng": "Chất lượng ôn thi TN THPT",
+            "Thành tích / Mức khen thưởng": "Xếp trong Top 50 toàn tỉnh",
+            "Số giải": 1,
+            "Điểm cộng": 30.0,
+            "Ghi chú": "Tính điểm cho GV dạy môn đó"
+        },
+        {
+            "STT": 5,
+            "Mục lớn": "1. Chất lượng giáo dục các môn văn hoá",
+            "Mã KT": "KT1.2A",
+            "Nội dung khen thưởng": "Chất lượng thi HSG cấp trường",
+            "Thành tích / Mức khen thưởng": "Giải Nhất",
+            "Số giải": 1,
+            "Điểm cộng": 10.0,
+            "Ghi chú": "Tính điểm cho GVBD"
+        },
+        {
+            "STT": 6,
+            "Mục lớn": "1. Chất lượng giáo dục các môn văn hoá",
+            "Mã KT": "KT1.2B",
+            "Nội dung khen thưởng": "Chất lượng thi HSG cấp trường",
+            "Thành tích / Mức khen thưởng": "Giải Nhì",
+            "Số giải": 1,
+            "Điểm cộng": 8.0,
+            "Ghi chú": "Tính điểm cho GVBD"
+        },
+        {
+            "STT": 7,
+            "Mục lớn": "1. Chất lượng giáo dục các môn văn hoá",
+            "Mã KT": "KT1.2C",
+            "Nội dung khen thưởng": "Chất lượng thi HSG cấp trường",
+            "Thành tích / Mức khen thưởng": "Giải Ba",
+            "Số giải": 1,
+            "Điểm cộng": 5.0,
+            "Ghi chú": "Tính điểm cho GVBD"
+        },
+        {
+            "STT": 8,
+            "Mục lớn": "1. Chất lượng giáo dục các môn văn hoá",
+            "Mã KT": "KT1.2D",
+            "Nội dung khen thưởng": "Chất lượng thi HSG cấp trường",
+            "Thành tích / Mức khen thưởng": "Giải Khuyến khích",
+            "Số giải": 1,
+            "Điểm cộng": 3.0,
+            "Ghi chú": "Tính điểm cho GVBD"
+        },
+        {
+            "STT": 9,
+            "Mục lớn": "1. Chất lượng giáo dục các môn văn hoá",
+            "Mã KT": "KT1.3A",
+            "Nội dung khen thưởng": "Chất lượng thi HSG cấp các cụm trường",
+            "Thành tích / Mức khen thưởng": "Giải Nhất",
+            "Số giải": 1,
+            "Điểm cộng": 20.0,
+            "Ghi chú": "Tính điểm cho GVBD"
+        },
+        {
+            "STT": 10,
+            "Mục lớn": "1. Chất lượng giáo dục các môn văn hoá",
+            "Mã KT": "KT1.3B",
+            "Nội dung khen thưởng": "Chất lượng thi HSG cấp các cụm trường",
+            "Thành tích / Mức khen thưởng": "Giải Nhì",
+            "Số giải": 1,
+            "Điểm cộng": 16.0,
+            "Ghi chú": "Tính điểm cho GVBD"
+        },
+        {
+            "STT": 11,
+            "Mục lớn": "1. Chất lượng giáo dục các môn văn hoá",
+            "Mã KT": "KT1.3C",
+            "Nội dung khen thưởng": "Chất lượng thi HSG cấp các cụm trường",
+            "Thành tích / Mức khen thưởng": "Giải Ba",
+            "Số giải": 1,
+            "Điểm cộng": 10.0,
+            "Ghi chú": "Tính điểm cho GVBD"
+        },
+        {
+            "STT": 12,
+            "Mục lớn": "1. Chất lượng giáo dục các môn văn hoá",
+            "Mã KT": "KT1.3D",
+            "Nội dung khen thưởng": "Chất lượng thi HSG cấp các cụm trường",
+            "Thành tích / Mức khen thưởng": "Giải Khuyến khích",
+            "Số giải": 1,
+            "Điểm cộng": 6.0,
+            "Ghi chú": "Tính điểm cho GVBD"
+        },
+        {
+            "STT": 13,
+            "Mục lớn": "1. Chất lượng giáo dục các môn văn hoá",
+            "Mã KT": "KT1.4A",
+            "Nội dung khen thưởng": "Chất lượng thi HSG cấp tỉnh",
+            "Thành tích / Mức khen thưởng": "Giải Nhất",
+            "Số giải": 1,
+            "Điểm cộng": 100.0,
+            "Ghi chú": "Tính điểm cho GVBD"
+        },
+        {
+            "STT": 14,
+            "Mục lớn": "1. Chất lượng giáo dục các môn văn hoá",
+            "Mã KT": "KT1.4B",
+            "Nội dung khen thưởng": "Chất lượng thi HSG cấp tỉnh",
+            "Thành tích / Mức khen thưởng": "Giải Nhì",
+            "Số giải": 1,
+            "Điểm cộng": 70.0,
+            "Ghi chú": "Tính điểm cho GVBD"
+        },
+        {
+            "STT": 15,
+            "Mục lớn": "1. Chất lượng giáo dục các môn văn hoá",
+            "Mã KT": "KT1.4C",
+            "Nội dung khen thưởng": "Chất lượng thi HSG cấp tỉnh",
+            "Thành tích / Mức khen thưởng": "Giải Ba",
+            "Số giải": 1,
+            "Điểm cộng": 50.0,
+            "Ghi chú": "Tính điểm cho GVBD"
+        },
+        {
+            "STT": 16,
+            "Mục lớn": "1. Chất lượng giáo dục các môn văn hoá",
+            "Mã KT": "KT1.4D",
+            "Nội dung khen thưởng": "Chất lượng thi HSG cấp tỉnh",
+            "Thành tích / Mức khen thưởng": "Giải Khuyến khích",
+            "Số giải": 1,
+            "Điểm cộng": 30.0,
+            "Ghi chú": "Tính điểm cho GVBD"
+        },
+        {
+            "STT": 17,
+            "Mục lớn": "2. Hoạt động Kỹ năng sống, STEM, KHKT, Văn nghệ, TDTT",
+            "Mã KT": "KT2.1A",
+            "Nội dung khen thưởng": "HD học sinh làm Sản phẩm STEM, học sinh thuyết trình tốt về các kiến thức môn học tích hợp trong sản phảm",
+            "Thành tích / Mức khen thưởng": "Giải Nhất",
+            "Số giải": 1,
+            "Điểm cộng": 10.0,
+            "Ghi chú": "Tính điểm cho GVHD"
+        },
+        {
+            "STT": 18,
+            "Mục lớn": "2. Hoạt động Kỹ năng sống, STEM, KHKT, Văn nghệ, TDTT",
+            "Mã KT": "KT2.1B",
+            "Nội dung khen thưởng": "HD học sinh làm Sản phẩm STEM, học sinh thuyết trình tốt về các kiến thức môn học tích hợp trong sản phảm",
+            "Thành tích / Mức khen thưởng": "Giải Nhì",
+            "Số giải": 1,
+            "Điểm cộng": 8.0,
+            "Ghi chú": "Tính điểm cho GVHD"
+        }
+    ],
+    "logs": [
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC1.1.2] Không đeo thẻ",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Trần Xuân Hoà",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)",
+            "Số điểm": 100.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng ôn thi TN THPT (Xếp trong Top 35 toàn tỉnh)",
+            "Số điểm": 70.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Thị Hiền",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Trần Xuân Hoà",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC2.1.1] Nghỉ Họp không báo cáo",
+            "Số điểm": 2.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Trần Xuân Hoà",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)",
+            "Số điểm": 100.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.2] Để học sinh ngồi chơi khi chưa hết giờ",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Số điểm": 8.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC5.1.2] Thiếu Kế hoạch bài dạy",
+            "Số điểm": 2.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp tỉnh (Giải Ba)",
+            "Số điểm": 50.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)",
+            "Số điểm": 100.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Trần Xuân Hoà",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC1.1.2] Không đeo thẻ",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Trần Xuân Hoà",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 2] Lớp 12A8 - Môn Toán (Kỳ trước 6.50 ➔ Kỳ này 7.25, Tăng 0.75 điểm (+10.0 điểm))",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 2] Lớp 12A1 - Môn Toán (Kỳ trước 5.00 ➔ Kỳ này 5.50, Tăng 0.50 điểm (+8.0 điểm))",
+            "Số điểm": 8.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp tỉnh (Giải Nhất)",
+            "Số điểm": 100.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Nhất) - Số giải: 3 (Tổng: +30.0đ)",
+            "Số điểm": 30.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 2] Lớp 12A1 - Môn Toán (Kỳ trước 5.50 ➔ Kỳ này 7.00, Tăng 1.50 điểm (+10.0 điểm))",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp tỉnh (Giải Nhất) - Số giải: 2 (Tổng: +200.0đ)",
+            "Số điểm": 200.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Lần 2] Lớp 12A1 - Môn Toán (Kỳ trước 7.00 ➔ Kỳ này 5.50, Giảm 1.50 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Trần Xuân Hoà",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A8 - Môn Toán (Kỳ trước 7.25 ➔ Kỳ này 6.50, Giảm 0.75 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Trần Xuân Hoà",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp tỉnh (Giải Nhì) - Số giải: 3 (Tổng: +210.0đ)",
+            "Số điểm": 210.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Trần Xuân Hoà",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.2] Để học sinh ngồi chơi khi chưa hết giờ",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Trần Thanh Long",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Nhất)",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Trần Thanh Long",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC1.2] Trang phục không đúng quy định của BTC",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Trần Thanh Long",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Nhất)",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Trần Xuân Hoà",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp các cụm trường (Giải Ba) - Số giải: 3 (Tổng: +30.0đ)",
+            "Số điểm": 30.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Học kỳ II] Lớp 12A1 - Môn Toán (Kỳ trước 5.50 ➔ Kỳ này 7.50, Tăng 2.00 điểm (+10.0 điểm))",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Trần Thanh Long",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Trần Thanh Long",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Nhất)",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Trần Thanh Long",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 2] Lớp 12A5 - Môn GDCD (Kỳ trước 7.50 ➔ Kỳ này 7.75, Tăng 0.25 điểm (+10.0 điểm))",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Trần Thanh Long",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Học kỳ I] Lớp 12A5 - Môn GDCD (Kỳ trước 7.75 ➔ Kỳ này 6.75, Giảm 1.00 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Vũ Thị Hương",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC1.1.2] Không đeo thẻ",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Vũ Thị Hương",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp tỉnh (Giải Nhất) - Số giải: 3 (Tổng: +300.0đ)",
+            "Số điểm": 300.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Nguyễn Thị Thanh Xuân",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC1.1.2] Không đeo thẻ",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Nguyễn Thị Thanh Xuân",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)",
+            "Số điểm": 6.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Nguyễn Thị Thanh Xuân",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 2] Lớp 11A7 - Môn Toán (Kỳ trước 7.50 ➔ Kỳ này 8.50, Tăng 1.00 điểm (+10.0 điểm))",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Nguyễn Thị Yến",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC1.1.2] Không đeo thẻ",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Nguyễn Thị Yến",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp tỉnh (Giải Nhì) - Số giải: 2 (Tổng: +140.0đ)",
+            "Số điểm": 140.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Nguyễn Thị Yến",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 2] Lớp 10A2 - Môn Tin học (Kỳ trước 6.50 ➔ Kỳ này 7.50, Tăng 1.00 điểm (+10.0 điểm))",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC2.1.1] Nghỉ Họp không báo cáo",
+            "Số điểm": 2.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)",
+            "Số điểm": 100.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL Thi thử TN THPT Lần 1] Lớp 12A1 - Môn Toán (Kỳ trước 7.50 ➔ Kỳ này 4.50, Giảm 3.00 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "30/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "30/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.1.3] Muộn từ 6 đến 10 phút",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
+        }
+    ],
+    "tammi_history": [
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.2] Không đeo thẻ' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Trần Xuân Hoà",
+            "SĐT Tammi": "0976378739",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Trần Xuân Hoà, Hệ thống ghi nhận khen thưởng: 'Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)' (Điểm cộng: +100.0 điểm). SĐT nhận: 0976378739.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận khen thưởng: 'Chất lượng ôn thi TN THPT (Xếp trong Top 35 toàn tỉnh)' (Điểm cộng: +70.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Thị Hiền",
+            "SĐT Tammi": "0976376576",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Lê Thị Hiền, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0976376576.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Trần Xuân Hoà",
+            "SĐT Tammi": "0976378739",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Trần Xuân Hoà, Hệ thống ghi nhận lỗi vi phạm: '[TC2.1.1] Nghỉ Họp không báo cáo' (Điểm trừ: -2.0 điểm). SĐT nhận: 0976378739.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Trần Xuân Hoà",
+            "SĐT Tammi": "0976378739",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Trần Xuân Hoà, Hệ thống ghi nhận khen thưởng: 'Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)' (Điểm cộng: +100.0 điểm). SĐT nhận: 0976378739.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC3.2] Để học sinh ngồi chơi khi chưa hết giờ' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhì)' (Điểm cộng: +8.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC5.1.2] Thiếu Kế hoạch bài dạy' (Điểm trừ: -2.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp tỉnh (Giải Ba)' (Điểm cộng: +50.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận khen thưởng: 'Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)' (Điểm cộng: +100.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Trần Xuân Hoà",
+            "SĐT Tammi": "0976378739",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Trần Xuân Hoà, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.2] Không đeo thẻ' (Điểm trừ: -1.0 điểm). SĐT nhận: 0976378739.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Trần Xuân Hoà",
+            "SĐT Tammi": "0976378739",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo KSCL ngày 28/10/2026: Kính gửi Trần Xuân Hoà, kết quả KSCL Lần 2 Lớp 12A8 - Môn Toán đạt ĐTB 7.25 (Kỳ trước 6.50, Tăng +0.75). Hệ thống ghi nhận: Tăng 0.75 điểm (+10.0 điểm) (+10.0đ thi đua). SĐT nhận: 0976378739.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo KSCL ngày 28/10/2026: Kính gửi Lê Hồng Thái, kết quả KSCL Lần 2 Lớp 12A1 - Môn Toán đạt ĐTB 5.50 (Kỳ trước 5.00, Tăng +0.50). Hệ thống ghi nhận: Tăng 0.50 điểm (+8.0 điểm) (+8.0đ thi đua). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp tỉnh (Giải Nhất)' (Điểm cộng: +100.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhất) - Số giải: 3 (Tổng: +30.0đ)' (Điểm cộng: +30.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo KSCL ngày 28/10/2026: Kính gửi Lê Hồng Thái, kết quả KSCL Lần 2 Lớp 12A1 - Môn Toán đạt ĐTB 7.00 (Kỳ trước 5.50, Tăng +1.50). Hệ thống ghi nhận: Tăng 1.50 điểm (+10.0 điểm) (+10.0đ thi đua). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp tỉnh (Giải Nhất) - Số giải: 2 (Tổng: +200.0đ)' (Điểm cộng: +200.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo KSCL ngày 28/10/2026: Kính gửi Lê Hồng Thái, kết quả KSCL Lần 2 Lớp 12A1 - Môn Toán đạt ĐTB 5.50 (Kỳ trước 7.00, Tăng -1.50). Hệ thống ghi nhận: Giảm 1.50 điểm (Trừ 1 điểm) (-1.0đ thi đua). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Trần Xuân Hoà",
+            "SĐT Tammi": "0976378739",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo KSCL ngày 28/10/2026: Kính gửi Trần Xuân Hoà, kết quả KSCL Lần 1 Lớp 12A8 - Môn Toán đạt ĐTB 6.50 (Kỳ trước 7.25, Tăng -0.75). Hệ thống ghi nhận: Giảm 0.75 điểm (Trừ 1 điểm) (-1.0đ thi đua). SĐT nhận: 0976378739.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Trần Xuân Hoà",
+            "SĐT Tammi": "0976378739",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Trần Xuân Hoà, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp tỉnh (Giải Nhì) - Số giải: 3 (Tổng: +210.0đ)' (Điểm cộng: +210.0 điểm). SĐT nhận: 0976378739.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Trần Xuân Hoà",
+            "SĐT Tammi": "0976378739",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Trần Xuân Hoà, Hệ thống ghi nhận lỗi vi phạm: '[TC3.2] Để học sinh ngồi chơi khi chưa hết giờ' (Điểm trừ: -1.0 điểm). SĐT nhận: 0976378739.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "SĐT Tammi": "0982566385",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 29/10/2026: Kính gửi Trần Thanh Long, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhất)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0982566385.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "SĐT Tammi": "0982566385",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 29/10/2026: Kính gửi Trần Thanh Long, Hệ thống ghi nhận lỗi vi phạm: '[TC1.2] Trang phục không đúng quy định của BTC' (Điểm trừ: -1.0 điểm). SĐT nhận: 0982566385.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "SĐT Tammi": "0982566385",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 29/10/2026: Kính gửi Trần Thanh Long, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhất)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0982566385.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Trần Xuân Hoà",
+            "SĐT Tammi": "0976378739",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 29/10/2026: Kính gửi Trần Xuân Hoà, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0976378739.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 29/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 29/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp các cụm trường (Giải Ba) - Số giải: 3 (Tổng: +30.0đ)' (Điểm cộng: +30.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 29/10/2026: Kính gửi Lê Hồng Thái, kết quả KSCL Học kỳ II Lớp 12A1 - Môn Toán đạt ĐTB 7.50 (Kỳ trước 5.50, Tăng +2.00). Hệ thống ghi nhận: Tăng 2.00 điểm (+10.0 điểm) (+10.0đ thi đua).",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "SĐT Tammi": "0982566385",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 29/10/2026: Kính gửi Trần Thanh Long, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0982566385.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "SĐT Tammi": "0982566385",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 29/10/2026: Kính gửi Trần Thanh Long, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhất)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0982566385.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "SĐT Tammi": "0982566385",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 29/10/2026: Kính gửi Trần Thanh Long, kết quả KSCL Lần 2 Lớp 12A5 - Môn GDCD đạt ĐTB 7.75 (Kỳ trước 7.50, Tăng +0.25). Hệ thống ghi nhận: Tăng 0.25 điểm (+10.0 điểm) (+10.0đ thi đua).",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "SĐT Tammi": "0982566385",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 29/10/2026: Kính gửi Trần Thanh Long, kết quả KSCL Học kỳ I Lớp 12A5 - Môn GDCD đạt ĐTB 6.75 (Kỳ trước 7.75, Tăng -1.00). Hệ thống ghi nhận: Giảm 1.00 điểm (Trừ 1 điểm) (-1.0đ thi đua).",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Vũ Thị Hương",
+            "SĐT Tammi": "0984847667",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 29/10/2026: Kính gửi Vũ Thị Hương, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.2] Không đeo thẻ' (Điểm trừ: -1.0 điểm). SĐT nhận: 0984847667.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Vũ Thị Hương",
+            "SĐT Tammi": "0984847667",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 29/10/2026: Kính gửi Vũ Thị Hương, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp tỉnh (Giải Nhất) - Số giải: 3 (Tổng: +300.0đ)' (Điểm cộng: +300.0 điểm). SĐT nhận: 0984847667.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Nguyễn Thị Thanh Xuân",
+            "SĐT Tammi": "0385929424",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 29/10/2026: Kính gửi Nguyễn Thị Thanh Xuân, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.2] Không đeo thẻ' (Điểm trừ: -1.0 điểm). SĐT nhận: 0385929424.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Nguyễn Thị Thanh Xuân",
+            "SĐT Tammi": "0385929424",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 29/10/2026: Kính gửi Nguyễn Thị Thanh Xuân, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)' (Điểm cộng: +6.0 điểm). SĐT nhận: 0385929424.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Nguyễn Thị Thanh Xuân",
+            "SĐT Tammi": "0385929424",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 29/10/2026: Kính gửi Nguyễn Thị Thanh Xuân, kết quả KSCL Lần 2 Lớp 11A7 - Môn Toán đạt ĐTB 8.50 (Kỳ trước 7.50, Tăng +1.00). Hệ thống ghi nhận: Tăng 1.00 điểm (+10.0 điểm) (+10.0đ thi đua).",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Nguyễn Thị Yến",
+            "SĐT Tammi": "0868463546",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 29/10/2026: Kính gửi Nguyễn Thị Yến, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.2] Không đeo thẻ' (Điểm trừ: -1.0 điểm). SĐT nhận: 0868463546.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Nguyễn Thị Yến",
+            "SĐT Tammi": "0868463546",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 29/10/2026: Kính gửi Nguyễn Thị Yến, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp tỉnh (Giải Nhì) - Số giải: 2 (Tổng: +140.0đ)' (Điểm cộng: +140.0 điểm). SĐT nhận: 0868463546.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Nguyễn Thị Yến",
+            "SĐT Tammi": "0868463546",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 29/10/2026: Kính gửi Nguyễn Thị Yến, kết quả KSCL Lần 2 Lớp 10A2 - Môn Tin học đạt ĐTB 7.50 (Kỳ trước 6.50, Tăng +1.00). Hệ thống ghi nhận: Tăng 1.00 điểm (+10.0 điểm) (+10.0đ thi đua).",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 29/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC2.1.1] Nghỉ Họp không báo cáo' (Điểm trừ: -2.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 29/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận khen thưởng: 'Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)' (Điểm cộng: +100.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 29/10/2026: Kính gửi Lê Hồng Thái, kết quả Thi thử TN THPT Lần 1 Lớp 12A1 - Môn Toán đạt ĐTB 4.50 (Kỳ trước 7.50, Tăng -3.00). Hệ thống ghi nhận: Giảm 3.00 điểm (Trừ 1 điểm) (-1.0đ thi đua).",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "30/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 30/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "30/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 30/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC3.1.3] Muộn từ 6 đến 10 phút' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        }
+    ],
+    "tammi_config": {},
+    "kscl_history": [
+        {
+            "ID": 1,
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Trần Xuân Hoà",
+            "Lớp": "12A8",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 6.5,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 2,
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Trần Xuân Hoà",
+            "Lớp": "12A8",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 2",
+            "Điểm TB": 7.25,
+            "Điểm kỳ trước": 6.5,
+            "Chỉ số tăng": 0.75,
+            "Điểm thi đua": 10.0,
+            "Ghi chú": "Tăng 0.75 điểm (+10.0 điểm)"
+        },
+        {
+            "ID": 3,
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Lớp": "12A1",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 5.0,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 4,
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Lớp": "12A1",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 2",
+            "Điểm TB": 5.5,
+            "Điểm kỳ trước": 5.0,
+            "Chỉ số tăng": 0.5,
+            "Điểm thi đua": 8.0,
+            "Ghi chú": "Tăng 0.50 điểm (+8.0 điểm)"
+        },
+        {
+            "ID": 5,
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Lớp": "12A1",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 2",
+            "Điểm TB": 7.0,
+            "Điểm kỳ trước": 5.5,
+            "Chỉ số tăng": 1.5,
+            "Điểm thi đua": 10.0,
+            "Ghi chú": "Tăng 1.50 điểm (+10.0 điểm)"
+        },
+        {
+            "ID": 6,
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Lớp": "12A1",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 2",
+            "Điểm TB": 5.5,
+            "Điểm kỳ trước": 7.0,
+            "Chỉ số tăng": -1.5,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": "Giảm 1.50 điểm (Trừ 1 điểm)"
+        },
+        {
+            "ID": 7,
+            "Ngày": "28/10/2026",
+            "Cán bộ": "Trần Xuân Hoà",
+            "Lớp": "12A8",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 6.5,
+            "Điểm kỳ trước": 7.25,
+            "Chỉ số tăng": -0.75,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": "Giảm 0.75 điểm (Trừ 1 điểm)"
+        },
+        {
+            "ID": 8,
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Lớp": "12A1",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Học kỳ II",
+            "Điểm TB": 7.5,
+            "Điểm kỳ trước": 5.5,
+            "Chỉ số tăng": 2.0,
+            "Điểm thi đua": 10.0,
+            "Ghi chú": "Tăng 2.00 điểm (+10.0 điểm)"
+        },
+        {
+            "ID": 9,
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Trần Thanh Long",
+            "Lớp": "12A5",
+            "Môn": "GDCD",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 7.5,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 10,
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Trần Thanh Long",
+            "Lớp": "12A5",
+            "Môn": "GDCD",
+            "Kỳ KSCL": "KSCL Lần 2",
+            "Điểm TB": 7.75,
+            "Điểm kỳ trước": 7.5,
+            "Chỉ số tăng": 0.25,
+            "Điểm thi đua": 10.0,
+            "Ghi chú": "Tăng 0.25 điểm (+10.0 điểm)"
+        },
+        {
+            "ID": 11,
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Trần Thanh Long",
+            "Lớp": "12A5",
+            "Môn": "GDCD",
+            "Kỳ KSCL": "KSCL Học kỳ I",
+            "Điểm TB": 6.75,
+            "Điểm kỳ trước": 7.75,
+            "Chỉ số tăng": -1.0,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": "Giảm 1.00 điểm (Trừ 1 điểm)"
+        },
+        {
+            "ID": 12,
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Nguyễn Thị Thanh Xuân",
+            "Lớp": "11A7",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 7.5,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 13,
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Nguyễn Thị Thanh Xuân",
+            "Lớp": "11A7",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 2",
+            "Điểm TB": 8.5,
+            "Điểm kỳ trước": 7.5,
+            "Chỉ số tăng": 1.0,
+            "Điểm thi đua": 10.0,
+            "Ghi chú": "Tăng 1.00 điểm (+10.0 điểm)"
+        },
+        {
+            "ID": 14,
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Nguyễn Thị Yến",
+            "Lớp": "10A2",
+            "Môn": "Tin học",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 6.5,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 15,
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Nguyễn Thị Yến",
+            "Lớp": "10A2",
+            "Môn": "Tin học",
+            "Kỳ KSCL": "KSCL Lần 2",
+            "Điểm TB": 7.5,
+            "Điểm kỳ trước": 6.5,
+            "Chỉ số tăng": 1.0,
+            "Điểm thi đua": 10.0,
+            "Ghi chú": "Tăng 1.00 điểm (+10.0 điểm)"
+        },
+        {
+            "ID": 16,
+            "Ngày": "29/10/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Lớp": "12A1",
+            "Môn": "Toán",
+            "Kỳ KSCL": "Thi thử TN THPT Lần 1",
+            "Điểm TB": 4.5,
+            "Điểm kỳ trước": 7.5,
+            "Chỉ số tăng": -3.0,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": "Giảm 3.00 điểm (Trừ 1 điểm)"
+        }
+    ],
+    "kscl_baselines": {
+        "Trần Xuân Hoà_12A8_Toán": {
+            "teacher": "Trần Xuân Hoà",
+            "class": "12A8",
+            "subject": "Toán",
+            "last_exam": "KSCL Lần 1",
+            "last_score": 6.5,
+            "last_date": "28/10/2026"
+        },
+        "Lê Hồng Thái_12A1_Toán": {
+            "teacher": "Lê Hồng Thái",
+            "class": "12A1",
+            "subject": "Toán",
+            "last_exam": "Thi thử TN THPT Lần 1",
+            "last_score": 4.5,
+            "last_date": "29/10/2026"
+        },
+        "Trần Thanh Long_12A5_GDCD": {
+            "teacher": "Trần Thanh Long",
+            "class": "12A5",
+            "subject": "GDCD",
+            "last_exam": "KSCL Học kỳ I",
+            "last_score": 6.75,
+            "last_date": "29/10/2026"
+        },
+        "Nguyễn Thị Thanh Xuân_11A7_Toán": {
+            "teacher": "Nguyễn Thị Thanh Xuân",
+            "class": "11A7",
+            "subject": "Toán",
+            "last_exam": "KSCL Lần 2",
+            "last_score": 8.5,
+            "last_date": "29/10/2026"
+        },
+        "Nguyễn Thị Yến_10A2_Tin học": {
+            "teacher": "Nguyễn Thị Yến",
+            "class": "10A2",
+            "subject": "Tin học",
+            "last_exam": "KSCL Lần 2",
+            "last_score": 7.5,
+            "last_date": "29/10/2026"
+        }
+    },
+    "guitin_list": [
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC1.1.2] Không đeo thẻ",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.2] Không đeo thẻ' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0976378739",
+            "Họ và tên": "Trần Xuân Hoà",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)",
+            "Số điểm": "+100.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Trần Xuân Hoà, Hệ thống ghi nhận khen thưởng: 'Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)' (Điểm cộng: +100.0 điểm). SĐT nhận: 0976378739.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng ôn thi TN THPT (Xếp trong Top 35 toàn tỉnh)",
+            "Số điểm": "+70.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận khen thưởng: 'Chất lượng ôn thi TN THPT (Xếp trong Top 35 toàn tỉnh)' (Điểm cộng: +70.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0976376576",
+            "Họ và tên": "Lê Thị Hiền",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Lê Thị Hiền, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0976376576.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0976378739",
+            "Họ và tên": "Trần Xuân Hoà",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC2.1.1] Nghỉ Họp không báo cáo",
+            "Số điểm": "-2.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Trần Xuân Hoà, Hệ thống ghi nhận lỗi vi phạm: '[TC2.1.1] Nghỉ Họp không báo cáo' (Điểm trừ: -2.0 điểm). SĐT nhận: 0976378739.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0976378739",
+            "Họ và tên": "Trần Xuân Hoà",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)",
+            "Số điểm": "+100.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Trần Xuân Hoà, Hệ thống ghi nhận khen thưởng: 'Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)' (Điểm cộng: +100.0 điểm). SĐT nhận: 0976378739.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC3.2] Để học sinh ngồi chơi khi chưa hết giờ",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC3.2] Để học sinh ngồi chơi khi chưa hết giờ' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Số điểm": "+8.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhì)' (Điểm cộng: +8.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC5.1.2] Thiếu Kế hoạch bài dạy",
+            "Số điểm": "-2.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC5.1.2] Thiếu Kế hoạch bài dạy' (Điểm trừ: -2.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp tỉnh (Giải Ba)",
+            "Số điểm": "+50.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp tỉnh (Giải Ba)' (Điểm cộng: +50.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)",
+            "Số điểm": "+100.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận khen thưởng: 'Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)' (Điểm cộng: +100.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0976378739",
+            "Họ và tên": "Trần Xuân Hoà",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC1.1.2] Không đeo thẻ",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Trần Xuân Hoà, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.2] Không đeo thẻ' (Điểm trừ: -1.0 điểm). SĐT nhận: 0976378739.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0976378739",
+            "Họ và tên": "Trần Xuân Hoà",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "ĐÁNH GIÁ KSCL",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 2] Lớp 12A8 - Môn Toán (Kỳ trước 6.50 ➔ Kỳ này 7.25, Tăng 0.75 điểm (+10.0 điểm))",
+            "Số điểm": "+10.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo KSCL ngày 28/10/2026: Kính gửi Trần Xuân Hoà, kết quả KSCL Lần 2 Lớp 12A8 - Môn Toán đạt ĐTB 7.25 (Kỳ trước 6.50, Tăng +0.75). Hệ thống ghi nhận: Tăng 0.75 điểm (+10.0 điểm) (+10.0đ thi đua). SĐT nhận: 0976378739.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "ĐÁNH GIÁ KSCL",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 2] Lớp 12A1 - Môn Toán (Kỳ trước 5.00 ➔ Kỳ này 5.50, Tăng 0.50 điểm (+8.0 điểm))",
+            "Số điểm": "+8.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo KSCL ngày 28/10/2026: Kính gửi Lê Hồng Thái, kết quả KSCL Lần 2 Lớp 12A1 - Môn Toán đạt ĐTB 5.50 (Kỳ trước 5.00, Tăng +0.50). Hệ thống ghi nhận: Tăng 0.50 điểm (+8.0 điểm) (+8.0đ thi đua). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp tỉnh (Giải Nhất)",
+            "Số điểm": "+100.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp tỉnh (Giải Nhất)' (Điểm cộng: +100.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhất) - Số giải: 3 (Tổng: +30.0đ)",
+            "Số điểm": "+30.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhất) - Số giải: 3 (Tổng: +30.0đ)' (Điểm cộng: +30.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "ĐÁNH GIÁ KSCL",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 2] Lớp 12A1 - Môn Toán (Kỳ trước 5.50 ➔ Kỳ này 7.00, Tăng 1.50 điểm (+10.0 điểm))",
+            "Số điểm": "+10.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo KSCL ngày 28/10/2026: Kính gửi Lê Hồng Thái, kết quả KSCL Lần 2 Lớp 12A1 - Môn Toán đạt ĐTB 7.00 (Kỳ trước 5.50, Tăng +1.50). Hệ thống ghi nhận: Tăng 1.50 điểm (+10.0 điểm) (+10.0đ thi đua). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp tỉnh (Giải Nhất) - Số giải: 2 (Tổng: +200.0đ)",
+            "Số điểm": "+200.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp tỉnh (Giải Nhất) - Số giải: 2 (Tổng: +200.0đ)' (Điểm cộng: +200.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "ĐÁNH GIÁ KSCL",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 2] Lớp 12A1 - Môn Toán (Kỳ trước 7.00 ➔ Kỳ này 5.50, Giảm 1.50 điểm (Trừ 1 điểm))",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo KSCL ngày 28/10/2026: Kính gửi Lê Hồng Thái, kết quả KSCL Lần 2 Lớp 12A1 - Môn Toán đạt ĐTB 5.50 (Kỳ trước 7.00, Tăng -1.50). Hệ thống ghi nhận: Giảm 1.50 điểm (Trừ 1 điểm) (-1.0đ thi đua). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0976378739",
+            "Họ và tên": "Trần Xuân Hoà",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "ĐÁNH GIÁ KSCL",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A8 - Môn Toán (Kỳ trước 7.25 ➔ Kỳ này 6.50, Giảm 0.75 điểm (Trừ 1 điểm))",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo KSCL ngày 28/10/2026: Kính gửi Trần Xuân Hoà, kết quả KSCL Lần 1 Lớp 12A8 - Môn Toán đạt ĐTB 6.50 (Kỳ trước 7.25, Tăng -0.75). Hệ thống ghi nhận: Giảm 0.75 điểm (Trừ 1 điểm) (-1.0đ thi đua). SĐT nhận: 0976378739.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0976378739",
+            "Họ và tên": "Trần Xuân Hoà",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp tỉnh (Giải Nhì) - Số giải: 3 (Tổng: +210.0đ)",
+            "Số điểm": "+210.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 28/10/2026: Kính gửi Trần Xuân Hoà, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp tỉnh (Giải Nhì) - Số giải: 3 (Tổng: +210.0đ)' (Điểm cộng: +210.0 điểm). SĐT nhận: 0976378739.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0976378739",
+            "Họ và tên": "Trần Xuân Hoà",
+            "Thời gian": "28/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC3.2] Để học sinh ngồi chơi khi chưa hết giờ",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 28/10/2026: Kính gửi Trần Xuân Hoà, Hệ thống ghi nhận lỗi vi phạm: '[TC3.2] Để học sinh ngồi chơi khi chưa hết giờ' (Điểm trừ: -1.0 điểm). SĐT nhận: 0976378739.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0982566385",
+            "Họ và tên": "Trần Thanh Long",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhất)",
+            "Số điểm": "+10.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 29/10/2026: Kính gửi Trần Thanh Long, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhất)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0982566385.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0982566385",
+            "Họ và tên": "Trần Thanh Long",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC1.2] Trang phục không đúng quy định của BTC",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 29/10/2026: Kính gửi Trần Thanh Long, Hệ thống ghi nhận lỗi vi phạm: '[TC1.2] Trang phục không đúng quy định của BTC' (Điểm trừ: -1.0 điểm). SĐT nhận: 0982566385.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0982566385",
+            "Họ và tên": "Trần Thanh Long",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhất)",
+            "Số điểm": "+10.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo khen thưởng ngày 29/10/2026: Kính gửi Trần Thanh Long, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhất)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0982566385.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0976378739",
+            "Họ và tên": "Trần Xuân Hoà",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [ZALO THPT VĨNH YÊN] Thông báo vi phạm ngày 29/10/2026: Kính gửi Trần Xuân Hoà, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0976378739.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 29/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp các cụm trường (Giải Ba) - Số giải: 3 (Tổng: +30.0đ)",
+            "Số điểm": "+30.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 29/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp các cụm trường (Giải Ba) - Số giải: 3 (Tổng: +30.0đ)' (Điểm cộng: +30.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "ĐÁNH GIÁ KSCL",
+            "Nội dung ghi nhận": "[KSCL KSCL Học kỳ II] Lớp 12A1 - Môn Toán (Kỳ trước 5.50 ➔ Kỳ này 7.50, Tăng 2.00 điểm (+10.0 điểm))",
+            "Số điểm": "+10.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 29/10/2026: Kính gửi Lê Hồng Thái, kết quả KSCL Học kỳ II Lớp 12A1 - Môn Toán đạt ĐTB 7.50 (Kỳ trước 5.50, Tăng +2.00). Hệ thống ghi nhận: Tăng 2.00 điểm (+10.0 điểm) (+10.0đ thi đua).",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0982566385",
+            "Họ và tên": "Trần Thanh Long",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 29/10/2026: Kính gửi Trần Thanh Long, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0982566385.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0982566385",
+            "Họ và tên": "Trần Thanh Long",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhất)",
+            "Số điểm": "+10.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 29/10/2026: Kính gửi Trần Thanh Long, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhất)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0982566385.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0982566385",
+            "Họ và tên": "Trần Thanh Long",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "ĐÁNH GIÁ KSCL",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 2] Lớp 12A5 - Môn GDCD (Kỳ trước 7.50 ➔ Kỳ này 7.75, Tăng 0.25 điểm (+10.0 điểm))",
+            "Số điểm": "+10.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 29/10/2026: Kính gửi Trần Thanh Long, kết quả KSCL Lần 2 Lớp 12A5 - Môn GDCD đạt ĐTB 7.75 (Kỳ trước 7.50, Tăng +0.25). Hệ thống ghi nhận: Tăng 0.25 điểm (+10.0 điểm) (+10.0đ thi đua).",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0982566385",
+            "Họ và tên": "Trần Thanh Long",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "ĐÁNH GIÁ KSCL",
+            "Nội dung ghi nhận": "[KSCL KSCL Học kỳ I] Lớp 12A5 - Môn GDCD (Kỳ trước 7.75 ➔ Kỳ này 6.75, Giảm 1.00 điểm (Trừ 1 điểm))",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 29/10/2026: Kính gửi Trần Thanh Long, kết quả KSCL Học kỳ I Lớp 12A5 - Môn GDCD đạt ĐTB 6.75 (Kỳ trước 7.75, Tăng -1.00). Hệ thống ghi nhận: Giảm 1.00 điểm (Trừ 1 điểm) (-1.0đ thi đua).",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0984847667",
+            "Họ và tên": "Vũ Thị Hương",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC1.1.2] Không đeo thẻ",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 29/10/2026: Kính gửi Vũ Thị Hương, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.2] Không đeo thẻ' (Điểm trừ: -1.0 điểm). SĐT nhận: 0984847667.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0984847667",
+            "Họ và tên": "Vũ Thị Hương",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp tỉnh (Giải Nhất) - Số giải: 3 (Tổng: +300.0đ)",
+            "Số điểm": "+300.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 29/10/2026: Kính gửi Vũ Thị Hương, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp tỉnh (Giải Nhất) - Số giải: 3 (Tổng: +300.0đ)' (Điểm cộng: +300.0 điểm). SĐT nhận: 0984847667.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0385929424",
+            "Họ và tên": "Nguyễn Thị Thanh Xuân",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC1.1.2] Không đeo thẻ",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 29/10/2026: Kính gửi Nguyễn Thị Thanh Xuân, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.2] Không đeo thẻ' (Điểm trừ: -1.0 điểm). SĐT nhận: 0385929424.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0385929424",
+            "Họ và tên": "Nguyễn Thị Thanh Xuân",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)",
+            "Số điểm": "+6.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 29/10/2026: Kính gửi Nguyễn Thị Thanh Xuân, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)' (Điểm cộng: +6.0 điểm). SĐT nhận: 0385929424.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0385929424",
+            "Họ và tên": "Nguyễn Thị Thanh Xuân",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "ĐÁNH GIÁ KSCL",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 2] Lớp 11A7 - Môn Toán (Kỳ trước 7.50 ➔ Kỳ này 8.50, Tăng 1.00 điểm (+10.0 điểm))",
+            "Số điểm": "+10.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 29/10/2026: Kính gửi Nguyễn Thị Thanh Xuân, kết quả KSCL Lần 2 Lớp 11A7 - Môn Toán đạt ĐTB 8.50 (Kỳ trước 7.50, Tăng +1.00). Hệ thống ghi nhận: Tăng 1.00 điểm (+10.0 điểm) (+10.0đ thi đua).",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0868463546",
+            "Họ và tên": "Nguyễn Thị Yến",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC1.1.2] Không đeo thẻ",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 29/10/2026: Kính gửi Nguyễn Thị Yến, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.2] Không đeo thẻ' (Điểm trừ: -1.0 điểm). SĐT nhận: 0868463546.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0868463546",
+            "Họ và tên": "Nguyễn Thị Yến",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp tỉnh (Giải Nhì) - Số giải: 2 (Tổng: +140.0đ)",
+            "Số điểm": "+140.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 29/10/2026: Kính gửi Nguyễn Thị Yến, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp tỉnh (Giải Nhì) - Số giải: 2 (Tổng: +140.0đ)' (Điểm cộng: +140.0 điểm). SĐT nhận: 0868463546.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0868463546",
+            "Họ và tên": "Nguyễn Thị Yến",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "ĐÁNH GIÁ KSCL",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 2] Lớp 10A2 - Môn Tin học (Kỳ trước 6.50 ➔ Kỳ này 7.50, Tăng 1.00 điểm (+10.0 điểm))",
+            "Số điểm": "+10.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 29/10/2026: Kính gửi Nguyễn Thị Yến, kết quả KSCL Lần 2 Lớp 10A2 - Môn Tin học đạt ĐTB 7.50 (Kỳ trước 6.50, Tăng +1.00). Hệ thống ghi nhận: Tăng 1.00 điểm (+10.0 điểm) (+10.0đ thi đua).",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC2.1.1] Nghỉ Họp không báo cáo",
+            "Số điểm": "-2.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 29/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC2.1.1] Nghỉ Họp không báo cáo' (Điểm trừ: -2.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)",
+            "Số điểm": "+100.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 29/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận khen thưởng: 'Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)' (Điểm cộng: +100.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "29/10/2026",
+            "Loại thông báo": "ĐÁNH GIÁ KSCL",
+            "Nội dung ghi nhận": "[KSCL Thi thử TN THPT Lần 1] Lớp 12A1 - Môn Toán (Kỳ trước 7.50 ➔ Kỳ này 4.50, Giảm 3.00 điểm (Trừ 1 điểm))",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 29/10/2026: Kính gửi Lê Hồng Thái, kết quả Thi thử TN THPT Lần 1 Lớp 12A1 - Môn Toán đạt ĐTB 4.50 (Kỳ trước 7.50, Tăng -3.00). Hệ thống ghi nhận: Giảm 3.00 điểm (Trừ 1 điểm) (-1.0đ thi đua).",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "30/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 30/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC1.1.1] Trang phục không đúng quy định' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "30/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC3.1.3] Muộn từ 6 đến 10 phút",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 30/10/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi vi phạm: '[TC3.1.3] Muộn từ 6 đến 10 phút' (Điểm trừ: -1.0 điểm). SĐT nhận: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        }
+    ],
+    "email_config": {
+        "smtp_server": "smtp.gmail.com",
+        "smtp_port": 587,
+        "sender_email": "c3.vinhyen.08707@phutho.edu.vn",
+        "sender_pass": "scex vzwf dlum chva",
+        "sender_name": "TRƯỜNG THPT VĨNH YÊN"
+    },
+    "email_history": [
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "lêhồngthái@vinhyen.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm Thi đua ngày 28/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC1.1.2] Không đeo thẻ",
+            "Trạng thái Email": "Lỗi kết nối Email SMTP: 'ascii' codec can't encode character '\\xea' in position 10: ordinal not in range(128)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Trần Xuân Hoà",
+            "Email cá nhân": "lethaivp@gmail.com",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Khen thưởng Thi đua ngày 28/10/2026 - Trần Xuân Hoà",
+            "Nội dung ghi nhận": "Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Khen thưởng Thi đua ngày 28/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "Chất lượng ôn thi TN THPT (Xếp trong Top 35 toàn tỉnh)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Thị Hiền",
+            "Email cá nhân": "lehongthai.phtvinhyen@vinhphuc.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm Thi đua ngày 28/10/2026 - Lê Thị Hiền",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 28/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Trần Xuân Hoà",
+            "Email cá nhân": "Txh775@gmail.com",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Khen thưởng Thi đua ngày 28/10/2026 - Trần Xuân Hoà",
+            "Nội dung ghi nhận": "Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)",
+            "Trạng thái Email": "Lỗi kết nối Email SMTP: Connection unexpectedly closed: The read operation timed out"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 28/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC3.2] Để học sinh ngồi chơi khi chưa hết giờ",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Khen thưởng Thi đua ngày 28/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 28/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC5.1.2] Thiếu Kế hoạch bài dạy",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Khen thưởng Thi đua ngày 28/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp tỉnh (Giải Ba)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 28/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Khen thưởng Thi đua ngày 28/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Trần Xuân Hoà",
+            "Email cá nhân": "Txh775@gmail.com",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 28/10/2026 - Trần Xuân Hoà",
+            "Nội dung ghi nhận": "[TC1.1.2] Không đeo thẻ",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Trần Xuân Hoà",
+            "Email cá nhân": "Txh775@gmail.com",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A8 Môn Toán - Trần Xuân Hoà",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 2] Lớp 12A8 - Môn Toán (Kỳ trước 6.50 ➔ Kỳ này 7.25, Tăng 0.75 điểm (+10.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A1 Môn Toán - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 2] Lớp 12A1 - Môn Toán (Kỳ trước 5.00 ➔ Kỳ này 5.50, Tăng 0.50 điểm (+8.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Khen thưởng Thi đua ngày 28/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp tỉnh (Giải Nhất)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 28/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 28/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Khen thưởng Thi đua ngày 28/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhất) - Số giải: 3 (Tổng: +30.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A1 Môn Toán - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 2] Lớp 12A1 - Môn Toán (Kỳ trước 5.50 ➔ Kỳ này 7.00, Tăng 1.50 điểm (+10.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 28/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Khen thưởng Thi đua ngày 28/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp tỉnh (Giải Nhất) - Số giải: 2 (Tổng: +200.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A1 Môn Toán - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 2] Lớp 12A1 - Môn Toán (Kỳ trước 7.00 ➔ Kỳ này 5.50, Giảm 1.50 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Trần Xuân Hoà",
+            "Email cá nhân": "Txh775@gmail.com",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A8 Môn Toán - Trần Xuân Hoà",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A8 - Môn Toán (Kỳ trước 7.25 ➔ Kỳ này 6.50, Giảm 0.75 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Trần Xuân Hoà",
+            "Email cá nhân": "Txh775@gmail.com",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Khen thưởng Thi đua ngày 28/10/2026 - Trần Xuân Hoà",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp tỉnh (Giải Nhì) - Số giải: 3 (Tổng: +210.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "28/10/2026",
+            "Người nhận": "Trần Xuân Hoà",
+            "Email cá nhân": "Txh775@gmail.com",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 28/10/2026 - Trần Xuân Hoà",
+            "Nội dung ghi nhận": "[TC3.2] Để học sinh ngồi chơi khi chưa hết giờ",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "Email cá nhân": "tranthanhlong.c3vinhyen@vinhphuc.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Khen thưởng Thi đua ngày 29/10/2026 - Trần Thanh Long",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhất)",
+            "Trạng thái Email": "Lỗi kết nối Email SMTP: Connection unexpectedly closed"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "Email cá nhân": "tranthanhlong.c3vinhyen@vinhphuc.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 29/10/2026 - Trần Thanh Long",
+            "Nội dung ghi nhận": "[TC1.2] Trang phục không đúng quy định của BTC",
+            "Trạng thái Email": "Lỗi kết nối Email SMTP: Connection unexpectedly closed"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "Email cá nhân": "tranlonggdctk56@gmail.com",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Khen thưởng Thi đua ngày 29/10/2026 - Trần Thanh Long",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhất)",
+            "Trạng thái Email": "Lỗi kết nối Email SMTP: Connection unexpectedly closed"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Trần Xuân Hoà",
+            "Email cá nhân": "Txh775@gmail.com",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 29/10/2026 - Trần Xuân Hoà",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Lỗi kết nối Email SMTP: Connection unexpectedly closed"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm Thi đua ngày 29/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Khen thưởng Thi đua ngày 29/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp các cụm trường (Giải Ba) - Số giải: 3 (Tổng: +30.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A1 Môn Toán - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[KSCL KSCL Học kỳ II] Lớp 12A1 - Môn Toán (Kỳ trước 5.50 ➔ Kỳ này 7.50, Tăng 2.00 điểm (+10.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "Email cá nhân": "tranlonggdctk56@gmail.com",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Khen thưởng Thi đua ngày 29/10/2026 - Trần Thanh Long",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhất)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "Email cá nhân": "tranlonggdctk56@gmail.com",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A5 Môn GDCD - Trần Thanh Long",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 2] Lớp 12A5 - Môn GDCD (Kỳ trước 7.50 ➔ Kỳ này 7.75, Tăng 0.25 điểm (+10.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "Email cá nhân": "tranlonggdctk56@gmail.com",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A5 Môn GDCD - Trần Thanh Long",
+            "Nội dung ghi nhận": "[KSCL KSCL Học kỳ I] Lớp 12A5 - Môn GDCD (Kỳ trước 7.75 ➔ Kỳ này 6.75, Giảm 1.00 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Vũ Thị Hương",
+            "Email cá nhân": "vuhuongvp@gmail.com",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm Thi đua ngày 29/10/2026 - Vũ Thị Hương",
+            "Nội dung ghi nhận": "[TC1.1.2] Không đeo thẻ",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Vũ Thị Hương",
+            "Email cá nhân": "vuhuongvp@gmail.com",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Khen thưởng Thi đua ngày 29/10/2026 - Vũ Thị Hương",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp tỉnh (Giải Nhất) - Số giải: 3 (Tổng: +300.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Nguyễn Thị Thanh Xuân",
+            "Email cá nhân": "Xuan1978vp@gmail. com",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm Thi đua ngày 29/10/2026 - Nguyễn Thị Thanh Xuân",
+            "Nội dung ghi nhận": "[TC1.1.2] Không đeo thẻ",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Nguyễn Thị Thanh Xuân",
+            "Email cá nhân": "Xuan1978vp@gmail. com",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Khen thưởng Thi đua ngày 29/10/2026 - Nguyễn Thị Thanh Xuân",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Nguyễn Thị Thanh Xuân",
+            "Email cá nhân": "Xuan1978vp@gmail. com",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A7 Môn Toán - Nguyễn Thị Thanh Xuân",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 2] Lớp 11A7 - Môn Toán (Kỳ trước 7.50 ➔ Kỳ này 8.50, Tăng 1.00 điểm (+10.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Nguyễn Thị Yến",
+            "Email cá nhân": "yen678@gmail.com",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm Thi đua ngày 29/10/2026 - Nguyễn Thị Yến",
+            "Nội dung ghi nhận": "[TC1.1.2] Không đeo thẻ",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Nguyễn Thị Yến",
+            "Email cá nhân": "yen678@gmail.com",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Khen thưởng Thi đua ngày 29/10/2026 - Nguyễn Thị Yến",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp tỉnh (Giải Nhì) - Số giải: 2 (Tổng: +140.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Nguyễn Thị Yến",
+            "Email cá nhân": "yen678@gmail.com",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A2 Môn Tin học - Nguyễn Thị Yến",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 2] Lớp 10A2 - Môn Tin học (Kỳ trước 6.50 ➔ Kỳ này 7.50, Tăng 1.00 điểm (+10.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm Thi đua ngày 29/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC2.1.1] Nghỉ Họp không báo cáo",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Khen thưởng Thi đua ngày 29/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "29/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "ĐÁNH GIÁ KSCL",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A1 Môn Toán - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[KSCL Thi thử TN THPT Lần 1] Lớp 12A1 - Môn Toán (Kỳ trước 7.50 ➔ Kỳ này 4.50, Giảm 3.00 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "30/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm Thi đua ngày 30/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "30/10/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm Thi đua ngày 30/10/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC3.1.3] Muộn từ 6 đến 10 phút",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        }
+    ],
+    "accounts": [
+        {
+            "username": "admin",
+            "password": "123",
+            "role": "Admin",
+            "name": "BGH / Thư ký Thi đua",
+            "email": "thptvinhyen.thidua@gmail.com"
+        },
+        {
+            "username": "theodoi",
+            "password": "123",
+            "role": "Người theo dõi",
+            "name": "Cán bộ Theo dõi / Cờ đỏ",
+            "email": "theodoi@vinhyen.edu.vn"
+        },
+        {
+            "username": "gv1",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Trần Xuân Hoà",
+            "email": "Txh775@gmail.com",
+            "phone": "0976378739"
+        },
+        {
+            "username": "gv2",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Lê Thị Hiền",
+            "email": "lehongthai.phtvinhyen@vinhphuc.edu.vn",
+            "phone": "0976376576"
+        },
+        {
+            "username": "gv3",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Lê Hồng Thái",
+            "email": "thailh.c3.25@phutho.edu.vn",
+            "phone": "0969611811"
+        },
+        {
+            "username": "gv4",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Thanh Hải",
+            "email": "nan",
+            "phone": "0979867819"
+        },
+        {
+            "username": "gv5",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Thanh Xuân",
+            "email": "Xuan1978vp@gmail. com",
+            "phone": "0385929424"
+        },
+        {
+            "username": "gv6",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Đỗ Mạnh Hà",
+            "email": "nan",
+            "phone": "0984578642"
+        },
+        {
+            "username": "gv7",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Ngọc Quý",
+            "email": "nan",
+            "phone": "0975655847"
+        },
+        {
+            "username": "gv8",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Lan Phương(T)",
+            "email": "nan",
+            "phone": "0947172889"
+        },
+        {
+            "username": "gv9",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Đại Văn Hải",
+            "email": "nan",
+            "phone": "0972881520"
+        },
+        {
+            "username": "gv10",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Đức Thịnh",
+            "email": "nan",
+            "phone": "0984490608"
+        },
+        {
+            "username": "gv11",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Tuyết",
+            "email": "nan",
+            "phone": "0986246056"
+        },
+        {
+            "username": "gv12",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Huyền",
+            "email": "nan",
+            "phone": "0387377705"
+        },
+        {
+            "username": "gv13",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Kim Thị Thu Hà",
+            "email": "nan",
+            "phone": "0963013895"
+        },
+        {
+            "username": "gv14",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Yến",
+            "email": "yen678@gmail.com",
+            "phone": "0868463546"
+        },
+        {
+            "username": "gv15",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Vũ Thị Hạnh",
+            "email": "nan",
+            "phone": "0383731541"
+        },
+        {
+            "username": "gv16",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Hòa",
+            "email": "nan",
+            "phone": "0976032320"
+        },
+        {
+            "username": "gv17",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Đỗ Anh Toản",
+            "email": "nan",
+            "phone": "0965142054"
+        },
+        {
+            "username": "gv18",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Lan Phương(H)",
+            "email": "nan",
+            "phone": "0983955526"
+        },
+        {
+            "username": "gv19",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Đào Thị Phương Lan",
+            "email": "nan",
+            "phone": "0985570376"
+        },
+        {
+            "username": "gv20",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Thuý",
+            "email": "nan",
+            "phone": "0982552288"
+        },
+        {
+            "username": "gv21",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Hồng Thanh",
+            "email": "nan",
+            "phone": "0832299959"
+        },
+        {
+            "username": "gv22",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Mai",
+            "email": "nan",
+            "phone": "0969468331"
+        },
+        {
+            "username": "gv23",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Thu Hương(H)",
+            "email": "nan",
+            "phone": "0363541619"
+        },
+        {
+            "username": "gv24",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Thu Hiền",
+            "email": "nan",
+            "phone": "0983821489"
+        },
+        {
+            "username": "gv25",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Thu Hương(S)",
+            "email": "nan",
+            "phone": "0383211702"
+        },
+        {
+            "username": "gv26",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Phương Khanh",
+            "email": "nan",
+            "phone": "0982726608"
+        },
+        {
+            "username": "gv27",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Kim Thị Thu Hương",
+            "email": "nan",
+            "phone": "0984080979"
+        },
+        {
+            "username": "gv28",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Lành",
+            "email": "nan",
+            "phone": "0989884448"
+        },
+        {
+            "username": "gv29",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Lê Anh Tuấn",
+            "email": "nan",
+            "phone": "0972446488"
+        },
+        {
+            "username": "gv30",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Lê Văn Tuệ",
+            "email": "nan",
+            "phone": "0977281084"
+        },
+        {
+            "username": "gv31",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Lê Thị Thuý Oanh",
+            "email": "nan",
+            "phone": "0986054792"
+        },
+        {
+            "username": "gv32",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Tuyết Mai",
+            "email": "nan",
+            "phone": "0392264986"
+        },
+        {
+            "username": "gv33",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Trần Thanh Long",
+            "email": "tranlonggdctk56@gmail.com",
+            "phone": "0982566385"
+        },
+        {
+            "username": "gv34",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Đào Thị Huệ",
+            "email": "nan",
+            "phone": "0328380786"
+        },
+        {
+            "username": "gv35",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Lưu Thị Phương Loan",
+            "email": "nan",
+            "phone": "0978810283"
+        },
+        {
+            "username": "gv36",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Thu",
+            "email": "nan",
+            "phone": "0938765286"
+        },
+        {
+            "username": "gv37",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Phan Thị Thu Hà",
+            "email": "nan",
+            "phone": "0989650636"
+        },
+        {
+            "username": "gv38",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Bùi Thị Thơm",
+            "email": "nan",
+            "phone": "0388104189"
+        },
+        {
+            "username": "gv39",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Quỳnh Trang",
+            "email": "nan",
+            "phone": "0347881059"
+        },
+        {
+            "username": "gv40",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Lương Thị Bích Vân",
+            "email": "nan",
+            "phone": "0982545976"
+        },
+        {
+            "username": "gv41",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Lê Hùng Cường",
+            "email": "nan",
+            "phone": "0984742848"
+        },
+        {
+            "username": "gv42",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Hồng Quân",
+            "email": "nan",
+            "phone": "0862468636"
+        },
+        {
+            "username": "gv43",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Phùng Ngọc Thưởng",
+            "email": "nan",
+            "phone": "0974858200"
+        },
+        {
+            "username": "gv44",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Phùng Thị Yên Vui",
+            "email": "nan",
+            "phone": "0332244019"
+        },
+        {
+            "username": "gv46",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Lê Thu Hà",
+            "email": "nan",
+            "phone": "0963050574"
+        },
+        {
+            "username": "gv47",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Trịnh Thị Hoài Giang",
+            "email": "nan",
+            "phone": "0945960159"
+        },
+        {
+            "username": "gv48",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Đỗ Thị Thu Hiền",
+            "email": "nan",
+            "phone": "0982415039"
+        },
+        {
+            "username": "gv49",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Lưu Thị Thúy Hồng",
+            "email": "nan",
+            "phone": "0945080808"
+        },
+        {
+            "username": "gv50",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Phùng Thị Hồng Minh",
+            "email": "nan",
+            "phone": "0978481328"
+        },
+        {
+            "username": "gv51",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Thu Huyền",
+            "email": "nan",
+            "phone": "0989206529"
+        },
+        {
+            "username": "gv52",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Quỳnh Ngân",
+            "email": "nan",
+            "phone": "0978493486"
+        },
+        {
+            "username": "gv53",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Đỗ Thị Hải Yến",
+            "email": "nan",
+            "phone": "0397131178"
+        },
+        {
+            "username": "gv54",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Cẩm Chi",
+            "email": "nan",
+            "phone": "0345631516"
+        },
+        {
+            "username": "gv55",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Phạm Minh Hằng",
+            "email": "nan",
+            "phone": "0346746681"
+        },
+        {
+            "username": "gv56",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Triệu Thị Hằng",
+            "email": "nan",
+            "phone": "0982608908"
+        },
+        {
+            "username": "gv57",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Đỗ Thị Thu Minh",
+            "email": "nan",
+            "phone": "0989737567"
+        },
+        {
+            "username": "gv58",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Trần Thị Thùy Linh",
+            "email": "nan",
+            "phone": "0837869345"
+        },
+        {
+            "username": "gv59",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Trang",
+            "email": "nan",
+            "phone": "0978606832"
+        },
+        {
+            "username": "gv60",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Khổng Thị Thảo",
+            "email": "nan",
+            "phone": "0986321883"
+        },
+        {
+            "username": "gv61",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Lê Thị Ánh Dương",
+            "email": "nan",
+            "phone": "0982046902"
+        },
+        {
+            "username": "gv62",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Thanh Huyền",
+            "email": "nan",
+            "phone": "0982284294"
+        },
+        {
+            "username": "gv63",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Kiều Thị Bích Hồng",
+            "email": "nan",
+            "phone": "0389290915"
+        },
+        {
+            "username": "gv64",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Thu Quế",
+            "email": "nan",
+            "phone": "0982118306"
+        },
+        {
+            "username": "gv65",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Nguyễn Thị Đông",
+            "email": "nan",
+            "phone": "0985569744"
+        },
+        {
+            "username": "gv66",
+            "password": "123456",
+            "role": "Giáo viên",
+            "name": "Vũ Thị Hương",
+            "email": "vuhuongvp@gmail.com",
+            "phone": "0984847667"
+        }
+    ]
+}
