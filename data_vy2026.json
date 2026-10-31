@@ -140,7 +140,7 @@
             "Tổ chuyên môn": "Tổ Toán-Tin-CN",
             "Lớp dạy": "12A4, 12A5, 12A6",
             "SĐT": "0383731541",
-            "Email": "hanhvt1986@"
+            "Email": "hanhvt1986@gmail.com"
         },
         {
             "ID": 16,
@@ -1754,12 +1754,1041 @@
             "Ghi chú": "Tính điểm cho GV phụ trách"
         }
     ],
-    "logs": [],
-    "tammi_history": [],
+    "logs": [
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Nguyễn Thị Thuý",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Số điểm": 8.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Nguyễn Thị Thuý",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Ba)",
+            "Số điểm": 5.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Nguyễn Thị Thuý",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Số điểm": 3.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Trịnh Thị Hoài Giang",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Trịnh Thị Hoài Giang",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 3 (Tổng: +9.0đ)",
+            "Số điểm": 9.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Nguyễn Quỳnh Ngân",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)",
+            "Số điểm": 6.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Nguyễn Thị Thu Huyền",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)",
+            "Số điểm": 6.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Đào Thị Huệ",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Nhất)",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Đào Thị Huệ",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Số điểm": 8.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Đào Thị Huệ",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Đào Thị Huệ",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 3 (Tổng: +9.0đ)",
+            "Số điểm": 9.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Nguyễn Thị Mai",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Số điểm": 3.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Trần Thanh Long",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Nhất)",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Trần Thanh Long",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Nhì) - Số giải: 2 (Tổng: +16.0đ)",
+            "Số điểm": 16.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Trần Thanh Long",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 3 (Tổng: +15.0đ)",
+            "Số điểm": 15.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Trần Thanh Long",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 8 (Tổng: +24.0đ)",
+            "Số điểm": 24.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Bùi Thị Thơm",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Nhất)",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Bùi Thị Thơm",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Số điểm": 8.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Bùi Thị Thơm",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Bùi Thị Thơm",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 5 (Tổng: +15.0đ)",
+            "Số điểm": 15.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Vũ Thị Hạnh",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Số điểm": 8.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Vũ Thị Hạnh",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Vũ Thị Hạnh",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Số điểm": 3.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Đào Thị Phương Lan",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Số điểm": 8.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Đào Thị Phương Lan",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Ba)",
+            "Số điểm": 5.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Đào Thị Phương Lan",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 3 (Tổng: +9.0đ)",
+            "Số điểm": 9.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Lê Anh Tuấn",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Số điểm": 3.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Đỗ Thị Thu Hiền",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Số điểm": 8.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Đỗ Thị Thu Hiền",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Số điểm": 3.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Trần Thị Thùy Linh",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Ba)",
+            "Số điểm": 5.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Trần Thị Thùy Linh",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)",
+            "Số điểm": 6.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Nguyễn Thị Hòa",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Ba)",
+            "Số điểm": 5.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Nguyễn Thị Hòa",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Số điểm": 3.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Đỗ Anh Toản",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Ba)",
+            "Số điểm": 5.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Đỗ Anh Toản",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Số điểm": 3.0,
+            "Ghi chú": ""
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Lưu Thị Thúy Hồng",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.4.3] Không ký xác nhận tiết dạy",
+            "Số điểm": 1.0,
+            "Ghi chú": "Sáng 09/10/2026: Văn Tiết 3-Lớp 12A6"
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Lưu Thị Thúy Hồng",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.4.3] Không ký xác nhận tiết dạy",
+            "Số điểm": 1.0,
+            "Ghi chú": "Chiều 13/10/2026: Văn Tiết 3-Lớp 12A1"
+        },
+        {
+            "Ngày": "31/10/2026",
+            "Cán bộ": "Lưu Thị Thúy Hồng",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.4.3] Không ký xác nhận tiết dạy",
+            "Số điểm": 1.0,
+            "Ghi chú": "Sáng 23/10/2026: Văn Tiết 1-Lớp 12A1"
+        }
+    ],
+    "tammi_history": [
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Nguyễn Thị Thuý",
+            "SĐT Tammi": "0982552288",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Nguyễn Thị Thuý, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhì)' (Điểm cộng: +8.0 điểm). SĐT nhận: 0982552288.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Nguyễn Thị Thuý",
+            "SĐT Tammi": "0982552288",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Nguyễn Thị Thuý, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba)' (Điểm cộng: +5.0 điểm). SĐT nhận: 0982552288.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Nguyễn Thị Thuý",
+            "SĐT Tammi": "0982552288",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Nguyễn Thị Thuý, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích)' (Điểm cộng: +3.0 điểm). SĐT nhận: 0982552288.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Trịnh Thị Hoài Giang",
+            "SĐT Tammi": "0945960159",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Trịnh Thị Hoài Giang, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0945960159.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Trịnh Thị Hoài Giang",
+            "SĐT Tammi": "0945960159",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Trịnh Thị Hoài Giang, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 3 (Tổng: +9.0đ)' (Điểm cộng: +9.0 điểm). SĐT nhận: 0945960159.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Nguyễn Quỳnh Ngân",
+            "SĐT Tammi": "0978493486",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Nguyễn Quỳnh Ngân, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)' (Điểm cộng: +6.0 điểm). SĐT nhận: 0978493486.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Nguyễn Thị Thu Huyền",
+            "SĐT Tammi": "0989206529",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Nguyễn Thị Thu Huyền, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)' (Điểm cộng: +6.0 điểm). SĐT nhận: 0989206529.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đào Thị Huệ",
+            "SĐT Tammi": "0328380786",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đào Thị Huệ, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhất)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0328380786.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đào Thị Huệ",
+            "SĐT Tammi": "0328380786",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đào Thị Huệ, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhì)' (Điểm cộng: +8.0 điểm). SĐT nhận: 0328380786.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đào Thị Huệ",
+            "SĐT Tammi": "0328380786",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đào Thị Huệ, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0328380786.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đào Thị Huệ",
+            "SĐT Tammi": "0328380786",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đào Thị Huệ, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 3 (Tổng: +9.0đ)' (Điểm cộng: +9.0 điểm). SĐT nhận: 0328380786.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Nguyễn Thị Mai",
+            "SĐT Tammi": "0969468331",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Nguyễn Thị Mai, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích)' (Điểm cộng: +3.0 điểm). SĐT nhận: 0969468331.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "SĐT Tammi": "0982566385",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Trần Thanh Long, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhất)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0982566385.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "SĐT Tammi": "0982566385",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Trần Thanh Long, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhì) - Số giải: 2 (Tổng: +16.0đ)' (Điểm cộng: +16.0 điểm). SĐT nhận: 0982566385.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "SĐT Tammi": "0982566385",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Trần Thanh Long, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 3 (Tổng: +15.0đ)' (Điểm cộng: +15.0 điểm). SĐT nhận: 0982566385.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "SĐT Tammi": "0982566385",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Trần Thanh Long, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 8 (Tổng: +24.0đ)' (Điểm cộng: +24.0 điểm). SĐT nhận: 0982566385.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Bùi Thị Thơm",
+            "SĐT Tammi": "0388104189",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Bùi Thị Thơm, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhất)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0388104189.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Bùi Thị Thơm",
+            "SĐT Tammi": "0388104189",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Bùi Thị Thơm, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhì)' (Điểm cộng: +8.0 điểm). SĐT nhận: 0388104189.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Bùi Thị Thơm",
+            "SĐT Tammi": "0388104189",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Bùi Thị Thơm, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0388104189.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Bùi Thị Thơm",
+            "SĐT Tammi": "0388104189",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Bùi Thị Thơm, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 5 (Tổng: +15.0đ)' (Điểm cộng: +15.0 điểm). SĐT nhận: 0388104189.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Vũ Thị Hạnh",
+            "SĐT Tammi": "0383731541",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Vũ Thị Hạnh, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhì)' (Điểm cộng: +8.0 điểm). SĐT nhận: 0383731541.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Vũ Thị Hạnh",
+            "SĐT Tammi": "0383731541",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Vũ Thị Hạnh, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0383731541.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Vũ Thị Hạnh",
+            "SĐT Tammi": "0383731541",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Vũ Thị Hạnh, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích)' (Điểm cộng: +3.0 điểm). SĐT nhận: 0383731541.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đào Thị Phương Lan",
+            "SĐT Tammi": "0985570376",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đào Thị Phương Lan, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhì)' (Điểm cộng: +8.0 điểm). SĐT nhận: 0985570376.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đào Thị Phương Lan",
+            "SĐT Tammi": "0985570376",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đào Thị Phương Lan, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba)' (Điểm cộng: +5.0 điểm). SĐT nhận: 0985570376.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đào Thị Phương Lan",
+            "SĐT Tammi": "0985570376",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đào Thị Phương Lan, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 3 (Tổng: +9.0đ)' (Điểm cộng: +9.0 điểm). SĐT nhận: 0985570376.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Lê Anh Tuấn",
+            "SĐT Tammi": "0972446488",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Lê Anh Tuấn, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích)' (Điểm cộng: +3.0 điểm). SĐT nhận: 0972446488.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đỗ Thị Thu Hiền",
+            "SĐT Tammi": "0982415039",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đỗ Thị Thu Hiền, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhì)' (Điểm cộng: +8.0 điểm). SĐT nhận: 0982415039.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đỗ Thị Thu Hiền",
+            "SĐT Tammi": "0982415039",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đỗ Thị Thu Hiền, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích)' (Điểm cộng: +3.0 điểm). SĐT nhận: 0982415039.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Trần Thị Thùy Linh",
+            "SĐT Tammi": "0837869345",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Trần Thị Thùy Linh, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba)' (Điểm cộng: +5.0 điểm). SĐT nhận: 0837869345.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Trần Thị Thùy Linh",
+            "SĐT Tammi": "0837869345",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Trần Thị Thùy Linh, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)' (Điểm cộng: +6.0 điểm). SĐT nhận: 0837869345.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Nguyễn Thị Hòa",
+            "SĐT Tammi": "0976032320",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Nguyễn Thị Hòa, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba)' (Điểm cộng: +5.0 điểm). SĐT nhận: 0976032320.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Nguyễn Thị Hòa",
+            "SĐT Tammi": "0976032320",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Nguyễn Thị Hòa, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích)' (Điểm cộng: +3.0 điểm). SĐT nhận: 0976032320.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đỗ Anh Toản",
+            "SĐT Tammi": "0965142054",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đỗ Anh Toản, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba)' (Điểm cộng: +5.0 điểm). SĐT nhận: 0965142054.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đỗ Anh Toản",
+            "SĐT Tammi": "0965142054",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đỗ Anh Toản, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích)' (Điểm cộng: +3.0 điểm). SĐT nhận: 0965142054.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Lưu Thị Thúy Hồng",
+            "SĐT Tammi": "0945080808",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 31/10/2026: Kính gửi Lưu Thị Thúy Hồng, Hệ thống ghi nhận lỗi vi phạm: '[TC3.4.3] Không ký xác nhận tiết dạy' (Điểm trừ: -1.0 điểm). SĐT nhận: 0945080808.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Lưu Thị Thúy Hồng",
+            "SĐT Tammi": "0945080808",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 31/10/2026: Kính gửi Lưu Thị Thúy Hồng, Hệ thống ghi nhận lỗi vi phạm: '[TC3.4.3] Không ký xác nhận tiết dạy' (Điểm trừ: -1.0 điểm). SĐT nhận: 0945080808.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Lưu Thị Thúy Hồng",
+            "SĐT Tammi": "0945080808",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 31/10/2026: Kính gửi Lưu Thị Thúy Hồng, Hệ thống ghi nhận lỗi vi phạm: '[TC3.4.3] Không ký xác nhận tiết dạy' (Điểm trừ: -1.0 điểm). SĐT nhận: 0945080808.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        }
+    ],
     "tammi_config": {},
     "kscl_history": [],
     "kscl_baselines": {},
-    "guitin_list": [],
+    "guitin_list": [
+        {
+            "SĐT": "0982552288",
+            "Họ và tên": "Nguyễn Thị Thuý",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Số điểm": "+8.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Nguyễn Thị Thuý, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhì)' (Điểm cộng: +8.0 điểm). SĐT nhận: 0982552288.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0982552288",
+            "Họ và tên": "Nguyễn Thị Thuý",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba)",
+            "Số điểm": "+5.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Nguyễn Thị Thuý, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba)' (Điểm cộng: +5.0 điểm). SĐT nhận: 0982552288.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0982552288",
+            "Họ và tên": "Nguyễn Thị Thuý",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Số điểm": "+3.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Nguyễn Thị Thuý, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích)' (Điểm cộng: +3.0 điểm). SĐT nhận: 0982552288.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0945960159",
+            "Họ và tên": "Trịnh Thị Hoài Giang",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)",
+            "Số điểm": "+10.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Trịnh Thị Hoài Giang, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0945960159.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0945960159",
+            "Họ và tên": "Trịnh Thị Hoài Giang",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 3 (Tổng: +9.0đ)",
+            "Số điểm": "+9.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Trịnh Thị Hoài Giang, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 3 (Tổng: +9.0đ)' (Điểm cộng: +9.0 điểm). SĐT nhận: 0945960159.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0978493486",
+            "Họ và tên": "Nguyễn Quỳnh Ngân",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)",
+            "Số điểm": "+6.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Nguyễn Quỳnh Ngân, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)' (Điểm cộng: +6.0 điểm). SĐT nhận: 0978493486.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0989206529",
+            "Họ và tên": "Nguyễn Thị Thu Huyền",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)",
+            "Số điểm": "+6.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Nguyễn Thị Thu Huyền, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)' (Điểm cộng: +6.0 điểm). SĐT nhận: 0989206529.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0328380786",
+            "Họ và tên": "Đào Thị Huệ",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhất)",
+            "Số điểm": "+10.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đào Thị Huệ, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhất)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0328380786.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0328380786",
+            "Họ và tên": "Đào Thị Huệ",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Số điểm": "+8.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đào Thị Huệ, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhì)' (Điểm cộng: +8.0 điểm). SĐT nhận: 0328380786.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0328380786",
+            "Họ và tên": "Đào Thị Huệ",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)",
+            "Số điểm": "+10.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đào Thị Huệ, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0328380786.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0328380786",
+            "Họ và tên": "Đào Thị Huệ",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 3 (Tổng: +9.0đ)",
+            "Số điểm": "+9.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đào Thị Huệ, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 3 (Tổng: +9.0đ)' (Điểm cộng: +9.0 điểm). SĐT nhận: 0328380786.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969468331",
+            "Họ và tên": "Nguyễn Thị Mai",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Số điểm": "+3.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Nguyễn Thị Mai, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích)' (Điểm cộng: +3.0 điểm). SĐT nhận: 0969468331.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0982566385",
+            "Họ và tên": "Trần Thanh Long",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhất)",
+            "Số điểm": "+10.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Trần Thanh Long, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhất)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0982566385.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0982566385",
+            "Họ và tên": "Trần Thanh Long",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhì) - Số giải: 2 (Tổng: +16.0đ)",
+            "Số điểm": "+16.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Trần Thanh Long, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhì) - Số giải: 2 (Tổng: +16.0đ)' (Điểm cộng: +16.0 điểm). SĐT nhận: 0982566385.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0982566385",
+            "Họ và tên": "Trần Thanh Long",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 3 (Tổng: +15.0đ)",
+            "Số điểm": "+15.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Trần Thanh Long, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 3 (Tổng: +15.0đ)' (Điểm cộng: +15.0 điểm). SĐT nhận: 0982566385.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0982566385",
+            "Họ và tên": "Trần Thanh Long",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 8 (Tổng: +24.0đ)",
+            "Số điểm": "+24.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Trần Thanh Long, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 8 (Tổng: +24.0đ)' (Điểm cộng: +24.0 điểm). SĐT nhận: 0982566385.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0388104189",
+            "Họ và tên": "Bùi Thị Thơm",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhất)",
+            "Số điểm": "+10.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Bùi Thị Thơm, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhất)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0388104189.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0388104189",
+            "Họ và tên": "Bùi Thị Thơm",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Số điểm": "+8.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Bùi Thị Thơm, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhì)' (Điểm cộng: +8.0 điểm). SĐT nhận: 0388104189.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0388104189",
+            "Họ và tên": "Bùi Thị Thơm",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)",
+            "Số điểm": "+10.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Bùi Thị Thơm, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0388104189.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0388104189",
+            "Họ và tên": "Bùi Thị Thơm",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 5 (Tổng: +15.0đ)",
+            "Số điểm": "+15.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Bùi Thị Thơm, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 5 (Tổng: +15.0đ)' (Điểm cộng: +15.0 điểm). SĐT nhận: 0388104189.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0383731541",
+            "Họ và tên": "Vũ Thị Hạnh",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Số điểm": "+8.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Vũ Thị Hạnh, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhì)' (Điểm cộng: +8.0 điểm). SĐT nhận: 0383731541.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0383731541",
+            "Họ và tên": "Vũ Thị Hạnh",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)",
+            "Số điểm": "+10.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Vũ Thị Hạnh, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)' (Điểm cộng: +10.0 điểm). SĐT nhận: 0383731541.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0383731541",
+            "Họ và tên": "Vũ Thị Hạnh",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Số điểm": "+3.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Vũ Thị Hạnh, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích)' (Điểm cộng: +3.0 điểm). SĐT nhận: 0383731541.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0985570376",
+            "Họ và tên": "Đào Thị Phương Lan",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Số điểm": "+8.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đào Thị Phương Lan, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhì)' (Điểm cộng: +8.0 điểm). SĐT nhận: 0985570376.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0985570376",
+            "Họ và tên": "Đào Thị Phương Lan",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba)",
+            "Số điểm": "+5.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đào Thị Phương Lan, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba)' (Điểm cộng: +5.0 điểm). SĐT nhận: 0985570376.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0985570376",
+            "Họ và tên": "Đào Thị Phương Lan",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 3 (Tổng: +9.0đ)",
+            "Số điểm": "+9.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đào Thị Phương Lan, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 3 (Tổng: +9.0đ)' (Điểm cộng: +9.0 điểm). SĐT nhận: 0985570376.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0972446488",
+            "Họ và tên": "Lê Anh Tuấn",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Số điểm": "+3.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Lê Anh Tuấn, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích)' (Điểm cộng: +3.0 điểm). SĐT nhận: 0972446488.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0982415039",
+            "Họ và tên": "Đỗ Thị Thu Hiền",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Số điểm": "+8.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đỗ Thị Thu Hiền, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Nhì)' (Điểm cộng: +8.0 điểm). SĐT nhận: 0982415039.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0982415039",
+            "Họ và tên": "Đỗ Thị Thu Hiền",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Số điểm": "+3.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đỗ Thị Thu Hiền, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích)' (Điểm cộng: +3.0 điểm). SĐT nhận: 0982415039.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0837869345",
+            "Họ và tên": "Trần Thị Thùy Linh",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba)",
+            "Số điểm": "+5.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Trần Thị Thùy Linh, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba)' (Điểm cộng: +5.0 điểm). SĐT nhận: 0837869345.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0837869345",
+            "Họ và tên": "Trần Thị Thùy Linh",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)",
+            "Số điểm": "+6.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Trần Thị Thùy Linh, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)' (Điểm cộng: +6.0 điểm). SĐT nhận: 0837869345.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0976032320",
+            "Họ và tên": "Nguyễn Thị Hòa",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba)",
+            "Số điểm": "+5.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Nguyễn Thị Hòa, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba)' (Điểm cộng: +5.0 điểm). SĐT nhận: 0976032320.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0976032320",
+            "Họ và tên": "Nguyễn Thị Hòa",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Số điểm": "+3.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Nguyễn Thị Hòa, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích)' (Điểm cộng: +3.0 điểm). SĐT nhận: 0976032320.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0965142054",
+            "Họ và tên": "Đỗ Anh Toản",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba)",
+            "Số điểm": "+5.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đỗ Anh Toản, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Ba)' (Điểm cộng: +5.0 điểm). SĐT nhận: 0965142054.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0965142054",
+            "Họ và tên": "Đỗ Anh Toản",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Số điểm": "+3.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 31/10/2026: Kính gửi Đỗ Anh Toản, Hệ thống ghi nhận khen thưởng: 'Chất lượng thi HSG cấp trường (Giải Khuyến khích)' (Điểm cộng: +3.0 điểm). SĐT nhận: 0965142054.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0945080808",
+            "Họ và tên": "Lưu Thị Thúy Hồng",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC3.4.3] Không ký xác nhận tiết dạy",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 31/10/2026: Kính gửi Lưu Thị Thúy Hồng, Hệ thống ghi nhận lỗi vi phạm: '[TC3.4.3] Không ký xác nhận tiết dạy' (Điểm trừ: -1.0 điểm). SĐT nhận: 0945080808.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0945080808",
+            "Họ và tên": "Lưu Thị Thúy Hồng",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC3.4.3] Không ký xác nhận tiết dạy",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 31/10/2026: Kính gửi Lưu Thị Thúy Hồng, Hệ thống ghi nhận lỗi vi phạm: '[TC3.4.3] Không ký xác nhận tiết dạy' (Điểm trừ: -1.0 điểm). SĐT nhận: 0945080808.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0945080808",
+            "Họ và tên": "Lưu Thị Thúy Hồng",
+            "Thời gian": "31/10/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC3.4.3] Không ký xác nhận tiết dạy",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 31/10/2026: Kính gửi Lưu Thị Thúy Hồng, Hệ thống ghi nhận lỗi vi phạm: '[TC3.4.3] Không ký xác nhận tiết dạy' (Điểm trừ: -1.0 điểm). SĐT nhận: 0945080808.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        }
+    ],
     "email_config": {
         "smtp_server": "smtp.gmail.com",
         "smtp_port": 587,
@@ -1767,18 +2796,361 @@
         "sender_pass": "scex vzwf dlum chva",
         "sender_name": "TRƯỜNG THPT VĨNH YÊN"
     },
-    "email_history": [],
+    "email_history": [
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Nguyễn Thị Thuý",
+            "Email cá nhân": "thuynt.c3.25.005@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Nguyễn Thị Thuý",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Nguyễn Thị Thuý",
+            "Email cá nhân": "thuynt.c3.25.005@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Nguyễn Thị Thuý",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Nguyễn Thị Thuý",
+            "Email cá nhân": "thuynt.c3.25.005@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Nguyễn Thị Thuý",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Trịnh Thị Hoài Giang",
+            "Email cá nhân": "giangt1981@gmail.com",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Trịnh Thị Hoài Giang",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Trịnh Thị Hoài Giang",
+            "Email cá nhân": "giangt1981@gmail.com",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Trịnh Thị Hoài Giang",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 3 (Tổng: +9.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Nguyễn Quỳnh Ngân",
+            "Email cá nhân": "quynhngan.vp@gmail.com",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Nguyễn Quỳnh Ngân",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Nguyễn Thị Thu Huyền",
+            "Email cá nhân": "huyenntt.c3.25.025@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Nguyễn Thị Thu Huyền",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đào Thị Huệ",
+            "Email cá nhân": "daothihue.c3vinhyen@vinhphuc.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Đào Thị Huệ",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhất)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đào Thị Huệ",
+            "Email cá nhân": "daothihue.c3vinhyen@vinhphuc.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Đào Thị Huệ",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đào Thị Huệ",
+            "Email cá nhân": "daothihue.c3vinhyen@vinhphuc.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Đào Thị Huệ",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đào Thị Huệ",
+            "Email cá nhân": "daothihue.c3vinhyen@vinhphuc.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Đào Thị Huệ",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 3 (Tổng: +9.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Nguyễn Thị Mai",
+            "Email cá nhân": "Mai1979vy@gmail.com",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Nguyễn Thị Mai",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "Email cá nhân": "tranlonggdctk56@gmail.com",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Trần Thanh Long",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhất)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "Email cá nhân": "tranlonggdctk56@gmail.com",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Trần Thanh Long",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhì) - Số giải: 2 (Tổng: +16.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "Email cá nhân": "tranlonggdctk56@gmail.com",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Trần Thanh Long",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 3 (Tổng: +15.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Trần Thanh Long",
+            "Email cá nhân": "tranlonggdctk56@gmail.com",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Trần Thanh Long",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 8 (Tổng: +24.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Bùi Thị Thơm",
+            "Email cá nhân": "thombt.c3.25.003@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Bùi Thị Thơm",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhất)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Bùi Thị Thơm",
+            "Email cá nhân": "thombt.c3.25.003@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Bùi Thị Thơm",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Bùi Thị Thơm",
+            "Email cá nhân": "thombt.c3.25.003@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Bùi Thị Thơm",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Bùi Thị Thơm",
+            "Email cá nhân": "thombt.c3.25.003@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Bùi Thị Thơm",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 5 (Tổng: +15.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Vũ Thị Hạnh",
+            "Email cá nhân": "hanhvt1986@",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Vũ Thị Hạnh",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Trạng thái Email": "Lỗi kết nối Email SMTP: {'hanhvt1986@': (553, b'5.1.3 The recipient address <hanhvt1986@> is not a valid RFC 5321 address.\\n5.1.3 For more information, go to\\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\\n5.1.3 specifications. 98e67ed59e1d1-3ae6e9b1506sm11551545a91.15 - gsmtp')}"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Vũ Thị Hạnh",
+            "Email cá nhân": "hanhvt1986@",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Vũ Thị Hạnh",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba) - Số giải: 2 (Tổng: +10.0đ)",
+            "Trạng thái Email": "Lỗi kết nối Email SMTP: {'hanhvt1986@': (553, b'5.1.3 The recipient address <hanhvt1986@> is not a valid RFC 5321 address.\\n5.1.3 For more information, go to\\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\\n5.1.3 specifications. 98e67ed59e1d1-3ae6e98afe3sm11637572a91.12 - gsmtp')}"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Vũ Thị Hạnh",
+            "Email cá nhân": "hanhvt1986@",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Vũ Thị Hạnh",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Trạng thái Email": "Lỗi kết nối Email SMTP: {'hanhvt1986@': (553, b'5.1.3 The recipient address <hanhvt1986@> is not a valid RFC 5321 address.\\n5.1.3 For more information, go to\\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\\n5.1.3 specifications. 98e67ed59e1d1-3ae85f662basm3206783a91.1 - gsmtp')}"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đào Thị Phương Lan",
+            "Email cá nhân": "landtp.C3.25.001@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Đào Thị Phương Lan",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đào Thị Phương Lan",
+            "Email cá nhân": "landtp.C3.25.001@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Đào Thị Phương Lan",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đào Thị Phương Lan",
+            "Email cá nhân": "landtp.C3.25.001@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Đào Thị Phương Lan",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 3 (Tổng: +9.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Lê Anh Tuấn",
+            "Email cá nhân": "leanhtuan.c3vinhyen@vinhphuc.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Lê Anh Tuấn",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đỗ Thị Thu Hiền",
+            "Email cá nhân": "hiendtt.c3.25.005@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Đỗ Thị Thu Hiền",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Nhì)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đỗ Thị Thu Hiền",
+            "Email cá nhân": "hiendtt.c3.25.005@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Đỗ Thị Thu Hiền",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Trần Thị Thùy Linh",
+            "Email cá nhân": "linhttt.c3.25.004@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Trần Thị Thùy Linh",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Trần Thị Thùy Linh",
+            "Email cá nhân": "linhttt.c3.25.004@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Trần Thị Thùy Linh",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích) - Số giải: 2 (Tổng: +6.0đ)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Nguyễn Thị Hòa",
+            "Email cá nhân": "hoant.c3.25.017@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Nguyễn Thị Hòa",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Nguyễn Thị Hòa",
+            "Email cá nhân": "hoant.c3.25.017@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Nguyễn Thị Hòa",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đỗ Anh Toản",
+            "Email cá nhân": "toanda.C3.25.001@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Đỗ Anh Toản",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Ba)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Đỗ Anh Toản",
+            "Email cá nhân": "toanda.C3.25.001@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 31/10/2026 - Đỗ Anh Toản",
+            "Nội dung ghi nhận": "Chất lượng thi HSG cấp trường (Giải Khuyến khích)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Lưu Thị Thúy Hồng",
+            "Email cá nhân": "luuthuyhongnth@gmail.com",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 31/10/2026 - Lưu Thị Thúy Hồng",
+            "Nội dung ghi nhận": "[TC3.4.3] Không ký xác nhận tiết dạy",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Lưu Thị Thúy Hồng",
+            "Email cá nhân": "luuthuyhongnth@gmail.com",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 31/10/2026 - Lưu Thị Thúy Hồng",
+            "Nội dung ghi nhận": "[TC3.4.3] Không ký xác nhận tiết dạy",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Lưu Thị Thúy Hồng",
+            "Email cá nhân": "luuthuyhongnth@gmail.com",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 31/10/2026 - Lưu Thị Thúy Hồng",
+            "Nội dung ghi nhận": "[TC3.4.3] Không ký xác nhận tiết dạy",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        }
+    ],
     "accounts": [
         {
             "username": "admin",
-            "password": "123",
+            "password": "Kpi@vinhyen",
             "role": "Admin",
             "name": "BGH / Thư ký Thi đua",
             "email": "thptvinhyen.thidua@gmail.com"
         },
         {
             "username": "theodoi",
-            "password": "123",
+            "password": "TdKpi@vinhyen",
             "role": "Người theo dõi",
             "name": "Cán bộ Theo dõi / Cờ đỏ",
             "email": "theodoi@vinhyen.edu.vn"
@@ -1900,7 +3272,7 @@
             "password": "123456",
             "role": "Giáo viên",
             "name": "Vũ Thị Hạnh",
-            "email": "hanhvt1986@",
+            "email": "hanhvt1986@gmail.com",
             "phone": "0383731541"
         },
         {
