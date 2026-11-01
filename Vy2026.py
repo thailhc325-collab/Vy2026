@@ -1047,18 +1047,24 @@ role = st.sidebar.radio("Chọn chức năng làm việc:", menu_options)
 # -----------------------------------------------------------------------------
 if role.startswith("1. ADMIN"):
     st.header("⚙️ Quản lý Danh mục Cơ bản & Cấu hình gửi tin")
-    tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
-        "Quản lý Nhân sự",
-        "Quản lý Tổ chuyên môn",
-        "Tiêu chí đánh giá viên chức",
-        "Tiêu chí điểm Thi đua khen thưởng",
-        "📡 Cấu hình API Viettel Tammi & Email SMTP",
-        "👥 Quản lý Tài khoản & Phân quyền",
-        "💾 Sao lưu & Khôi phục Dữ liệu (data_vy2026.json)",
-        "🔄 Reset Dữ liệu"
-    ])
-    # --- TAB 1: NHÂN SỰ ---
-    with tab1:
+    st.sidebar.markdown("---")
+    st.sidebar.markdown("### ⚙️ Menu Con (ADMIN)")
+    admin_sub = st.sidebar.radio(
+        "Tích chọn menu con:",
+        [
+            "Quản lý nhân sự",
+            "Quản lý tổ chuyên môn",
+            "Tiêu chí đánh giá viên chức",
+            "Tiêu chí thi đua khen thưởng",
+            "Cấu hình gửi tin",
+            "Quản lý tài khoản",
+            "Sao lưu và khôi phục dữ liệu",
+            "Reset dữ liệu"
+        ],
+        key="admin_submenu_radio"
+    )
+
+    if admin_sub == "Quản lý nhân sự":
         st.subheader("Danh sách Cán bộ, Giáo viên, Nhân viên chính thức")
         if st.session_state.users.empty:
             st.info("ℹ️ Chưa có nhân sự nào trong hệ thống. Vui lòng thêm nhân sự thủ công hoặc tải file Excel lên.")
@@ -1243,13 +1249,12 @@ if role.startswith("1. ADMIN"):
                             save_data_to_disk()
                             st.success(f"🗑️ Đã xóa cán bộ {del_name}!")
                             st.rerun()
-    # --- TAB 2: TỔ CHUYÊN MÔN ---
-    with tab2:
+    elif admin_sub == "Quản lý tổ chuyên môn":
         st.subheader("📂 Danh sách & Quản lý Tổ chuyên môn")
         df_depts = pd.DataFrame(
             {"STT": range(1, len(st.session_state.departments) + 1), "Tên Tổ chuyên môn": st.session_state.departments})
         st.dataframe(df_depts, use_container_width=True)
-        col_dept_add, col_dept_del = st.columns(2)
+        col_dept_add, col_dept_edit, col_dept_del = st.columns(3)
         with col_dept_add:
             with st.expander("➕ Thêm Tổ chuyên môn mới", expanded=True):
                 new_dept_name = st.text_input("Nhập tên Tổ chuyên môn mới:")
@@ -1259,17 +1264,39 @@ if role.startswith("1. ADMIN"):
                         save_data_to_disk()
                         st.success(f"✅ Đã thêm: {new_dept_name.strip()}")
                         st.rerun()
+        with col_dept_edit:
+            with st.expander("✏️ Chỉnh sửa tên Tổ chuyên môn", expanded=True):
+                if st.session_state.departments:
+                    dept_to_edit = st.selectbox("Chọn Tổ chuyên môn cần sửa:", st.session_state.departments, key="sel_dept_edit_name")
+                    new_dept_val = st.text_input("Nhập tên mới của Tổ:", value=dept_to_edit, key="txt_dept_edit_name")
+                    if st.button("💾 Cập nhật tên Tổ"):
+                        old_name = dept_to_edit.strip()
+                        clean_new_name = new_dept_val.strip()
+                        if not clean_new_name:
+                            st.error("Tên Tổ chuyên môn không được để trống!")
+                        elif clean_new_name == old_name:
+                            st.info("Tên Tổ không có sự thay đổi.")
+                        else:
+                            idx = st.session_state.departments.index(old_name)
+                            st.session_state.departments[idx] = clean_new_name
+                            if isinstance(st.session_state.get("users"), pd.DataFrame) and not st.session_state.users.empty:
+                                st.session_state.users.loc[st.session_state.users["Tổ chuyên môn"] == old_name, "Tổ chuyên môn"] = clean_new_name
+                            for log in st.session_state.get("logs", []):
+                                if log.get("Tổ chuyên môn") == old_name:
+                                    log["Tổ chuyên môn"] = clean_new_name
+                            save_data_to_disk()
+                            st.success(f"✅ Đã đổi tên Tổ từ `{old_name}` thành `{clean_new_name}`!")
+                            st.rerun()
         with col_dept_del:
-            with st.expander("🗑️ Xóa Tổ chuyên môn"):
-                dept_to_del = st.selectbox("Chọn Tổ chuyên môn cần xóa:", st.session_state.departments)
+            with st.expander("🗑️ Xóa Tổ chuyên môn", expanded=True):
+                dept_to_del = st.selectbox("Chọn Tổ chuyên môn cần xóa:", st.session_state.departments, key="sel_dept_del_name")
                 if st.button("Xóa Tổ chuyên môn"):
                     if len(st.session_state.departments) > 1:
                         st.session_state.departments.remove(dept_to_del)
                         save_data_to_disk()
                         st.success(f"🗑️ Đã xóa: {dept_to_del}")
                         st.rerun()
-    # --- TAB 3: TIÊU CHÍ ĐÁNH GIÁ VIÊN CHỨC (CÂY THÔNG TIN THEO QĐ 292 / PHỤ LỤC 1) ---
-    with tab3:
+    elif admin_sub == "Tiêu chí đánh giá viên chức":
         st.subheader("📋 Quản lý Tiêu chí Đánh giá Viên chức")
         filter_crit_group = st.selectbox("🌳 Lọc xem theo Nhóm tiêu chí lớn:",
                                          ["Tất cả các nhóm (3 Nhóm)"] + CRITERIA_GROUPS)
@@ -1364,8 +1391,7 @@ if role.startswith("1. ADMIN"):
                         save_data_to_disk()
                         st.success("🗑️ Đã xóa tiêu chí!")
                         st.rerun()
-    # --- TAB 4: TIÊU CHÍ ĐIỂM THI ĐỦA KHEN THƯỞNG (CÂY THÔNG TIN THEO PHỤ LỤC 2) ---
-    with tab4:
+    elif admin_sub == "Tiêu chí thi đua khen thưởng":
         st.subheader("⚖️ Quản lý Tiêu chí điểm Thi đua")
         filter_cat = st.selectbox("🌳 Lọc xem theo Cây thông tin (Mục lớn):",
                                   ["Tất cả các mục (6 Mục lớn)"] + REWARD_CATEGORIES)
@@ -1495,9 +1521,8 @@ if role.startswith("1. ADMIN"):
                         save_data_to_disk()
                         st.success("🗑️ Đã xóa Khen thưởng!")
                         st.rerun()
-    # -----------------------------------------------------------------------------
-    # --- TAB 5: CAU HINH API VIETTEL TAMMI & EMAIL ---
-    with tab5:
+        # -----------------------------------------------------------------------------
+    elif admin_sub == "Cấu hình gửi tin":
         st.subheader("📡 Cấu hình Tích hợp Cổng gửi tin nhắn tự động Viettel Tammi & Email SMTP")
         st.info(
             "💡 **Hệ thống hỗ trợ tự động gửi Email HTML thông báo kết quả thi đua trực tiếp tới Email cá nhân của giáo viên, đồng thời hỗ trợ kết nối cổng Viettel Tammi.**")
@@ -1599,8 +1624,7 @@ if role.startswith("1. ADMIN"):
                             f"🟢 **KẾT NỐI EMAIL SMTP THÀNH CÔNG (200 OK)!**\n\n- **Sender Email**: `{e_sender.strip()}`\n- **SMTP Server**: `{e_server.strip()}:{e_port}`\n- **Thông báo**: {e_status_msg}")
                     else:
                         st.error(f"🔴 **KẾT NỐI THẤT BẠI**: {e_status_msg}")
-    # --- TAB 7: QUAN LY TAI KHOAN & PHAN QUYEN ---
-    with tab6:
+    elif admin_sub == "Quản lý tài khoản":
         st.subheader("👥 Quản lý Tài khoản & Phân quyền")
         st.info(
             "💡 **Admin có thể tạo mới, phân quyền (Admin / Người theo dõi / Giáo viên) hoặc Reset mật khẩu cho bất kỳ tài khoản nào.**")
@@ -1656,8 +1680,7 @@ if role.startswith("1. ADMIN"):
                     st.success(
                         f"✅ Đã reset mật khẩu cho tài khoản `{target_a['username']}` thành `{new_reset_p.strip()}`!")
                     st.rerun()
-    # --- TAB 7: SAO LƯU & KHÔI PHỤC DỮ LIỆU ---
-    with tab7:
+    elif admin_sub == "Sao lưu và khôi phục dữ liệu":
         st.subheader("💾 Sao lưu & Khôi phục Dữ liệu Hệ thống")
         st.info(
             "💡 **Chức năng này giúp Admin chủ động tải về bản dữ liệu mới nhất để lưu giữ hoặc upload lên GitHub để đồng bộ vĩnh viễn trên Đám mây.**")
@@ -1698,8 +1721,7 @@ if role.startswith("1. ADMIN"):
                         st.rerun()
                     except Exception as e_json:
                         st.error(f"❌ Lỗi khi đọc tệp JSON: {e_json}")
-    # --- TAB 8: RESET DU LIEU THU NGHIEM ---
-    with tab8:
+    elif admin_sub == "Reset dữ liệu":
         st.subheader("🔄 Reset Dữ Liệu")
         st.info(
             "💡 **Chức năng này phục vụ đưa ứng dụng về trạng thái sạch ban đầu trước khi đưa vào vận hành chính thức tại nhà trường.**")
@@ -1737,7 +1759,19 @@ if role.startswith("1. ADMIN"):
                 st.success(
                     "✅ **ĐÃ RESET THÀNH CÔNG!** Toàn bộ dữ liệu vi phạm, điểm cộng và lịch sử tin nhắn/Email thử nghiệm đã được làm sạch về trạng thái ban đầu.")
                 st.rerun()
+
 elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
+    st.sidebar.markdown("---")
+    st.sidebar.markdown("### 📝 Menu Con (Nhập liệu)")
+    daily_sub = st.sidebar.radio(
+        "Tích chọn phân loại:",
+        [
+            "Lỗi vi phạm (Trừ điểm)",
+            "Thành tích Khen thưởng (Cộng điểm)",
+            "📊 Đánh giá điểm KSCL (Tiêu chí 5 - Tự động so sánh 2 kỳ)"
+        ],
+        key="daily_submenu_radio"
+    )
     st.header("📝 Ghi nhận Thực hiện Nhiệm vụ Hằng ngày")
     if st.session_state.users.empty:
         st.warning("⚠️ Chưa có nhân sự chính thức nào trong hệ thống. Vui lòng thêm nhân sự ở mục Admin trước!")
@@ -1750,9 +1784,8 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
             staff_list = st.session_state.users["Họ và tên"].tolist()
             selected_staff = st.selectbox("Chọn Cán bộ / Giáo viên / Nhân viên", staff_list)
         with col2:
-            event_type = st.radio("Phân loại ghi nhận:",
-                                  ["Lỗi vi phạm (Trừ điểm)", "Thành tích Khen thưởng (Cộng điểm)",
-                                   "📊 Đánh giá điểm KSCL (Tiêu chí 5 - Tự động so sánh 2 kỳ)"])
+            event_type = daily_sub
+            st.info(f"📌 Phân loại ghi nhận: **{event_type}**")
             if event_type == "Lỗi vi phạm (Trừ điểm)":
                 sel_crit_group = st.selectbox("Chọn Cấp 1 (Nhóm tiêu chí):", CRITERIA_GROUPS)
                 filtered_crit = st.session_state.criteria[st.session_state.criteria[
@@ -2088,9 +2121,9 @@ elif role.startswith("4. ĐIỂM CỦA CÁ NHÂN"):
     total_bonus = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_bonuses])
     final_gen_score = vc_score + total_bonus
     if vc_score >= 90.0:
-        vc_class = "Hoàn thành Xuất sắc 🥇"
+        vc_class = "HTXSNV 🥇"
     elif vc_score >= 70.0:
-        vc_class = "Hoàn thành Tốt 🥈"
+        vc_class = "HTTNV 🥈"
     elif vc_score >= 50.0:
         vc_class = "Hoàn thành 🥉"
     else:
@@ -2194,9 +2227,9 @@ else:
                 vc_contents = "Không có vi phạm"
             vc_score = 100.0 - total_penalty_vc
             if vc_score >= 90.0:
-                vc_class = "Hoàn thành Xuất sắc nhiệm vụ 🥇"
+                vc_class = "HTXSNV 🥇"
             elif vc_score >= 70.0:
-                vc_class = "Hoàn thành Tốt nhiệm vụ 🥈"
+                vc_class = "HTTNV 🥈"
             elif vc_score >= 50.0:
                 vc_class = "Hoàn thành nhiệm vụ 🥉"
             else:
@@ -2269,9 +2302,9 @@ else:
             # 3. Báo cáo Tổng hợp
             final_gen_score = vc_score + net_emulation_score
             if final_gen_score >= 90.0:
-                gen_class = "Hoàn thành Xuất sắc nhiệm vụ 🥇"
+                gen_class = "HTXSNV 🥇"
             elif final_gen_score >= 70.0:
-                gen_class = "Hoàn thành Tốt nhiệm vụ 🥈"
+                gen_class = "HTTNV 🥈"
             elif final_gen_score >= 50.0:
                 gen_class = "Hoàn thành nhiệm vụ 🥉"
             else:
