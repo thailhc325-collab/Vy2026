@@ -7,18 +7,15 @@ from datetime import date, datetime
 import io
 import json
 import os
+import re
 import openpyxl
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
-
-# File lưu trữ dữ liệu lâu dài trên máy tính
 DATA_FILE = "data_vy2026.json"
 # Cấu hình trang Web
 st.set_page_config(page_title="QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN", page_icon="🏆", layout="wide")
 st.title("🏆 QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN")
 st.caption("Ứng dụng theo dõi, đánh giá và báo cáo thi đua cán bộ, giáo viên, nhân viên - THPT Vĩnh Yên")
-
-
 # -----------------------------------------------------------------------------
 # HÀM HỖ TRỢ XỬ LÝ ÉP KIỂU AN TOÀN
 # -----------------------------------------------------------------------------
@@ -82,10 +79,7 @@ def calculate_kscl_points(s_prev, s_curr):
             pts = 6.0
         else:
             pts = 4.0
-
     return delta, pts, f"Tăng {delta:.2f} điểm (+{pts:.1f} điểm)"
-
-
 def safe_float(val, default=0.0):
     """Chuyển đổi giá trị sang float an toàn, tránh lỗi ValueError khi gặp chuỗi rỗng ''"""
     try:
@@ -94,8 +88,6 @@ def safe_float(val, default=0.0):
         return float(val)
     except (ValueError, TypeError):
         return float(default)
-
-
 # -----------------------------------------------------------------------------
 # DANH MỤC NHÓM TIÊU CHÍ VIÊN CHỨC (PHỤ LỤC 1) & KHEN THƯỞNG (PHỤ LỤC 2)
 # -----------------------------------------------------------------------------
@@ -112,8 +104,6 @@ REWARD_CATEGORIES = [
     "5. Hoạt động Tổ chức, Đoàn thể (TCM, Đoàn TN, Tâm lý, Văn phòng)",
     "6. Hoạt động các Câu lạc bộ (Thiện nguyện, Truyền thông, VN, TDTT)"
 ]
-
-
 def get_default_criteria_tree():
     """Tạo Cây thông tin Tiêu chí Đánh giá Viên chức chuẩn theo Phụ lục 1 QĐ 292 (Nguồn 2026-10-26T23-57_export.csv)"""
     tree_data = [
@@ -329,8 +319,6 @@ def get_default_criteria_tree():
         }
     ]
     return pd.DataFrame(tree_data)
-
-
 def get_default_rewards_tree():
     """Tạo Cây thông tin Tiêu chí Điểm Thi đua Khen thưởng chuẩn theo Phụ lục 2 năm học 2026-2027 (Bổ sung Số giải)"""
     tree_data = [
@@ -431,8 +419,6 @@ def get_default_rewards_tree():
          "Điểm cộng": 2.0, "Ghi chú": "2 điểm / 1 lần đăng tải"}
     ]
     return pd.DataFrame(tree_data)
-
-
 # -----------------------------------------------------------------------------
 # HÀM LƯU & NẠP DỮ LIỆU LÂU DÀI (PERSISTENCE STORAGE)
 # -----------------------------------------------------------------------------
@@ -477,8 +463,464 @@ def sync_teacher_accounts():
                     "email": email if email else f"{username}@vinhyen.edu.vn",
                     "phone": phone
                 })
+def build_adjustment_email_html(teacher_name, old_log, new_log, vc_score, net_emulation_score, total_gen_score,
+                                vc_class):
+    old_pts_str = f"-{safe_float(old_log.get('Số điểm'), 0.0):.1f}" if old_log.get(
+        "Loại") == "Điểm trừ" else f"+{safe_float(old_log.get('Số điểm'), 0.0):.1f}"
+    new_pts_str = f"-{safe_float(new_log.get('Số điểm'), 0.0):.1f}" if new_log.get(
+        "Loại") == "Điểm trừ" else f"+{safe_float(new_log.get('Số điểm'), 0.0):.1f}"
+    html = f"""<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {{ font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px; }}
+        .card {{ max-width: 650px; margin: 0 auto; background: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 1px solid #e1e8ed; }}
+        .header {{ background-color: #1F497D; color: #ffffff; padding: 22px 20px; text-align: center; }}
+        .header h2 {{ margin: 0; font-size: 19px; text-transform: uppercase; letter-spacing: 0.5px; }}
+        .header p {{ margin: 6px 0 0 0; opacity: 0.95; font-size: 13px; font-weight: 500; }}
+        .content {{ padding: 25px 22px; color: #333333; line-height: 1.6; }}
+        .greeting {{ font-size: 16px; font-weight: bold; margin-bottom: 12px; color: #1f497d; }}
+        .compare-table {{ width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 13px; }}
+        .compare-table th {{ background-color: #1F497D; color: #ffffff; padding: 10px; border: 1px solid #1F497D; text-align: center; }}
+        .compare-table td {{ padding: 10px; border: 1px solid #e1e8ed; vertical-align: top; }}
+        .old-col {{ background-color: #FFF0F0; color: #C5221F; }}
+        .new-col {{ background-color: #E6F4EA; color: #137333; font-weight: bold; }}
+        .score-card {{ background-color: #F8F9FA; border: 1px solid #DCE1E6; border-radius: 6px; padding: 15px; margin-top: 20px; }}
+        .score-title {{ font-size: 14px; font-weight: bold; color: #1F497D; margin-bottom: 10px; border-bottom: 2px solid #1F497D; padding-bottom: 5px; }}
+        .footer {{ background-color: #f8f9fa; padding: 15px; text-align: center; font-size: 12px; color: #777777; border-top: 1px solid #eeeeee; }}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <h2>SỞ GD&ĐT PHÚ THỌ-TRƯỜNG THPT VĨNH YÊN</h2>
+            <p>THÔNG BÁO ĐIỀU CHỈNH</p>
+        </div>
+        <div class="content">
+            <div class="greeting">Kính gửi Thầy/Cô: {teacher_name}</div>
+            <p>Ban Giám hiệu (Admin) TRƯỜNG THPT VĨNH YÊN trân trọng thông báo thông tin ghi nhận thi đua của Thầy/Cô vừa được **ĐIỀU CHỈNH / CẬP NHẬT** trên hệ thống như sau:</p>
 
+            <table class="compare-table">
+                <thead>
+                    <tr>
+                        <th style="width: 20%;">Hạng mục</th>
+                        <th style="width: 40%;">📌 NỘI DUNG CŨ (Đã hủy)</th>
+                        <th style="width: 40%;">✨ NỘI DUNG MỚI (Thay thế)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Ngày ghi nhận</b></td>
+                        <td class="old-col">{old_log.get('Ngày', '')}</td>
+                        <td class="new-col">{new_log.get('Ngày', '')}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Phân loại</b></td>
+                        <td class="old-col">{old_log.get('Loại', '')}</td>
+                        <td class="new-col">{new_log.get('Loại', '')}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Nội dung ghi nhận</b></td>
+                        <td class="old-col">{old_log.get('Nội dung', '')}</td>
+                        <td class="new-col">{new_log.get('Nội dung', '')}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Biến động điểm</b></td>
+                        <td class="old-col">{old_pts_str} điểm</td>
+                        <td class="new-col">{new_pts_str} điểm</td>
+                    </tr>
+                    <tr>
+                        <td><b>Ghi chú / Lý do</b></td>
+                        <td class="old-col">{old_log.get('Ghi chú', 'Không có')}</td>
+                        <td class="new-col">{new_log.get('Ghi chú', 'Không có')}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="score-card">
+                <div class="score-title">📊 BẢNG TỔNG HỢP ĐIỂM SAU KHI TÍNH LẠI</div>
+                <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+                    <tr>
+                        <td style="padding: 6px 0;">📉 <b>Điểm Đánh giá Viên chức còn lại:</b></td>
+                        <td style="text-align: right;"><b style="color: #D9534F; font-size: 15px;">{vc_score:.1f} điểm</b></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 6px 0;">🏆 <b>Điểm Thi đua Khen thưởng tích lũy:</b></td>
+                        <td style="text-align: right;"><b style="color: #28A745; font-size: 15px;">{net_emulation_score:+.1f} điểm</b></td>
+                    </tr>
+                    <tr style="border-top: 1px solid #ddd;">
+                        <td style="padding: 8px 0;">📊 <b>Tổng điểm Thi đua Tổng hợp:</b></td>
+                        <td style="text-align: right;"><b style="color: #1F497D; font-size: 16px;">{total_gen_score:.1f} điểm</b></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 6px 0;">🏅 <b>Dự kiến Xếp loại Viên chức:</b></td>
+                        <td style="text-align: right;"><b style="color: #1F497D; font-size: 15px;">{vc_class}</b></td>
+                    </tr>
+                </table>
+            </div>
+            <p style="margin-top: 20px; font-size: 13px; color: #555;">Thầy/Cô có thể đăng nhập ứng dụng Vy2026 bằng tài khoản cá nhân để xem Bảng tin chi tiết lịch sử thi đua của mình.</p>
+        </div>
+        <div class="footer">
+            TRƯỜNG THPT VĨNH YÊN
+        </div>
+    </div>
+</body>
+</html>"""
+    return html
+def render_manage_logs_ui():
+    st.subheader("📜 Quản lý, Điều chỉnh (Sửa) & Xóa Nhật ký Thi đua")
+    # 🔒 KIỂM TRA QUYỀN HẠN: BẮT BUỘC PHẢI LÀ ADMIN
+    curr_u = st.session_state.current_user if st.session_state.get("current_user") is not None else {
+        "role": "Giáo viên"}
+    if curr_u.get("role") != "Admin":
+        st.error("⛔ CẢNH BÁO QUYỀN HẠN: Chức năng Sửa và Xóa nhật ký thi đua chỉ dành riêng cho tài khoản Admin!")
+        st.info(
+            "💡 Nếu bạn là Cán bộ Theo dõi / Cờ đỏ và phát hiện nhập sai thông tin, vui lòng báo cho Ban Giám hiệu (Admin) để thực hiện điều chỉnh.")
+        return
+    if not st.session_state.get("logs"):
+        st.info("ℹ️ Chưa có nhật ký vi phạm hay khen thưởng nào trên hệ thống.")
+        return
+    # Bộ lọc nhật ký
+    c_f1, c_f2, c_f3 = st.columns(3)
+    with c_f1:
+        staff_opt = ["Tất cả Cán bộ / Giáo viên"] + sorted(
+            list(set([str(l.get("Cán bộ", "")).strip() for l in st.session_state.logs if l.get("Cán bộ")])))
+        sel_staff_flt = st.selectbox("🔍 Lọc theo Cán bộ:", staff_opt, key="flt_manage_staff_v33")
+    with c_f2:
+        type_opt = ["Tất cả phân loại", "Điểm trừ", "Điểm cộng"]
+        sel_type_flt = st.selectbox("🏷️ Lọc theo Phân loại:", type_opt, key="flt_manage_type_v33")
+    with c_f3:
+        kw_flt = st.text_input("🔎 Tìm từ khóa nội dung:", key="flt_manage_kw_v33").strip().lower()
+    filtered_indices = []
+    for idx, l in enumerate(st.session_state.logs):
+        c1 = (sel_staff_flt == "Tất cả Cán bộ / Giáo viên") or (str(l.get("Cán bộ", "")).strip() == sel_staff_flt)
+        c2 = (sel_type_flt == "Tất cả phân loại") or (l.get("Loại") == sel_type_flt)
+        c3 = not kw_flt or (kw_flt in str(l.get("Nội dung", "")).lower()) or (
+                    kw_flt in str(l.get("Cán bộ", "")).lower())
+        if c1 and c2 and c3:
+            filtered_indices.append(idx)
+    if not filtered_indices:
+        st.warning("⚠️ Không tìm thấy ghi nhận nào phù hợp với bộ lọc trên.")
+        return
+    # Bảng danh sách nhật ký khớp bộ lọc
+    disp_logs = []
+    for i, idx in enumerate(filtered_indices):
+        l = st.session_state.logs[idx]
+        disp_logs.append({
+            "STT": i + 1,
+            "Ngày": l.get("Ngày", ""),
+            "Cán bộ": l.get("Cán bộ", ""),
+            "Tổ chuyên môn": l.get("Tổ chuyên môn", ""),
+            "Loại": l.get("Loại", ""),
+            "Nội dung": l.get("Nội dung", ""),
+            "Số điểm": f"-{safe_float(l.get('Số điểm'), 0.0):.1f}" if l.get(
+                "Loại") == "Điểm trừ" else f"+{safe_float(l.get('Số điểm'), 0.0):.1f}",
+            "Ghi chú": l.get("Ghi chú", "")
+        })
+    st.markdown("##### 📊 Danh sách Nhật ký Ghi nhận Thi đua:")
+    st.dataframe(pd.DataFrame(disp_logs), use_container_width=True)
+    st.markdown("---")
+    log_options = [
+        f"Dòng #{i + 1} - [{st.session_state.logs[idx].get('Ngày')}] {st.session_state.logs[idx].get('Cán bộ')} - {st.session_state.logs[idx].get('Loại')}: {st.session_state.logs[idx].get('Nội dung')} ({st.session_state.logs[idx].get('Số điểm')}đ)"
+        for i, idx in enumerate(filtered_indices)
+    ]
+    sel_log_pos = st.selectbox("👉 Chọn nhật ký cần Sửa hoặc Xóa:", range(len(log_options)),
+                               format_func=lambda x: log_options[x], key="sel_manage_log_idx_v33")
+    target_real_idx = filtered_indices[sel_log_pos]
+    target_log = st.session_state.logs[target_real_idx]
+    tab_edit, tab_delete = st.tabs(["✏️ 1. Điều chỉnh (Sửa ghi nhận)", "🗑️ 2. Xóa ghi nhận"])
+    # --- TAB 1: SỬA GHI NHẬN ---
+    with tab_edit:
+        st.markdown("##### ✏️ ĐIỀU CHỈNH THÔNG TIN GHI NHẬN THI ĐUA")
+        col_old, col_new = st.columns(2)
+        # CỘT 1: NỘI DUNG CŨ (ĐÃ GHI NHẬN)
+        with col_old:
+            st.markdown("""
+            <div style="background-color: #FFF0F0; border-left: 5px solid #D9534F; padding: 12px; border-radius: 6px; margin-bottom: 10px;">
+                <h4 style="margin: 0 0 8px 0; color: #C5221F;">📌 NỘI DUNG CŨ (Bị thay thế)</h4>
+            </div>
+            """, unsafe_allow_html=True)
+            st.info(f"""
+            📅 **Ngày ghi nhận cũ:** `{target_log.get('Ngày')}`  
+            👤 **Cán bộ cũ:** `{target_log.get('Cán bộ')}`  
+            🏷️ **Phân loại cũ:** `{target_log.get('Loại')}`  
+            📝 **Nội dung cũ:** `{target_log.get('Nội dung')}`  
+            📊 **Số điểm cũ:** `{target_log.get('Số điểm')} điểm`  
+            💬 **Ghi chú cũ:** `{target_log.get('Ghi chú', 'Không có')}`
+            """)
+        # CỘT 2: LỰA CHỌN NỘI DUNG MỚI (THAY THẾ NỘI DUNG CŨ)
+        with col_new:
+            st.markdown("""
+            <div style="background-color: #E6F4EA; border-left: 5px solid #137333; padding: 12px; border-radius: 6px; margin-bottom: 10px;">
+                <h4 style="margin: 0 0 8px 0; color: #137333;">✨ LỰA CHỌN NỘI DUNG MỚI (Thay thế)</h4>
+            </div>
+            """, unsafe_allow_html=True)
+            raw_content = str(target_log.get("Nội dung", ""))
+            is_target_kscl = "kscl" in raw_content.lower() or raw_content.startswith("[KSCL")
+            default_cat_idx = 2 if is_target_kscl else (0 if target_log.get("Loại") == "Điểm trừ" else 1)
+            edit_cat = st.radio(
+                "Chọn Danh mục Nội dung Mới:",
+                ["1. Lỗi vi phạm (Trừ điểm)", "2. Thành tích Khen thưởng (Cộng điểm)",
+                 "3. Đánh giá điểm KSCL (Sửa điểm môn học KSCL)"],
+                index=default_cat_idx,
+                key="edit_category_radio_v33"
+            )
+            new_content = ""
+            new_pts = 0.0
+            new_type = "Điểm trừ"
+            if edit_cat == "1. Lỗi vi phạm (Trừ điểm)":
+                new_type = "Điểm trừ"
+                sel_cg = st.selectbox("Chọn Cấp 1 (Nhóm tiêu chí mới):", CRITERIA_GROUPS, key="edit_cg_select_v33")
+                filt_crit = st.session_state.criteria[st.session_state.criteria[
+                                                          "Nhóm tiêu chí"] == sel_cg] if not st.session_state.criteria.empty else st.session_state.criteria
+                if not filt_crit.empty:
+                    crit_opts = filt_crit["Mã TC"].astype(str) + " - " + filt_crit["Nội dung vi phạm"].astype(
+                        str) + " (-" + filt_crit["điểm trừ"].astype(str) + "đ/lỗi)"
+                    c_idx = st.selectbox("Chọn Cấp 2 & 3 (Lỗi vi phạm mới):", range(len(crit_opts)),
+                                         format_func=lambda x: crit_opts.iloc[x], key="edit_crit_idx_v33")
+                    chosen_row = filt_crit.iloc[c_idx]
+                    tc_code = str(chosen_row["Mã TC"]).strip()
+                    if tc_code in ["TC6.1.3", "TC6.1.4"]:
+                        def_p = 0.70 if tc_code == "TC6.1.3" else 0.30
+                        u_pen = safe_float(chosen_row["điểm trừ"], def_p)
+                        p_lbl = "📝 Số lỗi vi phạm khi ra đề chính:" if tc_code == "TC6.1.3" else "📝 Số lỗi vi phạm khi phản biện:"
+                        n_errs = st.number_input(p_lbl, min_value=1, max_value=50, value=1, step=1,
+                                                 key="edit_num_errs_v33")
+                        new_pts = n_errs * u_pen
+                        new_content = f"[{chosen_row['Mã TC']}] {chosen_row['Nội dung vi phạm']} - Số lỗi: {n_errs} (Tổng trừ: -{new_pts:.2f}đ)" if n_errs > 1 else f"[{chosen_row['Mã TC']}] {chosen_row['Nội dung vi phạm']}"
+                    else:
+                        new_content = f"[{chosen_row['Mã TC']}] {chosen_row['Nội dung vi phạm']}"
+                        new_pts = safe_float(chosen_row["điểm trừ"], 1.0)
+                else:
+                    new_content = "Vi phạm quy chế"
+                    new_pts = 1.0
+            elif edit_cat == "2. Thành tích Khen thưởng (Cộng điểm)":
+                new_type = "Điểm cộng"
+                sel_rg = st.selectbox("Chọn Cấp 1 (Mục lớn khen thưởng mới):", REWARD_CATEGORIES,
+                                      key="edit_rg_select_v33")
+                filt_rew = st.session_state.rewards[st.session_state.rewards[
+                                                        "Mục lớn"] == sel_rg] if not st.session_state.rewards.empty else st.session_state.rewards
+                if not filt_rew.empty:
+                    rew_opts = filt_rew["Nội dung khen thưởng"].astype(str) + " - " + filt_rew[
+                        "Thành tích / Mức khen thưởng"].astype(str) + " (+" + filt_rew["Điểm cộng"].astype(
+                        str) + "đ/giải)"
+                    r_idx = st.selectbox("Chọn Cấp 2 & 3 (Thành tích mới):", range(len(rew_opts)),
+                                         format_func=lambda x: rew_opts.iloc[x], key="edit_rew_idx_v33")
+                    chosen_r = filt_rew.iloc[r_idx]
+                    def_priz = int(safe_float(chosen_r.get("Số giải", 1), 1))
+                    n_priz = st.number_input("🏆 Số lượng giải / số lần đạt được:", min_value=1, max_value=50,
+                                             value=def_priz if def_priz >= 1 else 1, step=1, key="edit_num_prizes_v33")
+                    u_bon = safe_float(chosen_r["Điểm cộng"], 1.0)
+                    new_pts = n_priz * u_bon
+                    new_content = f"{chosen_r['Nội dung khen thưởng']} ({chosen_r['Thành tích / Mức khen thưởng']}) - Số giải: {n_priz} (Tổng: +{new_pts:.1f}đ)" if n_priz > 1 else f"{chosen_r['Nội dung khen thưởng']} ({chosen_r['Thành tích / Mức khen thưởng']})"
+                else:
+                    new_content = "Khen thưởng phát sinh"
+                    new_pts = 5.0
+            else:
+                # 3. Đánh giá điểm KSCL (Sửa điểm môn học KSCL)
+                m_ks = re.search(r'\[KSCL\s*(.*?)\]\s*Lớp\s*(.*?)\s*-\s*Môn\s*(.*?)(?:\s*\((.*?)\)|\s*:\s*(.*)|$)',
+                                 raw_content)
+                if m_ks:
+                    ks_exam = m_ks.group(1).strip()
+                    ks_cls = m_ks.group(2).strip()
+                    ks_subj = m_ks.group(3).strip()
+                    rest_parens = m_ks.group(4) or ""
+                    rest_colon = m_ks.group(5) or ""
+                    m_prev = re.search(r'Kỳ trước\s*([\d\.]+)', rest_parens)
+                    m_curr = re.search(r'Kỳ này\s*([\d\.]+)', rest_parens)
+                    m_s1 = re.search(r'S1\s*=\s*([\d\.]+)', rest_colon)
+                    if m_prev:
+                        s_prev = float(m_prev.group(1))
+                        s_curr_old = float(m_curr.group(1)) if m_curr else 6.50
+                        has_prev = True
+                    elif m_s1:
+                        s_prev = None
+                        s_curr_old = float(m_s1.group(1))
+                        has_prev = False
+                    else:
+                        s_prev = 6.00
+                        s_curr_old = 6.50
+                        has_prev = True
+                else:
+                    ks_exam = "KSCL Lần 1"
+                    ks_cls = "10A1"
+                    ks_subj = "Toán"
+                    s_prev = 6.00
+                    s_curr_old = 6.50
+                    has_prev = True
+                st.info(f"📌 **Tự động giữ nguyên:** Kỳ KSCL: `{ks_exam}` | Lớp: `{ks_cls}` | Môn: `{ks_subj}`")
+                if has_prev and s_prev is not None:
+                    st.write(f"📊 **Mốc điểm kỳ trước ($S_n$):** `{s_prev:.2f}`")
+                    new_kscl_score = st.number_input(
+                        f"📝 Nhập Điểm số MỚI của Môn {ks_subj} ($S_{{n+1}}$) (Cũ đang là `{s_curr_old:.2f}`):",
+                        min_value=0.0, max_value=10.0, value=float(s_curr_old), step=0.05,
+                        key="edit_kscl_score_input_v33"
+                    )
+                    delta, pts, desc_msg = calculate_kscl_points(s_prev, new_kscl_score)
+                    mk1, mk2, mk3 = st.columns(3)
+                    mk1.metric("Kỳ trước (Sn)", f"{s_prev:.2f}")
+                    mk2.metric("Điểm môn học mới (Sn+1)", f"{new_kscl_score:.2f}")
+                    mk3.metric("Điểm thi đua tự động", f"{pts:+.1f}đ", delta=desc_msg)
+                    new_pts = abs(pts)
+                    new_type = "Điểm cộng" if pts >= 0 else "Điểm trừ"
+                    new_content = f"[KSCL {ks_exam}] Lớp {ks_cls} - Môn {ks_subj} (Kỳ trước {s_prev:.2f} ➔ Kỳ này {new_kscl_score:.2f}, {desc_msg})"
+                else:
+                    new_kscl_score = st.number_input(
+                        f"📝 Nhập Điểm Mốc S1 MỚI của Môn {ks_subj} (Cũ đang là `{s_curr_old:.2f}`):",
+                        min_value=0.0, max_value=10.0, value=float(s_curr_old), step=0.05,
+                        key="edit_kscl_s1_input_v33"
+                    )
+                    new_pts = 0.0
+                    new_type = "Thông tin Mốc KSCL"
+                    new_content = f"[KSCL {ks_exam}] Lớp {ks_cls} - Môn {ks_subj}: Lưu mốc điểm đầu vào S1 = {new_kscl_score:.2f}"
 
+        st.markdown("---")
+        c_m1, c_m2 = st.columns(2)
+        with c_m1:
+            try:
+                d_obj = datetime.strptime(str(target_log.get("Ngày", "")), "%d/%m/%Y").date()
+            except Exception:
+                d_obj = date.today()
+            e_date = st.date_input("Sửa Ngày ghi nhận mới:", value=d_obj, format="DD/MM/YYYY", key="e_date_in_v33")
+            e_staff_list = st.session_state.users["Họ và tên"].tolist() if not st.session_state.users.empty else [
+                target_log.get("Cán bộ", "")]
+            e_staff_idx = e_staff_list.index(target_log.get("Cán bộ")) if target_log.get(
+                "Cán bộ") in e_staff_list else 0
+            e_staff = st.selectbox("Sửa Cán bộ được ghi nhận:", e_staff_list, index=e_staff_idx, key="e_staff_in_v33")
+        with c_m2:
+            chk_override_pts = st.checkbox("Tùy chỉnh số điểm mới thủ công (nếu không dùng điểm chuẩn danh mục)",
+                                           key="chk_override_pts_v33")
+            if chk_override_pts:
+                final_pts = st.number_input("Số điểm mới thủ công:", min_value=0.0, max_value=100.0,
+                                            value=float(new_pts), step=0.5, key="final_pts_override_v33")
+            else:
+                final_pts = float(new_pts)
+                st.info(f"📊 Số điểm tự động tính toán: **{final_pts:.2f} điểm**")
+
+            e_note = st.text_input("Sửa Ghi chú / Lý do điều chỉnh bổ sung:",
+                                   value=str(target_log.get("Ghi chú", "Điều chỉnh thông tin thi đua theo quy định")),
+                                   key="e_note_in_v33")
+        if st.button("💾 Xác nhận Lưu Thay Đổi & Gửi Thông Báo Cho Giáo Viên", key="btn_save_edit_log_v33"):
+            e_date_str = e_date.strftime("%d/%m/%Y")
+            old_log_data = dict(target_log)
+            target_log["Ngày"] = e_date_str
+            target_log["Cán bộ"] = e_staff
+            target_log["Loại"] = new_type
+            target_log["Nội dung"] = new_content
+            target_log["Số điểm"] = final_pts
+            target_log["Ghi chú"] = e_note.strip()
+            # If editing KSCL entry, update kscl_baselines
+            if edit_cat == "3. Đánh giá điểm KSCL (Sửa điểm KSCL)":
+                try:
+                    baseline_key = f"{e_staff}_{ks_cls}_{ks_subj}"
+                    if baseline_key in st.session_state.get("kscl_baselines", {}):
+                        st.session_state.kscl_baselines[baseline_key]["last_score"] = new_kscl_score
+                        st.session_state.kscl_baselines[baseline_key]["last_exam"] = ks_exam
+                except Exception:
+                    pass
+            save_data_to_disk()
+            u_logs = [l for l in st.session_state.logs if l.get("Cán bộ") == e_staff]
+            tot_vc_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_logs if
+                              l.get("Loại") == "Điểm trừ" and not l.get("Nội dung", "").startswith("[KSCL")])
+            tot_bon = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_logs if l.get("Loại") == "Điểm cộng"])
+            tot_kscl_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_logs if
+                                l.get("Loại") == "Điểm trừ" and l.get("Nội dung", "").startswith("[KSCL")])
+            vc_score = 100.0 - tot_vc_pen
+            net_emulation_score = tot_bon - tot_kscl_pen
+            total_gen_score = vc_score + net_emulation_score
+            if vc_score >= 90.0:
+                vc_class = "HTXSNV 🥇"
+            elif vc_score >= 70.0:
+                vc_class = "HTTNV 🥈"
+            elif vc_score >= 50.0:
+                vc_class = "Hoàn thành 🥉"
+            else:
+                vc_class = "Chưa hoàn thành ⚠️"
+            staff_matches = st.session_state.users[st.session_state.users["Họ và tên"] == e_staff]
+            t_email = str(staff_matches.iloc[0].get("Email", "")).strip() if not staff_matches.empty and pd.notna(
+                staff_matches.iloc[0].get("Email")) else f"{e_staff.lower().replace(' ', '')}@vinhyen.edu.vn"
+            if not t_email or "@" not in t_email:
+                t_email = f"{e_staff.lower().replace(' ', '')}@vinhyen.edu.vn"
+            e_subj = f"[THPT VĨNH YÊN] Thông báo ĐIỀU CHỈNH ghi nhận Thi đua ngày {e_date_str} - {e_staff}"
+            e_html = build_adjustment_email_html(e_staff, old_log_data, target_log, vc_score, net_emulation_score,
+                                                 total_gen_score, vc_class)
+            e_cfg = st.session_state.get("email_config", {})
+            ok_e, msg_e = send_email_notification(t_email, e_subj, e_html, e_cfg)
+            st.session_state.email_history.append({
+                "Thời gian": e_date_str,
+                "Người nhận": e_staff,
+                "Email cá nhân": t_email,
+                "Phân loại": f"ĐIỀU CHỈNH ({new_type.upper()})",
+                "Tiêu đề Email": e_subj,
+                "Nội dung ghi nhận": new_content,
+                "Trạng thái Email": "Đã gửi thành công (200 OK)" if ok_e else msg_e
+            })
+            save_data_to_disk()
+            st.success(
+                f"✅ Đã điều chỉnh ghi nhận cho Thầy/Cô **{e_staff}** thành công và tự động phát Email thông báo khoa học!")
+            st.info(f"📧 Email thông báo đã gửi tới: `{t_email}`")
+            st.rerun()
+    # --- TAB 2: XÓA GHI NHẬN ---
+    with tab_delete:
+        st.markdown("##### 🗑️ Xác nhận Xóa Ghi nhận Thi đua")
+        st.warning(
+            f"⚠️ **CẢNH BÁO:** Thao tác này sẽ xóa vĩnh viễn ghi nhận:\n* **[{target_log.get('Ngày')}] {target_log.get('Cán bộ')}** - {target_log.get('Loại')}: *{target_log.get('Nội dung')}* ({target_log.get('Số điểm')} điểm)")
+        st.info(
+            "💡 Khi xóa ghi nhận này, số điểm tương ứng sẽ tự động được hoàn trả / trừ bỏ khỏi bảng điểm của Giáo viên, đồng thời hệ thống sẽ phát Email thông báo xác nhận.")
+        chk_del = st.checkbox("⚠️ Tôi xác nhận muốn xóa dòng nhật ký thi đua này", key="chk_confirm_del_log_v33")
+        if chk_del:
+            if st.button("🔥 Tiến hành Xóa Ghi nhận này vĩnh viễn", key="btn_execute_del_log_v33"):
+                del_staff = target_log.get("Cán bộ")
+                del_content = target_log.get("Nội dung")
+                del_pts = target_log.get("Số điểm")
+                del_type = target_log.get("Loại")
+                del_date = target_log.get("Ngày")
+                st.session_state.logs.pop(target_real_idx)
+                save_data_to_disk()
+                u_logs = [l for l in st.session_state.logs if l.get("Cán bộ") == del_staff]
+                tot_vc_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_logs if
+                                  l.get("Loại") == "Điểm trừ" and not l.get("Nội dung", "").startswith("[KSCL")])
+                tot_bon = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_logs if l.get("Loại") == "Điểm cộng"])
+                tot_kscl_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_logs if
+                                    l.get("Loại") == "Điểm trừ" and l.get("Nội dung", "").startswith("[KSCL")])
+                vc_score = 100.0 - tot_vc_pen
+                net_emulation_score = tot_bon - tot_kscl_pen
+                total_gen_score = vc_score + net_emulation_score
+                if vc_score >= 90.0:
+                    vc_class = "HTXSNV 🥇"
+                elif vc_score >= 70.0:
+                    vc_class = "HTTNV 🥈"
+                elif vc_score >= 50.0:
+                    vc_class = "Hoàn thành 🥉"
+                else:
+                    vc_class = "Chưa hoàn thành ⚠️"
+                staff_matches = st.session_state.users[st.session_state.users["Họ và tên"] == del_staff]
+                t_email = str(staff_matches.iloc[0].get("Email", "")).strip() if not staff_matches.empty and pd.notna(
+                    staff_matches.iloc[0].get("Email")) else f"{del_staff.lower().replace(' ', '')}@vinhyen.edu.vn"
+                if not t_email or "@" not in t_email:
+                    t_email = f"{del_staff.lower().replace(' ', '')}@vinhyen.edu.vn"
+                old_dummy = {"Ngày": del_date, "Cán bộ": del_staff, "Loại": del_type, "Nội dung": del_content,
+                             "Số điểm": del_pts}
+                new_dummy = {"Ngày": del_date, "Cán bộ": del_staff, "Loại": "ĐÃ HỦY/XÓA",
+                             "Nội dung": f"[ĐÃ XÓA VĨNH VIỄN] {del_content}", "Số điểm": 0.0}
+                e_subj = f"[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày {del_date} - {del_staff}"
+                e_html = build_adjustment_email_html(del_staff, old_dummy, new_dummy, vc_score, net_emulation_score,
+                                                     total_gen_score, vc_class)
+                e_cfg = st.session_state.get("email_config", {})
+                ok_e, msg_e = send_email_notification(t_email, e_subj, e_html, e_cfg)
+                st.session_state.email_history.append({
+                    "Thời gian": del_date,
+                    "Người nhận": del_staff,
+                    "Email cá nhân": t_email,
+                    "Phân loại": f"ĐÃ HỦY/XÓA ({del_type.upper()})",
+                    "Tiêu đề Email": e_subj,
+                    "Nội dung ghi nhận": f"[ĐÃ XÓA] {del_content}",
+                    "Trạng thái Email": "Đã gửi thành công (200 OK)" if ok_e else msg_e
+                })
+                save_data_to_disk()
+                st.success(
+                    f"✅ Đã xóa vĩnh viễn ghi nhận cho **{del_staff}** và gửi Email thông báo cập nhật lại bảng điểm!")
+                st.rerun()
 def load_data_from_disk():
     """Tải dữ liệu từ file JSON vào ứng dụng nếu file tồn tại"""
     if os.path.exists(DATA_FILE):
@@ -553,8 +995,6 @@ def load_data_from_disk():
                 sync_teacher_accounts()
         except Exception as e:
             st.error(f"Lỗi khi đọc file dữ liệu: {e}")
-
-
 def save_data_to_disk():
     """Lưu toàn bộ dữ liệu hiện tại ra file JSON trên ổ cứng"""
     if isinstance(st.session_state.get("criteria"), pd.DataFrame) and not st.session_state.criteria.empty:
@@ -588,8 +1028,6 @@ def save_data_to_disk():
             df_gt_save.to_csv("/workspace/scratch/guitin.csv", index=False, encoding="utf-8-sig")
         except Exception:
             pass
-
-
 # Khởi tạo dữ liệu ban đầu
 if 'initialized' not in st.session_state:
     st.session_state.departments = ["Tổ Toán - Tin", "Tổ Ngữ văn", "Tổ Hành chính", "Tổ Ngoại ngữ",
@@ -615,8 +1053,6 @@ if 'initialized' not in st.session_state:
     st.session_state.current_user = None
     load_data_from_disk()
     st.session_state.initialized = True
-
-
 def build_email_html(teacher_name, event_type, date_str, content_str, points_val, calc_score=0.0, extra_info="",
                      **kwargs):
     if "total_points" in kwargs and kwargs["total_points"] is not None:
@@ -687,7 +1123,6 @@ def build_email_html(teacher_name, event_type, date_str, content_str, points_val
         <div class="content">
             <div class="greeting">Kính gửi Thầy/Cô: {teacher_name}</div>
             <p>TRƯỜNG THPT VĨNH YÊN trân trọng thông báo kết quả đánh giá vừa được ghi nhận như sau:</p>
-
             <div class="point-box">
                 <div><b>Biến động điểm:</b></div>
                 <div class="point-val">{point_text}</div>
@@ -707,7 +1142,6 @@ def build_email_html(teacher_name, event_type, date_str, content_str, points_val
                     <td><b style="color:{score_color}; font-size:16px;">{score_val_str}</b></td>
                 </tr>
             </table>
-
             <p style="margin-top:22px; font-size:12px; color:#666; font-style:italic;">* Email này được gửi tự động từ Hệ thống Quản lý Thi đua THPT Vĩnh Yên. Thầy/Cô vui lòng liên hệ Ban Thi đua nếu cần kiểm tra, đối soát.</p>
         </div>
         <div class="footer">
@@ -719,8 +1153,6 @@ def build_email_html(teacher_name, event_type, date_str, content_str, points_val
 </body>
 </html>"""
     return html
-
-
 def send_email_notification(to_email, subject, html_content, email_config):
     smtp_server = email_config.get("smtp_server", "smtp.gmail.com")
     smtp_port = int(email_config.get("smtp_port", 587))
@@ -746,8 +1178,6 @@ def send_email_notification(to_email, subject, html_content, email_config):
         return True, f"Đã gửi Email thành công tới {clean_email}"
     except Exception as e:
         return False, f"Lỗi kết nối Email SMTP: {str(e)}"
-
-
 def send_viettel_tammi_message(phone, message_text, tammi_config):
     api_url = tammi_config.get("api_url", "https://tammi-api.viettel.vn/v1/messages")
     app_key = tammi_config.get("app_key", "VT_TAMMI_2026")
@@ -765,8 +1195,6 @@ def send_viettel_tammi_message(phone, message_text, tammi_config):
             return False, f"Lỗi Viettel Tammi HTTP {res.status_code}: {res.text}"
     except Exception as e:
         return True, f"Đã ghi nhận & kích hoạt cổng gửi Viettel Tammi ({phone})"
-
-
 def get_time_title_suffix(time_frame):
     tf = str(time_frame).strip()
     if tf.startswith("Tháng"):
@@ -779,8 +1207,6 @@ def get_time_title_suffix(time_frame):
         return "NĂM HỌC 2026-2027"
     else:
         return tf.upper()
-
-
 def create_styled_excel_report(sheet_data_dict):
     wb = openpyxl.Workbook()
     wb.remove(wb.active)
@@ -862,8 +1288,6 @@ def create_styled_excel_report(sheet_data_dict):
     output = io.BytesIO()
     wb.save(output)
     return output.getvalue()
-
-
 def convert_df_to_excel(df):
     return create_styled_excel_report({
         "BaoCao": {
@@ -871,8 +1295,6 @@ def convert_df_to_excel(df):
             "title": "BÁO CÁO THI ĐUA"
         }
     })
-
-
 def convert_dfs_to_excel(df_dict):
     sheet_data_dict = {}
     for s_name, df in df_dict.items():
@@ -881,8 +1303,6 @@ def convert_dfs_to_excel(df_dict):
             "title": s_name.replace("_", " ").upper()
         }
     return create_styled_excel_report(sheet_data_dict)
-
-
 def filter_logs_by_timeframe(logs, time_frame):
     if not logs:
         return []
@@ -924,8 +1344,6 @@ def filter_logs_by_timeframe(logs, time_frame):
         except Exception:
             filtered.append(log)
     return filtered
-
-
 # -----------------------------------------------------------------------------
 # BẢO MẬT & ĐĂNG NHẬP TẬP TRUNG (WEBSITE MULTI-USER LOGIN)
 # -----------------------------------------------------------------------------
@@ -944,10 +1362,10 @@ if st.session_state.get("current_user") is None:
     </style>
     """, unsafe_allow_html=True)
     st.markdown("""
-    <div style="text-align: center; padding: 20px; background: linear-gradient(135deg, #1F497D 0%, #17A2B8 100%); color: white; border-radius: 10px; margin-bottom: 25px;">
+    <div style="text-align: center; padding: 20px; background: linear-gradient(100deg, #1F497D 0%, #17A2B8 100%); color: white; border-radius: 6px; margin-bottom: 20px;">
         <h2 style="margin: 0; font-size: 22px; font-weight: bold;">SỞ GD&ĐT PHÚ THỌ-TRƯỜNG THPT VĨNH YÊN</h2>
-        <h3 style="margin: 8px 0 0 0; font-size: 18px; color: #FFD700;">QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN</h3>
-        <p style="margin: 5px 0 0 0; font-size: 13px; opacity: 0.95;">Hệ thống Đăng nhập & Phân quyền Tập trung cho Cán bộ, Giáo viên</p>
+        <h3 style="margin: 1px 0 0 0; font-size: 40px; color: #FFD700;">QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN</h3>
+        <p style="margin: 1px 0 0 0; font-size: 20px; opacity: 0.95;">Hệ thống Đăng nhập & Phân quyền Tập trung cho Cán bộ, Giáo viên</p>
     </div>
     """, unsafe_allow_html=True)
     c_l1, c_l2, c_l3 = st.columns([1, 2, 1])
@@ -1058,12 +1476,12 @@ if role.startswith("1. ADMIN"):
             "Tiêu chí thi đua khen thưởng",
             "Cấu hình gửi tin",
             "Quản lý tài khoản",
+            "📜 Quản lý & Sửa/Xóa Nhật ký Thi đua",
             "Sao lưu và khôi phục dữ liệu",
             "Reset dữ liệu"
         ],
         key="admin_submenu_radio"
     )
-
     if admin_sub == "Quản lý nhân sự":
         st.subheader("Danh sách Cán bộ, Giáo viên, Nhân viên chính thức")
         if st.session_state.users.empty:
@@ -1267,7 +1685,8 @@ if role.startswith("1. ADMIN"):
         with col_dept_edit:
             with st.expander("✏️ Chỉnh sửa tên Tổ chuyên môn", expanded=True):
                 if st.session_state.departments:
-                    dept_to_edit = st.selectbox("Chọn Tổ chuyên môn cần sửa:", st.session_state.departments, key="sel_dept_edit_name")
+                    dept_to_edit = st.selectbox("Chọn Tổ chuyên môn cần sửa:", st.session_state.departments,
+                                                key="sel_dept_edit_name")
                     new_dept_val = st.text_input("Nhập tên mới của Tổ:", value=dept_to_edit, key="txt_dept_edit_name")
                     if st.button("💾 Cập nhật tên Tổ"):
                         old_name = dept_to_edit.strip()
@@ -1279,8 +1698,10 @@ if role.startswith("1. ADMIN"):
                         else:
                             idx = st.session_state.departments.index(old_name)
                             st.session_state.departments[idx] = clean_new_name
-                            if isinstance(st.session_state.get("users"), pd.DataFrame) and not st.session_state.users.empty:
-                                st.session_state.users.loc[st.session_state.users["Tổ chuyên môn"] == old_name, "Tổ chuyên môn"] = clean_new_name
+                            if isinstance(st.session_state.get("users"),
+                                          pd.DataFrame) and not st.session_state.users.empty:
+                                st.session_state.users.loc[st.session_state.users[
+                                                               "Tổ chuyên môn"] == old_name, "Tổ chuyên môn"] = clean_new_name
                             for log in st.session_state.get("logs", []):
                                 if log.get("Tổ chuyên môn") == old_name:
                                     log["Tổ chuyên môn"] = clean_new_name
@@ -1289,7 +1710,8 @@ if role.startswith("1. ADMIN"):
                             st.rerun()
         with col_dept_del:
             with st.expander("🗑️ Xóa Tổ chuyên môn", expanded=True):
-                dept_to_del = st.selectbox("Chọn Tổ chuyên môn cần xóa:", st.session_state.departments, key="sel_dept_del_name")
+                dept_to_del = st.selectbox("Chọn Tổ chuyên môn cần xóa:", st.session_state.departments,
+                                           key="sel_dept_del_name")
                 if st.button("Xóa Tổ chuyên môn"):
                     if len(st.session_state.departments) > 1:
                         st.session_state.departments.remove(dept_to_del)
@@ -1576,7 +1998,7 @@ if role.startswith("1. ADMIN"):
                 e_port = st.number_input("Cổng SMTP Port:", min_value=1, max_value=65535,
                                          value=int(e_cfg.get("smtp_port", 587)), step=1, key="e_port_in")
                 e_name = st.text_input("Tên hiển thị Người gửi (Sender Name):",
-                                       value=e_cfg.get("sender_name", "TRƯỜNG THPT VĨNH YÊN - HỆ THỐNG THI ĐỦA"),
+                                       value=e_cfg.get("sender_name", "TRƯỜNG THPT VĨNH YÊN"),
                                        key="e_name_in")
             with col_e2:
                 e_sender = st.text_input("Địa chỉ Email phát thông báo (Sender Email):",
@@ -1621,11 +2043,11 @@ if role.startswith("1. ADMIN"):
                                                                         st.session_state.get("email_config", {}))
                     if e_status_ok:
                         st.success(
-                            f"🟢 **KẾT NỐI EMAIL SMTP THÀNH CÔNG (200 OK)!**\n\n- **Sender Email**: `{e_sender.strip()}`\n- **SMTP Server**: `{e_server.strip()}:{e_port}`\n- **Thông báo**: {e_status_msg}")
+                            f"🟢 **KẾT NỐI EMAIL SMTP THÀNH CÔNG!**\n\n- **Sender Email**: `{e_sender.strip()}`\n- **SMTP Server**: `{e_server.strip()}:{e_port}`\n- **Thông báo**: {e_status_msg}")
                     else:
                         st.error(f"🔴 **KẾT NỐI THẤT BẠI**: {e_status_msg}")
     elif admin_sub == "Quản lý tài khoản":
-        st.subheader("👥 Quản lý Tài khoản & Phân quyền")
+        st.subheader("👥 Quản lý Tài khoản")
         st.info(
             "💡 **Admin có thể tạo mới, phân quyền (Admin / Người theo dõi / Giáo viên) hoặc Reset mật khẩu cho bất kỳ tài khoản nào.**")
         sync_teacher_accounts()
@@ -1680,6 +2102,8 @@ if role.startswith("1. ADMIN"):
                     st.success(
                         f"✅ Đã reset mật khẩu cho tài khoản `{target_a['username']}` thành `{new_reset_p.strip()}`!")
                     st.rerun()
+    elif admin_sub == "📜 Quản lý & Sửa/Xóa Nhật ký Thi đua":
+        render_manage_logs_ui()
     elif admin_sub == "Sao lưu và khôi phục dữ liệu":
         st.subheader("💾 Sao lưu & Khôi phục Dữ liệu Hệ thống")
         st.info(
@@ -1731,7 +2155,6 @@ if role.startswith("1. ADMIN"):
         * ❌ Toàn bộ Lịch sử Gửi Email thông báo tự động ().
         * ❌ Toàn bộ Lịch sử Điểm & Mốc so sánh KSCL ( & ).
         * ❌ Toàn bộ Danh sách Xuất tin nhắn ( & file ).
-
         **Dữ liệu được GIỮ NGUYÊN (Không bị ảnh hưởng):**
         * ✅ Danh sách Cán bộ, Giáo viên, Nhân viên chính thức.
         * ✅ Danh sách các Tổ chuyên môn.
@@ -1759,302 +2182,298 @@ if role.startswith("1. ADMIN"):
                 st.success(
                     "✅ **ĐÃ RESET THÀNH CÔNG!** Toàn bộ dữ liệu vi phạm, điểm cộng và lịch sử tin nhắn/Email thử nghiệm đã được làm sạch về trạng thái ban đầu.")
                 st.rerun()
-
 elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
     st.sidebar.markdown("---")
     st.sidebar.markdown("### 📝 Menu Con (Nhập liệu)")
+    daily_options = [
+        "Lỗi vi phạm (Trừ điểm)",
+        "Thành tích Khen thưởng (Cộng điểm)",
+        "📊 Đánh giá điểm KSCL (Tiêu chí 5 - Tự động so sánh 2 kỳ)"
+    ]
+    if curr_u.get("role") == "Admin":
+        daily_options.append("📜 Sửa / Xóa Nhật ký Thi đua")
     daily_sub = st.sidebar.radio(
         "Tích chọn phân loại:",
-        [
-            "Lỗi vi phạm (Trừ điểm)",
-            "Thành tích Khen thưởng (Cộng điểm)",
-            "📊 Đánh giá điểm KSCL (Tiêu chí 5 - Tự động so sánh 2 kỳ)"
-        ],
+        daily_options,
         key="daily_submenu_radio"
     )
     st.header("📝 Ghi nhận Thực hiện Nhiệm vụ Hằng ngày")
-    if st.session_state.users.empty:
-        st.warning("⚠️ Chưa có nhân sự chính thức nào trong hệ thống. Vui lòng thêm nhân sự ở mục Admin trước!")
-    elif st.session_state.criteria.empty and st.session_state.rewards.empty:
-        st.warning("⚠️ Chưa có danh mục tiêu chí vi phạm hoặc khen thưởng nào!")
+
+    if daily_sub == "📜 Sửa / Xóa Nhật ký Thi đua":
+        render_manage_logs_ui()
     else:
-        col1, col2 = st.columns(2)
-        with col1:
-            selected_date = st.date_input("Chọn Thứ, Ngày tháng năm", value=date.today(), format="DD/MM/YYYY")
-            staff_list = st.session_state.users["Họ và tên"].tolist()
-            selected_staff = st.selectbox("Chọn Cán bộ / Giáo viên / Nhân viên", staff_list)
-        with col2:
-            event_type = daily_sub
-            st.info(f"📌 Phân loại ghi nhận: **{event_type}**")
-            if event_type == "Lỗi vi phạm (Trừ điểm)":
-                sel_crit_group = st.selectbox("Chọn Cấp 1 (Nhóm tiêu chí):", CRITERIA_GROUPS)
-                filtered_crit = st.session_state.criteria[st.session_state.criteria[
-                                                              "Nhóm tiêu chí"] == sel_crit_group] if not st.session_state.criteria.empty else st.session_state.criteria
-                if not filtered_crit.empty:
-                    crit_display_options = filtered_crit["Mã TC"].astype(str) + " - " + filtered_crit[
-                        "Nội dung vi phạm"].astype(str) + " (-" + filtered_crit["điểm trừ"].astype(str) + "đ/lỗi)"
-                    selected_crit_idx = st.selectbox("Chọn Cấp 2 & 3 (Lỗi vi phạm & Mức trừ cụ thể):",
-                                                     options=range(len(crit_display_options)),
-                                                     format_func=lambda x: crit_display_options.iloc[x])
-                    chosen_crit_row = filtered_crit.iloc[selected_crit_idx]
-                    tc_code_str = str(chosen_crit_row["Mã TC"]).strip()
-                    # Đặc biệt cho TC6.1.3 (Lỗi 1 nội dung Ra đề chính) và TC6.1.4 (Lỗi 1 nội dung Phản biện)
-                    if tc_code_str in ["TC6.1.3", "TC6.1.4"]:
-                        default_p = 0.70 if tc_code_str == "TC6.1.3" else 0.30
-                        unit_penalty = safe_float(chosen_crit_row["điểm trừ"], default_p)
-                        prompt_lbl = "📝 Nhập Số lỗi vi phạm khi ra đề chính (Số lỗi x Điểm trừ 1 lỗi):" if tc_code_str == "TC6.1.3" else "📝 Nhập Số lỗi vi phạm khi phản biện (Số lỗi x Điểm trừ 1 lỗi):"
-                        input_num_errors = st.number_input(prompt_lbl, min_value=1, max_value=50, value=1, step=1,
-                                                           key=f"{tc_code_str.lower().replace('.', '')}_num_errors_input")
-                        points_val = input_num_errors * unit_penalty
-                        if input_num_errors > 1:
-                            selected_content = f"[{chosen_crit_row['Mã TC']}] {chosen_crit_row['Nội dung vi phạm']} - Số lỗi: {input_num_errors} (Tổng trừ: -{points_val:.2f}đ)"
+        if st.session_state.users.empty:
+            st.warning("⚠️ Chưa có nhân sự chính thức nào trong hệ thống. Vui lòng thêm nhân sự ở mục Admin trước!")
+        elif st.session_state.criteria.empty and st.session_state.rewards.empty:
+            st.warning("⚠️ Chưa có danh mục tiêu chí vi phạm hoặc khen thưởng nào!")
+        else:
+            col1, col2 = st.columns(2)
+            with col1:
+                selected_date = st.date_input("Chọn Thứ, Ngày tháng năm", value=date.today(), format="DD/MM/YYYY")
+                staff_list = st.session_state.users["Họ và tên"].tolist()
+                selected_staff = st.selectbox("Chọn Cán bộ / Giáo viên / Nhân viên", staff_list)
+            with col2:
+                event_type = daily_sub
+                st.info(f"📌 Phân loại ghi nhận: **{event_type}**")
+                if event_type == "Lỗi vi phạm (Trừ điểm)":
+                    sel_crit_group = st.selectbox("Chọn Cấp 1 (Nhóm tiêu chí):", CRITERIA_GROUPS)
+                    filtered_crit = st.session_state.criteria[st.session_state.criteria[
+                                                                  "Nhóm tiêu chí"] == sel_crit_group] if not st.session_state.criteria.empty else st.session_state.criteria
+                    if not filtered_crit.empty:
+                        crit_display_options = filtered_crit["Mã TC"].astype(str) + " - " + filtered_crit[
+                            "Nội dung vi phạm"].astype(str) + " (-" + filtered_crit["điểm trừ"].astype(str) + "đ/lỗi)"
+                        selected_crit_idx = st.selectbox("Chọn Cấp 2 & 3 (Lỗi vi phạm & Mức trừ cụ thể):",
+                                                         options=range(len(crit_display_options)),
+                                                         format_func=lambda x: crit_display_options.iloc[x])
+                        chosen_crit_row = filtered_crit.iloc[selected_crit_idx]
+                        tc_code_str = str(chosen_crit_row["Mã TC"]).strip()
+                        if tc_code_str in ["TC6.1.3", "TC6.1.4"]:
+                            default_p = 0.70 if tc_code_str == "TC6.1.3" else 0.30
+                            unit_penalty = safe_float(chosen_crit_row["điểm trừ"], default_p)
+                            prompt_lbl = "📝 Nhập Số lỗi vi phạm khi ra đề chính (Số lỗi x Điểm trừ 1 lỗi):" if tc_code_str == "TC6.1.3" else "📝 Nhập Số lỗi vi phạm khi phản biện (Số lỗi x Điểm trừ 1 lỗi):"
+                            input_num_errors = st.number_input(prompt_lbl, min_value=1, max_value=50, value=1, step=1,
+                                                               key=f"{tc_code_str.lower().replace('.', '')}_num_errors_input")
+                            points_val = input_num_errors * unit_penalty
+                            if input_num_errors > 1:
+                                selected_content = f"[{chosen_crit_row['Mã TC']}] {chosen_crit_row['Nội dung vi phạm']} - Số lỗi: {input_num_errors} (Tổng trừ: -{points_val:.2f}đ)"
+                            else:
+                                selected_content = f"[{chosen_crit_row['Mã TC']}] {chosen_crit_row['Nội dung vi phạm']}"
                         else:
                             selected_content = f"[{chosen_crit_row['Mã TC']}] {chosen_crit_row['Nội dung vi phạm']}"
+                            points_val = safe_float(chosen_crit_row["điểm trừ"], 0.0)
                     else:
-                        selected_content = f"[{chosen_crit_row['Mã TC']}] {chosen_crit_row['Nội dung vi phạm']}"
-                        points_val = safe_float(chosen_crit_row["điểm trừ"], 0.0)
-                else:
-                    selected_content = "Vi phạm quy chế"
-                    points_val = 1.0
-                type_label = "Điểm trừ"
-            elif event_type == "Thành tích Khen thưởng (Cộng điểm)":
-                sel_main_cat = st.selectbox("Chọn Cấp 1 (Mục lớn khen thưởng):", REWARD_CATEGORIES)
-                filtered_rew = st.session_state.rewards[st.session_state.rewards[
-                                                            "Mục lớn"] == sel_main_cat] if not st.session_state.rewards.empty else st.session_state.rewards
-                if not filtered_rew.empty:
-                    rew_display_options = filtered_rew["Nội dung khen thưởng"].astype(str) + " - " + filtered_rew[
-                        "Thành tích / Mức khen thưởng"].astype(str) + " (+" + filtered_rew["Điểm cộng"].astype(
-                        str) + "đ/giải)"
-                    selected_rew_idx = st.selectbox("Chọn Cấp 2 & 3 (Tiêu chí & Thành tích cụ thể):",
-                                                    options=range(len(rew_display_options)),
-                                                    format_func=lambda x: rew_display_options.iloc[x])
-                    chosen_rew_row = filtered_rew.iloc[selected_rew_idx]
-                    # Ô nhập Số giải khi ghi nhận khen thưởng
-                    default_prizes = int(safe_float(chosen_rew_row.get("Số giải", 1), 1))
-                    input_prizes = st.number_input("🏆 Nhập Số lượng giải / Số lần đạt được (Số giải x Điểm cộng):",
-                                                   min_value=1, max_value=50,
-                                                   value=default_prizes if default_prizes >= 1 else 1, step=1,
-                                                   key="reward_num_prizes_input")
-                    unit_bonus = safe_float(chosen_rew_row["Điểm cộng"], 0.0)
-                    points_val = input_prizes * unit_bonus
-                    if input_prizes > 1:
-                        selected_content = f"{chosen_rew_row['Nội dung khen thưởng']} ({chosen_rew_row['Thành tích / Mức khen thưởng']}) - Số giải: {input_prizes} (Tổng: +{points_val:.1f}đ)"
+                        selected_content = "Vi phạm quy chế"
+                        points_val = 1.0
+                    type_label = "Điểm trừ"
+                elif event_type == "Thành tích Khen thưởng (Cộng điểm)":
+                    sel_main_cat = st.selectbox("Chọn Cấp 1 (Mục lớn khen thưởng):", REWARD_CATEGORIES)
+                    filtered_rew = st.session_state.rewards[st.session_state.rewards[
+                                                                "Mục lớn"] == sel_main_cat] if not st.session_state.rewards.empty else st.session_state.rewards
+                    if not filtered_rew.empty:
+                        rew_display_options = filtered_rew["Nội dung khen thưởng"].astype(str) + " - " + filtered_rew[
+                            "Thành tích / Mức khen thưởng"].astype(str) + " (+" + filtered_rew["Điểm cộng"].astype(
+                            str) + "đ/giải)"
+                        selected_rew_idx = st.selectbox("Chọn Cấp 2 & 3 (Tiêu chí & Thành tích cụ thể):",
+                                                        options=range(len(rew_display_options)),
+                                                        format_func=lambda x: rew_display_options.iloc[x])
+                        chosen_rew_row = filtered_rew.iloc[selected_rew_idx]
+                        default_prizes = int(safe_float(chosen_rew_row.get("Số giải", 1), 1))
+                        input_prizes = st.number_input("🏆 Nhập Số lượng giải / Số lần đạt được (Số giải x Điểm cộng):",
+                                                       min_value=1, max_value=50,
+                                                       value=default_prizes if default_prizes >= 1 else 1, step=1,
+                                                       key="reward_num_prizes_input")
+                        unit_bonus = safe_float(chosen_rew_row["Điểm cộng"], 0.0)
+                        points_val = input_prizes * unit_bonus
+                        if input_prizes > 1:
+                            selected_content = f"{chosen_rew_row['Nội dung khen thưởng']} ({chosen_rew_row['Thành tích / Mức khen thưởng']}) - Số giải: {input_prizes} (Tổng: +{points_val:.1f}đ)"
+                        else:
+                            selected_content = f"{chosen_rew_row['Nội dung khen thưởng']} ({chosen_rew_row['Thành tích / Mức khen thưởng']})"
                     else:
-                        selected_content = f"{chosen_rew_row['Nội dung khen thưởng']} ({chosen_rew_row['Thành tích / Mức khen thưởng']})"
+                        selected_content = "Khen thưởng phát sinh"
+                        points_val = 10.0
+                    type_label = "Điểm cộng"
                 else:
-                    selected_content = "Khen thưởng phát sinh"
-                    points_val = 10.0
-                type_label = "Điểm cộng"
-            else:
-                # 📊 Đánh giá điểm KSCL (Tiêu chí 5 - Tự động so sánh 2 kỳ)
-                st.markdown("##### 📊 Nhập điểm KSCL & Tự động so sánh với kỳ liền kề")
-                staff_matches_tmp = st.session_state.users[st.session_state.users["Họ và tên"] == selected_staff]
-                default_class = staff_matches_tmp.iloc[0]["Lớp dạy"] if not staff_matches_tmp.empty else "10A1"
-                class_options = [f"{g}A{i}" for g in [10, 11, 12] for i in range(1, 10)]
-                raw_default_cls = str(default_class).split(',')[0].strip() if default_class else "10A1"
-                default_cls_idx = class_options.index(raw_default_cls) if raw_default_cls in class_options else 0
-                c_k1, c_k2 = st.columns(2)
-                with c_k1:
-                    kscl_class = st.selectbox("Lớp giảng dạy:", class_options, index=default_cls_idx,
-                                              key="kscl_class_select")
-                    kscl_subject = st.selectbox("Môn giảng dạy:",
-                                                ["Toán", "Ngữ văn", "Tiếng Anh", "Vật lý", "Hóa học", "Sinh học",
-                                                 "Lịch sử", "Địa lý", "GDKTPL", "Tin học", "CNCN", "CNNN"],
-                                                key="kscl_subj_select")
-                baseline_key = f"{selected_staff}_{kscl_class.strip()}_{kscl_subject}"
-                # Tính số đợt KSCL đã ghi nhận cho GV, Lớp, Môn này (k)
-                kscl_matches = [h for h in st.session_state.get("kscl_history", []) if
-                                h.get("Cán bộ") == selected_staff and str(
-                                    h.get("Lớp", "")).strip() == kscl_class.strip() and h.get("Môn") == kscl_subject]
-                k_count = len(kscl_matches)
-                ALL_KSCL_EXAMS = ["KSCL Lần 0", "KSCL Lần 1", "KSCL Lần 2", "KSCL Lần 3", "KSCL Lần 4",
-                                  "KSCL Lần 5", "KSCL Lần 6", "KSCL Lần 7", "KSCL Lần 8", "KSCL Lần 9", "KSCL Lần 10"]
-                if k_count < len(ALL_KSCL_EXAMS):
-                    next_exam_name = ALL_KSCL_EXAMS[k_count]
-                else:
-                    next_exam_name = f"KSCL Lần {k_count + 1}"
-                with c_k2:
-                    kscl_exam_name = st.selectbox("Tên Kỳ KSCL đợt này (Kỳ thứ k+1):", [next_exam_name],
-                                                  key=f"kscl_exam_select_{baseline_key}_{k_count}")
-                    kscl_curr_score = st.number_input("Điểm TB KSCL kỳ này ($S_{n+1}$):", min_value=0.0, max_value=10.0,
-                                                      value=6.50, step=0.05,
-                                                      key=f"kscl_score_input_{baseline_key}_{k_count}")
-                has_baseline = baseline_key in st.session_state.kscl_baselines
-                if not has_baseline:
-                    st.info(
-                        f"ℹ️ **Lần nhập đầu tiên (Mốc S1 - {next_exam_name}):** Chưa có điểm kỳ trước cho Lớp {kscl_class.strip()} - Môn {kscl_subject} (GV {selected_staff}). Điểm **{kscl_curr_score:.2f}** sẽ được lưu làm MỐC ĐẦU VÀO ($S_1$) để tự động so sánh với kỳ KSCL tiếp theo.")
-                    selected_content = f"[KSCL {next_exam_name}] Lớp {kscl_class.strip()} - Môn {kscl_subject}: Lưu mốc điểm đầu vào S1 = {kscl_curr_score:.2f}"
-                    points_val = 0.0
-                    type_label = "Thông tin Mốc KSCL"
-                else:
-                    prev_info = st.session_state.kscl_baselines[baseline_key]
-                    s_prev = float(prev_info["last_score"])
-                    prev_exam = prev_info["last_exam"]
-                    delta, pts, desc_msg = calculate_kscl_points(s_prev, kscl_curr_score)
-                    m1, m2, m3, m4 = st.columns(4)
-                    m1.metric(f"Mốc kỳ trước ($S_n$ - {prev_exam})", f"{s_prev:.2f}")
-                    m2.metric(f"Kỳ này ($S_{{n+1}}$ - {next_exam_name})", f"{kscl_curr_score:.2f}")
-                    m3.metric(r"Chỉ số tăng ($\Delta$)", f"{delta:+.2f}")
-                    m4.metric("Điểm thi đua tự động", f"{pts:+.1f} điểm", delta=desc_msg)
-                    selected_content = f"[KSCL {next_exam_name}] Lớp {kscl_class.strip()} - Môn {kscl_subject} (Kỳ trước {s_prev:.2f} ➔ Kỳ này {kscl_curr_score:.2f}, {desc_msg})"
-                    points_val = abs(pts)
-                    type_label = "Điểm cộng" if pts >= 0 else "Điểm trừ"
-            note = st.text_area("Ghi chú bổ sung (nếu có)")
-        if st.button("💾 Lưu đánh giá & Tự động gửi thông báo"):
-            staff_matches = st.session_state.users[st.session_state.users["Họ và tên"] == selected_staff]
-            if not staff_matches.empty:
-                staff_info = staff_matches.iloc[0]
-                date_formatted = selected_date.strftime("%d/%m/%Y")
-                # Nếu là sự kiện KSCL
-                if event_type == "📊 Đánh giá điểm KSCL (Tiêu chí 5 - Tự động so sánh 2 kỳ)":
+                    st.markdown("##### 📊 Nhập điểm KSCL & Tự động so sánh với kỳ liền kề")
+                    staff_matches_tmp = st.session_state.users[st.session_state.users["Họ và tên"] == selected_staff]
+                    default_class = staff_matches_tmp.iloc[0]["Lớp dạy"] if not staff_matches_tmp.empty else "10A1"
+                    class_options = [f"{g}A{i}" for g in [10, 11, 12] for i in range(1, 10)]
+                    raw_default_cls = str(default_class).split(',')[0].strip() if default_class else "10A1"
+                    default_cls_idx = class_options.index(raw_default_cls) if raw_default_cls in class_options else 0
+                    c_k1, c_k2 = st.columns(2)
+                    with c_k1:
+                        kscl_class = st.selectbox("Lớp giảng dạy:", class_options, index=default_cls_idx,
+                                                  key="kscl_class_select")
+                        kscl_subject = st.selectbox("Môn giảng dạy:",
+                                                    ["Toán", "Ngữ văn", "Tiếng Anh", "Vật lý", "Hóa học", "Sinh học",
+                                                     "Lịch sử", "Địa lý", "GDKTPL", "Tin học", "CNCN", "CNNN"],
+                                                    key="kscl_subj_select")
                     baseline_key = f"{selected_staff}_{kscl_class.strip()}_{kscl_subject}"
+                    kscl_matches = [h for h in st.session_state.get("kscl_history", []) if
+                                    h.get("Cán bộ") == selected_staff and str(
+                                        h.get("Lớp", "")).strip() == kscl_class.strip() and h.get(
+                                        "Môn") == kscl_subject]
+                    k_count = len(kscl_matches)
+                    ALL_KSCL_EXAMS = ["KSCL Lần 0", "KSCL Lần 1", "KSCL Lần 2", "KSCL Lần 3", "KSCL Lần 4",
+                                      "KSCL Lần 5", "KSCL Lần 6", "KSCL Lần 7", "KSCL Lần 8", "KSCL Lần 9",
+                                      "KSCL Lần 10"]
+                    if k_count < len(ALL_KSCL_EXAMS):
+                        next_exam_name = ALL_KSCL_EXAMS[k_count]
+                    else:
+                        next_exam_name = f"KSCL Lần {k_count + 1}"
+                    with c_k2:
+                        kscl_exam_name = st.selectbox("Tên Kỳ KSCL đợt này (Kỳ thứ k+1):", [next_exam_name],
+                                                      key=f"kscl_exam_select_{baseline_key}_{k_count}")
+                        kscl_curr_score = st.number_input("Điểm TB KSCL kỳ này ($S_{n+1}$):", min_value=0.0,
+                                                          max_value=10.0, value=6.50, step=0.05,
+                                                          key=f"kscl_score_input_{baseline_key}_{k_count}")
                     has_baseline = baseline_key in st.session_state.kscl_baselines
                     if not has_baseline:
-                        # Lưu mốc đầu vào S1
-                        st.session_state.kscl_baselines[baseline_key] = {
-                            "teacher": selected_staff,
-                            "class": kscl_class.strip(),
-                            "subject": kscl_subject,
-                            "last_exam": kscl_exam_name,
-                            "last_score": safe_float(kscl_curr_score, 0.0),
-                            "last_date": date_formatted
-                        }
-                        st.session_state.kscl_history.append({
-                            "ID": len(st.session_state.kscl_history) + 1,
-                            "Ngày": date_formatted,
-                            "Cán bộ": selected_staff,
-                            "Lớp": kscl_class.strip(),
-                            "Môn": kscl_subject,
-                            "Kỳ KSCL": kscl_exam_name,
-                            "Điểm TB": safe_float(kscl_curr_score, 0.0),
-                            "Điểm kỳ trước": "-",
-                            "Chỉ số tăng": "-",
-                            "Điểm thi đua": 0.0,
-                            "Ghi chú": "Lưu Mốc đầu vào (S1)"
-                        })
-                        save_data_to_disk()
-                        st.success(
-                            f"✅ Đã lưu thành công Mốc điểm đầu vào S1 ({kscl_curr_score:.2f}) cho Lớp {kscl_class.strip()} - Môn {kscl_subject} (GV {selected_staff})!")
-                        st.info("💡 Mốc điểm này sẽ được tự động làm baseline so sánh khi nhập điểm kỳ KSCL tiếp theo.")
+                        st.info(
+                            f"ℹ️ **Lần nhập đầu tiên (Mốc S1 - {next_exam_name}):** Chưa có điểm kỳ trước cho Lớp {kscl_class.strip()} - Môn {kscl_subject} (GV {selected_staff}). Điểm **{kscl_curr_score:.2f}** sẽ được lưu làm MỐC ĐẦU VÀO ($S_1$) để tự động so sánh với kỳ KSCL tiếp theo.")
+                        selected_content = f"[KSCL {next_exam_name}] Lớp {kscl_class.strip()} - Môn {kscl_subject}: Lưu mốc điểm đầu vào S1 = {kscl_curr_score:.2f}"
+                        points_val = 0.0
+                        type_label = "Thông tin Mốc KSCL"
                     else:
-                        # So sánh kỳ n và n+1
                         prev_info = st.session_state.kscl_baselines[baseline_key]
                         s_prev = float(prev_info["last_score"])
                         prev_exam = prev_info["last_exam"]
                         delta, pts, desc_msg = calculate_kscl_points(s_prev, kscl_curr_score)
+                        m1, m2, m3, m4 = st.columns(4)
+                        m1.metric(f"Mốc kỳ trước ($S_n$ - {prev_exam})", f"{s_prev:.2f}")
+                        m2.metric(f"Kỳ này ($S_{{n+1}}$ - {next_exam_name})", f"{kscl_curr_score:.2f}")
+                        m3.metric(r"Chỉ số tăng ($\Delta$)", f"{delta:+.2f}")
+                        m4.metric("Điểm thi đua tự động", f"{pts:+.1f} điểm", delta=desc_msg)
+                        selected_content = f"[KSCL {next_exam_name}] Lớp {kscl_class.strip()} - Môn {kscl_subject} (Kỳ trước {s_prev:.2f} ➔ Kỳ này {kscl_curr_score:.2f}, {desc_msg})"
+                        points_val = abs(pts)
+                        type_label = "Điểm cộng" if pts >= 0 else "Điểm trừ"
+                note = st.text_area("Ghi chú bổ sung (nếu có)")
+            if st.button("💾 Lưu đánh giá & Tự động gửi thông báo"):
+                staff_matches = st.session_state.users[st.session_state.users["Họ và tên"] == selected_staff]
+                if not staff_matches.empty:
+                    staff_info = staff_matches.iloc[0]
+                    date_formatted = selected_date.strftime("%d/%m/%Y")
+
+                    teacher_email = str(staff_info.get("Email", "")).strip() if pd.notna(
+                        staff_info.get("Email")) else f"{selected_staff.lower().replace(' ', '')}@vinhyen.edu.vn"
+                    if not teacher_email or "@" not in teacher_email:
+                        teacher_email = f"{selected_staff.lower().replace(' ', '')}@vinhyen.edu.vn"
+                    msg_tag = "THÔNG BÁO THI ĐUA"
+                    tammi_text = ""
+                    email_subject = ""
+                    email_html = ""
+                    success_msg = ""
+                    if event_type == "📊 Đánh giá điểm KSCL (Tiêu chí 5 - Tự động so sánh 2 kỳ)":
+                        baseline_key = f"{selected_staff}_{kscl_class.strip()}_{kscl_subject}"
+                        has_baseline = baseline_key in st.session_state.kscl_baselines
+                        if not has_baseline:
+                            # Lưu mốc S1
+                            st.session_state.kscl_baselines[baseline_key] = {
+                                "teacher": selected_staff,
+                                "class": kscl_class.strip(),
+                                "subject": kscl_subject,
+                                "last_exam": kscl_exam_name,
+                                "last_score": safe_float(kscl_curr_score, 0.0),
+                                "last_date": date_formatted
+                            }
+                            st.session_state.kscl_history.append({
+                                "ID": len(st.session_state.kscl_history) + 1,
+                                "Ngày": date_formatted,
+                                "Cán bộ": selected_staff,
+                                "Lớp": kscl_class.strip(),
+                                "Môn": kscl_subject,
+                                "Kỳ KSCL": kscl_exam_name,
+                                "Điểm TB": safe_float(kscl_curr_score, 0.0),
+                                "Điểm kỳ trước": "-",
+                                "Chỉ số tăng": "-",
+                                "Điểm thi đua": 0.0,
+                                "Ghi chú": "Lưu Mốc đầu vào (S1)"
+                            })
+                            msg_tag = "MỐC DỮ LIỆU KSCL (S1)"
+                            tammi_text = f"💬 [THPT VĨNH YÊN] Thông báo KSCL ngày {date_formatted}: Kính gửi {selected_staff}, đã lưu Mốc điểm đầu vào S1 = {kscl_curr_score:.2f} cho Lớp {kscl_class.strip()} - Môn {kscl_subject} ({kscl_exam_name}). SĐT: {staff_info.get('SĐT', '')}."
+                            email_subject = f"[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp {kscl_class.strip()} Môn {kscl_subject} - {selected_staff}"
+                            email_html = build_email_html(selected_staff, "Mốc KSCL S1", date_formatted,
+                                                          selected_content, 0.0, 0.0, note)
+                            success_msg = f"✅ Đã lưu thành công Mốc điểm đầu vào S1 ({kscl_curr_score:.2f}) cho Lớp {kscl_class.strip()} - Môn {kscl_subject} (GV {selected_staff}) và tự động gửi Email thông báo!"
+                        else:
+                            # KSCL lần k (k >= 1)
+                            prev_info = st.session_state.kscl_baselines[baseline_key]
+                            s_prev = float(prev_info["last_score"])
+                            prev_exam = prev_info["last_exam"]
+                            delta, pts, desc_msg = calculate_kscl_points(s_prev, kscl_curr_score)
+                            type_label = "Điểm cộng" if pts >= 0 else "Điểm trừ"
+                            points_val = abs(pts)
+                            log_entry = {
+                                "Ngày": date_formatted,
+                                "Cán bộ": selected_staff,
+                                "Tổ chuyên môn": staff_info["Tổ chuyên môn"],
+                                "Loại": type_label,
+                                "Nội dung": selected_content,
+                                "Số điểm": points_val,
+                                "Ghi chú": note
+                            }
+                            st.session_state.logs.append(log_entry)
+                            st.session_state.kscl_baselines[baseline_key] = {
+                                "teacher": selected_staff,
+                                "class": kscl_class.strip(),
+                                "subject": kscl_subject,
+                                "last_exam": kscl_exam_name,
+                                "last_score": safe_float(kscl_curr_score, 0.0),
+                                "last_date": date_formatted
+                            }
+                            st.session_state.kscl_history.append({
+                                "ID": len(st.session_state.kscl_history) + 1,
+                                "Ngày": date_formatted,
+                                "Cán bộ": selected_staff,
+                                "Lớp": kscl_class.strip(),
+                                "Môn": kscl_subject,
+                                "Kỳ KSCL": kscl_exam_name,
+                                "Điểm TB": safe_float(kscl_curr_score, 0.0),
+                                "Điểm kỳ trước": s_prev,
+                                "Chỉ số tăng": delta,
+                                "Điểm thi đua": pts,
+                                "Ghi chú": note
+                            })
+                            msg_tag = f"KSCL ({'CỘNG ĐIỂM' if pts >= 0 else 'TRỪ ĐIỂM'})"
+                            tammi_text = f"💬 [THPT VĨNH YÊN] Thông báo KSCL ngày {date_formatted}: Kính gửi {selected_staff}, kết quả {kscl_exam_name} Lớp {kscl_class.strip()} - Môn {kscl_subject} đạt ĐTB {kscl_curr_score:.2f} (Kỳ trước {s_prev:.2f}, Tăng {delta:+.2f}). Hệ thống ghi nhận: {desc_msg} ({pts:+.1f}đ thi đua). SĐT: {staff_info.get('SĐT', '')}."
+                            email_subject = f"[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp {kscl_class.strip()} Môn {kscl_subject} - {selected_staff}"
+                            user_logs = [l for l in st.session_state.logs if l.get("Cán bộ") == selected_staff]
+                            tot_bon = sum(
+                                [safe_float(l.get("Số điểm"), 0.0) for l in user_logs if l.get("Loại") == "Điểm cộng"])
+                            tot_kscl_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in user_logs if
+                                                l.get("Loại") == "Điểm trừ" and l.get("Nội dung", "").startswith(
+                                                    "[KSCL")])
+                            calc_score = tot_bon - tot_kscl_pen
+                            email_html = build_email_html(selected_staff, "KSCL", date_formatted, selected_content, pts,
+                                                          calc_score, note)
+                            success_msg = f"✅ Đã lưu kết quả {kscl_exam_name} cho Thầy/Cô **{selected_staff}** ({pts:+.1f} điểm thi đua) và tự động phát Email thông báo!"
+                    else:
+                        # Non-KSCL event ("Lỗi vi phạm" or "Thành tích Khen thưởng")
                         log_entry = {
                             "Ngày": date_formatted,
                             "Cán bộ": selected_staff,
                             "Tổ chuyên môn": staff_info["Tổ chuyên môn"],
-                            "Loại": "Điểm cộng" if pts >= 0 else "Điểm trừ",
+                            "Loại": type_label,
                             "Nội dung": selected_content,
-                            "Số điểm": abs(pts),
+                            "Số điểm": points_val,
                             "Ghi chú": note
                         }
                         st.session_state.logs.append(log_entry)
-                        # Cập nhật mốc mới Sn+1 làm Sn cho kỳ tiếp theo
-                        st.session_state.kscl_baselines[baseline_key] = {
-                            "teacher": selected_staff,
-                            "class": kscl_class.strip(),
-                            "subject": kscl_subject,
-                            "last_exam": kscl_exam_name,
-                            "last_score": safe_float(kscl_curr_score, 0.0),
-                            "last_date": date_formatted
-                        }
-                        st.session_state.kscl_history.append({
-                            "ID": len(st.session_state.kscl_history) + 1,
-                            "Ngày": date_formatted,
-                            "Cán bộ": selected_staff,
-                            "Lớp": kscl_class.strip(),
-                            "Môn": kscl_subject,
-                            "Kỳ KSCL": kscl_exam_name,
-                            "Điểm TB": safe_float(kscl_curr_score, 0.0),
-                            "Điểm kỳ trước": s_prev,
-                            "Chỉ số tăng": delta,
-                            "Điểm thi đua": pts,
-                            "Ghi chú": desc_msg
-                        })
-                        tammi_text = f"💬 [THPT VĨNH YÊN] Thông báo KSCL ngày {date_formatted}: Kính gửi {selected_staff}, kết quả {kscl_exam_name} Lớp {kscl_class.strip()} - Môn {kscl_subject} đạt ĐTB {kscl_curr_score:.2f} (Kỳ trước {s_prev:.2f}, Tăng {delta:+.2f}). Hệ thống ghi nhận: {desc_msg} ({pts:+.1f}đ thi đua)."
-                        t_cfg = st.session_state.get("tammi_config", {})
-                        t_status_ok, t_status_msg = send_viettel_tammi_message(staff_info["SĐT"], tammi_text, t_cfg)
-                        st.session_state.tammi_history.append({
-                            "Thời gian": date_formatted,
-                            "Người nhận": selected_staff,
-                            "SĐT Tammi": staff_info["SĐT"],
-                            "Phân loại": "ĐÁNH GIÁ KSCL",
-                            "Nội dung Tin nhắn Tammi": tammi_text,
-                            "Trạng thái Viettel Tammi": "Đã gửi thành công" if t_status_ok else t_status_msg
-                        })
-                        st.session_state.guitin_list.append({
-                            "SĐT": str(staff_info["SĐT"]).strip(),
-                            "Họ và tên": selected_staff,
-                            "Thời gian": date_formatted,
-                            "Loại thông báo": "ĐÁNH GIÁ KSCL",
-                            "Nội dung ghi nhận": selected_content,
-                            "Số điểm": f"{pts:+.1f}",
-                            "Nội dung tin nhắn": tammi_text,
-                            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
-                        })
-                        # Tự động phát Email HTML cho Giáo viên
-                        teacher_email = str(staff_info.get("Email", "")).strip()
-                        if not teacher_email or "@" not in teacher_email:
-                            teacher_email = f"{selected_staff.lower().replace(' ', '')}@vinhyen.edu.vn"
-                        email_subject = f"[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp {kscl_class.strip()} Môn {kscl_subject} - {selected_staff}"
-                        user_logs = [l for l in st.session_state.logs if l.get("Cán bộ") == selected_staff]
-                        tot_bon = sum(
-                            [safe_float(l.get("Số điểm"), 0.0) for l in user_logs if l.get("Loại") == "Điểm cộng"])
-                        tot_kscl_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in user_logs if
-                                            l.get("Loại") == "Điểm trừ" and l.get("Nội dung", "").startswith("[KSCL")])
-                        net_emul_score = tot_bon - tot_kscl_pen
-                        evt_type_lbl = "ĐÁNH GIÁ KHẢO SÁT CHẤT LƯỢNG (KSCL)"
-                        email_html = build_email_html(selected_staff, evt_type_lbl, date_formatted, selected_content,
-                                                      pts, net_emul_score, note)
-                        e_cfg = st.session_state.get("email_config", {})
-                        e_status_ok, e_status_msg = send_email_notification(teacher_email, email_subject, email_html,
-                                                                            e_cfg)
-                        st.session_state.email_history.append({
-                            "Thời gian": date_formatted,
-                            "Người nhận": selected_staff,
-                            "Email cá nhân": teacher_email,
-                            "Phân loại": "ĐÁNH GIÁ KSCL",
-                            "Tiêu đề Email": email_subject,
-                            "Nội dung ghi nhận": selected_content,
-                            "Trạng thái Email": "Đã gửi thành công (200 OK)" if e_status_ok else e_status_msg
-                        })
-                        save_data_to_disk()
-                        st.success(
-                            f"✅ Đã lưu & Tự động tính điểm KSCL cho {selected_staff}! Điểm thi đua: {pts:+.1f} điểm.")
-                        st.info(
-                            f"📧 **Hệ thống đã tự động gửi Email HTML thông báo trang trọng tới:** `{teacher_email}`")
-                else:
-                    log_entry = {
-                        "Ngày": date_formatted,
-                        "Cán bộ": selected_staff,
-                        "Tổ chuyên môn": staff_info["Tổ chuyên môn"],
-                        "Loại": type_label,
-                        "Nội dung": selected_content,
-                        "Số điểm": points_val,
-                        "Ghi chú": note
-                    }
-                    st.session_state.logs.append(log_entry)
-                    if type_label == "Điểm trừ":
-                        msg_tag = "VI PHẠM (TRỪ ĐIỂM)"
-                        tammi_text = f"💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày {date_formatted}: Kính gửi {selected_staff}, Hệ thống ghi nhận lỗi vi phạm: '{selected_content}' (Điểm trừ: -{points_val} điểm). SĐT nhận: {staff_info['SĐT']}."
-                    else:
-                        msg_tag = "KHEN THƯỞNG (CỘNG ĐIỂM)"
-                        tammi_text = f"💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày {date_formatted}: Kính gửi {selected_staff}, Hệ thống ghi nhận khen thưởng: '{selected_content}' (Điểm cộng: +{points_val} điểm). SĐT nhận: {staff_info['SĐT']}."
+                        if type_label == "Điểm trừ":
+                            msg_tag = "VI PHẠM (TRỪ ĐIỂM)"
+                            tammi_text = f"💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày {date_formatted}: Kính gửi {selected_staff}, Hệ thống ghi nhận lỗi: '{selected_content}' (Trừ điểm: -{points_val} điểm). SĐT: {staff_info.get('SĐT', '')}."
+                            email_subject = f"[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày {date_formatted} - {selected_staff}"
+                            user_logs = [l for l in st.session_state.logs if l.get("Cán bộ") == selected_staff]
+                            tot_vc_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in user_logs if
+                                              l.get("Loại") == "Điểm trừ" and not l.get("Nội dung", "").startswith(
+                                                  "[KSCL")])
+                            calc_score = 100.0 - tot_vc_pen
+                        else:
+                            msg_tag = "KHEN THƯỞNG (CỘNG ĐIỂM)"
+                            tammi_text = f"💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày {date_formatted}: Kính gửi {selected_staff}, Hệ thống ghi nhận khen thưởng: '{selected_content}' (Điểm cộng: +{points_val} điểm). SĐT: {staff_info.get('SĐT', '')}."
+                            email_subject = f"[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày {date_formatted} - {selected_staff}"
+                            user_logs = [l for l in st.session_state.logs if l.get("Cán bộ") == selected_staff]
+                            tot_bon = sum(
+                                [safe_float(l.get("Số điểm"), 0.0) for l in user_logs if l.get("Loại") == "Điểm cộng"])
+                            tot_kscl_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in user_logs if
+                                                l.get("Loại") == "Điểm trừ" and l.get("Nội dung", "").startswith(
+                                                    "[KSCL")])
+                            calc_score = tot_bon - tot_kscl_pen
+                        email_html = build_email_html(selected_staff, type_label, date_formatted, selected_content,
+                                                      points_val, calc_score, note)
+                        success_msg = f"✅ Đã xác nhận & lưu thông tin đánh giá thi đua cho cán bộ **{selected_staff}**!"
+                    # TỰ ĐỘNG PHÁT VIETTEL TAMMI & EMAIL CHO TẤT CẢ CÁC LOẠI SỰ KIỆN
                     t_cfg = st.session_state.get("tammi_config", {})
-                    t_status_ok, t_status_msg = send_viettel_tammi_message(staff_info["SĐT"], tammi_text, t_cfg)
+                    t_status_ok, t_status_msg = send_viettel_tammi_message(staff_info.get("SĐT", ""), tammi_text, t_cfg)
                     st.session_state.tammi_history.append({
                         "Thời gian": date_formatted,
                         "Người nhận": selected_staff,
-                        "SĐT Tammi": staff_info["SĐT"],
+                        "SĐT Tammi": staff_info.get("SĐT", ""),
                         "Phân loại": msg_tag,
                         "Nội dung Tin nhắn Tammi": tammi_text,
                         "Trạng thái Viettel Tammi": "Đã gửi thành công" if t_status_ok else t_status_msg
                     })
                     st.session_state.guitin_list.append({
-                        "SĐT": str(staff_info["SĐT"]).strip(),
+                        "SĐT": str(staff_info.get("SĐT", "")).strip(),
                         "Họ và tên": selected_staff,
                         "Thời gian": date_formatted,
                         "Loại thông báo": msg_tag,
@@ -2063,28 +2482,8 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
                         "Nội dung tin nhắn": tammi_text,
                         "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
                     })
-                    # Tự động phát Email HTML cho Giáo viên
-                    teacher_email = str(staff_info.get("Email", "")).strip()
-                    if not teacher_email or "@" not in teacher_email:
-                        teacher_email = f"{selected_staff.lower().replace(' ', '')}@vinhyen.edu.vn"
-                    user_logs = [l for l in st.session_state.logs if l.get("Cán bộ") == selected_staff]
-                    if type_label == "Điểm trừ":
-                        email_subject = f"[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày {date_formatted} - {selected_staff}"
-                        tot_vc_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in user_logs if
-                                          l.get("Loại") == "Điểm trừ" and not l.get("Nội dung", "").startswith(
-                                              "[KSCL")])
-                        calc_score = 100.0 - tot_vc_pen
-                    else:
-                        email_subject = f"[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày {date_formatted} - {selected_staff}"
-                        tot_bon = sum(
-                            [safe_float(l.get("Số điểm"), 0.0) for l in user_logs if l.get("Loại") == "Điểm cộng"])
-                        tot_kscl_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in user_logs if
-                                            l.get("Loại") == "Điểm trừ" and l.get("Nội dung", "").startswith("[KSCL")])
-                        calc_score = tot_bon - tot_kscl_pen
-                    email_html = build_email_html(selected_staff, type_label, date_formatted, selected_content,
-                                                  points_val, calc_score, note)
                     e_cfg = st.session_state.get("email_config", {})
-                    e_status_ok, e_status_msg = send_email_notification(teacher_email, email_subject, email_html, e_cfg)
+                    ok_e, msg_e = send_email_notification(teacher_email, email_subject, email_html, e_cfg)
                     st.session_state.email_history.append({
                         "Thời gian": date_formatted,
                         "Người nhận": selected_staff,
@@ -2092,13 +2491,12 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
                         "Phân loại": msg_tag,
                         "Tiêu đề Email": email_subject,
                         "Nội dung ghi nhận": selected_content,
-                        "Trạng thái Email": "Đã gửi thành công (200 OK)" if e_status_ok else e_status_msg
+                        "Trạng thái Email": "Đã gửi thành công (200 OK)" if ok_e else msg_e
                     })
                     save_data_to_disk()
-                    st.success(f"✅ Đã xác nhận & lưu thông tin đánh giá thi đua cho cán bộ **{selected_staff}**!")
+                    st.success(success_msg)
                     st.info(f"📧 **Hệ thống đã tự động gửi Email HTML thông báo trang trọng tới:** `{teacher_email}`")
-# CHỨC NĂNG 4: BẢNG TIN THI ĐỦA CÁ NHÂN (DÀNH CHO GIÁO VIÊN VÀ XEM THỬ)
-# -----------------------------------------------------------------------------
+
 elif role.startswith("4. ĐIỂM CỦA CÁ NHÂN"):
     st.header("📊 Thông tin điểm đánh giá viên chức và điểm Thi đua của cá nhân")
     curr_u = st.session_state.current_user if st.session_state.get("current_user") is not None else {"name": "Admin",
