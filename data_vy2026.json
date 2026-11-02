@@ -3255,8 +3255,52 @@
         }
     ],
     "tammi_config": {},
-    "kscl_history": [],
-    "kscl_baselines": {},
+    "kscl_history": [
+        {
+            "ID": 1,
+            "Ngày": "01/11/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Lớp": "12A1",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 4.15,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 2,
+            "Ngày": "01/11/2026",
+            "Cán bộ": "Lê Thị Hiền",
+            "Lớp": "10A1",
+            "Môn": "Ngữ văn",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 7.85,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        }
+    ],
+    "kscl_baselines": {
+        "Lê Hồng Thái_12A1_Toán": {
+            "teacher": "Lê Hồng Thái",
+            "class": "12A1",
+            "subject": "Toán",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 4.15,
+            "last_date": "01/11/2026"
+        },
+        "Lê Thị Hiền_10A1_Ngữ văn": {
+            "teacher": "Lê Thị Hiền",
+            "class": "10A1",
+            "subject": "Ngữ văn",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 7.85,
+            "last_date": "01/11/2026"
+        }
+    },
     "guitin_list": [
         {
             "SĐT": "0982552288",
@@ -5381,7 +5425,7 @@
         },
         {
             "username": "gv55",
-            "password": "123456",
+            "password": "Hang171276@",
             "role": "Giáo viên",
             "name": "Phạm Minh Hằng",
             "email": "minhhangvp6801@gmail.com",
