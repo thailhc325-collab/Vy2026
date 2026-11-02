@@ -479,232 +479,6 @@ def sync_teacher_accounts():
                 })
 
 
-
-def render_manage_logs_ui():
-    st.subheader("📜 Quản lý, Điều chỉnh (Sửa) & Xóa Nhật ký Thi đua")
-    st.info("💡 **Chức năng này cho phép Admin / Cán bộ Theo dõi chỉnh sửa hoặc xóa các ghi nhận vi phạm / khen thưởng của Giáo viên. Điểm Đánh giá Viên chức và Điểm Thi đua sẽ tự động được cập nhật/hoàn trả ngay lập tức, đồng thời gửi thông báo tự động tới Giáo viên.**")
-    
-    if not st.session_state.get("logs"):
-        st.info("ℹ️ Chưa có nhật ký vi phạm hoặc khen thưởng nào trong hệ thống.")
-        return
-
-    # Bộ lọc danh sách nhật ký
-    c_f1, c_f2, c_f3 = st.columns(3)
-    with c_f1:
-        staff_list_unique = sorted(list(set([str(l.get("Cán bộ", "")).strip() for l in st.session_state.logs if l.get("Cán bộ")])))
-        staff_options = ["Tất cả Cán bộ / Giáo viên"] + staff_list_unique
-        sel_filter_staff = st.selectbox("🔍 Lọc theo Giáo viên:", staff_options, key="log_edit_filter_staff")
-    with c_f2:
-        sel_filter_type = st.selectbox("🏷️ Lọc theo Phân loại:", ["Tất cả", "Điểm trừ (Vi phạm)", "Điểm cộng (Thành tích)"], key="log_edit_filter_type")
-    with c_f3:
-        search_kw = st.text_input("🔎 Tìm từ khóa nội dung:", key="log_edit_search_kw")
-
-    # Lọc danh sách logs
-    matching_indices = []
-    for idx, l in enumerate(st.session_state.logs):
-        if sel_filter_staff != "Tất cả Cán bộ / Giáo viên" and str(l.get("Cán bộ", "")).strip() != sel_filter_staff:
-            continue
-        if sel_filter_type == "Điểm trừ (Vi phạm)" and l.get("Loại") != "Điểm trừ":
-            continue
-        if sel_filter_type == "Điểm cộng (Thành tích)" and l.get("Loại") != "Điểm cộng":
-            continue
-        if search_kw.strip() and search_kw.strip().lower() not in str(l.get("Nội dung", "")).lower():
-            continue
-        matching_indices.append(idx)
-
-    if not matching_indices:
-        st.warning("⚠️ Không tìm thấy ghi nhận nào phù hợp với bộ lọc trên.")
-        return
-
-    # Hiển thị bảng tổng hợp các log tìm thấy
-    display_data = []
-    for i, idx in enumerate(matching_indices):
-        l = st.session_state.logs[idx]
-        display_data.append({
-            "STT": i + 1,
-            "Ngày": l.get("Ngày", ""),
-            "Cán bộ": l.get("Cán bộ", ""),
-            "Tổ chuyên môn": l.get("Tổ chuyên môn", ""),
-            "Phân loại": l.get("Loại", ""),
-            "Nội dung ghi nhận": l.get("Nội dung", ""),
-            "Số điểm": f"-{safe_float(l.get('Số điểm'), 0.0):.1f}" if l.get("Loại") == "Điểm trừ" else f"+{safe_float(l.get('Số điểm'), 0.0):.1f}",
-            "Ghi chú": l.get("Ghi chú", "")
-        })
-
-    st.markdown("##### 📊 Danh sách Nhật ký Ghi nhận Thi đua:")
-    st.dataframe(pd.DataFrame(display_data), use_container_width=True)
-
-    st.markdown("---")
-    st.markdown("##### ⚙️ Thao tác Sửa / Xóa Ghi nhận:")
-
-    # Selectbox chọn dòng nhật ký để thao tác
-    log_select_options = [
-        f"Dòng {i+1}. [{st.session_state.logs[idx].get('Ngày')}] {st.session_state.logs[idx].get('Cán bộ')} - {st.session_state.logs[idx].get('Loại')}: {st.session_state.logs[idx].get('Nội dung')} ({st.session_state.logs[idx].get('Số điểm')}đ)"
-        for i, idx in enumerate(matching_indices)
-    ]
-    
-    selected_option_idx = st.selectbox(
-        "👉 Chọn dòng nhật ký cần Sửa hoặc Xóa:",
-        options=range(len(log_select_options)),
-        format_func=lambda x: log_select_options[x],
-        key="sel_log_action_idx"
-    )
-
-    real_log_idx = matching_indices[selected_option_idx]
-    target_log = st.session_state.logs[real_log_idx]
-
-    tab_edit, tab_delete = st.tabs(["✏️ 1. Chỉnh sửa (Sửa ghi nhận)", "🗑️ 2. Xóa ghi nhận"])
-
-    # --- TAB 1: SỬA GHI NHẬN ---
-    with tab_edit:
-        st.markdown("##### ✏️ Điều chỉnh Thông tin Ghi nhận Thi đua")
-        col_e1, col_e2 = st.columns(2)
-        with col_e1:
-            try:
-                curr_date_obj = datetime.strptime(str(target_log.get("Ngày", "")), "%d/%m/%Y").date()
-            except Exception:
-                curr_date_obj = date.today()
-            edit_date = st.date_input("Ngày ghi nhận:", value=curr_date_obj, format="DD/MM/YYYY", key=f"e_date_{real_log_idx}")
-            
-            all_staff_names = st.session_state.users["Họ và tên"].tolist() if isinstance(st.session_state.get("users"), pd.DataFrame) and not st.session_state.users.empty else [target_log.get("Cán bộ")]
-            if target_log.get("Cán bộ") not in all_staff_names:
-                all_staff_names.append(target_log.get("Cán bộ"))
-            try:
-                staff_idx = all_staff_names.index(target_log.get("Cán bộ"))
-            except Exception:
-                staff_idx = 0
-            edit_staff = st.selectbox("Cán bộ / Giáo viên:", all_staff_names, index=staff_idx, key=f"e_staff_{real_log_idx}")
-            
-            edit_type = st.radio("Phân loại điểm:", ["Điểm trừ", "Điểm cộng"], index=0 if target_log.get("Loại") == "Điểm trừ" else 1, key=f"e_type_{real_log_idx}")
-
-        with col_e2:
-            edit_content = st.text_area("Nội dung ghi nhận:", value=str(target_log.get("Nội dung", "")), key=f"e_content_{real_log_idx}")
-            edit_points = st.number_input("Số điểm:", min_value=0.1, max_value=50.0, value=float(safe_float(target_log.get("Số điểm"), 1.0)), step=0.25, key=f"e_pts_{real_log_idx}")
-            edit_note = st.text_input("Ghi chú:", value=str(target_log.get("Ghi chú", "")), key=f"e_note_{real_log_idx}")
-
-        if st.button("💾 Lưu Thông tin Đã Sửa", key=f"btn_save_edit_{real_log_idx}"):
-            old_log_content = target_log.get("Nội dung", "")
-            old_log_pts = safe_float(target_log.get("Số điểm"), 0.0)
-            old_log_type = target_log.get("Loại", "")
-
-            # Cập nhật thông tin trong log
-            new_date_formatted = edit_date.strftime("%d/%m/%Y")
-            
-            # Lấy tổ chuyên môn của cán bộ mới (nếu đổi cán bộ)
-            staff_info_row = st.session_state.users[st.session_state.users["Họ và tên"] == edit_staff] if isinstance(st.session_state.get("users"), pd.DataFrame) and not st.session_state.users.empty else pd.DataFrame()
-            new_dept = staff_info_row["Tổ chuyên môn"].values[0] if not staff_info_row.empty else target_log.get("Tổ chuyên môn", "")
-
-            st.session_state.logs[real_log_idx]["Ngày"] = new_date_formatted
-            st.session_state.logs[real_log_idx]["Cán bộ"] = edit_staff
-            st.session_state.logs[real_log_idx]["Tổ chuyên môn"] = new_dept
-            st.session_state.logs[real_log_idx]["Loại"] = edit_type
-            st.session_state.logs[real_log_idx]["Nội dung"] = edit_content.strip()
-            st.session_state.logs[real_log_idx]["Số điểm"] = float(edit_points)
-            st.session_state.logs[real_log_idx]["Ghi chú"] = edit_note.strip()
-
-            save_data_to_disk()
-
-            # Gửi Email thông báo cho GV
-            teacher_email = str(staff_info_row["Email"].values[0]).strip() if not staff_info_row.empty and pd.notna(staff_info_row["Email"].values[0]) else ""
-            if not teacher_email or "@" not in teacher_email:
-                teacher_email = f"{edit_staff.lower().replace(' ', '')}@vinhyen.edu.vn"
-
-            # Tính lại điểm tổng cho GV sau khi sửa
-            user_logs = [l for l in st.session_state.logs if l.get("Cán bộ") == edit_staff]
-            if edit_type == "Điểm trừ":
-                tot_vc_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in user_logs if l.get("Loại") == "Điểm trừ" and not l.get("Nội dung", "").startswith("[KSCL")])
-                calc_score = 100.0 - tot_vc_pen
-                email_subj = f"[THPT VĨNH YÊN] Thông báo ĐIỀU CHỈNH Lỗi vi phạm ngày {new_date_formatted} - {edit_staff}"
-                msg_tag = "ĐIỀU CHỈNH VI PHẠM (SỬA LỖI)"
-            else:
-                tot_bon = sum([safe_float(l.get("Số điểm"), 0.0) for l in user_logs if l.get("Loại") == "Điểm cộng"])
-                tot_kscl_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in user_logs if l.get("Loại") == "Điểm trừ" and l.get("Nội dung", "").startswith("[KSCL")])
-                calc_score = tot_bon - tot_kscl_pen
-                email_subj = f"[THPT VĨNH YÊN] Thông báo ĐIỀU CHỈNH điểm Thi đua ngày {new_date_formatted} - {edit_staff}"
-                msg_tag = "ĐIỀU CHỈNH KHEN THƯỞNG (SỬA ĐIỂM)"
-
-            note_detail = f"Đã sửa từ: '{old_log_content}' ({old_log_type} {old_log_pts:.1f}đ) thành nội dung mới."
-            email_html = build_email_html(edit_staff, edit_type, new_date_formatted, edit_content.strip(), edit_points, calc_score, note_detail)
-            
-            e_cfg = st.session_state.get("email_config", {})
-            e_ok, e_msg = send_email_notification(teacher_email, email_subj, email_html, e_cfg)
-
-            st.session_state.email_history.append({
-                "Thời gian": new_date_formatted,
-                "Người nhận": edit_staff,
-                "Email cá nhân": teacher_email,
-                "Phân loại": msg_tag,
-                "Tiêu đề Email": email_subj,
-                "Nội dung ghi nhận": edit_content.strip(),
-                "Trạng thái Email": "Đã gửi thành công (200 OK)" if e_ok else e_msg
-            })
-            save_data_to_disk()
-
-            st.success(f"✅ Đã ĐIỀU CHỈNH thành công ghi nhận thi đua cho Giáo viên **{edit_staff}**!")
-            st.info(f"📧 **Đã tự động gửi Email thông báo điểm cập nhật tới:** `{teacher_email}`")
-            st.rerun()
-
-    # --- TAB 2: XÓA GHI NHẬN ---
-    with tab_delete:
-        st.markdown("##### 🗑️ Xác nhận Xóa Ghi nhận Thi đua")
-        st.warning(f"⚠️ **Bạn sắp xóa ghi nhận:** [{target_log.get('Ngày')}] **{target_log.get('Cán bộ')}** - {target_log.get('Loại')}: *{target_log.get('Nội dung')}* ({target_log.get('Số điểm')}đ)")
-        st.info("💡 **Khi xóa, số điểm này sẽ lập tức được trừ bỏ / hoàn trả lại vào Bảng điểm Đánh giá Viên chức & Điểm Thi đua của Giáo viên, đồng thời gửi Email thông báo tự động tới Giáo viên.**")
-        
-        confirm_del = st.checkbox("⚠️ Tôi xác nhận chắc chắn muốn XÓA ghi nhận này.", key=f"chk_del_{real_log_idx}")
-        if confirm_del:
-            if st.button("🔥 XÁC NHẬN XÓA GHI NHẬN NÀY", key=f"btn_exec_del_{real_log_idx}"):
-                del_staff = target_log.get("Cán bộ", "")
-                del_content = target_log.get("Nội dung", "")
-                del_pts = safe_float(target_log.get("Số điểm"), 0.0)
-                del_type = target_log.get("Loại", "")
-                del_date = target_log.get("Ngày", "")
-
-                # Xóa khỏi danh sách logs
-                st.session_state.logs.pop(real_log_idx)
-                save_data_to_disk()
-
-                # Gửi Email thông báo Xóa cho GV
-                staff_info_row = st.session_state.users[st.session_state.users["Họ và tên"] == del_staff] if isinstance(st.session_state.get("users"), pd.DataFrame) and not st.session_state.users.empty else pd.DataFrame()
-                teacher_email = str(staff_info_row["Email"].values[0]).strip() if not staff_info_row.empty and pd.notna(staff_info_row["Email"].values[0]) else ""
-                if not teacher_email or "@" not in teacher_email:
-                    teacher_email = f"{del_staff.lower().replace(' ', '')}@vinhyen.edu.vn"
-
-                # Tính lại điểm tổng cho GV sau khi xóa
-                user_logs = [l for l in st.session_state.logs if l.get("Cán bộ") == del_staff]
-                if del_type == "Điểm trừ":
-                    tot_vc_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in user_logs if l.get("Loại") == "Điểm trừ" and not l.get("Nội dung", "").startswith("[KSCL")])
-                    calc_score = 100.0 - tot_vc_pen
-                    email_subj = f"[THPT VĨNH YÊN] Thông báo HỦY/XÓA Lỗi vi phạm ngày {del_date} - {del_staff}"
-                    msg_tag = "HỦY GHI NHẬN VI PHẠM (HOÀN ĐIỂM)"
-                else:
-                    tot_bon = sum([safe_float(l.get("Số điểm"), 0.0) for l in user_logs if l.get("Loại") == "Điểm cộng"])
-                    tot_kscl_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in user_logs if l.get("Loại") == "Điểm trừ" and l.get("Nội dung", "").startswith("[KSCL")])
-                    calc_score = tot_bon - tot_kscl_pen
-                    email_subj = f"[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Khen thưởng - {del_staff}"
-                    msg_tag = "HỦY GHI NHẬN KHEN THƯỞNG (TRỪ BỎ ĐIỂM)"
-
-                del_notice = f"🔴 ĐÃ HỦY/XÓA GHI NHẬN: '{del_content}' (Điểm cũ: {del_type} {del_pts:.1f}đ). Số điểm đã được hoàn trả/trừ bỏ."
-                email_html = build_email_html(del_staff, del_type, del_date, del_notice, del_pts, calc_score, "Ghi nhận này đã bị xóa khỏi hệ thống thi đua.")
-
-                e_cfg = st.session_state.get("email_config", {})
-                e_ok, e_msg = send_email_notification(teacher_email, email_subj, email_html, e_cfg)
-
-                st.session_state.email_history.append({
-                    "Thời gian": del_date,
-                    "Người nhận": del_staff,
-                    "Email cá nhân": teacher_email,
-                    "Phân loại": msg_tag,
-                    "Tiêu đề Email": email_subj,
-                    "Nội dung ghi nhận": del_notice,
-                    "Trạng thái Email": "Đã gửi thành công (200 OK)" if e_ok else e_msg
-                })
-                save_data_to_disk()
-
-                st.success(f"✅ Đã XÓA ghi nhận thi đua của Giáo viên **{del_staff}** và hoàn trả/trừ bỏ điểm số thành công!")
-                st.info(f"📧 **Đã tự động gửi Email thông báo cập nhật tới:** `{teacher_email}`")
-                st.rerun()
-
-
 def load_data_from_disk():
     """Tải dữ liệu từ file JSON vào ứng dụng nếu file tồn tại"""
     if os.path.exists(DATA_FILE):
@@ -1284,7 +1058,6 @@ if role.startswith("1. ADMIN"):
             "Tiêu chí thi đua khen thưởng",
             "Cấu hình gửi tin",
             "Quản lý tài khoản",
-            "📜 Quản lý & Sửa/Xóa Nhật ký Thi đua",
             "Sao lưu và khôi phục dữ liệu",
             "Reset dữ liệu"
         ],
@@ -1907,8 +1680,6 @@ if role.startswith("1. ADMIN"):
                     st.success(
                         f"✅ Đã reset mật khẩu cho tài khoản `{target_a['username']}` thành `{new_reset_p.strip()}`!")
                     st.rerun()
-    elif admin_sub == "📜 Quản lý & Sửa/Xóa Nhật ký Thi đua":
-        render_manage_logs_ui()
     elif admin_sub == "Sao lưu và khôi phục dữ liệu":
         st.subheader("💾 Sao lưu & Khôi phục Dữ liệu Hệ thống")
         st.info(
@@ -1997,8 +1768,7 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
         [
             "Lỗi vi phạm (Trừ điểm)",
             "Thành tích Khen thưởng (Cộng điểm)",
-            "📊 Đánh giá điểm KSCL (Tiêu chí 5 - Tự động so sánh 2 kỳ)",
-            "📜 Sửa / Xóa Nhật ký Thi đua"
+            "📊 Đánh giá điểm KSCL (Tiêu chí 5 - Tự động so sánh 2 kỳ)"
         ],
         key="daily_submenu_radio"
     )
@@ -2075,8 +1845,6 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
                     selected_content = "Khen thưởng phát sinh"
                     points_val = 10.0
                 type_label = "Điểm cộng"
-            elif event_type == "📜 Sửa / Xóa Nhật ký Thi đua":
-                render_manage_logs_ui()
             else:
                 # 📊 Đánh giá điểm KSCL (Tiêu chí 5 - Tự động so sánh 2 kỳ)
                 st.markdown("##### 📊 Nhập điểm KSCL & Tự động so sánh với kỳ liền kề")
