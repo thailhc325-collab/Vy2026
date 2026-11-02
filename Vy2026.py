@@ -426,9 +426,9 @@ def sync_teacher_accounts():
     """Tự động tạo tài khoản đăng nhập cho giáo viên nếu chưa có và đồng bộ Email/SĐT từ danh sách nhân sự"""
     if "accounts" not in st.session_state or not isinstance(st.session_state.accounts, list):
         st.session_state.accounts = [
-            {"username": "admin", "password": "123", "role": "Admin", "name": "BGH / Thư ký Thi đua",
+            {"username": "admin", "password": "123", "role": "Admin", "name": "BGH",
              "email": "thptvinhyen.thidua@gmail.com"},
-            {"username": "theodoi", "password": "123", "role": "Người theo dõi", "name": "Cán bộ Theo dõi / Cờ đỏ",
+            {"username": "theodoi", "password": "123", "role": "Người theo dõi", "name": "Cán bộ Theo dõi",
              "email": "theodoi@vinhyen.edu.vn"}
         ]
     if isinstance(st.session_state.get("users"), pd.DataFrame) and not st.session_state.users.empty:
@@ -499,8 +499,7 @@ def build_adjustment_email_html(teacher_name, old_log, new_log, vc_score, net_em
         </div>
         <div class="content">
             <div class="greeting">Kính gửi Thầy/Cô: {teacher_name}</div>
-            <p>Ban Giám hiệu (Admin) TRƯỜNG THPT VĨNH YÊN trân trọng thông báo thông tin ghi nhận thi đua của Thầy/Cô vừa được **ĐIỀU CHỈNH / CẬP NHẬT** trên hệ thống như sau:</p>
-
+            <p>Ban Giám hiệu trường THPT VĨNH YÊN trân trọng thông báo: Thầy/Cô vừa được **ĐIỀU CHỈNH / CẬP NHẬT** trên hệ thống như sau:</p>
             <table class="compare-table">
                 <thead>
                     <tr>
@@ -558,7 +557,7 @@ def build_adjustment_email_html(teacher_name, old_log, new_log, vc_score, net_em
                     </tr>
                 </table>
             </div>
-            <p style="margin-top: 20px; font-size: 13px; color: #555;">Thầy/Cô có thể đăng nhập ứng dụng Vy2026 bằng tài khoản cá nhân để xem Bảng tin chi tiết lịch sử thi đua của mình.</p>
+            <p style="margin-top: 20px; font-size: 13px; color: #555;">Thầy/Cô có thể đăng nhập ứng dụng tại https://thptvinhyen.streamlit.app bằng tài khoản cá nhân để xem Bảng tin chi tiết lịch sử thi đua của mình.</p>
         </div>
         <div class="footer">
             TRƯỜNG THPT VĨNH YÊN
@@ -575,7 +574,7 @@ def render_manage_logs_ui():
     if curr_u.get("role") != "Admin":
         st.error("⛔ CẢNH BÁO QUYỀN HẠN: Chức năng Sửa và Xóa nhật ký thi đua chỉ dành riêng cho tài khoản Admin!")
         st.info(
-            "💡 Nếu bạn là Cán bộ Theo dõi / Cờ đỏ và phát hiện nhập sai thông tin, vui lòng báo cho Ban Giám hiệu (Admin) để thực hiện điều chỉnh.")
+            "💡 Nếu bạn là Cán bộ Theo dõi và phát hiện nhập sai thông tin, vui lòng báo cho Ban Giám hiệu (Admin) để thực hiện điều chỉnh.")
         return
     if not st.session_state.get("logs"):
         st.info("ℹ️ Chưa có nhật ký vi phạm hay khen thưởng nào trên hệ thống.")
@@ -857,7 +856,7 @@ def render_manage_logs_ui():
             })
             save_data_to_disk()
             st.success(
-                f"✅ Đã điều chỉnh ghi nhận cho Thầy/Cô **{e_staff}** thành công và tự động phát Email thông báo khoa học!")
+                f"✅ Đã điều chỉnh ghi nhận cho Thầy/Cô **{e_staff}** thành công và tự động gửi Email thông báo!")
             st.info(f"📧 Email thông báo đã gửi tới: `{t_email}`")
             st.rerun()
     # --- TAB 2: XÓA GHI NHẬN ---
@@ -987,10 +986,10 @@ def load_data_from_disk():
                 st.session_state.accounts = data.get("accounts", [])
                 if not st.session_state.accounts:
                     st.session_state.accounts = [
-                        {"username": "admin", "password": "123", "role": "Admin", "name": "BGH / Thư ký Thi đua",
+                        {"username": "admin", "password": "123", "role": "Admin", "name": "BGH",
                          "email": "thptvinhyen.thidua@gmail.com"},
                         {"username": "theodoi", "password": "123", "role": "Người theo dõi",
-                         "name": "Cán bộ Theo dõi / Cờ đỏ", "email": "theodoi@vinhyen.edu.vn"}
+                         "name": "Cán bộ Theo dõi", "email": "theodoi@vinhyen.edu.vn"}
                     ]
                 sync_teacher_accounts()
         except Exception as e:
@@ -1142,7 +1141,7 @@ def build_email_html(teacher_name, event_type, date_str, content_str, points_val
                     <td><b style="color:{score_color}; font-size:16px;">{score_val_str}</b></td>
                 </tr>
             </table>
-            <p style="margin-top:22px; font-size:12px; color:#666; font-style:italic;">* Email này được gửi tự động từ Hệ thống Quản lý Thi đua THPT Vĩnh Yên. Thầy/Cô vui lòng liên hệ Ban Thi đua nếu cần kiểm tra, đối soát.</p>
+            <p style="margin-top:22px; font-size:12px; color:#666; font-style:italic;">* Email này được gửi tự động từ Hệ thống Quản lý-Đánh giá KPI của THPT Vĩnh Yên. Thầy/Cô vui lòng liên hệ Ban giám hiệu nếu cần kiểm tra, đối soát.</p>
         </div>
         <div class="footer">
             <b>TRƯỜNG THPT VĨNH YÊN</b><br>
@@ -1351,12 +1350,12 @@ if st.session_state.get("current_user") is None:
     st.markdown("""
     <style>
         .login-box {
-            max-width: 500px;
+            max-width: 400px;
             margin: 30px auto;
-            padding: 30px;
+            padding: 20px;
             background-color: #ffffff;
             border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             border: 1px solid #e1e8ed;
         }
     </style>
@@ -1365,7 +1364,7 @@ if st.session_state.get("current_user") is None:
     <div style="text-align: center; padding: 20px; background: linear-gradient(100deg, #1F497D 0%, #17A2B8 100%); color: white; border-radius: 6px; margin-bottom: 20px;">
         <h2 style="margin: 0; font-size: 22px; font-weight: bold;">SỞ GD&ĐT PHÚ THỌ-TRƯỜNG THPT VĨNH YÊN</h2>
         <h3 style="margin: 1px 0 0 0; font-size: 40px; color: #FFD700;">QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN</h3>
-        <p style="margin: 1px 0 0 0; font-size: 20px; opacity: 0.95;">Hệ thống Đăng nhập & Phân quyền Tập trung cho Cán bộ, Giáo viên</p>
+        <p style="margin: 1px 0 0 0; font-size: 20px; opacity: 0.95;">Hệ thống Đăng nhập & Phân quyền cho Cán bộ, Giáo viên</p>
     </div>
     """, unsafe_allow_html=True)
     c_l1, c_l2, c_l3 = st.columns([1, 2, 1])
