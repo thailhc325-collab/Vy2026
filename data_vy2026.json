@@ -3268,6 +3268,14 @@
             "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
             "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 03/11/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi: '[TC1.1.1] Trang phục không đúng quy định' (Trừ điểm: -1.0 điểm). SĐT: 0969611811.",
             "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Nguyễn Thị Thanh Xuân",
+            "SĐT Tammi": "0385929424",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Nguyễn Thị Thanh Xuân, đã lưu Mốc điểm đầu vào S1 = 6.42 cho Lớp 12A7 - Môn Toán (KSCL Lần 0). SĐT: 0385929424.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
         }
     ],
     "tammi_config": {},
@@ -3297,6 +3305,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 3,
+            "Ngày": "03/11/2026",
+            "Cán bộ": "Nguyễn Thị Thanh Xuân",
+            "Lớp": "12A7",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 6.42,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -3315,6 +3336,14 @@
             "last_exam": "KSCL Lần 0",
             "last_score": 7.85,
             "last_date": "01/11/2026"
+        },
+        "Nguyễn Thị Thanh Xuân_12A7_Toán": {
+            "teacher": "Nguyễn Thị Thanh Xuân",
+            "class": "12A7",
+            "subject": "Toán",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 6.42,
+            "last_date": "03/11/2026"
         }
     },
     "guitin_list": [
@@ -4217,6 +4246,16 @@
             "Số điểm": "-1.0",
             "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 03/11/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi: '[TC1.1.1] Trang phục không đúng quy định' (Trừ điểm: -1.0 điểm). SĐT: 0969611811.",
             "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0385929424",
+            "Họ và tên": "Nguyễn Thị Thanh Xuân",
+            "Thời gian": "03/11/2026",
+            "Loại thông báo": "MỐC DỮ LIỆU KSCL (S1)",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A7 - Môn Toán: Lưu mốc điểm đầu vào S1 = 6.42",
+            "Số điểm": "+0.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Nguyễn Thị Thanh Xuân, đã lưu Mốc điểm đầu vào S1 = 6.42 cho Lớp 12A7 - Môn Toán (KSCL Lần 0). SĐT: 0385929424.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
         }
     ],
     "email_config": {
@@ -5053,6 +5092,15 @@
             "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM TRỪ)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 03/11/2026 - Lê Hồng Thái",
             "Nội dung ghi nhận": "[ĐÃ XÓA] [TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Nguyễn Thị Thanh Xuân",
+            "Email cá nhân": "Xuan1978vp@gmail. com",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A7 Môn Toán - Nguyễn Thị Thanh Xuân",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A7 - Môn Toán: Lưu mốc điểm đầu vào S1 = 6.42",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
