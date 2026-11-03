@@ -2320,15 +2320,6 @@
             "Loại": "Điểm trừ",
             "Nội dung": "[TC3.4.3] Không ký xác nhận tiết dạy",
             "Số điểm": 1.0,
-            "Ghi chú": "Chiều  28/10/2026- Toán Tiết 3-Lớp 11A6"
-        },
-        {
-            "Ngày": "31/10/2026",
-            "Cán bộ": "Nguyễn Thị Tuyết",
-            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
-            "Loại": "Điểm trừ",
-            "Nội dung": "[TC3.4.3] Không ký xác nhận tiết dạy",
-            "Số điểm": 1.0,
             "Ghi chú": "Chiều  30/10/2026- Toán Tiết 3-Lớp 12A4"
         },
         {
@@ -2546,6 +2537,15 @@
             "Nội dung": "[TC3.4.3] Không ký xác nhận tiết dạy",
             "Số điểm": 1.0,
             "Ghi chú": "Sáng  29/10/2026- Toán Tiết 2-Lớp 11A2"
+        },
+        {
+            "Ngày": "03/11/2026",
+            "Cán bộ": "Nguyễn Thị Lan Phương(H)",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.1.3] Muộn từ 6 đến 10 phút",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
         }
     ],
     "tammi_history": [
@@ -3251,6 +3251,14 @@
             "SĐT Tammi": "0963013895",
             "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
             "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 31/10/2026: Kính gửi Kim Thị Thu Hà, Hệ thống ghi nhận lỗi vi phạm: '[TC3.4.3] Không ký xác nhận tiết dạy' (Điểm trừ: -1.0 điểm). SĐT nhận: 0963013895.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Nguyễn Thị Lan Phương(H)",
+            "SĐT Tammi": "0983955526",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 03/11/2026: Kính gửi Nguyễn Thị Lan Phương(H), Hệ thống ghi nhận lỗi: '[TC3.1.3] Muộn từ 6 đến 10 phút' (Trừ điểm: -1.0 điểm). SĐT: 0983955526.",
             "Trạng thái Viettel Tammi": "Đã gửi thành công"
         }
     ],
@@ -4181,6 +4189,16 @@
             "Số điểm": "-1.0",
             "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 31/10/2026: Kính gửi Kim Thị Thu Hà, Hệ thống ghi nhận lỗi vi phạm: '[TC3.4.3] Không ký xác nhận tiết dạy' (Điểm trừ: -1.0 điểm). SĐT nhận: 0963013895.",
             "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0983955526",
+            "Họ và tên": "Nguyễn Thị Lan Phương(H)",
+            "Thời gian": "03/11/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC3.1.3] Muộn từ 6 đến 10 phút",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 03/11/2026: Kính gửi Nguyễn Thị Lan Phương(H), Hệ thống ghi nhận lỗi: '[TC3.1.3] Muộn từ 6 đến 10 phút' (Trừ điểm: -1.0 điểm). SĐT: 0983955526.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
         }
     ],
     "email_config": {
@@ -4981,6 +4999,24 @@
             "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 31/10/2026 - Kim Thị Thu Hà",
             "Nội dung ghi nhận": "[TC3.4.3] Không ký xác nhận tiết dạy",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Nguyễn Thị Lan Phương(H)",
+            "Email cá nhân": "phuongntl.c3.25.007@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 03/11/2026 - Nguyễn Thị Lan Phương(H)",
+            "Nội dung ghi nhận": "[TC3.1.3] Muộn từ 6 đến 10 phút",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "31/10/2026",
+            "Người nhận": "Nguyễn Thị Tuyết",
+            "Email cá nhân": "tuyetspt@gmail.com",
+            "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM TRỪ)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 31/10/2026 - Nguyễn Thị Tuyết",
+            "Nội dung ghi nhận": "[ĐÃ XÓA] [TC3.4.3] Không ký xác nhận tiết dạy",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
