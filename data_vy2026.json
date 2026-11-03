@@ -3390,6 +3390,14 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Phùng Thị Hồng Minh, đã lưu Mốc điểm đầu vào S1 = 6.03 cho Lớp 12A3 - Môn Ngữ văn (KSCL Lần 0). SĐT: 0978481328.",
             "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Nguyễn Thị Thu Huyền",
+            "SĐT Tammi": "0989206529",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Nguyễn Thị Thu Huyền, đã lưu Mốc điểm đầu vào S1 = 6.39 cho Lớp 12A4 - Môn Ngữ văn (KSCL Lần 0). SĐT: 0989206529.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
         }
     ],
     "tammi_config": {},
@@ -3562,6 +3570,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 14,
+            "Ngày": "03/11/2026",
+            "Cán bộ": "Nguyễn Thị Thu Huyền",
+            "Lớp": "12A4",
+            "Môn": "Ngữ văn",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 6.39,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -3667,6 +3688,14 @@
             "subject": "Ngữ văn",
             "last_exam": "KSCL Lần 0",
             "last_score": 6.03,
+            "last_date": "03/11/2026"
+        },
+        "Nguyễn Thị Thu Huyền_12A4_Ngữ văn": {
+            "teacher": "Nguyễn Thị Thu Huyền",
+            "class": "12A4",
+            "subject": "Ngữ văn",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 6.39,
             "last_date": "03/11/2026"
         }
     },
@@ -4700,6 +4729,16 @@
             "Số điểm": "+0.0",
             "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Phùng Thị Hồng Minh, đã lưu Mốc điểm đầu vào S1 = 6.03 cho Lớp 12A3 - Môn Ngữ văn (KSCL Lần 0). SĐT: 0978481328.",
             "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0989206529",
+            "Họ và tên": "Nguyễn Thị Thu Huyền",
+            "Thời gian": "03/11/2026",
+            "Loại thông báo": "MỐC DỮ LIỆU KSCL (S1)",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A4 - Môn Ngữ văn: Lưu mốc điểm đầu vào S1 = 6.39",
+            "Số điểm": "+0.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Nguyễn Thị Thu Huyền, đã lưu Mốc điểm đầu vào S1 = 6.39 cho Lớp 12A4 - Môn Ngữ văn (KSCL Lần 0). SĐT: 0989206529.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
         }
     ],
     "email_config": {
@@ -5653,6 +5692,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A3 Môn Ngữ văn - Phùng Thị Hồng Minh",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A3 - Môn Ngữ văn: Lưu mốc điểm đầu vào S1 = 6.03",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Nguyễn Thị Thu Huyền",
+            "Email cá nhân": "huyenntt.c3.25.025@phutho.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A4 Môn Ngữ văn - Nguyễn Thị Thu Huyền",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A4 - Môn Ngữ văn: Lưu mốc điểm đầu vào S1 = 6.39",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
