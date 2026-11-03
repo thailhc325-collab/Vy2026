@@ -17,7 +17,7 @@ DATA_FILE = "data_vy2026.json"
 # Cấu hình trang Web
 st.set_page_config(page_title="QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN", page_icon="🏆", layout="wide")
 st.title("🏆 QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN")
-st.caption("Ứng dụng theo dõi, quản lý-đánh giá KPI trường THPT Vĩnh Yên")
+st.caption("Cập nhật Ứng dụng theo địa chỉ https://thptvinhyen.streamlit.app")
 # -----------------------------------------------------------------------------
 # HÀM HỖ TRỢ XỬ LÝ ÉP KIỂU AN TOÀN
 # -----------------------------------------------------------------------------
@@ -81,6 +81,7 @@ def calculate_kscl_points(s_prev, s_curr):
             pts = 6.0
         else:
             pts = 4.0
+
     return delta, pts, f"Tăng {delta:.2f} điểm (+{pts:.1f} điểm)"
 def safe_float(val, default=0.0):
     """Chuyển đổi giá trị sang float an toàn, tránh lỗi ValueError khi gặp chuỗi rỗng ''"""
@@ -107,7 +108,7 @@ REWARD_CATEGORIES = [
     "6. Hoạt động các Câu lạc bộ (Thiện nguyện, Truyền thông, VN, TDTT)"
 ]
 def get_default_criteria_tree():
-    """Tạo Cây thông tin Tiêu chí Đánh giá Viên chức chuẩn theo Phụ lục 1 QĐ 292 (Nguồn 2026-10-26T23-57_export.csv)"""
+    """Tạo Cây thông tin Tiêu chí Đánh giá Viên chức chuẩn theo Phụ lục 1 QĐ 292"""
     tree_data = [
         # Nhóm 1: Văn hóa công sở (15 điểm)
         {
@@ -322,7 +323,7 @@ def get_default_criteria_tree():
     ]
     return pd.DataFrame(tree_data)
 def get_default_rewards_tree():
-    """Tạo Cây thông tin Tiêu chí Điểm Thi đua Khen thưởng chuẩn theo Phụ lục 2 năm học 2026-2027 (Bổ sung Số giải)"""
+    """Tạo Cây thông tin Tiêu chí Điểm Thi đua Khen thưởng chuẩn theo Phụ lục 2 năm học 2026-2027"""
     tree_data = [
         # Mục 1
         {"STT": 1, "Mục lớn": "1. Chất lượng giáo dục các môn văn hoá", "Mã KT": "KT1.1A",
@@ -497,11 +498,11 @@ def build_adjustment_email_html(teacher_name, old_log, new_log, vc_score, net_em
     <div class="card">
         <div class="header">
             <h2>SỞ GD&ĐT PHÚ THỌ-TRƯỜNG THPT VĨNH YÊN</h2>
-            <p>THÔNG BÁO ĐIỀU CHỈNH</p>
+            <p>THÔNG BÁO ĐIỀU CHỈNH / CẬP NHẬT THÔNG TIN</p>
         </div>
         <div class="content">
             <div class="greeting">Kính gửi Thầy/Cô: {teacher_name}</div>
-            <p>Ban Giám hiệu (Admin) TRƯỜNG THPT VĨNH YÊN trân trọng thông báo: Thông tin của Thầy/Cô vừa được **ĐIỀU CHỈNH / CẬP NHẬT** trên hệ thống như sau:</p>
+            <p>BGH TRƯỜNG THPT VĨNH YÊN trân trọng thông báo: Đểm của Thầy/Cô được **ĐIỀU CHỈNH / CẬP NHẬT** trên hệ thống như sau:</p>
             <table class="compare-table">
                 <thead>
                     <tr>
@@ -539,7 +540,7 @@ def build_adjustment_email_html(teacher_name, old_log, new_log, vc_score, net_em
                 </tbody>
             </table>
             <div class="score-card">
-                <div class="score-title">📊 BẢNG TỔNG HỢP ĐIỂM BẢN THÂN SAU KHI TÍNH LẠI</div>
+                <div class="score-title">📊 BẢNG TỔNG HỢP ĐIỂM SAU KHI TÍNH LẠI</div>
                 <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
                     <tr>
                         <td style="padding: 6px 0;">📉 <b>Điểm Đánh giá Viên chức còn lại:</b></td>
@@ -559,10 +560,10 @@ def build_adjustment_email_html(teacher_name, old_log, new_log, vc_score, net_em
                     </tr>
                 </table>
             </div>
-            <p style="margin-top: 20px; font-size: 13px; color: #555;">Thầy/Cô có thể đăng nhập qua https://thptvinhyen.streamlit.app bằng tài khoản cá nhân để xem Bảng tin chi tiết lịch sử thi đua của mình.</p>
+            <p style="margin-top: 20px; font-size: 13px; color: #555;">Thầy/Cô có thể đăng nhập ứng dụng tại https://thptvinhyen.streamlit.app/ bằng tài khoản cá nhân để xem Bảng thông tin chi tiết của mình.</p>
         </div>
         <div class="footer">
-            TRƯỜNG THPT VĨNH YÊN
+            TRÂN TRỌNG THÔNG BÁO!
         </div>
     </div>
 </body>
@@ -576,7 +577,7 @@ def render_manage_logs_ui():
     if curr_u.get("role") != "Admin":
         st.error("⛔ CẢNH BÁO QUYỀN HẠN: Chức năng Sửa và Xóa nhật ký thi đua chỉ dành riêng cho tài khoản Admin!")
         st.info(
-            "💡 Nếu bạn là Cán bộ Theo dõi và phát hiện nhập sai thông tin, vui lòng báo cho BGH (Admin) để thực hiện điều chỉnh.")
+            "💡 Nếu bạn là Cán bộ Theo dõi và phát hiện nhập sai thông tin, vui lòng báo cho Ban Giám hiệu để thực hiện điều chỉnh.")
         return
     if not st.session_state.get("logs"):
         st.info("ℹ️ Chưa có nhật ký vi phạm hay khen thưởng nào trên hệ thống.")
@@ -621,7 +622,6 @@ def render_manage_logs_ui():
     st.markdown("##### 📊 Danh sách Nhật ký Ghi nhận Thi đua:")
     st.dataframe(pd.DataFrame(disp_logs), use_container_width=True)
     st.markdown("---")
-
     log_options = [
         f"Dòng #{i + 1} - [{st.session_state.logs[idx].get('Ngày')}] {st.session_state.logs[idx].get('Cán bộ')} - {st.session_state.logs[idx].get('Loại')}: {st.session_state.logs[idx].get('Nội dung')} ({st.session_state.logs[idx].get('Số điểm')}đ)"
         for i, idx in enumerate(filtered_indices)
@@ -633,7 +633,7 @@ def render_manage_logs_ui():
     tab_edit, tab_delete = st.tabs(["✏️ 1. Điều chỉnh (Sửa ghi nhận)", "🗑️ 2. Xóa ghi nhận"])
     # --- TAB 1: SỬA GHI NHẬN ---
     with tab_edit:
-        st.markdown("##### ✏️ ĐIỀU CHỈNH THÔNG TIN")
+        st.markdown("##### ✏️ ĐIỀU CHỈNH THÔNG TIN GHI NHẬN ĐIỂM THI ĐUA")
         col_old, col_new = st.columns(2)
         # CỘT 1: NỘI DUNG CŨ (ĐÃ GHI NHẬN)
         with col_old:
@@ -650,7 +650,7 @@ def render_manage_logs_ui():
             📊 **Số điểm cũ:** `{target_log.get('Số điểm')} điểm`  
             💬 **Ghi chú cũ:** `{target_log.get('Ghi chú', 'Không có')}`
             """)
-        # CỘT 2: LỰA CHỌN NỘI DUNG MỚI (THAY THẾ NỘI DUNG CỦ)
+        # CỘT 2: LỰA CHỌN NỘI DUNG MỚI (THAY THẾ NỘI DUNG CŨ)
         with col_new:
             st.markdown("""
             <div style="background-color: #E6F4EA; border-left: 5px solid #137333; padding: 12px; border-radius: 6px; margin-bottom: 10px;">
@@ -662,7 +662,7 @@ def render_manage_logs_ui():
             default_cat_idx = 2 if is_target_kscl else (0 if target_log.get("Loại") == "Điểm trừ" else 1)
             edit_cat = st.radio(
                 "Chọn Danh mục Nội dung Mới:",
-                ["1. Lỗi vi phạm (Trừ điểm)", "2. Thành tích",
+                ["1. Lỗi vi phạm (Trừ điểm)", "2. Thành tích Khen thưởng (Cộng điểm)",
                  "3. Đánh giá điểm KSCL (Sửa điểm môn học KSCL)"],
                 index=default_cat_idx,
                 key="edit_category_radio_v33"
@@ -696,7 +696,7 @@ def render_manage_logs_ui():
                 else:
                     new_content = "Vi phạm quy chế"
                     new_pts = 1.0
-            elif edit_cat == "2. Thành tích":
+            elif edit_cat == "2. Thành tích Khen thưởng (Cộng điểm)":
                 new_type = "Điểm cộng"
                 sel_rg = st.selectbox("Chọn Cấp 1 (Mục lớn khen thưởng mới):", REWARD_CATEGORIES,
                                       key="edit_rg_select_v33")
@@ -759,7 +759,6 @@ def render_manage_logs_ui():
                         key="edit_kscl_score_input_v33"
                     )
                     delta, pts, desc_msg = calculate_kscl_points(s_prev, new_kscl_score)
-
                     mk1, mk2, mk3 = st.columns(3)
                     mk1.metric("Kỳ trước (Sn)", f"{s_prev:.2f}")
                     mk2.metric("Điểm môn học mới (Sn+1)", f"{new_kscl_score:.2f}")
@@ -776,14 +775,11 @@ def render_manage_logs_ui():
                     new_pts = 0.0
                     new_type = "Thông tin Mốc KSCL"
                     new_content = f"[KSCL {ks_exam}] Lớp {ks_cls} - Môn {ks_subj}: Lưu mốc điểm đầu vào S1 = {new_kscl_score:.2f}"
-
         st.markdown("---")
         c_m1, c_m2 = st.columns(2)
         with c_m1:
-            try:
-                d_obj = datetime.strptime(str(target_log.get("Ngày", "")), "%d/%m/%Y").date()
-            except Exception:
-                d_obj = date.today()
+            d_obj = datetime.strptime(str(target_log.get("Ngày", "")), "%d/%m/%Y").date()
+            d_obj = date.today()
             e_date = st.date_input("Sửa Ngày ghi nhận mới:", value=d_obj, format="DD/MM/YYYY", key="e_date_in_v33")
             e_staff_list = st.session_state.users["Họ và tên"].tolist() if not st.session_state.users.empty else [
                 target_log.get("Cán bộ", "")]
@@ -813,13 +809,10 @@ def render_manage_logs_ui():
             target_log["Ghi chú"] = e_note.strip()
             # If editing KSCL entry, update kscl_baselines
             if edit_cat == "3. Đánh giá điểm KSCL (Sửa điểm môn học KSCL)":
-                try:
-                    baseline_key = f"{e_staff}_{ks_cls}_{ks_subj}"
-                    if baseline_key in st.session_state.get("kscl_baselines", {}):
-                        st.session_state.kscl_baselines[baseline_key]["last_score"] = new_kscl_score
-                        st.session_state.kscl_baselines[baseline_key]["last_exam"] = ks_exam
-                except Exception:
-                    pass
+                baseline_key = f"{e_staff}_{ks_cls}_{ks_subj}"
+                if baseline_key in st.session_state.get("kscl_baselines", {}):
+                    st.session_state.kscl_baselines[baseline_key]["last_score"] = new_kscl_score
+                    st.session_state.kscl_baselines[baseline_key]["last_exam"] = ks_exam
             save_data_to_disk()
             u_logs = [l for l in st.session_state.logs if l.get("Cán bộ") == e_staff]
             tot_vc_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_logs if
@@ -843,7 +836,7 @@ def render_manage_logs_ui():
                 staff_matches.iloc[0].get("Email")) else f"{e_staff.lower().replace(' ', '')}@vinhyen.edu.vn"
             if not t_email or "@" not in t_email:
                 t_email = f"{e_staff.lower().replace(' ', '')}@vinhyen.edu.vn"
-            e_subj = f"[THPT VĨNH YÊN] Thông báo ĐIỀU CHỈNH ngày {e_date_str} - {e_staff}"
+            e_subj = f"[THPT VĨNH YÊN] THÔNG BÁO ĐIỀU CHỈNH ngày {e_date_str} - {e_staff}"
             e_html = build_adjustment_email_html(e_staff, old_log_data, target_log, vc_score, net_emulation_score,
                                                  total_gen_score, vc_class)
             e_cfg = st.session_state.get("email_config", {})
@@ -859,7 +852,7 @@ def render_manage_logs_ui():
             })
             save_data_to_disk()
             st.success(
-                f"✅ Đã điều chỉnh ghi nhận cho Thầy/Cô **{e_staff}** thành công và tự động gửi Email thông báo!")
+                f"✅ Đã điều chỉnh ghi nhận cho Thầy/Cô **{e_staff}** thành công và tự động phát Email thông báo khoa học!")
             st.info(f"📧 Email thông báo đã gửi tới: `{t_email}`")
             st.rerun()
     # --- TAB 2: XÓA GHI NHẬN ---
@@ -869,7 +862,6 @@ def render_manage_logs_ui():
             f"⚠️ **CẢNH BÁO:** Thao tác này sẽ xóa vĩnh viễn ghi nhận:\n* **[{target_log.get('Ngày')}] {target_log.get('Cán bộ')}** - {target_log.get('Loại')}: *{target_log.get('Nội dung')}* ({target_log.get('Số điểm')} điểm)")
         st.info(
             "💡 Khi xóa ghi nhận này, số điểm tương ứng sẽ tự động được hoàn trả / trừ bỏ khỏi bảng điểm của Giáo viên, đồng thời hệ thống sẽ phát Email thông báo xác nhận.")
-
         chk_del = st.checkbox("⚠️ Tôi xác nhận muốn xóa dòng nhật ký thi đua này", key="chk_confirm_del_log_v33")
         if chk_del:
             if st.button("🔥 Tiến hành Xóa Ghi nhận này vĩnh viễn", key="btn_execute_del_log_v33"):
@@ -980,11 +972,8 @@ def load_data_from_disk():
                 else:
                     st.session_state.rewards = get_default_rewards_tree()
                 st.session_state.logs = data.get("logs", [])
-                st.session_state.tammi_history = data.get("tammi_history", [])
-                st.session_state.tammi_config = data.get("tammi_config", {})
                 st.session_state.kscl_history = data.get("kscl_history", [])
                 st.session_state.kscl_baselines = data.get("kscl_baselines", {})
-                st.session_state.guitin_list = data.get("guitin_list", [])
                 st.session_state.email_config = data.get("email_config", {})
                 st.session_state.email_history = data.get("email_history", [])
                 st.session_state.accounts = data.get("accounts", [])
@@ -993,7 +982,7 @@ def load_data_from_disk():
                         {"username": "admin", "password": "123", "role": "Admin", "name": "BGH",
                          "email": "thptvinhyen.thidua@gmail.com"},
                         {"username": "theodoi", "password": "123", "role": "Người theo dõi",
-                         "name": "Cán bộ Theo dõi", "email": "theodoi@vinhyen.edu.vn"}
+                         "name": "Cán bộ Theo dõi / Cờ đỏ", "email": "theodoi@vinhyen.edu.vn"}
                     ]
                 sync_teacher_accounts()
         except Exception as e:
@@ -1049,11 +1038,8 @@ def save_data_to_disk():
         "rewards": st.session_state.rewards.to_dict(orient="records") if isinstance(st.session_state.get("rewards"),
                                                                                     pd.DataFrame) else [],
         "logs": st.session_state.get("logs", []),
-        "tammi_history": st.session_state.get("tammi_history", []),
-        "tammi_config": st.session_state.get("tammi_config", {}),
         "kscl_history": st.session_state.get("kscl_history", []),
         "kscl_baselines": st.session_state.get("kscl_baselines", {}),
-        "guitin_list": st.session_state.get("guitin_list", []),
         "email_config": st.session_state.get("email_config", {}),
         "email_history": st.session_state.get("email_history", []),
         "accounts": st.session_state.get("accounts", [])
@@ -1066,13 +1052,6 @@ def save_data_to_disk():
         sync_to_github_api(json_str)
     except Exception as e_f:
         print(f"Lỗi ghi file local: {{e_f}}")
-    if st.session_state.get("guitin_list"):
-        try:
-            df_gt_save = pd.DataFrame(st.session_state.guitin_list)
-            df_gt_save.to_csv("guitin.csv", index=False, encoding="utf-8-sig")
-            df_gt_save.to_csv("/workspace/scratch/guitin.csv", index=False, encoding="utf-8-sig")
-        except Exception:
-            pass
 # Khởi tạo dữ liệu ban đầu
 if 'initialized' not in st.session_state:
     st.session_state.departments = ["Tổ Toán - Tin", "Tổ Ngữ văn", "Tổ Hành chính", "Tổ Ngoại ngữ",
@@ -1082,11 +1061,8 @@ if 'initialized' not in st.session_state:
     st.session_state.criteria = get_default_criteria_tree()
     st.session_state.rewards = get_default_rewards_tree()
     st.session_state.logs = []
-    st.session_state.tammi_history = []
-    st.session_state.tammi_config = {}
     st.session_state.kscl_history = []
     st.session_state.kscl_baselines = {}
-    st.session_state.guitin_list = []
     st.session_state.email_config = {}
     st.session_state.email_history = []
     st.session_state.accounts = [
@@ -1168,7 +1144,6 @@ def build_email_html(teacher_name, event_type, date_str, content_str, points_val
         <div class="content">
             <div class="greeting">Kính gửi Thầy/Cô: {teacher_name}</div>
             <p>TRƯỜNG THPT VĨNH YÊN trân trọng thông báo kết quả đánh giá vừa được ghi nhận như sau:</p>
-
             <div class="point-box">
                 <div><b>Biến động điểm:</b></div>
                 <div class="point-val">{point_text}</div>
@@ -1224,23 +1199,6 @@ def send_email_notification(to_email, subject, html_content, email_config):
         return True, f"Đã gửi Email thành công tới {clean_email}"
     except Exception as e:
         return False, f"Lỗi kết nối Email SMTP: {str(e)}"
-def send_viettel_tammi_message(phone, message_text, tammi_config):
-    api_url = tammi_config.get("api_url", "https://tammi-api.viettel.vn/v1/messages")
-    app_key = tammi_config.get("app_key", "VT_TAMMI_2026")
-    brandname = tammi_config.get("brandname", "THPT_VINHYEN")
-    payload = {"brandname": brandname, "phone": phone, "message": message_text,
-               "send_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
-    headers = {"Content-Type": "application/json", "Authorization": f"Bearer {app_key}"}
-    try:
-        if "viettel.vn" not in api_url or "KEY" in app_key:
-            return True, "Đã kết nối Viettel Tammi API (Xác thực mô phỏng 200 OK)"
-        res = requests.post(api_url, json=payload, headers=headers, timeout=5)
-        if res.status_code in [200, 201]:
-            return True, "Đã gửi thành công qua Viettel Tammi API"
-        else:
-            return False, f"Lỗi Viettel Tammi HTTP {res.status_code}: {res.text}"
-    except Exception as e:
-        return True, f"Đã ghi nhận & kích hoạt cổng gửi Viettel Tammi ({phone})"
 def get_time_title_suffix(time_frame):
     tf = str(time_frame).strip()
     if tf.startswith("Tháng"):
@@ -1358,7 +1316,6 @@ def filter_logs_by_timeframe(logs, time_frame):
     for log in logs:
         d_str = log.get("Ngày", "")
         try:
-            d_obj = datetime.strptime(d_str, "%d/%m/%Y")
             m, y = d_obj.month, d_obj.year
             matched = False
             if time_frame == "Tháng 9/2026" and m == 9 and y == 2026:
@@ -1389,7 +1346,6 @@ def filter_logs_by_timeframe(logs, time_frame):
                 filtered.append(log)
         except Exception:
             filtered.append(log)
-    return filtered
 # -----------------------------------------------------------------------------
 # BẢO MẬT & ĐĂNG NHẬP TẬP TRUNG (WEBSITE MULTI-USER LOGIN)
 # -----------------------------------------------------------------------------
@@ -1456,6 +1412,7 @@ if st.session_state.get("current_user") is None:
 curr_u = st.session_state.current_user if st.session_state.get("current_user") is not None else {"name": "GUEST",
                                                                                                  "role": "Giáo viên",
                                                                                                  "username": "guest"}
+
 st.sidebar.markdown(f"""
 <div style="background-color:#F0F4F8; padding:12px; border-radius:8px; border-left:4px solid #1F497D; margin-bottom:15px;">
     <div style="font-weight:bold; font-size:15px; color:#1F497D;">👤 {curr_u['name']}</div>
@@ -1521,7 +1478,7 @@ if role.startswith("1. ADMIN"):
             "Tiêu chí thi đua khen thưởng",
             "Cấu hình gửi tin",
             "Quản lý tài khoản",
-            "📜 Quản lý & Sửa/Xóa Nhật ký Thi đua",
+            "📜Sửa/Xóa thông tin",
             "Sao lưu và khôi phục dữ liệu",
             "Reset dữ liệu"
         ],
@@ -1579,11 +1536,11 @@ if role.startswith("1. ADMIN"):
                                     dob_val = str(row["Ngày sinh"]).strip() if pd.notna(
                                         row["Ngày sinh"]) else "01/01/1990"
                                     if "00:00:00" in dob_val:
-                                        dob_val = dob_val.split(" ")
-                                        try:
-                                            dob_val = datetime.strptime(dob_val, "%Y-%m-%d").strftime("%d/%m/%Y")
-                                        except:
-                                            pass
+                                        dob_val = dob_val.split(" ")[0]
+                                    try:
+                                        dob_val = datetime.strptime(dob_val, "%Y-%m-%d").strftime("%d/%m/%Y")
+                                    except Exception:
+                                        pass
                                     user_entry = {
                                         "ID": start_id + idx,
                                         "Họ và tên": str(row["Họ và tên"]).strip(),
@@ -1614,7 +1571,7 @@ if role.startswith("1. ADMIN"):
                 dob = st.date_input("Ngày sinh", value=date(1990, 1, 1), format="DD/MM/YYYY", key="add_u_dob")
                 dept = st.selectbox("Tổ chuyên môn", st.session_state.departments, key="add_u_dept")
                 classes = st.text_input("Lớp dạy", "10A1", key="add_u_cls")
-                phone = st.text_input("Số điện thoại (Nhận tin Viettel Tammi) *", "0900000000", key="add_u_phone")
+                phone = st.text_input("Số điện thoại *", "0900000000", key="add_u_phone")
                 email = st.text_input("Địa chỉ Email (Nhận thông báo tự động) *", "nguyenvana@gmail.com",
                                       key="add_u_email")
                 if st.button("Lưu cán bộ thủ công"):
@@ -1668,7 +1625,7 @@ if role.startswith("1. ADMIN"):
                                                      key=f"edit_u_dept_{user_to_edit_id}")
                             edit_classes = st.text_input("Lớp dạy", value=str(curr_user["Lớp dạy"]),
                                                          key=f"edit_u_cls_{user_to_edit_id}")
-                            edit_phone = st.text_input("Số điện thoại (Nhận tin Viettel Tammi)",
+                            edit_phone = st.text_input("Số điện thoại",
                                                        value=str(curr_user["SĐT"]),
                                                        key=f"edit_u_phone_{user_to_edit_id}")
                             edit_email = st.text_input("Địa chỉ Email (Nhận thông báo)",
@@ -1990,107 +1947,67 @@ if role.startswith("1. ADMIN"):
                         st.rerun()
         # -----------------------------------------------------------------------------
     elif admin_sub == "Cấu hình gửi tin":
-        st.subheader("📡 Cấu hình Tích hợp Cổng gửi tin nhắn tự động Viettel Tammi & Email SMTP")
+        st.subheader("📧 Cấu hình Máy chủ Email SMTP (Tự động gửi Email cho Giáo viên)")
         st.info(
-            "💡 **Hệ thống hỗ trợ tự động gửi Email HTML thông báo kết quả thi đua trực tiếp tới Email cá nhân của giáo viên, đồng thời hỗ trợ kết nối cổng Viettel Tammi.**")
-        t_tab, e_tab = st.tabs(["📡 Cấu hình Viettel Tammi", "📧 Cấu hình Email SMTP (Tự động gửi Email cho GV)"])
-        with t_tab:
-            cfg = st.session_state.get("tammi_config", {})
-            col_c1, col_c2 = st.columns(2)
-            with col_c1:
-                t_url = st.text_input("Trang Quản trị / Tammi API URL:",
-                                      value=cfg.get("api_url", "https://oa.tammi.vn/oa-management"), key="t_url_in")
-                t_oaid = st.text_input("OA ID Tammi:", value=cfg.get("oa_id", "1698070323812809143"), key="t_oaid_in")
-                t_key = st.text_input("App Secret Key / Access Token:",
-                                      value=cfg.get("app_key", "VT_TAMMI_2026_SECRET_KEY"), key="t_key_in")
-            with col_c2:
-                t_oaname = st.text_input("Tên Official Account:", value=cfg.get("oa_name", "TRƯỜNG THPT VĨNH YÊN"),
-                                         key="t_oaname_in")
-                t_brand = st.text_input("Brandname / Tên định danh trường:", value=cfg.get("brandname", "THPT_VINHYEN"),
-                                        key="t_brand_in")
-                t_type = st.selectbox("Kênh ưu tiên gửi:", ["Viettel OTT & Brandname SMS", "Viettel OTT Tammi App Only",
-                                                            "Brandname SMS Direct"], key="t_type_in")
-            col_btn1, col_btn2 = st.columns(2)
-            with col_btn1:
-                if st.button("💾 Lưu Cấu hình Kết nối Viettel Tammi"):
-                    st.session_state.tammi_config = {
-                        "api_url": t_url.strip(),
-                        "oa_id": t_oaid.strip(),
-                        "oa_name": t_oaname.strip(),
-                        "app_key": t_key.strip(),
-                        "brandname": t_brand.strip(),
-                        "sender_type": t_type
-                    }
-                    save_data_to_disk()
-                    st.success("✅ Đã cập nhật thành công Cấu hình Cổng kết nối Viettel Tammi API!")
-            with col_btn2:
-                if st.button("🧪 Kiểm tra kết nối Viettel OA Tammi"):
+            "💡 **Hệ thống hỗ trợ tự động gửi Email HTML thông báo kết quả thi đua trực tiếp tới Email cá nhân của giáo viên ngay khi có ghi nhận mới.**")
+        e_cfg = st.session_state.get("email_config", {})
+        st.info(
+            "📌 **Cấu hình Máy chủ Email SMTP tự động phát Email thông báo trang trọng tới Hộp thư cá nhân/công vụ của Giáo viên (Miễn phí 0đ):**")
+        col_e1, col_e2 = st.columns(2)
+        with col_e1:
+            e_server = st.text_input("Máy chủ Email (SMTP Server):",
+                                     value=e_cfg.get("smtp_server", "smtp.gmail.com"), key="e_server_in")
+            e_port = st.number_input("Cổng SMTP Port:", min_value=1, max_value=65535,
+                                     value=int(e_cfg.get("smtp_port", 587)), step=1, key="e_port_in")
+            e_name = st.text_input("Tên hiển thị Người gửi (Sender Name):",
+                                   value=e_cfg.get("sender_name", "TRƯỜNG THPT VĨNH YÊN"),
+                                   key="e_name_in")
+        with col_e2:
+            e_sender = st.text_input("Địa chỉ Email phát thông báo (Sender Email):",
+                                     value=e_cfg.get("sender_email", "thptvinhyen.thidua@gmail.com"),
+                                     key="e_sender_in")
+            e_pass = st.text_input("Mật khẩu ứng dụng Gmail (16 ký tự App Password):",
+                                   value=e_cfg.get("sender_pass", "GMAIL_APP_KEY"), type="password",
+                                   key="e_pass_in")
+        st.markdown("""
+        **💡 Hướng dẫn 4 bước lấy Mật khẩu ứng dụng Gmail gửi Email miễn phí:**
+        1. Truy cập tài khoản Google công vụ/cá nhân của nhà trường (`myaccount.google.com`).
+        2. Chọn mục **Bảo mật (Security)** ➔ Bật tính năng **Xác minh 2 bước (2-Step Verification)**.
+        3. Tìm mục **Mật khẩu ứng dụng (App passwords)** ➔ Chọn *Ứng dụng khác* ➔ Nhập tên `Vy2026` ➔ Bấm **Tạo**.
+        4. Sao chép chuỗi mã **16 ký tự** hiện ra (ví dụ: `abcd efgh ijkl mnop`), dán vào ô *Mật khẩu ứng dụng Gmail* ở trên rồi nhấn **Lưu Cấu hình**.
+        """)
+        col_eb1, col_eb2 = st.columns(2)
+        with col_eb1:
+            if st.button("💾 Lưu Cấu hình Kết nối Email SMTP"):
+                st.session_state.email_config = {
+                    "smtp_server": e_server.strip(),
+                    "smtp_port": int(e_port),
+                    "sender_email": e_sender.strip(),
+                    "sender_pass": e_pass.strip(),
+                    "sender_name": e_name.strip()
+                }
+                save_data_to_disk()
+                st.success("✅ Đã cập nhật thành công Cấu hình Kết nối Cổng Email SMTP!")
+        with col_eb2:
+            if st.button("🧪 Kiểm tra kết nối Email SMTP (Gửi Email thử nghiệm)"):
+                test_html = build_email_html(
+                    teacher_name="Cán bộ Kiểm thử",
+                    event_type="THỬ NGHIỆM KẾT NỐI EMAIL SMTP",
+                    date_str=datetime.now().strftime("%d/%m/%Y"),
+                    content_str="[HỆ THỐNG VY2026] Kết nối thành công cổng Email SMTP gửi thông báo thi đua tự động!",
+                    points_val=10.0,
+                    calc_score=100.0,
+                    extra_info="Trạng thái hệ thống: Sẵn sàng phát Email HTML trực tiếp tới Giáo viên."
+                )
+                e_status_ok, e_status_msg = send_email_notification(e_sender.strip(),
+                                                                    "[THPT VĨNH YÊN] Kiểm tra kết nối Email SMTP thành công",
+                                                                    test_html,
+                                                                    st.session_state.get("email_config", {}))
+                if e_status_ok:
                     st.success(
-                        f"🟢 **KẾT NỐI VIETTEL TAMMI THÀNH CÔNG (200 OK)!**\n\n"
-                        f"- **Tên Official Account**: {t_oaname.strip()}\n"
-                        f"- **OA ID**: {t_oaid.strip()}\n"
-                        f"- **Trang Quản trị**: {t_url.strip()}\n"
-                        f"- **Trạng thái**: Viettel OTT Tammi Server Hoạt động 24/7."
-                    )
-        with e_tab:
-            e_cfg = st.session_state.get("email_config", {})
-            st.info(
-                "📌 **Cấu hình Máy chủ Email SMTP tự động phát Email thông báo trang trọng tới Hộp thư cá nhân/công vụ của Giáo viên (Miễn phí 0đ):**")
-            col_e1, col_e2 = st.columns(2)
-            with col_e1:
-                e_server = st.text_input("Máy chủ Email (SMTP Server):",
-                                         value=e_cfg.get("smtp_server", "smtp.gmail.com"), key="e_server_in")
-                e_port = st.number_input("Cổng SMTP Port:", min_value=1, max_value=65535,
-                                         value=int(e_cfg.get("smtp_port", 587)), step=1, key="e_port_in")
-                e_name = st.text_input("Tên hiển thị Người gửi (Sender Name):",
-                                       value=e_cfg.get("sender_name", "TRƯỜNG THPT VĨNH YÊN"),
-                                       key="e_name_in")
-            with col_e2:
-                e_sender = st.text_input("Địa chỉ Email phát thông báo (Sender Email):",
-                                         value=e_cfg.get("sender_email", "thptvinhyen.thidua@gmail.com"),
-                                         key="e_sender_in")
-                e_pass = st.text_input("Mật khẩu ứng dụng Gmail (16 ký tự App Password):",
-                                       value=e_cfg.get("sender_pass", "GMAIL_APP_KEY"), type="password",
-                                       key="e_pass_in")
-            st.markdown("""
-            **💡 Hướng dẫn 4 bước lấy Mật khẩu ứng dụng Gmail gửi Email miễn phí:**
-            1. Truy cập tài khoản Google công vụ/cá nhân của nhà trường (`myaccount.google.com`).
-            2. Chọn mục **Bảo mật (Security)** ➔ Bật tính năng **Xác minh 2 bước (2-Step Verification)**.
-            3. Tìm mục **Mật khẩu ứng dụng (App passwords)** ➔ Chọn *Ứng dụng khác* ➔ Nhập tên `Vy2026` ➔ Bấm **Tạo**.
-            4. Sao chép chuỗi mã **16 ký tự** hiện ra (ví dụ: `abcd efgh ijkl mnop`), dán vào ô *Mật khẩu ứng dụng Gmail* ở trên rồi nhấn **Lưu Cấu hình**.
-            """)
-            col_eb1, col_eb2 = st.columns(2)
-            with col_eb1:
-                if st.button("💾 Lưu Cấu hình Kết nối Email SMTP"):
-                    st.session_state.email_config = {
-                        "smtp_server": e_server.strip(),
-                        "smtp_port": int(e_port),
-                        "sender_email": e_sender.strip(),
-                        "sender_pass": e_pass.strip(),
-                        "sender_name": e_name.strip()
-                    }
-                    save_data_to_disk()
-                    st.success("✅ Đã cập nhật thành công Cấu hình Kết nối Cổng Email SMTP!")
-            with col_eb2:
-                if st.button("🧪 Kiểm tra kết nối Email SMTP (Gửi Email thử nghiệm)"):
-                    test_html = build_email_html(
-                        teacher_name="Cán bộ Kiểm thử",
-                        event_type="THỬ NGHIỆM KẾT NỐI EMAIL SMTP",
-                        date_str=datetime.now().strftime("%d/%m/%Y"),
-                        content_str="[HỆ THỐNG VY2026] Kết nối thành công cổng Email SMTP gửi thông báo thi đua tự động!",
-                        points_val=10.0,
-                        calc_score=100.0,
-                        extra_info="Trạng thái hệ thống: Sẵn sàng phát Email HTML trực tiếp tới Giáo viên."
-                    )
-                    e_status_ok, e_status_msg = send_email_notification(e_sender.strip(),
-                                                                        "[THPT VĨNH YÊN] Kiểm tra kết nối Email SMTP thành công",
-                                                                        test_html,
-                                                                        st.session_state.get("email_config", {}))
-                    if e_status_ok:
-                        st.success(
-                            f"🟢 **KẾT NỐI EMAIL SMTP THÀNH CÔNG (200 OK)!**\n\n- **Sender Email**: `{e_sender.strip()}`\n- **SMTP Server**: `{e_server.strip()}:{e_port}`\n- **Thông báo**: {e_status_msg}")
-                    else:
-                        st.error(f"🔴 **KẾT NỐI THẤT BẠI**: {e_status_msg}")
+                        f"🟢 **KẾT NỐI EMAIL SMTP THÀNH CÔNG (200 OK)!**\n\n- **Sender Email**: `{e_sender.strip()}`\n- **SMTP Server**: `{e_server.strip()}:{e_port}`\n- **Thông báo**: {e_status_msg}")
+                else:
+                    st.error(f"🔴 **KẾT NỐI THẤT BẠI**: {e_status_msg}")
     elif admin_sub == "Quản lý tài khoản":
         st.subheader("👥 Quản lý Tài khoản")
         st.info(
@@ -2161,11 +2078,8 @@ if role.startswith("1. ADMIN"):
             save_data_to_disk()
             json_export_data = "{}"
             if os.path.exists(DATA_FILE):
-                try:
-                    with open(DATA_FILE, "r", encoding="utf-8") as f_exp:
-                        json_export_data = f_exp.read()
-                except Exception:
-                    pass
+                with open(DATA_FILE, "r", encoding="utf-8") as f_exp:
+                    json_export_data = f_exp.read()
             st.download_button(
                 label="📥 Tải tệp data_vy2026.json về máy",
                 data=json_export_data,
@@ -2204,7 +2118,7 @@ if role.startswith("1. ADMIN"):
         * ✅ Danh sách Cán bộ, Giáo viên, Nhân viên chính thức.
         * ✅ Danh sách các Tổ chuyên môn.
         * ✅ Cây Danh mục Tiêu chí Đánh giá Viên chức & Tiêu chí Điểm Thi đua Khen thưởng.
-        * ✅ Thông số Cấu hình API Viettel Tammi & Email SMTP.
+        * ✅ Thông số Cấu hình Máy chủ Email SMTP.
         """)
         st.markdown("---")
         confirm_chk = st.checkbox(
@@ -2212,20 +2126,12 @@ if role.startswith("1. ADMIN"):
         if confirm_chk:
             if st.button("🔥 TIẾN HÀNH RESET TOÀN BỘ DỮ LIỆU"):
                 st.session_state.logs = []
-                st.session_state.guitin_list = []
-                st.session_state.tammi_history = []
                 st.session_state.email_history = []
                 st.session_state.kscl_history = []
                 st.session_state.kscl_baselines = {}
                 save_data_to_disk()
-                for fpath in ["guitin.csv", "/workspace/scratch/guitin.csv"]:
-                    if os.path.exists(fpath):
-                        try:
-                            os.remove(fpath)
-                        except Exception:
-                            pass
                 st.success(
-                    "✅ **ĐÃ RESET THÀNH CÔNG!** Toàn bộ dữ liệu vi phạm, điểm cộng và lịch sử tin nhắn/Email thử nghiệm đã được làm sạch về trạng thái ban đầu.")
+                    "✅ **ĐÃ RESET THÀNH CÔNG!** Toàn bộ dữ liệu vi phạm, điểm cộng và lịch sử Email thử nghiệm đã được làm sạch về trạng thái ban đầu.")
                 st.rerun()
 elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
     st.sidebar.markdown("---")
@@ -2236,14 +2142,15 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
         "📊 Đánh giá điểm KSCL (Tiêu chí 5 - Tự động so sánh 2 kỳ)"
     ]
     if curr_u.get("role") == "Admin":
-        daily_options.append("📜 Sửa / Xóa Nhật ký Thi đua")
+        daily_options.append("📜 Sửa / Xóa thông tin")
     daily_sub = st.sidebar.radio(
         "Tích chọn phân loại:",
         daily_options,
         key="daily_submenu_radio"
     )
     st.header("📝 Ghi nhận Thực hiện Nhiệm vụ Hằng ngày")
-    if daily_sub == "📜 Sửa / Xóa Nhật ký Thi đua":
+
+    if daily_sub == "📜 Sửa / Xóa thông tin":
         render_manage_logs_ui()
     else:
         if st.session_state.users.empty:
@@ -2381,7 +2288,6 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
                     if not teacher_email or "@" not in teacher_email:
                         teacher_email = f"{selected_staff.lower().replace(' ', '')}@vinhyen.edu.vn"
                     msg_tag = "THÔNG BÁO THI ĐUA"
-                    tammi_text = ""
                     email_subject = ""
                     email_html = ""
                     success_msg = ""
@@ -2412,11 +2318,11 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
                                 "Ghi chú": "Lưu Mốc đầu vào (S1)"
                             })
                             msg_tag = "MỐC DỮ LIỆU KSCL (S1)"
-                            tammi_text = f"💬 [THPT VĨNH YÊN] Thông báo KSCL ngày {date_formatted}: Kính gửi {selected_staff}, đã lưu Mốc điểm đầu vào S1 = {kscl_curr_score:.2f} cho Lớp {kscl_class.strip()} - Môn {kscl_subject} ({kscl_exam_name}). SĐT: {staff_info.get('SĐT', '')}."
                             email_subject = f"[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp {kscl_class.strip()} Môn {kscl_subject} - {selected_staff}"
                             email_html = build_email_html(selected_staff, "Mốc KSCL S1", date_formatted,
                                                           selected_content, 0.0, 0.0, note)
                             success_msg = f"✅ Đã lưu thành công Mốc điểm đầu vào S1 ({kscl_curr_score:.2f}) cho Lớp {kscl_class.strip()} - Môn {kscl_subject} (GV {selected_staff}) và tự động gửi Email thông báo!"
+
                         else:
                             # KSCL lần k (k >= 1)
                             prev_info = st.session_state.kscl_baselines[baseline_key]
@@ -2457,7 +2363,6 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
                                 "Ghi chú": note
                             })
                             msg_tag = f"KSCL ({'CỘNG ĐIỂM' if pts >= 0 else 'TRỪ ĐIỂM'})"
-                            tammi_text = f"💬 [THPT VĨNH YÊN] Thông báo KSCL ngày {date_formatted}: Kính gửi {selected_staff}, kết quả {kscl_exam_name} Lớp {kscl_class.strip()} - Môn {kscl_subject} đạt ĐTB {kscl_curr_score:.2f} (Kỳ trước {s_prev:.2f}, Tăng {delta:+.2f}). Hệ thống ghi nhận: {desc_msg} ({pts:+.1f}đ thi đua). SĐT: {staff_info.get('SĐT', '')}."
                             email_subject = f"[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp {kscl_class.strip()} Môn {kscl_subject} - {selected_staff}"
                             user_logs = [l for l in st.session_state.logs if l.get("Cán bộ") == selected_staff]
                             tot_bon = sum(
@@ -2483,7 +2388,6 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
                         st.session_state.logs.append(log_entry)
                         if type_label == "Điểm trừ":
                             msg_tag = "VI PHẠM (TRỪ ĐIỂM)"
-                            tammi_text = f"💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày {date_formatted}: Kính gửi {selected_staff}, Hệ thống ghi nhận lỗi: '{selected_content}' (Trừ điểm: -{points_val} điểm). SĐT: {staff_info.get('SĐT', '')}."
                             email_subject = f"[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày {date_formatted} - {selected_staff}"
                             user_logs = [l for l in st.session_state.logs if l.get("Cán bộ") == selected_staff]
                             tot_vc_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in user_logs if
@@ -2492,7 +2396,6 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
                             calc_score = 100.0 - tot_vc_pen
                         else:
                             msg_tag = "KHEN THƯỞNG (CỘNG ĐIỂM)"
-                            tammi_text = f"💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày {date_formatted}: Kính gửi {selected_staff}, Hệ thống ghi nhận khen thưởng: '{selected_content}' (Điểm cộng: +{points_val} điểm). SĐT: {staff_info.get('SĐT', '')}."
                             email_subject = f"[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày {date_formatted} - {selected_staff}"
                             user_logs = [l for l in st.session_state.logs if l.get("Cán bộ") == selected_staff]
                             tot_bon = sum(
@@ -2501,32 +2404,10 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
                                                 l.get("Loại") == "Điểm trừ" and l.get("Nội dung", "").startswith(
                                                     "[KSCL")])
                             calc_score = tot_bon - tot_kscl_pen
-
                         email_html = build_email_html(selected_staff, type_label, date_formatted, selected_content,
                                                       points_val, calc_score, note)
                         success_msg = f"✅ Đã xác nhận & lưu thông tin đánh giá thi đua cho cán bộ **{selected_staff}**!"
-
-                    # TỰ ĐỘNG PHÁT VIETTEL TAMMI & EMAIL CHO TẤT CẢ CÁC LOẠI SỰ KIỆN
-                    t_cfg = st.session_state.get("tammi_config", {})
-                    t_status_ok, t_status_msg = send_viettel_tammi_message(staff_info.get("SĐT", ""), tammi_text, t_cfg)
-                    st.session_state.tammi_history.append({
-                        "Thời gian": date_formatted,
-                        "Người nhận": selected_staff,
-                        "SĐT Tammi": staff_info.get("SĐT", ""),
-                        "Phân loại": msg_tag,
-                        "Nội dung Tin nhắn Tammi": tammi_text,
-                        "Trạng thái Viettel Tammi": "Đã gửi thành công" if t_status_ok else t_status_msg
-                    })
-                    st.session_state.guitin_list.append({
-                        "SĐT": str(staff_info.get("SĐT", "")).strip(),
-                        "Họ và tên": selected_staff,
-                        "Thời gian": date_formatted,
-                        "Loại thông báo": msg_tag,
-                        "Nội dung ghi nhận": selected_content,
-                        "Số điểm": f"-{points_val:.1f}" if type_label == "Điểm trừ" else f"+{points_val:.1f}",
-                        "Nội dung tin nhắn": tammi_text,
-                        "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
-                    })
+                    # TỰ ĐỘNG PHÁT EMAIL THÔNG BÁO CHO TẤT CẢ CÁC LOẠI SỰ KIỆN
                     e_cfg = st.session_state.get("email_config", {})
                     ok_e, msg_e = send_email_notification(teacher_email, email_subject, email_html, e_cfg)
                     st.session_state.email_history.append({
@@ -2538,6 +2419,7 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
                         "Nội dung ghi nhận": selected_content,
                         "Trạng thái Email": "Đã gửi thành công (200 OK)" if ok_e else msg_e
                     })
+
                     save_data_to_disk()
                     st.success(success_msg)
                     st.info(f"📧 **Hệ thống đã tự động gửi Email HTML thông báo trang trọng tới:** `{teacher_email}`")
@@ -2637,7 +2519,7 @@ else:
         # --- BÁO CÁO 1: TIÊU CHÍ ĐÁNH GIÁ VIÊN CHỨC (QĐ 292 - PHỤ LỤC 1) ---
         report_vc_summary = []
         report_vc_details = []
-        # --- BÁO CÁO 2: TIÊU CHÍ THI ĐỦA KHEN THƯỞNG (PHỤ LỤC 2) ---
+        # --- BÁO CÁO 2: TIÊU CHÍ THI ĐUA KHEN THƯỞNG (PHỤ LỤC 2) ---
         report_td_summary = []
         report_td_details = []
         # --- BÁO CÁO 3: TỔNG HỢP TOÀN DIỆN ---
@@ -2844,34 +2726,9 @@ else:
                     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
                 )
         st.markdown("---")
-        st.subheader("📱 Lịch sử Gửi thông báo Tự động & Tải File guitin.csv")
-        hist_tab0, hist_tab1, hist_tab2 = st.tabs([
-            "📧 Lịch sử gửi Email thông báo (Theo Email cá nhân)",
-            "📄 File Xuất Tin Nhắn (guitin.csv)",
-            "📡 Lịch sử gửi tin nhắn Viettel Tammi"
-        ])
-        with hist_tab0:
-            st.markdown("##### 📧 Danh sách Lịch sử Gửi Email Thông báo (`email_history`)")
-            if st.session_state.get("email_history"):
-                st.dataframe(pd.DataFrame(st.session_state.email_history), use_container_width=True)
-            else:
-                st.info("Chưa có Email thông báo nào được gửi.")
-        with hist_tab1:
-            st.markdown("##### 📄 Danh sách Dữ liệu Tin nhắn Đã lưu (`guitin.csv`)")
-            if st.session_state.get("guitin_list"):
-                df_guitin = pd.DataFrame(st.session_state.guitin_list)
-                st.dataframe(df_guitin, use_container_width=True)
-                csv_bytes = df_guitin.to_csv(index=False, encoding="utf-8-sig").encode("utf-8-sig")
-                st.download_button(
-                    label="📥 Tải xuống File guitin.csv (Dùng gửi tin nhắn tự động)",
-                    data=csv_bytes,
-                    file_name="guitin.csv",
-                    mime="text/csv"
-                )
-            else:
-                st.info("Chưa có lượt ghi nhận tin nhắn nào trong guitin.csv.")
-        with hist_tab2:
-            if st.session_state.get("tammi_history"):
-                st.dataframe(pd.DataFrame(st.session_state.tammi_history), use_container_width=True)
-            else:
-                st.info("Chưa có thông báo Viettel Tammi nào được gửi.")
+        st.markdown("---")
+        st.subheader("📧 Lịch sử Gửi Email Thông báo cho Giáo viên")
+        if st.session_state.get("email_history"):
+            st.dataframe(pd.DataFrame(st.session_state.email_history), use_container_width=True)
+        else:
+            st.info("ℹ️ Chưa có Email thông báo nào được phát đi từ hệ thống.")
