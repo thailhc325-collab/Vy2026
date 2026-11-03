@@ -2546,6 +2546,15 @@
             "Nội dung": "[TC3.1.3] Muộn từ 6 đến 10 phút",
             "Số điểm": 1.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "03/11/2026",
+            "Cán bộ": "Đào Thị Phương Lan",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "HD học sinh tham gia cuộc thi “Khát vọng Lạc Hồng” (Qua vòng Sơ loại (Cuộc thi Tuần))",
+            "Số điểm": 5.0,
+            "Ghi chú": ""
         }
     ],
     "tammi_history": [
@@ -3323,6 +3332,14 @@
             "SĐT Tammi": "0387377705",
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Nguyễn Thị Huyền, đã lưu Mốc điểm đầu vào S1 = 4.75 cho Lớp 12A6 - Môn Toán (KSCL Lần 0). SĐT: 0387377705.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Đào Thị Phương Lan",
+            "SĐT Tammi": "0985570376",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 03/11/2026: Kính gửi Đào Thị Phương Lan, Hệ thống ghi nhận khen thưởng: 'HD học sinh tham gia cuộc thi “Khát vọng Lạc Hồng” (Qua vòng Sơ loại (Cuộc thi Tuần))' (Điểm cộng: +5.0 điểm). SĐT: 0985570376.",
             "Trạng thái Viettel Tammi": "Đã gửi thành công"
         }
     ],
@@ -4490,6 +4507,16 @@
             "Số điểm": "+0.0",
             "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Nguyễn Thị Huyền, đã lưu Mốc điểm đầu vào S1 = 4.75 cho Lớp 12A6 - Môn Toán (KSCL Lần 0). SĐT: 0387377705.",
             "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0985570376",
+            "Họ và tên": "Đào Thị Phương Lan",
+            "Thời gian": "03/11/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "HD học sinh tham gia cuộc thi “Khát vọng Lạc Hồng” (Qua vòng Sơ loại (Cuộc thi Tuần))",
+            "Số điểm": "+5.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 03/11/2026: Kính gửi Đào Thị Phương Lan, Hệ thống ghi nhận khen thưởng: 'HD học sinh tham gia cuộc thi “Khát vọng Lạc Hồng” (Qua vòng Sơ loại (Cuộc thi Tuần))' (Điểm cộng: +5.0 điểm). SĐT: 0985570376.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
         }
     ],
     "email_config": {
@@ -5389,6 +5416,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A6 Môn Toán - Nguyễn Thị Huyền",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A6 - Môn Toán: Lưu mốc điểm đầu vào S1 = 4.75",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Đào Thị Phương Lan",
+            "Email cá nhân": "landtp.C3.25.001@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 03/11/2026 - Đào Thị Phương Lan",
+            "Nội dung ghi nhận": "HD học sinh tham gia cuộc thi “Khát vọng Lạc Hồng” (Qua vòng Sơ loại (Cuộc thi Tuần))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
