@@ -3316,6 +3316,14 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Nguyễn Thị Tuyết, đã lưu Mốc điểm đầu vào S1 = 4.40 cho Lớp 12A4 - Môn Toán (KSCL Lần 0). SĐT: 0986246056.",
             "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Nguyễn Thị Huyền",
+            "SĐT Tammi": "0387377705",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Nguyễn Thị Huyền, đã lưu Mốc điểm đầu vào S1 = 4.75 cho Lớp 12A6 - Môn Toán (KSCL Lần 0). SĐT: 0387377705.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
         }
     ],
     "tammi_config": {},
@@ -3423,6 +3431,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 9,
+            "Ngày": "03/11/2026",
+            "Cán bộ": "Nguyễn Thị Huyền",
+            "Lớp": "12A6",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 4.75,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -3488,6 +3509,14 @@
             "subject": "Toán",
             "last_exam": "KSCL Lần 0",
             "last_score": 4.4,
+            "last_date": "03/11/2026"
+        },
+        "Nguyễn Thị Huyền_12A6_Toán": {
+            "teacher": "Nguyễn Thị Huyền",
+            "class": "12A6",
+            "subject": "Toán",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 4.75,
             "last_date": "03/11/2026"
         }
     },
@@ -4451,6 +4480,16 @@
             "Số điểm": "+0.0",
             "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Nguyễn Thị Tuyết, đã lưu Mốc điểm đầu vào S1 = 4.40 cho Lớp 12A4 - Môn Toán (KSCL Lần 0). SĐT: 0986246056.",
             "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0387377705",
+            "Họ và tên": "Nguyễn Thị Huyền",
+            "Thời gian": "03/11/2026",
+            "Loại thông báo": "MỐC DỮ LIỆU KSCL (S1)",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A6 - Môn Toán: Lưu mốc điểm đầu vào S1 = 4.75",
+            "Số điểm": "+0.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Nguyễn Thị Huyền, đã lưu Mốc điểm đầu vào S1 = 4.75 cho Lớp 12A6 - Môn Toán (KSCL Lần 0). SĐT: 0387377705.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
         }
     ],
     "email_config": {
@@ -5341,6 +5380,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A4 Môn Toán - Nguyễn Thị Tuyết",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A4 - Môn Toán: Lưu mốc điểm đầu vào S1 = 4.40",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Nguyễn Thị Huyền",
+            "Email cá nhân": "huyennt.c3.25.017@phutho.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A6 Môn Toán - Nguyễn Thị Huyền",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A6 - Môn Toán: Lưu mốc điểm đầu vào S1 = 4.75",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
