@@ -3406,6 +3406,14 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Trịnh Thị Hoài Giang, đã lưu Mốc điểm đầu vào S1 = 6.79 cho Lớp 12A5 - Môn Ngữ văn (KSCL Lần 0). SĐT: 0945960159.",
             "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Trịnh Thị Hoài Giang",
+            "SĐT Tammi": "0945960159",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Trịnh Thị Hoài Giang, đã lưu Mốc điểm đầu vào S1 = 7.40 cho Lớp 12A7 - Môn Ngữ văn (KSCL Lần 0). SĐT: 0945960159.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
         }
     ],
     "tammi_config": {},
@@ -3604,6 +3612,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 16,
+            "Ngày": "03/11/2026",
+            "Cán bộ": "Trịnh Thị Hoài Giang",
+            "Lớp": "12A7",
+            "Môn": "Ngữ văn",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 7.4,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -3725,6 +3746,14 @@
             "subject": "Ngữ văn",
             "last_exam": "KSCL Lần 0",
             "last_score": 6.79,
+            "last_date": "03/11/2026"
+        },
+        "Trịnh Thị Hoài Giang_12A7_Ngữ văn": {
+            "teacher": "Trịnh Thị Hoài Giang",
+            "class": "12A7",
+            "subject": "Ngữ văn",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 7.4,
             "last_date": "03/11/2026"
         }
     },
@@ -4778,6 +4807,16 @@
             "Số điểm": "+0.0",
             "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Trịnh Thị Hoài Giang, đã lưu Mốc điểm đầu vào S1 = 6.79 cho Lớp 12A5 - Môn Ngữ văn (KSCL Lần 0). SĐT: 0945960159.",
             "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0945960159",
+            "Họ và tên": "Trịnh Thị Hoài Giang",
+            "Thời gian": "03/11/2026",
+            "Loại thông báo": "MỐC DỮ LIỆU KSCL (S1)",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A7 - Môn Ngữ văn: Lưu mốc điểm đầu vào S1 = 7.40",
+            "Số điểm": "+0.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Trịnh Thị Hoài Giang, đã lưu Mốc điểm đầu vào S1 = 7.40 cho Lớp 12A7 - Môn Ngữ văn (KSCL Lần 0). SĐT: 0945960159.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
         }
     ],
     "email_config": {
@@ -5749,6 +5788,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A5 Môn Ngữ văn - Trịnh Thị Hoài Giang",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A5 - Môn Ngữ văn: Lưu mốc điểm đầu vào S1 = 6.79",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Trịnh Thị Hoài Giang",
+            "Email cá nhân": "giangt1981@gmail.com",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A7 Môn Ngữ văn - Trịnh Thị Hoài Giang",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A7 - Môn Ngữ văn: Lưu mốc điểm đầu vào S1 = 7.40",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
