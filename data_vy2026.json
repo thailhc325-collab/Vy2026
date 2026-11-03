@@ -5045,6 +5045,15 @@
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 03/11/2026 - Lê Hồng Thái",
             "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM TRỪ)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 03/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[ĐÃ XÓA] [TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
     "accounts": [
