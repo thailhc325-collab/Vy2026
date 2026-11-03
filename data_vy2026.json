@@ -2555,6 +2555,15 @@
             "Nội dung": "HD học sinh tham gia cuộc thi “Khát vọng Lạc Hồng” (Qua vòng Sơ loại (Cuộc thi Tuần))",
             "Số điểm": 5.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "03/11/2026",
+            "Cán bộ": "Đào Thị Phương Lan",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "HD học sinh tham gia cuộc thi “Khát vọng Lạc Hồng” (Nhì Vòng đấu trí (Cuộc thi tháng))",
+            "Số điểm": 6.0,
+            "Ghi chú": ""
         }
     ],
     "tammi_history": [
@@ -3340,6 +3349,14 @@
             "SĐT Tammi": "0985570376",
             "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
             "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 03/11/2026: Kính gửi Đào Thị Phương Lan, Hệ thống ghi nhận khen thưởng: 'HD học sinh tham gia cuộc thi “Khát vọng Lạc Hồng” (Qua vòng Sơ loại (Cuộc thi Tuần))' (Điểm cộng: +5.0 điểm). SĐT: 0985570376.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Đào Thị Phương Lan",
+            "SĐT Tammi": "0985570376",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 03/11/2026: Kính gửi Đào Thị Phương Lan, Hệ thống ghi nhận khen thưởng: 'HD học sinh tham gia cuộc thi “Khát vọng Lạc Hồng” (Nhì Vòng đấu trí (Cuộc thi tháng))' (Điểm cộng: +6.0 điểm). SĐT: 0985570376.",
             "Trạng thái Viettel Tammi": "Đã gửi thành công"
         }
     ],
@@ -4517,6 +4534,16 @@
             "Số điểm": "+5.0",
             "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 03/11/2026: Kính gửi Đào Thị Phương Lan, Hệ thống ghi nhận khen thưởng: 'HD học sinh tham gia cuộc thi “Khát vọng Lạc Hồng” (Qua vòng Sơ loại (Cuộc thi Tuần))' (Điểm cộng: +5.0 điểm). SĐT: 0985570376.",
             "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0985570376",
+            "Họ và tên": "Đào Thị Phương Lan",
+            "Thời gian": "03/11/2026",
+            "Loại thông báo": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Nội dung ghi nhận": "HD học sinh tham gia cuộc thi “Khát vọng Lạc Hồng” (Nhì Vòng đấu trí (Cuộc thi tháng))",
+            "Số điểm": "+6.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo khen thưởng ngày 03/11/2026: Kính gửi Đào Thị Phương Lan, Hệ thống ghi nhận khen thưởng: 'HD học sinh tham gia cuộc thi “Khát vọng Lạc Hồng” (Nhì Vòng đấu trí (Cuộc thi tháng))' (Điểm cộng: +6.0 điểm). SĐT: 0985570376.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
         }
     ],
     "email_config": {
@@ -5425,6 +5452,15 @@
             "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 03/11/2026 - Đào Thị Phương Lan",
             "Nội dung ghi nhận": "HD học sinh tham gia cuộc thi “Khát vọng Lạc Hồng” (Qua vòng Sơ loại (Cuộc thi Tuần))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Đào Thị Phương Lan",
+            "Email cá nhân": "landtp.C3.25.001@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 03/11/2026 - Đào Thị Phương Lan",
+            "Nội dung ghi nhận": "HD học sinh tham gia cuộc thi “Khát vọng Lạc Hồng” (Nhì Vòng đấu trí (Cuộc thi tháng))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
