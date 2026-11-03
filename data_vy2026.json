@@ -3292,6 +3292,14 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Đại Văn Hải, đã lưu Mốc điểm đầu vào S1 = 6.65 cho Lớp 12A9 - Môn Toán (KSCL Lần 0). SĐT: 0972881520.",
             "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Nguyễn Đức Thịnh",
+            "SĐT Tammi": "0984490608",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Nguyễn Đức Thịnh, đã lưu Mốc điểm đầu vào S1 = 4.59 cho Lớp 12A3 - Môn Toán (KSCL Lần 0). SĐT: 0984490608.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
         }
     ],
     "tammi_config": {},
@@ -3360,6 +3368,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 6,
+            "Ngày": "03/11/2026",
+            "Cán bộ": "Nguyễn Đức Thịnh",
+            "Lớp": "12A3",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 4.59,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -3401,6 +3422,14 @@
             "subject": "Toán",
             "last_exam": "KSCL Lần 0",
             "last_score": 6.65,
+            "last_date": "03/11/2026"
+        },
+        "Nguyễn Đức Thịnh_12A3_Toán": {
+            "teacher": "Nguyễn Đức Thịnh",
+            "class": "12A3",
+            "subject": "Toán",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 4.59,
             "last_date": "03/11/2026"
         }
     },
@@ -4334,6 +4363,16 @@
             "Số điểm": "+0.0",
             "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Đại Văn Hải, đã lưu Mốc điểm đầu vào S1 = 6.65 cho Lớp 12A9 - Môn Toán (KSCL Lần 0). SĐT: 0972881520.",
             "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0984490608",
+            "Họ và tên": "Nguyễn Đức Thịnh",
+            "Thời gian": "03/11/2026",
+            "Loại thông báo": "MỐC DỮ LIỆU KSCL (S1)",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A3 - Môn Toán: Lưu mốc điểm đầu vào S1 = 4.59",
+            "Số điểm": "+0.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo KSCL ngày 03/11/2026: Kính gửi Nguyễn Đức Thịnh, đã lưu Mốc điểm đầu vào S1 = 4.59 cho Lớp 12A3 - Môn Toán (KSCL Lần 0). SĐT: 0984490608.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
         }
     ],
     "email_config": {
@@ -5197,6 +5236,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A9 Môn Toán - Đại Văn Hải",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A9 - Môn Toán: Lưu mốc điểm đầu vào S1 = 6.65",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Nguyễn Đức Thịnh",
+            "Email cá nhân": "nguyenducthinhgv.c3songlo@vinhphuc.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A3 Môn Toán - Nguyễn Đức Thịnh",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A3 - Môn Toán: Lưu mốc điểm đầu vào S1 = 4.59",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
