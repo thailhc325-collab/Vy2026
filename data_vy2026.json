@@ -2546,6 +2546,15 @@
             "Nội dung": "[TC3.1.3] Muộn từ 6 đến 10 phút",
             "Số điểm": 1.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "03/11/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": 1.0,
+            "Ghi chú": "BGH xác nhận và cập nhật."
         }
     ],
     "tammi_history": [
@@ -3259,6 +3268,14 @@
             "SĐT Tammi": "0983955526",
             "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
             "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 03/11/2026: Kính gửi Nguyễn Thị Lan Phương(H), Hệ thống ghi nhận lỗi: '[TC3.1.3] Muộn từ 6 đến 10 phút' (Trừ điểm: -1.0 điểm). SĐT: 0983955526.",
+            "Trạng thái Viettel Tammi": "Đã gửi thành công"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "SĐT Tammi": "0969611811",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung Tin nhắn Tammi": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 03/11/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi: '[TC1.1.1] Trang phục không đúng quy định' (Trừ điểm: -1.0 điểm). SĐT: 0969611811.",
             "Trạng thái Viettel Tammi": "Đã gửi thành công"
         }
     ],
@@ -4199,6 +4216,16 @@
             "Số điểm": "-1.0",
             "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 03/11/2026: Kính gửi Nguyễn Thị Lan Phương(H), Hệ thống ghi nhận lỗi: '[TC3.1.3] Muộn từ 6 đến 10 phút' (Trừ điểm: -1.0 điểm). SĐT: 0983955526.",
             "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
+        },
+        {
+            "SĐT": "0969611811",
+            "Họ và tên": "Lê Hồng Thái",
+            "Thời gian": "03/11/2026",
+            "Loại thông báo": "VI PHẠM (TRỪ ĐIỂM)",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Số điểm": "-1.0",
+            "Nội dung tin nhắn": "💬 [THPT VĨNH YÊN] Thông báo vi phạm ngày 03/11/2026: Kính gửi Lê Hồng Thái, Hệ thống ghi nhận lỗi: '[TC1.1.1] Trang phục không đúng quy định' (Trừ điểm: -1.0 điểm). SĐT: 0969611811.",
+            "Trạng thái": "Đã lưu (Sẵn sàng gửi)"
         }
     ],
     "email_config": {
@@ -5017,6 +5044,15 @@
             "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM TRỪ)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 31/10/2026 - Nguyễn Thị Tuyết",
             "Nội dung ghi nhận": "[ĐÃ XÓA] [TC3.4.3] Không ký xác nhận tiết dạy",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 03/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
