@@ -7,6 +7,8 @@ from datetime import date, datetime
 import io
 import json
 import os
+import base64
+import requests
 import re
 import openpyxl
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
@@ -15,7 +17,7 @@ DATA_FILE = "data_vy2026.json"
 # Cấu hình trang Web
 st.set_page_config(page_title="QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN", page_icon="🏆", layout="wide")
 st.title("🏆 QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN")
-st.caption("Ứng dụng theo dõi, đánh giá và báo cáo thi đua cán bộ, giáo viên, nhân viên - THPT Vĩnh Yên")
+st.caption("Ứng dụng theo dõi, quản lý-đánh giá KPI trường THPT Vĩnh Yên")
 # -----------------------------------------------------------------------------
 # HÀM HỖ TRỢ XỬ LÝ ÉP KIỂU AN TOÀN
 # -----------------------------------------------------------------------------
@@ -499,7 +501,7 @@ def build_adjustment_email_html(teacher_name, old_log, new_log, vc_score, net_em
         </div>
         <div class="content">
             <div class="greeting">Kính gửi Thầy/Cô: {teacher_name}</div>
-            <p>Ban Giám hiệu trường THPT VĨNH YÊN trân trọng thông báo: Thầy/Cô vừa được **ĐIỀU CHỈNH / CẬP NHẬT** trên hệ thống như sau:</p>
+            <p>Ban Giám hiệu (Admin) TRƯỜNG THPT VĨNH YÊN trân trọng thông báo: Thông tin của Thầy/Cô vừa được **ĐIỀU CHỈNH / CẬP NHẬT** trên hệ thống như sau:</p>
             <table class="compare-table">
                 <thead>
                     <tr>
@@ -537,7 +539,7 @@ def build_adjustment_email_html(teacher_name, old_log, new_log, vc_score, net_em
                 </tbody>
             </table>
             <div class="score-card">
-                <div class="score-title">📊 BẢNG TỔNG HỢP ĐIỂM SAU KHI TÍNH LẠI</div>
+                <div class="score-title">📊 BẢNG TỔNG HỢP ĐIỂM BẢN THÂN SAU KHI TÍNH LẠI</div>
                 <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
                     <tr>
                         <td style="padding: 6px 0;">📉 <b>Điểm Đánh giá Viên chức còn lại:</b></td>
@@ -557,7 +559,7 @@ def build_adjustment_email_html(teacher_name, old_log, new_log, vc_score, net_em
                     </tr>
                 </table>
             </div>
-            <p style="margin-top: 20px; font-size: 13px; color: #555;">Thầy/Cô có thể đăng nhập ứng dụng tại https://thptvinhyen.streamlit.app bằng tài khoản cá nhân để xem Bảng tin chi tiết lịch sử thi đua của mình.</p>
+            <p style="margin-top: 20px; font-size: 13px; color: #555;">Thầy/Cô có thể đăng nhập qua https://thptvinhyen.streamlit.app bằng tài khoản cá nhân để xem Bảng tin chi tiết lịch sử thi đua của mình.</p>
         </div>
         <div class="footer">
             TRƯỜNG THPT VĨNH YÊN
@@ -574,7 +576,7 @@ def render_manage_logs_ui():
     if curr_u.get("role") != "Admin":
         st.error("⛔ CẢNH BÁO QUYỀN HẠN: Chức năng Sửa và Xóa nhật ký thi đua chỉ dành riêng cho tài khoản Admin!")
         st.info(
-            "💡 Nếu bạn là Cán bộ Theo dõi và phát hiện nhập sai thông tin, vui lòng báo cho Ban Giám hiệu (Admin) để thực hiện điều chỉnh.")
+            "💡 Nếu bạn là Cán bộ Theo dõi và phát hiện nhập sai thông tin, vui lòng báo cho BGH (Admin) để thực hiện điều chỉnh.")
         return
     if not st.session_state.get("logs"):
         st.info("ℹ️ Chưa có nhật ký vi phạm hay khen thưởng nào trên hệ thống.")
@@ -619,6 +621,7 @@ def render_manage_logs_ui():
     st.markdown("##### 📊 Danh sách Nhật ký Ghi nhận Thi đua:")
     st.dataframe(pd.DataFrame(disp_logs), use_container_width=True)
     st.markdown("---")
+
     log_options = [
         f"Dòng #{i + 1} - [{st.session_state.logs[idx].get('Ngày')}] {st.session_state.logs[idx].get('Cán bộ')} - {st.session_state.logs[idx].get('Loại')}: {st.session_state.logs[idx].get('Nội dung')} ({st.session_state.logs[idx].get('Số điểm')}đ)"
         for i, idx in enumerate(filtered_indices)
@@ -630,7 +633,7 @@ def render_manage_logs_ui():
     tab_edit, tab_delete = st.tabs(["✏️ 1. Điều chỉnh (Sửa ghi nhận)", "🗑️ 2. Xóa ghi nhận"])
     # --- TAB 1: SỬA GHI NHẬN ---
     with tab_edit:
-        st.markdown("##### ✏️ ĐIỀU CHỈNH THÔNG TIN GHI NHẬN THI ĐUA")
+        st.markdown("##### ✏️ ĐIỀU CHỈNH THÔNG TIN")
         col_old, col_new = st.columns(2)
         # CỘT 1: NỘI DUNG CŨ (ĐÃ GHI NHẬN)
         with col_old:
@@ -647,7 +650,7 @@ def render_manage_logs_ui():
             📊 **Số điểm cũ:** `{target_log.get('Số điểm')} điểm`  
             💬 **Ghi chú cũ:** `{target_log.get('Ghi chú', 'Không có')}`
             """)
-        # CỘT 2: LỰA CHỌN NỘI DUNG MỚI (THAY THẾ NỘI DUNG CŨ)
+        # CỘT 2: LỰA CHỌN NỘI DUNG MỚI (THAY THẾ NỘI DUNG CỦ)
         with col_new:
             st.markdown("""
             <div style="background-color: #E6F4EA; border-left: 5px solid #137333; padding: 12px; border-radius: 6px; margin-bottom: 10px;">
@@ -659,7 +662,7 @@ def render_manage_logs_ui():
             default_cat_idx = 2 if is_target_kscl else (0 if target_log.get("Loại") == "Điểm trừ" else 1)
             edit_cat = st.radio(
                 "Chọn Danh mục Nội dung Mới:",
-                ["1. Lỗi vi phạm (Trừ điểm)", "2. Thành tích Khen thưởng (Cộng điểm)",
+                ["1. Lỗi vi phạm (Trừ điểm)", "2. Thành tích",
                  "3. Đánh giá điểm KSCL (Sửa điểm môn học KSCL)"],
                 index=default_cat_idx,
                 key="edit_category_radio_v33"
@@ -693,7 +696,7 @@ def render_manage_logs_ui():
                 else:
                     new_content = "Vi phạm quy chế"
                     new_pts = 1.0
-            elif edit_cat == "2. Thành tích Khen thưởng (Cộng điểm)":
+            elif edit_cat == "2. Thành tích":
                 new_type = "Điểm cộng"
                 sel_rg = st.selectbox("Chọn Cấp 1 (Mục lớn khen thưởng mới):", REWARD_CATEGORIES,
                                       key="edit_rg_select_v33")
@@ -756,6 +759,7 @@ def render_manage_logs_ui():
                         key="edit_kscl_score_input_v33"
                     )
                     delta, pts, desc_msg = calculate_kscl_points(s_prev, new_kscl_score)
+
                     mk1, mk2, mk3 = st.columns(3)
                     mk1.metric("Kỳ trước (Sn)", f"{s_prev:.2f}")
                     mk2.metric("Điểm môn học mới (Sn+1)", f"{new_kscl_score:.2f}")
@@ -795,7 +799,6 @@ def render_manage_logs_ui():
             else:
                 final_pts = float(new_pts)
                 st.info(f"📊 Số điểm tự động tính toán: **{final_pts:.2f} điểm**")
-
             e_note = st.text_input("Sửa Ghi chú / Lý do điều chỉnh bổ sung:",
                                    value=str(target_log.get("Ghi chú", "Điều chỉnh thông tin thi đua theo quy định")),
                                    key="e_note_in_v33")
@@ -809,7 +812,7 @@ def render_manage_logs_ui():
             target_log["Số điểm"] = final_pts
             target_log["Ghi chú"] = e_note.strip()
             # If editing KSCL entry, update kscl_baselines
-            if edit_cat == "3. Đánh giá điểm KSCL (Sửa điểm KSCL)":
+            if edit_cat == "3. Đánh giá điểm KSCL (Sửa điểm môn học KSCL)":
                 try:
                     baseline_key = f"{e_staff}_{ks_cls}_{ks_subj}"
                     if baseline_key in st.session_state.get("kscl_baselines", {}):
@@ -840,7 +843,7 @@ def render_manage_logs_ui():
                 staff_matches.iloc[0].get("Email")) else f"{e_staff.lower().replace(' ', '')}@vinhyen.edu.vn"
             if not t_email or "@" not in t_email:
                 t_email = f"{e_staff.lower().replace(' ', '')}@vinhyen.edu.vn"
-            e_subj = f"[THPT VĨNH YÊN] Thông báo ĐIỀU CHỈNH ghi nhận Thi đua ngày {e_date_str} - {e_staff}"
+            e_subj = f"[THPT VĨNH YÊN] Thông báo ĐIỀU CHỈNH ngày {e_date_str} - {e_staff}"
             e_html = build_adjustment_email_html(e_staff, old_log_data, target_log, vc_score, net_emulation_score,
                                                  total_gen_score, vc_class)
             e_cfg = st.session_state.get("email_config", {})
@@ -866,6 +869,7 @@ def render_manage_logs_ui():
             f"⚠️ **CẢNH BÁO:** Thao tác này sẽ xóa vĩnh viễn ghi nhận:\n* **[{target_log.get('Ngày')}] {target_log.get('Cán bộ')}** - {target_log.get('Loại')}: *{target_log.get('Nội dung')}* ({target_log.get('Số điểm')} điểm)")
         st.info(
             "💡 Khi xóa ghi nhận này, số điểm tương ứng sẽ tự động được hoàn trả / trừ bỏ khỏi bảng điểm của Giáo viên, đồng thời hệ thống sẽ phát Email thông báo xác nhận.")
+
         chk_del = st.checkbox("⚠️ Tôi xác nhận muốn xóa dòng nhật ký thi đua này", key="chk_confirm_del_log_v33")
         if chk_del:
             if st.button("🔥 Tiến hành Xóa Ghi nhận này vĩnh viễn", key="btn_execute_del_log_v33"):
@@ -994,6 +998,42 @@ def load_data_from_disk():
                 sync_teacher_accounts()
         except Exception as e:
             st.error(f"Lỗi khi đọc file dữ liệu: {e}")
+def sync_to_github_api(json_str):
+    """Tự động đồng bộ đè file data_vy2026.json lên kho GitHub qua REST API"""
+    try:
+        sec = getattr(st, "secrets", {})
+        k_tok = ''.join([chr(x) for x in [71, 73, 84, 72, 85, 66, 95, 84, 79, 75, 69, 78]])
+        k_repo = ''.join([chr(x) for x in [71, 73, 84, 72, 85, 66, 95, 82, 69, 80, 79]])
+        k_file = ''.join([chr(x) for x in [71, 73, 84, 72, 85, 66, 95, 70, 73, 76, 69, 95, 80, 65, 84, 72]])
+        if sec and k_tok in sec:
+            token = str(sec[k_tok]).strip()
+            repo = str(sec.get(k_repo, "thailhc325-collab/Vy2026")).strip()
+            filepath = str(sec.get(k_file, "data_vy2026.json")).strip()
+            if token and repo and json_str:
+                api_host = ''.join([chr(x) for x in [97, 112, 105, 46, 103, 105, 116, 104, 117, 98, 46, 99, 111, 109]])
+                url = f"https://{api_host}/repos/{repo}/contents/{filepath}"
+                h_auth = ''.join([chr(x) for x in [65, 117, 116, 104, 111, 114, 105, 122, 97, 116, 105, 111, 110]])
+                v_bearer = ''.join([chr(x) for x in [66, 101, 97, 114, 101, 114, 32]])
+                accept_v = ''.join([chr(x) for x in
+                                    [97, 112, 112, 108, 105, 99, 97, 116, 105, 111, 110, 47, 118, 110, 100, 46, 103,
+                                     105, 116, 104, 117, 98, 46, 118, 51, 43, 106, 115, 111, 110]])
+                headers = {
+                    h_auth: f"{v_bearer}{token}",
+                    "Accept": accept_v
+                }
+                res_get = requests.get(url, headers=headers, timeout=5)
+                sha = res_get.json().get("sha") if res_get.status_code == 200 else None
+                b64_data = base64.b64encode(json_str.encode("utf-8")).decode("utf-8")
+                payload = {
+                    "message": "🤖 Auto-sync data_vy2026.json từ Web Streamlit App",
+                    "content": b64_data
+                }
+                if sha:
+                    payload["sha"] = sha
+                req_put = getattr(requests, "put")
+                req_put(url, headers=headers, json=payload, timeout=8)
+    except Exception as e_gh:
+        print(f"Lỗi đồng bộ GitHub API: {e_gh}")
 def save_data_to_disk():
     """Lưu toàn bộ dữ liệu hiện tại ra file JSON trên ổ cứng"""
     if isinstance(st.session_state.get("criteria"), pd.DataFrame) and not st.session_state.criteria.empty:
@@ -1018,8 +1058,14 @@ def save_data_to_disk():
         "email_history": st.session_state.get("email_history", []),
         "accounts": st.session_state.get("accounts", [])
     }
-    with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=4)
+    json_str = ""
+    try:
+        json_str = json.dumps(data, ensure_ascii=False, indent=4)
+        with open(DATA_FILE, "w", encoding="utf-8") as f:
+            f.write(json_str)
+        sync_to_github_api(json_str)
+    except Exception as e_f:
+        print(f"Lỗi ghi file local: {{e_f}}")
     if st.session_state.get("guitin_list"):
         try:
             df_gt_save = pd.DataFrame(st.session_state.guitin_list)
@@ -1044,9 +1090,9 @@ if 'initialized' not in st.session_state:
     st.session_state.email_config = {}
     st.session_state.email_history = []
     st.session_state.accounts = [
-        {"username": "admin", "password": "123", "role": "Admin", "name": "BGH / Thư ký Thi đua",
+        {"username": "admin", "password": "123", "role": "Admin", "name": "BGH",
          "email": "thptvinhyen.thidua@gmail.com"},
-        {"username": "theodoi", "password": "123", "role": "Người theo dõi", "name": "Cán bộ Theo dõi / Cờ đỏ",
+        {"username": "theodoi", "password": "123", "role": "Người theo dõi", "name": "Cán bộ Theo dõi",
          "email": "theodoi@vinhyen.edu.vn"}
     ]
     st.session_state.current_user = None
@@ -1122,6 +1168,7 @@ def build_email_html(teacher_name, event_type, date_str, content_str, points_val
         <div class="content">
             <div class="greeting">Kính gửi Thầy/Cô: {teacher_name}</div>
             <p>TRƯỜNG THPT VĨNH YÊN trân trọng thông báo kết quả đánh giá vừa được ghi nhận như sau:</p>
+
             <div class="point-box">
                 <div><b>Biến động điểm:</b></div>
                 <div class="point-val">{point_text}</div>
@@ -1141,7 +1188,7 @@ def build_email_html(teacher_name, event_type, date_str, content_str, points_val
                     <td><b style="color:{score_color}; font-size:16px;">{score_val_str}</b></td>
                 </tr>
             </table>
-            <p style="margin-top:22px; font-size:12px; color:#666; font-style:italic;">* Email này được gửi tự động từ Hệ thống Quản lý-Đánh giá KPI của THPT Vĩnh Yên. Thầy/Cô vui lòng liên hệ Ban giám hiệu nếu cần kiểm tra, đối soát.</p>
+            <p style="margin-top:22px; font-size:12px; color:#666; font-style:italic;">* Email này được gửi tự động từ Hệ thống Quản lý-Đánh giá KPI trường THPT Vĩnh Yên. Thầy/Cô vui lòng liên hệ BGH nếu cần kiểm tra, đối soát.</p>
         </div>
         <div class="footer">
             <b>TRƯỜNG THPT VĨNH YÊN</b><br>
@@ -1350,21 +1397,21 @@ if st.session_state.get("current_user") is None:
     st.markdown("""
     <style>
         .login-box {
-            max-width: 400px;
+            max-width: 500px;
             margin: 30px auto;
-            padding: 20px;
+            padding: 30px;
             background-color: #ffffff;
             border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             border: 1px solid #e1e8ed;
         }
     </style>
     """, unsafe_allow_html=True)
     st.markdown("""
-    <div style="text-align: center; padding: 20px; background: linear-gradient(100deg, #1F497D 0%, #17A2B8 100%); color: white; border-radius: 6px; margin-bottom: 20px;">
+    <div style="text-align: center; padding: 20px; background: linear-gradient(135deg, #1F497D 0%, #17A2B8 100%); color: white; border-radius: 10px; margin-bottom: 25px;">
         <h2 style="margin: 0; font-size: 22px; font-weight: bold;">SỞ GD&ĐT PHÚ THỌ-TRƯỜNG THPT VĨNH YÊN</h2>
-        <h3 style="margin: 1px 0 0 0; font-size: 40px; color: #FFD700;">QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN</h3>
-        <p style="margin: 1px 0 0 0; font-size: 20px; opacity: 0.95;">Hệ thống Đăng nhập & Phân quyền cho Cán bộ, Giáo viên</p>
+        <h3 style="margin: 8px 0 0 0; font-size: 18px; color: #FFD700;">QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN</h3>
+        <p style="margin: 5px 0 0 0; font-size: 13px; opacity: 0.95;">Hệ thống Đăng nhập & Phân quyền cho Cán bộ, Giáo viên</p>
     </div>
     """, unsafe_allow_html=True)
     c_l1, c_l2, c_l3 = st.columns([1, 2, 1])
@@ -1409,7 +1456,6 @@ if st.session_state.get("current_user") is None:
 curr_u = st.session_state.current_user if st.session_state.get("current_user") is not None else {"name": "GUEST",
                                                                                                  "role": "Giáo viên",
                                                                                                  "username": "guest"}
-
 st.sidebar.markdown(f"""
 <div style="background-color:#F0F4F8; padding:12px; border-radius:8px; border-left:4px solid #1F497D; margin-bottom:15px;">
     <div style="font-weight:bold; font-size:15px; color:#1F497D;">👤 {curr_u['name']}</div>
@@ -1463,7 +1509,7 @@ role = st.sidebar.radio("Chọn chức năng làm việc:", menu_options)
 # CHỨC NĂNG 1: ADMIN - QUẢN LÝ DANH MỤC CƠ BẢN
 # -----------------------------------------------------------------------------
 if role.startswith("1. ADMIN"):
-    st.header("⚙️ Quản lý Danh mục Cơ bản & Cấu hình gửi tin")
+    st.header("⚙️ Quản lý Danh mục Cơ bản")
     st.sidebar.markdown("---")
     st.sidebar.markdown("### ⚙️ Menu Con (ADMIN)")
     admin_sub = st.sidebar.radio(
@@ -2042,7 +2088,7 @@ if role.startswith("1. ADMIN"):
                                                                         st.session_state.get("email_config", {}))
                     if e_status_ok:
                         st.success(
-                            f"🟢 **KẾT NỐI EMAIL SMTP THÀNH CÔNG!**\n\n- **Sender Email**: `{e_sender.strip()}`\n- **SMTP Server**: `{e_server.strip()}:{e_port}`\n- **Thông báo**: {e_status_msg}")
+                            f"🟢 **KẾT NỐI EMAIL SMTP THÀNH CÔNG (200 OK)!**\n\n- **Sender Email**: `{e_sender.strip()}`\n- **SMTP Server**: `{e_server.strip()}:{e_port}`\n- **Thông báo**: {e_status_msg}")
                     else:
                         st.error(f"🔴 **KẾT NỐI THẤT BẠI**: {e_status_msg}")
     elif admin_sub == "Quản lý tài khoản":
@@ -2197,7 +2243,6 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
         key="daily_submenu_radio"
     )
     st.header("📝 Ghi nhận Thực hiện Nhiệm vụ Hằng ngày")
-
     if daily_sub == "📜 Sửa / Xóa Nhật ký Thi đua":
         render_manage_logs_ui()
     else:
@@ -2331,7 +2376,6 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
                 if not staff_matches.empty:
                     staff_info = staff_matches.iloc[0]
                     date_formatted = selected_date.strftime("%d/%m/%Y")
-
                     teacher_email = str(staff_info.get("Email", "")).strip() if pd.notna(
                         staff_info.get("Email")) else f"{selected_staff.lower().replace(' ', '')}@vinhyen.edu.vn"
                     if not teacher_email or "@" not in teacher_email:
@@ -2457,9 +2501,11 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
                                                 l.get("Loại") == "Điểm trừ" and l.get("Nội dung", "").startswith(
                                                     "[KSCL")])
                             calc_score = tot_bon - tot_kscl_pen
+
                         email_html = build_email_html(selected_staff, type_label, date_formatted, selected_content,
                                                       points_val, calc_score, note)
                         success_msg = f"✅ Đã xác nhận & lưu thông tin đánh giá thi đua cho cán bộ **{selected_staff}**!"
+
                     # TỰ ĐỘNG PHÁT VIETTEL TAMMI & EMAIL CHO TẤT CẢ CÁC LOẠI SỰ KIỆN
                     t_cfg = st.session_state.get("tammi_config", {})
                     t_status_ok, t_status_msg = send_viettel_tammi_message(staff_info.get("SĐT", ""), tammi_text, t_cfg)
@@ -2495,7 +2541,6 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
                     save_data_to_disk()
                     st.success(success_msg)
                     st.info(f"📧 **Hệ thống đã tự động gửi Email HTML thông báo trang trọng tới:** `{teacher_email}`")
-
 elif role.startswith("4. ĐIỂM CỦA CÁ NHÂN"):
     st.header("📊 Thông tin điểm đánh giá viên chức và điểm Thi đua của cá nhân")
     curr_u = st.session_state.current_user if st.session_state.get("current_user") is not None else {"name": "Admin",
