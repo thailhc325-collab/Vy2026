@@ -17,7 +17,7 @@ DATA_FILE = "data_vy2026.json"
 # Cấu hình trang Web
 st.set_page_config(page_title="QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN", page_icon="🏆", layout="wide")
 st.title("🏆 QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN")
-st.caption("Cập nhật Ứng dụng theo địa chỉ https://thptvinhyen.streamlit.app")
+st.caption("Đường Trương Định, Phường Vĩnh Yên, Tỉnh Phú Thọ")
 # -----------------------------------------------------------------------------
 # HÀM HỖ TRỢ XỬ LÝ ÉP KIỂU AN TOÀN
 # -----------------------------------------------------------------------------
