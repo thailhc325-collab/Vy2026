@@ -2798,6 +2798,32 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 23,
+            "Ngày": "04/11/2026",
+            "Cán bộ": "Nguyễn Thị Mai",
+            "Lớp": "12A3",
+            "Môn": "Hóa học",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 4.14,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 24,
+            "Ngày": "04/11/2026",
+            "Cán bộ": "Nguyễn Thị Mai",
+            "Lớp": "12A9",
+            "Môn": "Hóa học",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 5.66,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -2967,6 +2993,22 @@
             "subject": "Vật lý",
             "last_exam": "KSCL Lần 0",
             "last_score": 3.87,
+            "last_date": "04/11/2026"
+        },
+        "Nguyễn Thị Mai_12A3_Hóa học": {
+            "teacher": "Nguyễn Thị Mai",
+            "class": "12A3",
+            "subject": "Hóa học",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 4.14,
+            "last_date": "04/11/2026"
+        },
+        "Nguyễn Thị Mai_12A9_Hóa học": {
+            "teacher": "Nguyễn Thị Mai",
+            "class": "12A9",
+            "subject": "Hóa học",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 5.66,
             "last_date": "04/11/2026"
         }
     },
@@ -4029,6 +4071,24 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A3 Môn Vật lý - Lê Anh Tuấn",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A3 - Môn Vật lý: Lưu mốc điểm đầu vào S1 = 3.87",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "04/11/2026",
+            "Người nhận": "Nguyễn Thị Mai",
+            "Email cá nhân": "Mai1979vy@gmail.com",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A3 Môn Hóa học - Nguyễn Thị Mai",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A3 - Môn Hóa học: Lưu mốc điểm đầu vào S1 = 4.14",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "04/11/2026",
+            "Người nhận": "Nguyễn Thị Mai",
+            "Email cá nhân": "Mai1979vy@gmail.com",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A9 Môn Hóa học - Nguyễn Thị Mai",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A9 - Môn Hóa học: Lưu mốc điểm đầu vào S1 = 5.66",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
