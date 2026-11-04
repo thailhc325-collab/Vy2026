@@ -3267,6 +3267,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 48,
+            "Ngày": "04/11/2026",
+            "Cán bộ": "Lê Thu Hà",
+            "Lớp": "10A4",
+            "Môn": "Ngữ văn",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 7.83,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -3636,6 +3649,14 @@
             "subject": "Ngữ văn",
             "last_exam": "KSCL Lần 0",
             "last_score": 8.12,
+            "last_date": "04/11/2026"
+        },
+        "Lê Thu Hà_10A4_Ngữ văn": {
+            "teacher": "Lê Thu Hà",
+            "class": "10A4",
+            "subject": "Ngữ văn",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 7.83,
             "last_date": "04/11/2026"
         }
     },
@@ -4923,6 +4944,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A3 Môn Ngữ văn - Lê Thu Hà",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A3 - Môn Ngữ văn: Lưu mốc điểm đầu vào S1 = 8.12",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "04/11/2026",
+            "Người nhận": "Lê Thu Hà",
+            "Email cá nhân": "halt.c3.25.005@phutho.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A4 Môn Ngữ văn - Lê Thu Hà",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A4 - Môn Ngữ văn: Lưu mốc điểm đầu vào S1 = 7.83",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
