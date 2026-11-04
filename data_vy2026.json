@@ -3384,6 +3384,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 57,
+            "Ngày": "04/11/2026",
+            "Cán bộ": "Phạm Minh Hằng",
+            "Lớp": "10A5",
+            "Môn": "Tiếng Anh",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 7.39,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -3825,6 +3838,14 @@
             "subject": "Tiếng Anh",
             "last_exam": "KSCL Lần 0",
             "last_score": 6.83,
+            "last_date": "04/11/2026"
+        },
+        "Phạm Minh Hằng_10A5_Tiếng Anh": {
+            "teacher": "Phạm Minh Hằng",
+            "class": "10A5",
+            "subject": "Tiếng Anh",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 7.39,
             "last_date": "04/11/2026"
         }
     },
@@ -5193,6 +5214,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A1 Môn Tiếng Anh - Phạm Minh Hằng",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A1 - Môn Tiếng Anh: Lưu mốc điểm đầu vào S1 = 6.83",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "04/11/2026",
+            "Người nhận": "Phạm Minh Hằng",
+            "Email cá nhân": "minhhangvp6801@gmail.com",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A5 Môn Tiếng Anh - Phạm Minh Hằng",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A5 - Môn Tiếng Anh: Lưu mốc điểm đầu vào S1 = 7.39",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
