@@ -2889,6 +2889,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 30,
+            "Ngày": "04/11/2026",
+            "Cán bộ": "Bùi Thị Thơm",
+            "Lớp": "12A7",
+            "Môn": "Địa lý",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 7.41,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -3114,6 +3127,14 @@
             "subject": "Địa lý",
             "last_exam": "KSCL Lần 0",
             "last_score": 6.28,
+            "last_date": "04/11/2026"
+        },
+        "Bùi Thị Thơm_12A7_Địa lý": {
+            "teacher": "Bùi Thị Thơm",
+            "class": "12A7",
+            "subject": "Địa lý",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 7.41,
             "last_date": "04/11/2026"
         }
     },
@@ -4239,6 +4260,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A2 Môn Địa lý - Bùi Thị Thơm",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A2 - Môn Địa lý: Lưu mốc điểm đầu vào S1 = 6.28",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "04/11/2026",
+            "Người nhận": "Bùi Thị Thơm",
+            "Email cá nhân": "thombt.c3.25.003@phutho.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A7 Môn Địa lý - Bùi Thị Thơm",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A7 - Môn Địa lý: Lưu mốc điểm đầu vào S1 = 7.41",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
