@@ -2850,6 +2850,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 27,
+            "Ngày": "04/11/2026",
+            "Cán bộ": "Nguyễn Quỳnh Trang",
+            "Lớp": "12A6",
+            "Môn": "GDKTPL",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 6.74,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -3051,6 +3064,14 @@
             "subject": "GDKTPL",
             "last_exam": "KSCL Lần 0",
             "last_score": 7.04,
+            "last_date": "04/11/2026"
+        },
+        "Nguyễn Quỳnh Trang_12A6_GDKTPL": {
+            "teacher": "Nguyễn Quỳnh Trang",
+            "class": "12A6",
+            "subject": "GDKTPL",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 6.74,
             "last_date": "04/11/2026"
         }
     },
@@ -4149,6 +4170,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A5 Môn GDKTPL - Trần Thanh Long",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A5 - Môn GDKTPL: Lưu mốc điểm đầu vào S1 = 7.04",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "04/11/2026",
+            "Người nhận": "Nguyễn Quỳnh Trang",
+            "Email cá nhân": "trangthptvy@gmail.com",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A6 Môn GDKTPL - Nguyễn Quỳnh Trang",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A6 - Môn GDKTPL: Lưu mốc điểm đầu vào S1 = 6.74",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
