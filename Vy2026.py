@@ -19,8 +19,6 @@ DATA_FILE = "data_vy2026.json"
 st.set_page_config(page_title="QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN", page_icon="🏆", layout="wide")
 st.title("🏆 QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN")
 st.caption("Đường Trương Định, Phường Vĩnh Yên, Tỉnh Phú Thọ")
-
-
 # -----------------------------------------------------------------------------
 # HÀM HỖ TRỢ XỬ LÝ ÉP KIỂU AN TOÀN
 # -----------------------------------------------------------------------------
@@ -825,12 +823,37 @@ def render_manage_logs_ui():
             target_log["Nội dung"] = new_content
             target_log["Số điểm"] = final_pts
             target_log["Ghi chú"] = e_note.strip()
-            # If editing KSCL entry, update kscl_baselines
+            # If editing KSCL entry, update kscl_baselines and kscl_history
             if edit_cat == "3. Đánh giá điểm KSCL (Sửa điểm môn học KSCL)":
                 baseline_key = f"{e_staff}_{ks_cls}_{ks_subj}"
-                if baseline_key in st.session_state.get("kscl_baselines", {}):
-                    st.session_state.kscl_baselines[baseline_key]["last_score"] = new_kscl_score
-                    st.session_state.kscl_baselines[baseline_key]["last_exam"] = ks_exam
+                for kh in st.session_state.get("kscl_history", []):
+                    c_staff = str(kh.get("Cán bộ", "")).strip()
+                    c_cls = str(kh.get("Lớp", "")).strip()
+                    c_subj = str(kh.get("Môn", "")).strip()
+                    c_exam = str(kh.get("Kỳ KSCL", "")).strip()
+                    if c_staff == e_staff and c_cls == ks_cls and c_subj == ks_subj:
+                        if c_exam == ks_exam or f"KSCL {c_exam}" == ks_exam or c_exam in ks_exam or ks_exam in c_exam:
+                            kh["Điểm TB"] = safe_float(new_kscl_score, 0.0)
+                            kh["Điểm thi đua"] = new_pts if new_type == "Điểm cộng" else (-new_pts if new_type == "Điểm trừ" else 0.0)
+                            kh["Ghi chú"] = e_note.strip()
+                            break
+
+                remaining_history = [
+                    h for h in st.session_state.get("kscl_history", [])
+                    if str(h.get("Cán bộ", "")).strip() == e_staff
+                    and str(h.get("Lớp", "")).strip() == ks_cls
+                    and str(h.get("Môn", "")).strip() == ks_subj
+                ]
+                if remaining_history:
+                    last_h = remaining_history[-1]
+                    st.session_state.kscl_baselines[baseline_key] = {
+                        "teacher": e_staff,
+                        "class": ks_cls,
+                        "subject": ks_subj,
+                        "last_exam": str(last_h.get("Kỳ KSCL", "")).strip(),
+                        "last_score": safe_float(last_h.get("Điểm TB"), 0.0),
+                        "last_date": str(last_h.get("Ngày", "")).strip()
+                    }
             save_data_to_disk()
             u_logs = [l for l in st.session_state.logs if l.get("Cán bộ") == e_staff]
             tot_vc_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_logs if
@@ -889,6 +912,73 @@ def render_manage_logs_ui():
                 del_type = target_log.get("Loại")
                 del_date = target_log.get("Ngày")
                 st.session_state.logs.pop(target_real_idx)
+
+                # Xóa tương ứng trong kscl_history & tự động hoàn trả mốc k về kscl_baselines
+                raw_c = str(del_content).strip()
+                is_del_kscl = "kscl" in raw_c.lower() or del_type == "Thông tin Mốc KSCL" or raw_c.startswith("[KSCL")
+                if is_del_kscl:
+                    m_cls_subj = re.search(r'Lớp\s*(.*?)\s*-\s*Môn\s*(.*?)(?:\s*\(|\s*:|$)', raw_c)
+                    m_exam = re.search(r'\[(.*?)\]', raw_c)
+                    if m_cls_subj:
+                        cls_name = m_cls_subj.group(1).strip()
+                        subj_name = m_cls_subj.group(2).strip()
+                        exam_tag = m_exam.group(1).strip() if m_exam else ""
+
+                        match_idx = -1
+                        candidates = []
+                        for kh_i, kh in enumerate(st.session_state.get("kscl_history", [])):
+                            c_staff = str(kh.get("Cán bộ", "")).strip()
+                            c_cls = str(kh.get("Lớp", "")).strip()
+                            c_subj = str(kh.get("Môn", "")).strip()
+                            if c_staff == del_staff and c_cls == cls_name and c_subj == subj_name:
+                                candidates.append((kh_i, kh))
+
+                        if len(candidates) == 1:
+                            match_idx = candidates[0][0]
+                        elif len(candidates) > 1:
+                            clean_tag = exam_tag.replace("KSCL", "").strip()
+                            for kh_i, kh in candidates:
+                                c_exam = str(kh.get("Kỳ KSCL", "")).replace("KSCL", "").strip()
+                                if c_exam == clean_tag or c_exam in clean_tag or clean_tag in c_exam:
+                                    match_idx = kh_i
+                                    break
+                            if match_idx == -1:
+                                for kh_i, kh in candidates:
+                                    if str(kh.get("Ngày", "")).strip() == del_date:
+                                        match_idx = kh_i
+                                        break
+                            if match_idx == -1:
+                                match_idx = candidates[-1][0]
+
+                        if match_idx != -1:
+                            st.session_state.kscl_history.pop(match_idx)
+
+                        for new_id, kh_item in enumerate(st.session_state.get("kscl_history", []), 1):
+                            kh_item["ID"] = new_id
+
+                        # Cập nhật / Đưa mốc về kỳ k (lần kề trước) trong kscl_baselines
+                        baseline_key = f"{del_staff}_{cls_name}_{subj_name}"
+                        remaining_history = [
+                            h for h in st.session_state.get("kscl_history", [])
+                            if str(h.get("Cán bộ", "")).strip() == del_staff
+                            and str(h.get("Lớp", "")).strip() == cls_name
+                            and str(h.get("Môn", "")).strip() == subj_name
+                        ]
+
+                        if remaining_history:
+                            last_h = remaining_history[-1]
+                            st.session_state.kscl_baselines[baseline_key] = {
+                                "teacher": del_staff,
+                                "class": cls_name,
+                                "subject": subj_name,
+                                "last_exam": str(last_h.get("Kỳ KSCL", "")).strip(),
+                                "last_score": safe_float(last_h.get("Điểm TB"), 0.0),
+                                "last_date": str(last_h.get("Ngày", "")).strip()
+                            }
+                        else:
+                            if "kscl_baselines" in st.session_state:
+                                st.session_state.kscl_baselines.pop(baseline_key, None)
+
                 save_data_to_disk()
                 u_logs = [l for l in st.session_state.logs if l.get("Cán bộ") == del_staff]
                 tot_vc_pen = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_logs if
