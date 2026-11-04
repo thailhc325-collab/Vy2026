@@ -3137,6 +3137,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 38,
+            "Ngày": "04/11/2026",
+            "Cán bộ": "Đại Văn Hải",
+            "Lớp": "10A9",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 7.43,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -3426,6 +3439,14 @@
             "subject": "Toán",
             "last_exam": "KSCL Lần 0",
             "last_score": 7.02,
+            "last_date": "04/11/2026"
+        },
+        "Đại Văn Hải_10A9_Toán": {
+            "teacher": "Đại Văn Hải",
+            "class": "10A9",
+            "subject": "Toán",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 7.43,
             "last_date": "04/11/2026"
         }
     },
@@ -4623,6 +4644,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A8 Môn Toán - Nguyễn Thị Thanh Hải",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A8 - Môn Toán: Lưu mốc điểm đầu vào S1 = 7.02",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "04/11/2026",
+            "Người nhận": "Đại Văn Hải",
+            "Email cá nhân": "haidv.c3.25.002@phutho.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A9 Môn Toán - Đại Văn Hải",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A9 - Môn Toán: Lưu mốc điểm đầu vào S1 = 7.43",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
