@@ -2902,6 +2902,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 31,
+            "Ngày": "04/11/2026",
+            "Cán bộ": "Nguyễn Tuyết Mai",
+            "Lớp": "12A5",
+            "Môn": "Lịch sử",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 4.48,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -3135,6 +3148,14 @@
             "subject": "Địa lý",
             "last_exam": "KSCL Lần 0",
             "last_score": 7.41,
+            "last_date": "04/11/2026"
+        },
+        "Nguyễn Tuyết Mai_12A5_Lịch sử": {
+            "teacher": "Nguyễn Tuyết Mai",
+            "class": "12A5",
+            "subject": "Lịch sử",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 4.48,
             "last_date": "04/11/2026"
         }
     },
@@ -4269,6 +4290,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A7 Môn Địa lý - Bùi Thị Thơm",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A7 - Môn Địa lý: Lưu mốc điểm đầu vào S1 = 7.41",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "04/11/2026",
+            "Người nhận": "Nguyễn Tuyết Mai",
+            "Email cá nhân": "maint.c3.25.012@phutho.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A5 Môn Lịch sử - Nguyễn Tuyết Mai",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A5 - Môn Lịch sử: Lưu mốc điểm đầu vào S1 = 4.48",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
