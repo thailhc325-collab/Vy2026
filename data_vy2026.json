@@ -2759,6 +2759,32 @@
             "Chỉ số tăng": 2.35,
             "Điểm thi đua": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 20,
+            "Ngày": "04/11/2026",
+            "Cán bộ": "Đào Thị Phương Lan",
+            "Lớp": "12A8",
+            "Môn": "Vật lý",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 5.51,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 21,
+            "Ngày": "04/11/2026",
+            "Cán bộ": "Đào Thị Phương Lan",
+            "Lớp": "12A9",
+            "Môn": "Vật lý",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 5.32,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -2904,6 +2930,22 @@
             "subject": "Ngữ văn",
             "last_exam": "KSCL Lần 0",
             "last_score": 5.63,
+            "last_date": "04/11/2026"
+        },
+        "Đào Thị Phương Lan_12A8_Vật lý": {
+            "teacher": "Đào Thị Phương Lan",
+            "class": "12A8",
+            "subject": "Vật lý",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 5.51,
+            "last_date": "04/11/2026"
+        },
+        "Đào Thị Phương Lan_12A9_Vật lý": {
+            "teacher": "Đào Thị Phương Lan",
+            "class": "12A9",
+            "subject": "Vật lý",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 5.32,
             "last_date": "04/11/2026"
         }
     },
@@ -3939,6 +3981,24 @@
             "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 04/11/2026 - Đỗ Thị Thu Hiền",
             "Nội dung ghi nhận": "[TC1.1.2] Không đeo thẻ",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "04/11/2026",
+            "Người nhận": "Đào Thị Phương Lan",
+            "Email cá nhân": "landtp.C3.25.001@phutho.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A8 Môn Vật lý - Đào Thị Phương Lan",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A8 - Môn Vật lý: Lưu mốc điểm đầu vào S1 = 5.51",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "04/11/2026",
+            "Người nhận": "Đào Thị Phương Lan",
+            "Email cá nhân": "landtp.C3.25.001@phutho.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A9 Môn Vật lý - Đào Thị Phương Lan",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A9 - Môn Vật lý: Lưu mốc điểm đầu vào S1 = 5.32",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
