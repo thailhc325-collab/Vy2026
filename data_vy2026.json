@@ -3150,6 +3150,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 39,
+            "Ngày": "04/11/2026",
+            "Cán bộ": "Đỗ Mạnh Hà",
+            "Lớp": "10A5",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 7.21,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -3447,6 +3460,14 @@
             "subject": "Toán",
             "last_exam": "KSCL Lần 0",
             "last_score": 7.43,
+            "last_date": "04/11/2026"
+        },
+        "Đỗ Mạnh Hà_10A5_Toán": {
+            "teacher": "Đỗ Mạnh Hà",
+            "class": "10A5",
+            "subject": "Toán",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 7.21,
             "last_date": "04/11/2026"
         }
     },
@@ -4653,6 +4674,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A9 Môn Toán - Đại Văn Hải",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A9 - Môn Toán: Lưu mốc điểm đầu vào S1 = 7.43",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "04/11/2026",
+            "Người nhận": "Đỗ Mạnh Hà",
+            "Email cá nhân": "domanhha.c3vinhyen@vinhphuc.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A5 Môn Toán - Đỗ Mạnh Hà",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A5 - Môn Toán: Lưu mốc điểm đầu vào S1 = 7.21",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
