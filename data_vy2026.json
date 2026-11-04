@@ -2483,6 +2483,24 @@
             "Nội dung": "[KSCL Lần 0] Lớp 12A9 - Môn Ngữ văn: Lưu mốc điểm đầu vào S1 = 5.63",
             "Số điểm": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "Ngày": "03/11/2026",
+            "Cán bộ": "Phùng Thị Hồng Minh",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Thông tin Mốc KSCL",
+            "Nội dung": "[KSCL Lần 0] Lớp 12A9 - Môn Ngữ văn: Lưu mốc điểm đầu vào S1 = 5.63",
+            "Số điểm": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "Ngày": "04/11/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A1 - Môn Toán (Kỳ trước 4.15 ➔ Kỳ này 6.50, Tăng 2.35 điểm (+10.0 điểm))",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -2719,6 +2737,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 19,
+            "Ngày": "04/11/2026",
+            "Cán bộ": "Lê Hồng Thái",
+            "Lớp": "12A1",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 6.5,
+            "Điểm kỳ trước": 4.15,
+            "Chỉ số tăng": 2.35,
+            "Điểm thi đua": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -2726,9 +2757,9 @@
             "teacher": "Lê Hồng Thái",
             "class": "12A1",
             "subject": "Toán",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 4.15,
-            "last_date": "01/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 6.5,
+            "last_date": "04/11/2026"
         },
         "Lê Thị Hiền_10A1_Ngữ văn": {
             "teacher": "Lê Thị Hiền",
@@ -3881,6 +3912,15 @@
             "Phân loại": "ĐÃ HỦY/XÓA (THÔNG TIN MỐC KSCL)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 03/11/2026 - Phùng Thị Hồng Minh",
             "Nội dung ghi nhận": "[ĐÃ XÓA] [KSCL Lần 0] Lớp 12A9 - Môn Ngữ văn: Lưu mốc điểm đầu vào S1 = 5.63",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "04/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A1 Môn Toán - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A1 - Môn Toán (Kỳ trước 4.15 ➔ Kỳ này 6.50, Tăng 2.35 điểm (+10.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
