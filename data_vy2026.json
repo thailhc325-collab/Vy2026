@@ -3215,6 +3215,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 44,
+            "Ngày": "04/11/2026",
+            "Cán bộ": "Nguyễn Thị Lan Phương(T)",
+            "Lớp": "10A4",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 6.36,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -3552,6 +3565,14 @@
             "subject": "Toán",
             "last_exam": "KSCL Lần 0",
             "last_score": 6.09,
+            "last_date": "04/11/2026"
+        },
+        "Nguyễn Thị Lan Phương(T)_10A4_Toán": {
+            "teacher": "Nguyễn Thị Lan Phương(T)",
+            "class": "10A4",
+            "subject": "Toán",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 6.36,
             "last_date": "04/11/2026"
         }
     },
@@ -4803,6 +4824,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A1 Môn Toán - Nguyễn Thị Lan Phương(T)",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A1 - Môn Toán: Lưu mốc điểm đầu vào S1 = 6.09",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "04/11/2026",
+            "Người nhận": "Nguyễn Thị Lan Phương(T)",
+            "Email cá nhân": "phuongntl.c3.25.005@phutho.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A4 Môn Toán - Nguyễn Thị Lan Phương(T)",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A4 - Môn Toán: Lưu mốc điểm đầu vào S1 = 6.36",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
