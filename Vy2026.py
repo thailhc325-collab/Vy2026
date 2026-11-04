@@ -13,11 +13,14 @@ import re
 import openpyxl
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
+
 DATA_FILE = "data_vy2026.json"
 # Cấu hình trang Web
 st.set_page_config(page_title="QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN", page_icon="🏆", layout="wide")
 st.title("🏆 QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN")
 st.caption("Đường Trương Định, Phường Vĩnh Yên, Tỉnh Phú Thọ")
+
+
 # -----------------------------------------------------------------------------
 # HÀM HỖ TRỢ XỬ LÝ ÉP KIỂU AN TOÀN
 # -----------------------------------------------------------------------------
@@ -83,6 +86,8 @@ def calculate_kscl_points(s_prev, s_curr):
             pts = 4.0
 
     return delta, pts, f"Tăng {delta:.2f} điểm (+{pts:.1f} điểm)"
+
+
 def safe_float(val, default=0.0):
     """Chuyển đổi giá trị sang float an toàn, tránh lỗi ValueError khi gặp chuỗi rỗng ''"""
     try:
@@ -91,6 +96,8 @@ def safe_float(val, default=0.0):
         return float(val)
     except (ValueError, TypeError):
         return float(default)
+
+
 # -----------------------------------------------------------------------------
 # DANH MỤC NHÓM TIÊU CHÍ VIÊN CHỨC (PHỤ LỤC 1) & KHEN THƯỞNG (PHỤ LỤC 2)
 # -----------------------------------------------------------------------------
@@ -107,6 +114,8 @@ REWARD_CATEGORIES = [
     "5. Hoạt động Tổ chức, Đoàn thể (TCM, Đoàn TN, Tâm lý, Văn phòng)",
     "6. Hoạt động các Câu lạc bộ (Thiện nguyện, Truyền thông, VN, TDTT)"
 ]
+
+
 def get_default_criteria_tree():
     """Tạo Cây thông tin Tiêu chí Đánh giá Viên chức chuẩn theo Phụ lục 1 QĐ 292"""
     tree_data = [
@@ -322,6 +331,8 @@ def get_default_criteria_tree():
         }
     ]
     return pd.DataFrame(tree_data)
+
+
 def get_default_rewards_tree():
     """Tạo Cây thông tin Tiêu chí Điểm Thi đua Khen thưởng chuẩn theo Phụ lục 2 năm học 2026-2027"""
     tree_data = [
@@ -422,6 +433,8 @@ def get_default_rewards_tree():
          "Điểm cộng": 2.0, "Ghi chú": "2 điểm / 1 lần đăng tải"}
     ]
     return pd.DataFrame(tree_data)
+
+
 # -----------------------------------------------------------------------------
 # HÀM LƯU & NẠP DỮ LIỆU LÂU DÀI (PERSISTENCE STORAGE)
 # -----------------------------------------------------------------------------
@@ -466,6 +479,8 @@ def sync_teacher_accounts():
                     "email": email if email else f"{username}@vinhyen.edu.vn",
                     "phone": phone
                 })
+
+
 def build_adjustment_email_html(teacher_name, old_log, new_log, vc_score, net_emulation_score, total_gen_score,
                                 vc_class):
     old_pts_str = f"-{safe_float(old_log.get('Số điểm'), 0.0):.1f}" if old_log.get(
@@ -498,11 +513,11 @@ def build_adjustment_email_html(teacher_name, old_log, new_log, vc_score, net_em
     <div class="card">
         <div class="header">
             <h2>SỞ GD&ĐT PHÚ THỌ-TRƯỜNG THPT VĨNH YÊN</h2>
-            <p>THÔNG BÁO ĐIỀU CHỈNH / CẬP NHẬT THÔNG TIN</p>
+            <p>THÔNG BÁO ĐIỀU CHỈNH/CẬP NHẬT THÔNG TIN</p>
         </div>
         <div class="content">
             <div class="greeting">Kính gửi Thầy/Cô: {teacher_name}</div>
-            <p>BGH TRƯỜNG THPT VĨNH YÊN trân trọng thông báo: Đểm của Thầy/Cô được **ĐIỀU CHỈNH / CẬP NHẬT** trên hệ thống như sau:</p>
+            <p>BGH TRƯỜNG THPT VĨNH YÊN trân trọng thông báo: Đểm của Thầy/Cô được **ĐIỀU CHỈNH/CẬP NHẬT** trên hệ thống như sau:</p>
             <table class="compare-table">
                 <thead>
                     <tr>
@@ -569,8 +584,11 @@ def build_adjustment_email_html(teacher_name, old_log, new_log, vc_score, net_em
 </body>
 </html>"""
     return html
+
+
 def render_manage_logs_ui():
-    st.subheader("📜 Quản lý, Điều chỉnh (Sửa) & Xóa Nhật ký Thi đua")
+    sync_kscl_history_to_logs()
+    st.subheader("📜 Sửa/Xóa thông tin")
     # 🔒 KIỂM TRA QUYỀN HẠN: BẮT BUỘC PHẢI LÀ ADMIN
     curr_u = st.session_state.current_user if st.session_state.get("current_user") is not None else {
         "role": "Giáo viên"}
@@ -589,7 +607,7 @@ def render_manage_logs_ui():
             list(set([str(l.get("Cán bộ", "")).strip() for l in st.session_state.logs if l.get("Cán bộ")])))
         sel_staff_flt = st.selectbox("🔍 Lọc theo Cán bộ:", staff_opt, key="flt_manage_staff_v33")
     with c_f2:
-        type_opt = ["Tất cả phân loại", "Điểm trừ", "Điểm cộng"]
+        type_opt = ["Tất cả phân loại", "Điểm trừ", "Điểm cộng", "Thông tin Mốc KSCL"]
         sel_type_flt = st.selectbox("🏷️ Lọc theo Phân loại:", type_opt, key="flt_manage_type_v33")
     with c_f3:
         kw_flt = st.text_input("🔎 Tìm từ khóa nội dung:", key="flt_manage_kw_v33").strip().lower()
@@ -598,7 +616,7 @@ def render_manage_logs_ui():
         c1 = (sel_staff_flt == "Tất cả Cán bộ / Giáo viên") or (str(l.get("Cán bộ", "")).strip() == sel_staff_flt)
         c2 = (sel_type_flt == "Tất cả phân loại") or (l.get("Loại") == sel_type_flt)
         c3 = not kw_flt or (kw_flt in str(l.get("Nội dung", "")).lower()) or (
-                    kw_flt in str(l.get("Cán bộ", "")).lower())
+                kw_flt in str(l.get("Cán bộ", "")).lower())
         if c1 and c2 and c3:
             filtered_indices.append(idx)
     if not filtered_indices:
@@ -852,7 +870,7 @@ def render_manage_logs_ui():
             })
             save_data_to_disk()
             st.success(
-                f"✅ Đã điều chỉnh ghi nhận cho Thầy/Cô **{e_staff}** thành công và tự động phát Email thông báo khoa học!")
+                f"✅ Đã điều chỉnh ghi nhận cho Thầy/Cô **{e_staff}** thành công và tự động gửi Email thông báo!")
             st.info(f"📧 Email thông báo đã gửi tới: `{t_email}`")
             st.rerun()
     # --- TAB 2: XÓA GHI NHẬN ---
@@ -916,6 +934,93 @@ def render_manage_logs_ui():
                 st.success(
                     f"✅ Đã xóa vĩnh viễn ghi nhận cho **{del_staff}** và gửi Email thông báo cập nhật lại bảng điểm!")
                 st.rerun()
+
+
+def deduplicate_logs():
+    """Xóa bỏ các dòng nhật ký bị trùng lặp hoàn toàn trong st.session_state.logs"""
+    if "logs" not in st.session_state or not st.session_state.logs:
+        return
+    seen = set()
+    unique_logs = []
+    for log in st.session_state.logs:
+        key = (
+            str(log.get("Ngày", "")).strip(),
+            str(log.get("Cán bộ", "")).strip(),
+            str(log.get("Loại", "")).strip(),
+            str(log.get("Nội dung", "")).strip(),
+            f"{safe_float(log.get('Số điểm'), 0.0):.2f}"
+        )
+        if key not in seen:
+            seen.add(key)
+            unique_logs.append(log)
+    st.session_state.logs = unique_logs
+
+
+def sync_kscl_history_to_logs():
+    """Đảm bảo tất cả các lượt ghi nhận điểm KSCL trong kscl_history đều xuất hiện trong st.session_state.logs để Admin có thể Sửa/Xóa"""
+    if "kscl_history" not in st.session_state or not st.session_state.kscl_history:
+        return
+    if "logs" not in st.session_state:
+        st.session_state.logs = []
+
+    deduplicate_logs()
+    users_df = st.session_state.get("users", pd.DataFrame())
+
+    for k_item in st.session_state.kscl_history:
+        staff_name = str(k_item.get("Cán bộ", "")).strip()
+        exam_name = str(k_item.get("Kỳ KSCL", "")).strip()
+        ks_cls = str(k_item.get("Lớp", "")).strip()
+        ks_subj = str(k_item.get("Môn", "")).strip()
+        d_str = str(k_item.get("Ngày", "")).strip()
+        s_prev = k_item.get("Điểm kỳ trước", "-")
+        s_curr = safe_float(k_item.get("Điểm TB"), 0.0)
+        pts = safe_float(k_item.get("Điểm thi đua"), 0.0)
+        note = str(k_item.get("Ghi chú", ""))
+
+        dept = ""
+        if isinstance(users_df, pd.DataFrame) and not users_df.empty:
+            matched_u = users_df[users_df["Họ và tên"] == staff_name]
+            if not matched_u.empty:
+                dept = str(matched_u.iloc[0].get("Tổ chuyên môn", "")).strip()
+
+        exam_tag = exam_name if exam_name.upper().startswith("KSCL") else f"KSCL {exam_name}"
+        if s_prev == "-" or str(s_prev).strip() == "-":
+            content = f"[{exam_tag}] Lớp {ks_cls} - Môn {ks_subj}: Lưu mốc điểm đầu vào S1 = {s_curr:.2f}"
+            type_label = "Thông tin Mốc KSCL"
+            points_val = 0.0
+        else:
+            try:
+                s_prev_num = float(s_prev)
+                delta, calc_pts, desc_msg = calculate_kscl_points(s_prev_num, s_curr)
+            except Exception:
+                desc_msg = ""
+            content = f"[{exam_tag}] Lớp {ks_cls} - Môn {ks_subj} (Kỳ trước {safe_float(s_prev):.2f} ➔ Kỳ này {s_curr:.2f}, {desc_msg})"
+            type_label = "Điểm cộng" if pts >= 0 else "Điểm trừ"
+            points_val = abs(pts)
+
+        already_exists = False
+        for l in st.session_state.logs:
+            c_name = str(l.get("Cán bộ", "")).strip()
+            c_content = str(l.get("Nội dung", "")).strip()
+            if c_name == staff_name and f"Lớp {ks_cls}" in c_content and f"Môn {ks_subj}" in c_content:
+                if exam_name in c_content or exam_tag in c_content or "KSCL" in c_content:
+                    already_exists = True
+                    break
+
+        if not already_exists:
+            st.session_state.logs.append({
+                "Ngày": d_str if d_str else date.today().strftime("%d/%m/%Y"),
+                "Cán bộ": staff_name,
+                "Tổ chuyên môn": dept,
+                "Loại": type_label,
+                "Nội dung": content,
+                "Số điểm": points_val,
+                "Ghi chú": note
+            })
+
+    deduplicate_logs()
+
+
 def load_data_from_disk():
     """Tải dữ liệu từ file JSON vào ứng dụng nếu file tồn tại"""
     if os.path.exists(DATA_FILE):
@@ -974,6 +1079,7 @@ def load_data_from_disk():
                 st.session_state.logs = data.get("logs", [])
                 st.session_state.kscl_history = data.get("kscl_history", [])
                 st.session_state.kscl_baselines = data.get("kscl_baselines", {})
+                sync_kscl_history_to_logs()
                 st.session_state.email_config = data.get("email_config", {})
                 st.session_state.email_history = data.get("email_history", [])
                 st.session_state.accounts = data.get("accounts", [])
@@ -987,6 +1093,8 @@ def load_data_from_disk():
                 sync_teacher_accounts()
         except Exception as e:
             st.error(f"Lỗi khi đọc file dữ liệu: {e}")
+
+
 def sync_to_github_api(json_str):
     """Tự động đồng bộ đè file data_vy2026.json lên kho GitHub qua REST API"""
     try:
@@ -1023,7 +1131,10 @@ def sync_to_github_api(json_str):
                 req_put(url, headers=headers, json=payload, timeout=8)
     except Exception as e_gh:
         print(f"Lỗi đồng bộ GitHub API: {e_gh}")
+
+
 def save_data_to_disk():
+    deduplicate_logs()
     """Lưu toàn bộ dữ liệu hiện tại ra file JSON trên ổ cứng"""
     if isinstance(st.session_state.get("criteria"), pd.DataFrame) and not st.session_state.criteria.empty:
         st.session_state.criteria["STT"] = range(1, len(st.session_state.criteria) + 1)
@@ -1052,6 +1163,8 @@ def save_data_to_disk():
         sync_to_github_api(json_str)
     except Exception as e_f:
         print(f"Lỗi ghi file local: {{e_f}}")
+
+
 # Khởi tạo dữ liệu ban đầu
 if 'initialized' not in st.session_state:
     st.session_state.departments = ["Tổ Toán - Tin", "Tổ Ngữ văn", "Tổ Hành chính", "Tổ Ngoại ngữ",
@@ -1074,6 +1187,8 @@ if 'initialized' not in st.session_state:
     st.session_state.current_user = None
     load_data_from_disk()
     st.session_state.initialized = True
+
+
 def build_email_html(teacher_name, event_type, date_str, content_str, points_val, calc_score=0.0, extra_info="",
                      **kwargs):
     if "total_points" in kwargs and kwargs["total_points"] is not None:
@@ -1174,6 +1289,8 @@ def build_email_html(teacher_name, event_type, date_str, content_str, points_val
 </body>
 </html>"""
     return html
+
+
 def send_email_notification(to_email, subject, html_content, email_config):
     smtp_server = email_config.get("smtp_server", "smtp.gmail.com")
     smtp_port = int(email_config.get("smtp_port", 587))
@@ -1199,6 +1316,8 @@ def send_email_notification(to_email, subject, html_content, email_config):
         return True, f"Đã gửi Email thành công tới {clean_email}"
     except Exception as e:
         return False, f"Lỗi kết nối Email SMTP: {str(e)}"
+
+
 def get_time_title_suffix(time_frame):
     tf = str(time_frame).strip()
     if tf.startswith("Tháng"):
@@ -1211,6 +1330,8 @@ def get_time_title_suffix(time_frame):
         return "NĂM HỌC 2026-2027"
     else:
         return tf.upper()
+
+
 def create_styled_excel_report(sheet_data_dict):
     wb = openpyxl.Workbook()
     wb.remove(wb.active)
@@ -1292,6 +1413,8 @@ def create_styled_excel_report(sheet_data_dict):
     output = io.BytesIO()
     wb.save(output)
     return output.getvalue()
+
+
 def convert_df_to_excel(df):
     return create_styled_excel_report({
         "BaoCao": {
@@ -1299,6 +1422,8 @@ def convert_df_to_excel(df):
             "title": "BÁO CÁO THI ĐUA"
         }
     })
+
+
 def convert_dfs_to_excel(df_dict):
     sheet_data_dict = {}
     for s_name, df in df_dict.items():
@@ -1307,6 +1432,8 @@ def convert_dfs_to_excel(df_dict):
             "title": s_name.replace("_", " ").upper()
         }
     return create_styled_excel_report(sheet_data_dict)
+
+
 def filter_logs_by_timeframe(logs, time_frame):
     if not logs:
         return []
@@ -1346,6 +1473,8 @@ def filter_logs_by_timeframe(logs, time_frame):
                 filtered.append(log)
         except Exception:
             filtered.append(log)
+
+
 # -----------------------------------------------------------------------------
 # BẢO MẬT & ĐĂNG NHẬP TẬP TRUNG (WEBSITE MULTI-USER LOGIN)
 # -----------------------------------------------------------------------------
@@ -1478,7 +1607,7 @@ if role.startswith("1. ADMIN"):
             "Tiêu chí thi đua khen thưởng",
             "Cấu hình gửi tin",
             "Quản lý tài khoản",
-            "📜Sửa/Xóa thông tin",
+            "📜 Sửa/Xóa thông tin",
             "Sao lưu và khôi phục dữ liệu",
             "Reset dữ liệu"
         ],
@@ -1832,7 +1961,7 @@ if role.startswith("1. ADMIN"):
                           "Điểm cộng", "Ghi chú"]], use_container_width=True)
         st.markdown("---")
         st.markdown("---")
-        with st.expander("📊 Tra cứu Quy tắc Tự động & Lịch sử Mốc điểm KSCL (Tiêu chí 5)"):
+        with st.expander("📊 Tra cứu Quy tắc Tự động & Lịch sử Mốc điểm KSCL"):
             st.markdown(r"""
             **Quy tắc tính điểm Tiêu chí 5 (So sánh kỳ KSCL trước $S_n$ và kỳ KSCL sau $S_{n+1}$ liền kề):**
             * **Giảm điểm ($\Delta < 0$)**: **Trừ 1.0 điểm**
@@ -2064,7 +2193,7 @@ if role.startswith("1. ADMIN"):
                     st.success(
                         f"✅ Đã reset mật khẩu cho tài khoản `{target_a['username']}` thành `{new_reset_p.strip()}`!")
                     st.rerun()
-    elif admin_sub == "📜 Quản lý & Sửa/Xóa Nhật ký Thi đua":
+    elif admin_sub == "📜 Sửa/Xóa thông tin":
         render_manage_logs_ui()
     elif admin_sub == "Sao lưu và khôi phục dữ liệu":
         st.subheader("💾 Sao lưu & Khôi phục Dữ liệu Hệ thống")
@@ -2139,10 +2268,10 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
     daily_options = [
         "Lỗi vi phạm (Trừ điểm)",
         "Thành tích Khen thưởng (Cộng điểm)",
-        "📊 Đánh giá điểm KSCL (Tiêu chí 5 - Tự động so sánh 2 kỳ)"
+        "📊 Đánh giá điểm KSCL"
     ]
     if curr_u.get("role") == "Admin":
-        daily_options.append("📜 Sửa / Xóa thông tin")
+        daily_options.append("📜 Sửa/Xóa thông tin")
     daily_sub = st.sidebar.radio(
         "Tích chọn phân loại:",
         daily_options,
@@ -2150,7 +2279,7 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
     )
     st.header("📝 Ghi nhận Thực hiện Nhiệm vụ Hằng ngày")
 
-    if daily_sub == "📜 Sửa / Xóa thông tin":
+    if daily_sub == "📜 Sửa/Xóa thông tin":
         render_manage_logs_ui()
     else:
         if st.session_state.users.empty:
@@ -2291,7 +2420,7 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
                     email_subject = ""
                     email_html = ""
                     success_msg = ""
-                    if event_type == "📊 Đánh giá điểm KSCL (Tiêu chí 5 - Tự động so sánh 2 kỳ)":
+                    if event_type == "📊 Đánh giá điểm KSCL":
                         baseline_key = f"{selected_staff}_{kscl_class.strip()}_{kscl_subject}"
                         has_baseline = baseline_key in st.session_state.kscl_baselines
                         if not has_baseline:
