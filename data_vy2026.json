@@ -3873,6 +3873,15 @@
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A9 Môn Ngữ văn - Đỗ Thị Hải Yến",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A9 - Môn Ngữ văn: Lưu mốc điểm đầu vào S1 = 5.63",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Phùng Thị Hồng Minh",
+            "Email cá nhân": "minhpth.C3.25.001@phutho.edu.vn",
+            "Phân loại": "ĐÃ HỦY/XÓA (THÔNG TIN MỐC KSCL)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 03/11/2026 - Phùng Thị Hồng Minh",
+            "Nội dung ghi nhận": "[ĐÃ XÓA] [KSCL Lần 0] Lớp 12A9 - Môn Ngữ văn: Lưu mốc điểm đầu vào S1 = 5.63",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
     "accounts": [
