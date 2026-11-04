@@ -2501,6 +2501,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A1 - Môn Toán (Kỳ trước 4.15 ➔ Kỳ này 6.50, Tăng 2.35 điểm (+10.0 điểm))",
             "Số điểm": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "04/11/2026",
+            "Cán bộ": "Đỗ Thị Thu Hiền",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC1.1.2] Không đeo thẻ",
+            "Số điểm": 1.0,
+            "Ghi chú": "Chiều Thứ 4, ngày 04/11/2026"
         }
     ],
     "kscl_history": [
@@ -3921,6 +3930,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A1 Môn Toán - Lê Hồng Thái",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A1 - Môn Toán (Kỳ trước 4.15 ➔ Kỳ này 6.50, Tăng 2.35 điểm (+10.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "04/11/2026",
+            "Người nhận": "Đỗ Thị Thu Hiền",
+            "Email cá nhân": "hiendtt.c3.25.005@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 04/11/2026 - Đỗ Thị Thu Hiền",
+            "Nội dung ghi nhận": "[TC1.1.2] Không đeo thẻ",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
