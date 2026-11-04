@@ -3319,6 +3319,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 52,
+            "Ngày": "04/11/2026",
+            "Cán bộ": "Nguyễn Cẩm Chi",
+            "Lớp": "10A9",
+            "Môn": "Ngữ văn",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 8.15,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -3720,6 +3733,14 @@
             "subject": "Ngữ văn",
             "last_exam": "KSCL Lần 0",
             "last_score": 7.62,
+            "last_date": "04/11/2026"
+        },
+        "Nguyễn Cẩm Chi_10A9_Ngữ văn": {
+            "teacher": "Nguyễn Cẩm Chi",
+            "class": "10A9",
+            "subject": "Ngữ văn",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 8.15,
             "last_date": "04/11/2026"
         }
     },
@@ -5043,6 +5064,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A7 Môn Ngữ văn - Nguyễn Cẩm Chi",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A7 - Môn Ngữ văn: Lưu mốc điểm đầu vào S1 = 7.62",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "04/11/2026",
+            "Người nhận": "Nguyễn Cẩm Chi",
+            "Email cá nhân": "chinc.C3.25@phutho.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A9 Môn Ngữ văn - Nguyễn Cẩm Chi",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A9 - Môn Ngữ văn: Lưu mốc điểm đầu vào S1 = 8.15",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
