@@ -3761,6 +3761,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 68,
+            "Ngày": "05/11/2026",
+            "Cán bộ": "Nguyễn Thị Tuyết",
+            "Lớp": "11A6",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 6.13,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -4290,6 +4303,14 @@
             "subject": "Toán",
             "last_exam": "KSCL Lần 0",
             "last_score": 3.45,
+            "last_date": "05/11/2026"
+        },
+        "Nguyễn Thị Tuyết_11A6_Toán": {
+            "teacher": "Nguyễn Thị Tuyết",
+            "class": "11A6",
+            "subject": "Toán",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 6.13,
             "last_date": "05/11/2026"
         }
     },
@@ -5757,6 +5778,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 11A9 Môn Toán - Đỗ Mạnh Hà",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 11A9 - Môn Toán: Lưu mốc điểm đầu vào S1 = 3.45",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "05/11/2026",
+            "Người nhận": "Nguyễn Thị Tuyết",
+            "Email cá nhân": "tuyetspt@gmail.com",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 11A6 Môn Toán - Nguyễn Thị Tuyết",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 11A6 - Môn Toán: Lưu mốc điểm đầu vào S1 = 6.13",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
