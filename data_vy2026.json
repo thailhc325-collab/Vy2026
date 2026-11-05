@@ -3800,6 +3800,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 71,
+            "Ngày": "05/11/2026",
+            "Cán bộ": "Đỗ Thị Hải Yến",
+            "Lớp": "11A1",
+            "Môn": "Ngữ văn",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 6.06,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -4353,6 +4366,14 @@
             "subject": "Toán",
             "last_exam": "KSCL Lần 0",
             "last_score": 7.0,
+            "last_date": "05/11/2026"
+        },
+        "Đỗ Thị Hải Yến_11A1_Ngữ văn": {
+            "teacher": "Đỗ Thị Hải Yến",
+            "class": "11A1",
+            "subject": "Ngữ văn",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 6.06,
             "last_date": "05/11/2026"
         }
     },
@@ -5847,6 +5868,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 11A7 Môn Toán - Nguyễn Thị Thanh Xuân",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 11A7 - Môn Toán: Lưu mốc điểm đầu vào S1 = 7.00",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "05/11/2026",
+            "Người nhận": "Đỗ Thị Hải Yến",
+            "Email cá nhân": "dothihaiyen.c3vinhyen@vinhphuc.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 11A1 Môn Ngữ văn - Đỗ Thị Hải Yến",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 11A1 - Môn Ngữ văn: Lưu mốc điểm đầu vào S1 = 6.06",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
