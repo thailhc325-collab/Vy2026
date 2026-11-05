@@ -3878,6 +3878,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 77,
+            "Ngày": "05/11/2026",
+            "Cán bộ": "Lê Thu Hà",
+            "Lớp": "11A8",
+            "Môn": "Ngữ văn",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 5.76,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -4479,6 +4492,14 @@
             "subject": "Ngữ văn",
             "last_exam": "KSCL Lần 0",
             "last_score": 6.18,
+            "last_date": "05/11/2026"
+        },
+        "Lê Thu Hà_11A8_Ngữ văn": {
+            "teacher": "Lê Thu Hà",
+            "class": "11A8",
+            "subject": "Ngữ văn",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 5.76,
             "last_date": "05/11/2026"
         }
     },
@@ -6027,6 +6048,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 11A3 Môn Ngữ văn - Lưu Thị Thúy Hồng",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 11A3 - Môn Ngữ văn: Lưu mốc điểm đầu vào S1 = 6.18",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "05/11/2026",
+            "Người nhận": "Lê Thu Hà",
+            "Email cá nhân": "halt.c3.25.005@phutho.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 11A8 Môn Ngữ văn - Lê Thu Hà",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 11A8 - Môn Ngữ văn: Lưu mốc điểm đầu vào S1 = 5.76",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
