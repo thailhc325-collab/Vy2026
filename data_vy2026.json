@@ -4248,6 +4248,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 93,
+            "Ngày": "05/11/2026",
+            "Cán bộ": "Nguyễn Thị Thu",
+            "Lớp": "11A9",
+            "Môn": "Lịch sử",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 5.36,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -4977,6 +4990,14 @@
             "subject": "Lịch sử",
             "last_exam": "KSCL Lần 0",
             "last_score": 5.88,
+            "last_date": "05/11/2026"
+        },
+        "Nguyễn Thị Thu_11A9_Lịch sử": {
+            "teacher": "Nguyễn Thị Thu",
+            "class": "11A9",
+            "subject": "Lịch sử",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 5.36,
             "last_date": "05/11/2026"
         }
     },
@@ -6669,6 +6690,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 11A1 Môn Lịch sử - Lưu Thị Phương Loan",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 11A1 - Môn Lịch sử: Lưu mốc điểm đầu vào S1 = 5.88",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "05/11/2026",
+            "Người nhận": "Nguyễn Thị Thu",
+            "Email cá nhân": "thusuhpu2@gmail.com",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 11A9 Môn Lịch sử - Nguyễn Thị Thu",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 11A9 - Môn Lịch sử: Lưu mốc điểm đầu vào S1 = 5.36",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
