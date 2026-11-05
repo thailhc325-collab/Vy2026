@@ -4157,6 +4157,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 86,
+            "Ngày": "05/11/2026",
+            "Cán bộ": "Khổng Thị Thảo",
+            "Lớp": "11A7",
+            "Môn": "Tiếng Anh",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 6.19,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -4830,6 +4843,14 @@
             "subject": "Tiếng Anh",
             "last_exam": "KSCL Lần 0",
             "last_score": 4.68,
+            "last_date": "05/11/2026"
+        },
+        "Khổng Thị Thảo_11A7_Tiếng Anh": {
+            "teacher": "Khổng Thị Thảo",
+            "class": "11A7",
+            "subject": "Tiếng Anh",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 6.19,
             "last_date": "05/11/2026"
         }
     },
@@ -6459,6 +6480,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 11A5 Môn Tiếng Anh - Khổng Thị Thảo",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 11A5 - Môn Tiếng Anh: Lưu mốc điểm đầu vào S1 = 4.68",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "05/11/2026",
+            "Người nhận": "Khổng Thị Thảo",
+            "Email cá nhân": "Khongthaovp92@gmail.com",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 11A7 Môn Tiếng Anh - Khổng Thị Thảo",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 11A7 - Môn Tiếng Anh: Lưu mốc điểm đầu vào S1 = 6.19",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
