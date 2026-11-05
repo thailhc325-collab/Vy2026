@@ -4413,6 +4413,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 96,
+            "Ngày": "05/11/2026",
+            "Cán bộ": "Phan Thị Thu Hà",
+            "Lớp": "11A3",
+            "Môn": "Địa lý",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 7.23,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -5166,6 +5179,14 @@
             "subject": "Địa lý",
             "last_exam": "KSCL Lần 0",
             "last_score": 8.25,
+            "last_date": "05/11/2026"
+        },
+        "Phan Thị Thu Hà_11A3_Địa lý": {
+            "teacher": "Phan Thị Thu Hà",
+            "class": "11A3",
+            "subject": "Địa lý",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 7.23,
             "last_date": "05/11/2026"
         }
     },
@@ -6885,6 +6906,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 11A2 Môn Địa lý - Phan Thị Thu Hà",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 11A2 - Môn Địa lý: Lưu mốc điểm đầu vào S1 = 8.25",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "05/11/2026",
+            "Người nhận": "Phan Thị Thu Hà",
+            "Email cá nhân": "phanthuha.c3vinhyen@vinhphuc.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 11A3 Môn Địa lý - Phan Thị Thu Hà",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 11A3 - Môn Địa lý: Lưu mốc điểm đầu vào S1 = 7.23",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
