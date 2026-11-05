@@ -4183,6 +4183,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 88,
+            "Ngày": "05/11/2026",
+            "Cán bộ": "Lê Văn Tuệ",
+            "Lớp": "11A6",
+            "Môn": "Vật lý",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 6.22,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -4872,6 +4885,14 @@
             "subject": "Vật lý",
             "last_exam": "KSCL Lần 0",
             "last_score": 4.34,
+            "last_date": "05/11/2026"
+        },
+        "Lê Văn Tuệ_11A6_Vật lý": {
+            "teacher": "Lê Văn Tuệ",
+            "class": "11A6",
+            "subject": "Vật lý",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 6.22,
             "last_date": "05/11/2026"
         }
     },
@@ -6519,6 +6540,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 11A8 Môn Vật lý - Đỗ Anh Toản",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 11A8 - Môn Vật lý: Lưu mốc điểm đầu vào S1 = 4.34",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "05/11/2026",
+            "Người nhận": "Lê Văn Tuệ",
+            "Email cá nhân": "levantuec3td@gmail.com",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 11A6 Môn Vật lý - Lê Văn Tuệ",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 11A6 - Môn Vật lý: Lưu mốc điểm đầu vào S1 = 6.22",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
