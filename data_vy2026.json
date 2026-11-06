@@ -2557,13 +2557,13 @@
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
         },
         {
-            "Ngày": "04/11/2026",
+            "Ngày": "06/11/2026",
             "Cán bộ": "Nguyễn Thị Thuý",
             "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
             "Loại": "Thông tin Mốc KSCL",
-            "Nội dung": "[KSCL Lần 0] Lớp 12A9 - Môn Sinh học: Lưu mốc điểm đầu vào S1 = 5.68",
+            "Nội dung": "[KSCL Lần 0] Lớp 12A9 - Môn Sinh học: Lưu mốc điểm đầu vào S1 = 4.57",
             "Số điểm": 0.0,
-            "Ghi chú": "Lưu Mốc đầu vào (S1)"
+            "Ghi chú": ""
         },
         {
             "Ngày": "04/11/2026",
@@ -3570,11 +3570,11 @@
             "Lớp": "12A9",
             "Môn": "Sinh học",
             "Kỳ KSCL": "KSCL Lần 0",
-            "Điểm TB": 5.68,
+            "Điểm TB": 4.57,
             "Điểm kỳ trước": "-",
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
-            "Ghi chú": "Lưu Mốc đầu vào (S1)"
+            "Ghi chú": ""
         },
         {
             "ID": 26,
@@ -4768,7 +4768,7 @@
             "class": "12A9",
             "subject": "Sinh học",
             "last_exam": "KSCL Lần 0",
-            "last_score": 5.68,
+            "last_score": 4.57,
             "last_date": "04/11/2026"
         },
         "Trần Thanh Long_12A5_GDKTPL": {
