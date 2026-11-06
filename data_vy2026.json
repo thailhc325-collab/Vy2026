@@ -3248,6 +3248,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A1 - Môn CNCN (Kỳ trước 7.54 ➔ Kỳ này 8.50, Tăng 0.96 điểm (+10.0 điểm))",
             "Số điểm": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "06/11/2026",
+            "Cán bộ": "Nguyễn Thị Thuý",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A9 - Môn Sinh học (Kỳ trước 4.57 ➔ Kỳ này 5.70, Tăng 1.13 điểm (+10.0 điểm))",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -4576,6 +4585,19 @@
             "Chỉ số tăng": 0.96,
             "Điểm thi đua": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 103,
+            "Ngày": "06/11/2026",
+            "Cán bộ": "Nguyễn Thị Thuý",
+            "Lớp": "12A9",
+            "Môn": "Sinh học",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 5.7,
+            "Điểm kỳ trước": 4.57,
+            "Chỉ số tăng": 1.13,
+            "Điểm thi đua": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -4767,9 +4789,9 @@
             "teacher": "Nguyễn Thị Thuý",
             "class": "12A9",
             "subject": "Sinh học",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 4.57,
-            "last_date": "04/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 5.7,
+            "last_date": "06/11/2026"
         },
         "Trần Thanh Long_12A5_GDKTPL": {
             "teacher": "Trần Thanh Long",
@@ -7178,6 +7200,15 @@
             "Phân loại": "ĐIỀU CHỈNH (THÔNG TIN MỐC KSCL)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] THÔNG BÁO ĐIỀU CHỈNH ngày 06/11/2026 - Nguyễn Thị Thuý",
             "Nội dung ghi nhận": "[KSCL Lần 0] Lớp 12A9 - Môn Sinh học: Lưu mốc điểm đầu vào S1 = 4.57",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "06/11/2026",
+            "Người nhận": "Nguyễn Thị Thuý",
+            "Email cá nhân": "thuynt.c3.25.005@phutho.edu.vn",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A9 Môn Sinh học - Nguyễn Thị Thuý",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A9 - Môn Sinh học (Kỳ trước 4.57 ➔ Kỳ này 5.70, Tăng 1.13 điểm (+10.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
