@@ -3230,6 +3230,15 @@
             "Nội dung": "Thực hiện hiệu quả các chương trình văn nghệ, thiện nguyện do BGH tổ chức hoặc được BGH phê duyệt kế hoạch phát sinh (Người thực hiện)",
             "Số điểm": 10.0,
             "Ghi chú": "Nguyễn Minh Giang-12A2"
+        },
+        {
+            "Ngày": "06/11/2026",
+            "Cán bộ": "Vũ Thị Hạnh",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A4 - Môn CNNN (Kỳ trước 6.32 ➔ Kỳ này 7.60, Tăng 1.28 điểm (+10.0 điểm))",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -4519,6 +4528,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 100,
+            "Ngày": "06/11/2026",
+            "Cán bộ": "Vũ Thị Hạnh",
+            "Lớp": "12A4",
+            "Môn": "CNNN",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 7.6,
+            "Điểm kỳ trước": 6.32,
+            "Chỉ số tăng": 1.28,
+            "Điểm thi đua": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -5302,8 +5324,8 @@
             "teacher": "Vũ Thị Hạnh",
             "class": "12A4",
             "subject": "CNNN",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 6.32,
+            "last_exam": "KSCL Lần 1",
+            "last_score": 7.6,
             "last_date": "06/11/2026"
         }
     },
@@ -7077,6 +7099,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A4 Môn CNNN - Vũ Thị Hạnh",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A4 - Môn CNNN: Lưu mốc điểm đầu vào S1 = 6.32",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "06/11/2026",
+            "Người nhận": "Vũ Thị Hạnh",
+            "Email cá nhân": "hanhvt1986@gmail.com",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A4 Môn CNNN - Vũ Thị Hạnh",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A4 - Môn CNNN (Kỳ trước 6.32 ➔ Kỳ này 7.60, Tăng 1.28 điểm (+10.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
