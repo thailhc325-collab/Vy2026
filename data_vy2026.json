@@ -4541,6 +4541,19 @@
             "Chỉ số tăng": 1.28,
             "Điểm thi đua": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 101,
+            "Ngày": "06/11/2026",
+            "Cán bộ": "Nguyễn Thị Hòa",
+            "Lớp": "12A1",
+            "Môn": "CNCN",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 7.54,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -5326,6 +5339,14 @@
             "subject": "CNNN",
             "last_exam": "KSCL Lần 1",
             "last_score": 7.6,
+            "last_date": "06/11/2026"
+        },
+        "Nguyễn Thị Hòa_12A1_CNCN": {
+            "teacher": "Nguyễn Thị Hòa",
+            "class": "12A1",
+            "subject": "CNCN",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 7.54,
             "last_date": "06/11/2026"
         }
     },
@@ -7108,6 +7129,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A4 Môn CNNN - Vũ Thị Hạnh",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A4 - Môn CNNN (Kỳ trước 6.32 ➔ Kỳ này 7.60, Tăng 1.28 điểm (+10.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "06/11/2026",
+            "Người nhận": "Nguyễn Thị Hòa",
+            "Email cá nhân": "hoant.c3.25.017@phutho.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A1 Môn CNCN - Nguyễn Thị Hòa",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A1 - Môn CNCN: Lưu mốc điểm đầu vào S1 = 7.54",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
