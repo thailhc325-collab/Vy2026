@@ -3239,6 +3239,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A4 - Môn CNNN (Kỳ trước 6.32 ➔ Kỳ này 7.60, Tăng 1.28 điểm (+10.0 điểm))",
             "Số điểm": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "06/11/2026",
+            "Cán bộ": "Nguyễn Thị Hòa",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A1 - Môn CNCN (Kỳ trước 7.54 ➔ Kỳ này 8.50, Tăng 0.96 điểm (+10.0 điểm))",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -4554,6 +4563,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 102,
+            "Ngày": "06/11/2026",
+            "Cán bộ": "Nguyễn Thị Hòa",
+            "Lớp": "12A1",
+            "Môn": "CNCN",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 8.5,
+            "Điểm kỳ trước": 7.54,
+            "Chỉ số tăng": 0.96,
+            "Điểm thi đua": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -5345,8 +5367,8 @@
             "teacher": "Nguyễn Thị Hòa",
             "class": "12A1",
             "subject": "CNCN",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 7.54,
+            "last_exam": "KSCL Lần 1",
+            "last_score": 8.5,
             "last_date": "06/11/2026"
         }
     },
@@ -7138,6 +7160,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A1 Môn CNCN - Nguyễn Thị Hòa",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A1 - Môn CNCN: Lưu mốc điểm đầu vào S1 = 7.54",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "06/11/2026",
+            "Người nhận": "Nguyễn Thị Hòa",
+            "Email cá nhân": "hoant.c3.25.017@phutho.edu.vn",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A1 Môn CNCN - Nguyễn Thị Hòa",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A1 - Môn CNCN (Kỳ trước 7.54 ➔ Kỳ này 8.50, Tăng 0.96 điểm (+10.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
