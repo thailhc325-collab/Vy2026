@@ -3293,6 +3293,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A3 - Môn Toán (Kỳ trước 4.59 ➔ Kỳ này 5.22, Tăng 0.63 điểm (+6.0 điểm))",
             "Số điểm": 6.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "06/11/2026",
+            "Cán bộ": "Nguyễn Đức Thịnh",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A8 - Môn Toán (Kỳ trước 7.11 ➔ Kỳ này 6.32, Giảm 0.79 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -4686,6 +4695,19 @@
             "Chỉ số tăng": 0.63,
             "Điểm thi đua": 6.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 108,
+            "Ngày": "06/11/2026",
+            "Cán bộ": "Nguyễn Đức Thịnh",
+            "Lớp": "12A8",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 6.32,
+            "Điểm kỳ trước": 7.11,
+            "Chỉ số tăng": -0.79,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -4741,9 +4763,9 @@
             "teacher": "Nguyễn Đức Thịnh",
             "class": "12A8",
             "subject": "Toán",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 7.11,
-            "last_date": "03/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 6.32,
+            "last_date": "06/11/2026"
         },
         "Nguyễn Thị Tuyết_12A4_Toán": {
             "teacher": "Nguyễn Thị Tuyết",
@@ -7333,6 +7355,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A3 Môn Toán - Nguyễn Đức Thịnh",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A3 - Môn Toán (Kỳ trước 4.59 ➔ Kỳ này 5.22, Tăng 0.63 điểm (+6.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "06/11/2026",
+            "Người nhận": "Nguyễn Đức Thịnh",
+            "Email cá nhân": "nguyenducthinhgv.c3songlo@vinhphuc.edu.vn",
+            "Phân loại": "KSCL (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A8 Môn Toán - Nguyễn Đức Thịnh",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A8 - Môn Toán (Kỳ trước 7.11 ➔ Kỳ này 6.32, Giảm 0.79 điểm (Trừ 1 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
