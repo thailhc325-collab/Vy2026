@@ -3176,6 +3176,60 @@
             "Nội dung": "[KSCL Lần 0] Lớp 11A9 - Môn Lịch sử: Lưu mốc điểm đầu vào S1 = 5.36",
             "Số điểm": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "Ngày": "05/11/2026",
+            "Cán bộ": "Phan Thị Thu Hà",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Thông tin Mốc KSCL",
+            "Nội dung": "[KSCL Lần 0] Lớp 11A1 - Môn Địa lý: Lưu mốc điểm đầu vào S1 = 6.72",
+            "Số điểm": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "Ngày": "05/11/2026",
+            "Cán bộ": "Phan Thị Thu Hà",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Thông tin Mốc KSCL",
+            "Nội dung": "[KSCL Lần 0] Lớp 11A2 - Môn Địa lý: Lưu mốc điểm đầu vào S1 = 8.25",
+            "Số điểm": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "Ngày": "05/11/2026",
+            "Cán bộ": "Phan Thị Thu Hà",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Thông tin Mốc KSCL",
+            "Nội dung": "[KSCL Lần 0] Lớp 11A3 - Môn Địa lý: Lưu mốc điểm đầu vào S1 = 7.23",
+            "Số điểm": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "Ngày": "05/11/2026",
+            "Cán bộ": "Nguyễn Quỳnh Trang",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Thông tin Mốc KSCL",
+            "Nội dung": "[KSCL Lần 0] Lớp 11A5 - Môn GDKTPL: Lưu mốc điểm đầu vào S1 = 5.72",
+            "Số điểm": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "Ngày": "05/11/2026",
+            "Cán bộ": "Nguyễn Quỳnh Trang",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Thông tin Mốc KSCL",
+            "Nội dung": "[KSCL Lần 0] Lớp 11A4 - Môn GDKTPL: Lưu mốc điểm đầu vào S1 = 6.66",
+            "Số điểm": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "Ngày": "06/11/2026",
+            "Cán bộ": "Nguyễn Thị Trang",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Thực hiện hiệu quả các chương trình văn nghệ, thiện nguyện do BGH tổ chức hoặc được BGH phê duyệt kế hoạch phát sinh (Người thực hiện)",
+            "Số điểm": 10.0,
+            "Ghi chú": "Nguyễn Minh Giang-12A2"
         }
     ],
     "kscl_history": [
@@ -6975,6 +7029,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 11A4 Môn GDKTPL - Nguyễn Quỳnh Trang",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 11A4 - Môn GDKTPL: Lưu mốc điểm đầu vào S1 = 6.66",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "06/11/2026",
+            "Người nhận": "Nguyễn Thị Trang",
+            "Email cá nhân": "trangnt.c3.25.005@phutho.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 06/11/2026 - Nguyễn Thị Trang",
+            "Nội dung ghi nhận": "Thực hiện hiệu quả các chương trình văn nghệ, thiện nguyện do BGH tổ chức hoặc được BGH phê duyệt kế hoạch phát sinh (Người thực hiện)",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
