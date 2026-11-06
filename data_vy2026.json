@@ -4506,6 +4506,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 99,
+            "Ngày": "06/11/2026",
+            "Cán bộ": "Vũ Thị Hạnh",
+            "Lớp": "12A4",
+            "Môn": "CNNN",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 6.32,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -5284,6 +5297,14 @@
             "last_exam": "KSCL Lần 0",
             "last_score": 6.66,
             "last_date": "05/11/2026"
+        },
+        "Vũ Thị Hạnh_12A4_CNNN": {
+            "teacher": "Vũ Thị Hạnh",
+            "class": "12A4",
+            "subject": "CNNN",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 6.32,
+            "last_date": "06/11/2026"
         }
     },
     "email_config": {
@@ -7047,6 +7068,15 @@
             "Phân loại": "ĐIỀU CHỈNH (ĐIỂM CỘNG)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] THÔNG BÁO ĐIỀU CHỈNH ngày 06/11/2026 - Lê Hồng Thái",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A1 - Môn Toán (Kỳ trước 4.15 ➔ Kỳ này 4.67, Tăng 0.52 điểm (+6.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "06/11/2026",
+            "Người nhận": "Vũ Thị Hạnh",
+            "Email cá nhân": "hanhvt1986@gmail.com",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A4 Môn CNNN - Vũ Thị Hạnh",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A4 - Môn CNNN: Lưu mốc điểm đầu vào S1 = 6.32",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
