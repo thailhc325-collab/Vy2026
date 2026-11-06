@@ -3320,6 +3320,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A5 - Môn Toán (Kỳ trước 4.42 ➔ Kỳ này 4.90, Tăng 0.48 điểm (+4.0 điểm))",
             "Số điểm": 4.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "06/11/2026",
+            "Cán bộ": "Nguyễn Thị Huyền",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A6 - Môn Toán (Kỳ trước 4.75 ➔ Kỳ này 5.16, Tăng 0.41 điểm (+4.0 điểm))",
+            "Số điểm": 4.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -4765,6 +4774,19 @@
             "Chỉ số tăng": 0.48,
             "Điểm thi đua": 4.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 112,
+            "Ngày": "06/11/2026",
+            "Cán bộ": "Nguyễn Thị Huyền",
+            "Lớp": "12A6",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 5.16,
+            "Điểm kỳ trước": 4.75,
+            "Chỉ số tăng": 0.41,
+            "Điểm thi đua": 4.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -4836,9 +4858,9 @@
             "teacher": "Nguyễn Thị Huyền",
             "class": "12A6",
             "subject": "Toán",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 4.75,
-            "last_date": "03/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 5.16,
+            "last_date": "06/11/2026"
         },
         "Lưu Thị Thúy Hồng_12A1_Ngữ văn": {
             "teacher": "Lưu Thị Thúy Hồng",
@@ -7456,6 +7478,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A5 Môn Toán - Nguyễn Thị Tuyết",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A5 - Môn Toán (Kỳ trước 4.42 ➔ Kỳ này 4.90, Tăng 0.48 điểm (+4.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "06/11/2026",
+            "Người nhận": "Nguyễn Thị Huyền",
+            "Email cá nhân": "huyennt.c3.25.017@phutho.edu.vn",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A6 Môn Toán - Nguyễn Thị Huyền",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A6 - Môn Toán (Kỳ trước 4.75 ➔ Kỳ này 5.16, Tăng 0.41 điểm (+4.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
