@@ -3275,6 +3275,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A9 - Môn Toán (Kỳ trước 6.65 ➔ Kỳ này 6.47, Giảm 0.18 điểm (Trừ 1 điểm))",
             "Số điểm": 1.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "06/11/2026",
+            "Cán bộ": "Nguyễn Thị Thanh Xuân",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A7 - Môn Toán (Kỳ trước 6.42 ➔ Kỳ này 5.95, Giảm 0.47 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -4642,6 +4651,19 @@
             "Chỉ số tăng": -0.18,
             "Điểm thi đua": -1.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 106,
+            "Ngày": "06/11/2026",
+            "Cán bộ": "Nguyễn Thị Thanh Xuân",
+            "Lớp": "12A7",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 5.95,
+            "Điểm kỳ trước": 6.42,
+            "Chỉ số tăng": -0.47,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -4665,9 +4687,9 @@
             "teacher": "Nguyễn Thị Thanh Xuân",
             "class": "12A7",
             "subject": "Toán",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 6.42,
-            "last_date": "03/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 5.95,
+            "last_date": "06/11/2026"
         },
         "Đại Văn Hải_12A2_Toán": {
             "teacher": "Đại Văn Hải",
@@ -7271,6 +7293,15 @@
             "Phân loại": "KSCL (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A9 Môn Toán - Đại Văn Hải",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A9 - Môn Toán (Kỳ trước 6.65 ➔ Kỳ này 6.47, Giảm 0.18 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "06/11/2026",
+            "Người nhận": "Nguyễn Thị Thanh Xuân",
+            "Email cá nhân": "Xuan1978vp@gmail. com",
+            "Phân loại": "KSCL (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A7 Môn Toán - Nguyễn Thị Thanh Xuân",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A7 - Môn Toán (Kỳ trước 6.42 ➔ Kỳ này 5.95, Giảm 0.47 điểm (Trừ 1 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
