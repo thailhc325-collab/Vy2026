@@ -3464,6 +3464,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A7 - Môn Ngữ văn (Kỳ trước 7.40 ➔ Kỳ này 7.58, Tăng 0.18 điểm (+6.0 điểm))",
             "Số điểm": 6.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Lê Anh Tuấn",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A3 - Môn Vật lý (Kỳ trước 3.87 ➔ Kỳ này 5.99, Tăng 2.12 điểm (+10.0 điểm))",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -5208,6 +5217,19 @@
             "Chỉ số tăng": 0.18,
             "Điểm thi đua": 6.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 135,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Lê Anh Tuấn",
+            "Lớp": "12A3",
+            "Môn": "Vật lý",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 5.99,
+            "Điểm kỳ trước": 3.87,
+            "Chỉ số tăng": 2.12,
+            "Điểm thi đua": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -5375,9 +5397,9 @@
             "teacher": "Lê Anh Tuấn",
             "class": "12A3",
             "subject": "Vật lý",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 3.87,
-            "last_date": "04/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 5.99,
+            "last_date": "07/11/2026"
         },
         "Nguyễn Thị Mai_12A3_Hóa học": {
             "teacher": "Nguyễn Thị Mai",
@@ -8162,6 +8184,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A7 Môn Ngữ văn - Trịnh Thị Hoài Giang",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A7 - Môn Ngữ văn (Kỳ trước 7.40 ➔ Kỳ này 7.58, Tăng 0.18 điểm (+6.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Lê Anh Tuấn",
+            "Email cá nhân": "leanhtuan.c3vinhyen@vinhphuc.edu.vn",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A3 Môn Vật lý - Lê Anh Tuấn",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A3 - Môn Vật lý (Kỳ trước 3.87 ➔ Kỳ này 5.99, Tăng 2.12 điểm (+10.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
