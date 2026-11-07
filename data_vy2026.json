@@ -3986,6 +3986,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 10A2 - Môn Toán (Kỳ trước 6.45 ➔ Kỳ này 5.88, Giảm 0.57 điểm (Trừ 1 điểm))",
             "Số điểm": 1.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Thị Thanh Hải",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 10A8 - Môn Toán (Kỳ trước 7.02 ➔ Kỳ này 6.19, Giảm 0.83 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -6484,6 +6493,19 @@
             "Chỉ số tăng": -0.57,
             "Điểm thi đua": -1.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 193,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Thị Thanh Hải",
+            "Lớp": "10A8",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 6.19,
+            "Điểm kỳ trước": 7.02,
+            "Chỉ số tăng": -0.83,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -6771,9 +6793,9 @@
             "teacher": "Nguyễn Thị Thanh Hải",
             "class": "10A8",
             "subject": "Toán",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 7.02,
-            "last_date": "04/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 6.19,
+            "last_date": "07/11/2026"
         },
         "Đại Văn Hải_10A9_Toán": {
             "teacher": "Đại Văn Hải",
@@ -9960,6 +9982,15 @@
             "Phân loại": "KSCL (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A2 Môn Toán - Nguyễn Thị Thanh Hải",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A2 - Môn Toán (Kỳ trước 6.45 ➔ Kỳ này 5.88, Giảm 0.57 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Nguyễn Thị Thanh Hải",
+            "Email cá nhân": "nguyenthithanhhai.c3vinhyen@vinhphuc.edu.vn",
+            "Phân loại": "KSCL (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A8 Môn Toán - Nguyễn Thị Thanh Hải",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A8 - Môn Toán (Kỳ trước 7.02 ➔ Kỳ này 6.19, Giảm 0.83 điểm (Trừ 1 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
