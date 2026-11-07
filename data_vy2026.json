@@ -4247,6 +4247,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 10A6 - Môn Hóa học (Kỳ trước 5.43 ➔ Kỳ này 5.43, Giữ nguyên điểm (0 điểm))",
             "Số điểm": 0.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Thị Phương Khanh",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 10A6 - Môn Sinh học (Kỳ trước 5.41 ➔ Kỳ này 5.41, Giữ nguyên điểm (0 điểm))",
+            "Số điểm": 0.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -7213,6 +7222,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 229,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Thị Phương Khanh",
+            "Lớp": "10A6",
+            "Môn": "Sinh học",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 5.41,
+            "Điểm kỳ trước": 5.41,
+            "Chỉ số tăng": 0.0,
+            "Điểm thi đua": 0.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -8132,7 +8154,7 @@
             "teacher": "Nguyễn Thị Phương Khanh",
             "class": "10A6",
             "subject": "Sinh học",
-            "last_exam": "KSCL Lần 0",
+            "last_exam": "KSCL Lần 1",
             "last_score": 5.41,
             "last_date": "07/11/2026"
         }
@@ -11086,6 +11108,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A6 Môn Sinh học - Nguyễn Thị Phương Khanh",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A6 - Môn Sinh học: Lưu mốc điểm đầu vào S1 = 5.41",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Nguyễn Thị Phương Khanh",
+            "Email cá nhân": "khanhntp.C3.25.001@phutho.edu.vn",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A6 Môn Sinh học - Nguyễn Thị Phương Khanh",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A6 - Môn Sinh học (Kỳ trước 5.41 ➔ Kỳ này 5.41, Giữ nguyên điểm (0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
