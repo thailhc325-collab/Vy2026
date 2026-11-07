@@ -3410,6 +3410,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A2 - Môn Ngữ văn (Kỳ trước 6.14 ➔ Kỳ này 6.67, Tăng 0.53 điểm (+10.0 điểm))",
             "Số điểm": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Phùng Thị Hồng Minh",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A3 - Môn Ngữ văn (Kỳ trước 6.03 ➔ Kỳ này 6.47, Tăng 0.44 điểm (+8.0 điểm))",
+            "Số điểm": 8.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -5063,6 +5072,19 @@
             "Chỉ số tăng": 0.53,
             "Điểm thi đua": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 128,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Phùng Thị Hồng Minh",
+            "Lớp": "12A3",
+            "Môn": "Ngữ văn",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 6.47,
+            "Điểm kỳ trước": 6.03,
+            "Chỉ số tăng": 0.44,
+            "Điểm thi đua": 8.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -5166,9 +5188,9 @@
             "teacher": "Phùng Thị Hồng Minh",
             "class": "12A3",
             "subject": "Ngữ văn",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 6.03,
-            "last_date": "03/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 6.47,
+            "last_date": "07/11/2026"
         },
         "Nguyễn Thị Thu Huyền_12A4_Ngữ văn": {
             "teacher": "Nguyễn Thị Thu Huyền",
@@ -7946,6 +7968,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A2 Môn Ngữ văn - Phùng Thị Hồng Minh",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A2 - Môn Ngữ văn (Kỳ trước 6.14 ➔ Kỳ này 6.67, Tăng 0.53 điểm (+10.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Phùng Thị Hồng Minh",
+            "Email cá nhân": "minhpth.C3.25.001@phutho.edu.vn",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A3 Môn Ngữ văn - Phùng Thị Hồng Minh",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A3 - Môn Ngữ văn (Kỳ trước 6.03 ➔ Kỳ này 6.47, Tăng 0.44 điểm (+8.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
