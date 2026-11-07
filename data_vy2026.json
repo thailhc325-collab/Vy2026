@@ -3824,6 +3824,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A7 - Môn Tiếng Anh (Kỳ trước 6.19 ➔ Kỳ này 6.19, Giữ nguyên điểm (0 điểm))",
             "Số điểm": 0.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Đỗ Anh Toản",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A8 - Môn Vật lý (Kỳ trước 4.34 ➔ Kỳ này 4.57, Tăng 0.23 điểm (+4.0 điểm))",
+            "Số điểm": 4.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -6088,6 +6097,19 @@
             "Chỉ số tăng": 0.0,
             "Điểm thi đua": 0.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 175,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Đỗ Anh Toản",
+            "Lớp": "11A8",
+            "Môn": "Vật lý",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 4.57,
+            "Điểm kỳ trước": 4.34,
+            "Chỉ số tăng": 0.23,
+            "Điểm thi đua": 4.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -6775,9 +6797,9 @@
             "teacher": "Đỗ Anh Toản",
             "class": "11A8",
             "subject": "Vật lý",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 4.34,
-            "last_date": "05/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 4.57,
+            "last_date": "07/11/2026"
         },
         "Lê Văn Tuệ_11A6_Vật lý": {
             "teacher": "Lê Văn Tuệ",
@@ -9402,6 +9424,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A7 Môn Tiếng Anh - Khổng Thị Thảo",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A7 - Môn Tiếng Anh (Kỳ trước 6.19 ➔ Kỳ này 6.19, Giữ nguyên điểm (0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Đỗ Anh Toản",
+            "Email cá nhân": "toanda.C3.25.001@phutho.edu.vn",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A8 Môn Vật lý - Đỗ Anh Toản",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A8 - Môn Vật lý (Kỳ trước 4.34 ➔ Kỳ này 4.57, Tăng 0.23 điểm (+4.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
