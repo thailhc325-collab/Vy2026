@@ -7060,6 +7060,19 @@
             "Chỉ số tăng": 0.0,
             "Điểm thi đua": 0.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 220,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Lê Anh Tuấn",
+            "Lớp": "10A7",
+            "Môn": "Vật lý",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 4.7,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -7941,6 +7954,14 @@
             "subject": "Vật lý",
             "last_exam": "KSCL Lần 1",
             "last_score": 5.8,
+            "last_date": "07/11/2026"
+        },
+        "Lê Anh Tuấn_10A7_Vật lý": {
+            "teacher": "Lê Anh Tuấn",
+            "class": "10A7",
+            "subject": "Vật lý",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 4.7,
             "last_date": "07/11/2026"
         }
     },
@@ -10812,6 +10833,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A9 Môn Vật lý - Lê Văn Tuệ",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A9 - Môn Vật lý (Kỳ trước 5.80 ➔ Kỳ này 5.80, Giữ nguyên điểm (0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Lê Anh Tuấn",
+            "Email cá nhân": "leanhtuan.c3vinhyen@vinhphuc.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A7 Môn Vật lý - Lê Anh Tuấn",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A7 - Môn Vật lý: Lưu mốc điểm đầu vào S1 = 4.70",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
