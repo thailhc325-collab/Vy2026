@@ -3878,6 +3878,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A1 - Môn Lịch sử (Kỳ trước 5.88 ➔ Kỳ này 5.02, Giảm 0.86 điểm (Trừ 1 điểm))",
             "Số điểm": 1.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Thị Thu",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A9 - Môn Lịch sử (Kỳ trước 5.36 ➔ Kỳ này 5.26, Giảm 0.10 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -6220,6 +6229,19 @@
             "Chỉ số tăng": -0.86,
             "Điểm thi đua": -1.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 181,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Thị Thu",
+            "Lớp": "11A9",
+            "Môn": "Lịch sử",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 5.26,
+            "Điểm kỳ trước": 5.36,
+            "Chỉ số tăng": -0.1,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -6955,9 +6977,9 @@
             "teacher": "Nguyễn Thị Thu",
             "class": "11A9",
             "subject": "Lịch sử",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 5.36,
-            "last_date": "05/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 5.26,
+            "last_date": "07/11/2026"
         },
         "Phan Thị Thu Hà_11A1_Địa lý": {
             "teacher": "Phan Thị Thu Hà",
@@ -9588,6 +9610,15 @@
             "Phân loại": "KSCL (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A1 Môn Lịch sử - Lưu Thị Phương Loan",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A1 - Môn Lịch sử (Kỳ trước 5.88 ➔ Kỳ này 5.02, Giảm 0.86 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Nguyễn Thị Thu",
+            "Email cá nhân": "thusuhpu2@gmail.com",
+            "Phân loại": "KSCL (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A9 Môn Lịch sử - Nguyễn Thị Thu",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A9 - Môn Lịch sử (Kỳ trước 5.36 ➔ Kỳ này 5.26, Giảm 0.10 điểm (Trừ 1 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
