@@ -3851,6 +3851,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A7 - Môn Vật lý (Kỳ trước 6.92 ➔ Kỳ này 6.83, Giảm 0.09 điểm (Trừ 1 điểm))",
             "Số điểm": 1.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Thị Lan Phương(H)",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A6 - Môn Hóa học (Kỳ trước 5.11 ➔ Kỳ này 5.45, Tăng 0.34 điểm (+6.0 điểm))",
+            "Số điểm": 6.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -6154,6 +6163,19 @@
             "Chỉ số tăng": -0.09,
             "Điểm thi đua": -1.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 178,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Thị Lan Phương(H)",
+            "Lớp": "11A6",
+            "Môn": "Hóa học",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 5.45,
+            "Điểm kỳ trước": 5.11,
+            "Chỉ số tăng": 0.34,
+            "Điểm thi đua": 6.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -6865,9 +6887,9 @@
             "teacher": "Nguyễn Thị Lan Phương(H)",
             "class": "11A6",
             "subject": "Hóa học",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 5.11,
-            "last_date": "05/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 5.45,
+            "last_date": "07/11/2026"
         },
         "Nguyễn Thị Thu Hiền_11A6_Sinh học": {
             "teacher": "Nguyễn Thị Thu Hiền",
@@ -9495,6 +9517,15 @@
             "Phân loại": "KSCL (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A7 Môn Vật lý - Lê Văn Tuệ",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A7 - Môn Vật lý (Kỳ trước 6.92 ➔ Kỳ này 6.83, Giảm 0.09 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Nguyễn Thị Lan Phương(H)",
+            "Email cá nhân": "phuongntl.c3.25.007@phutho.edu.vn",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A6 Môn Hóa học - Nguyễn Thị Lan Phương(H)",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A6 - Môn Hóa học (Kỳ trước 5.11 ➔ Kỳ này 5.45, Tăng 0.34 điểm (+6.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
