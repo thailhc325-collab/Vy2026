@@ -3482,6 +3482,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A8 - Môn Vật lý (Kỳ trước 5.51 ➔ Kỳ này 7.46, Tăng 1.95 điểm (+10.0 điểm))",
             "Số điểm": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Đào Thị Phương Lan",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A9 - Môn Vật lý (Kỳ trước 5.32 ➔ Kỳ này 7.39, Tăng 2.07 điểm (+10.0 điểm))",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -5252,6 +5261,19 @@
             "Chỉ số tăng": 1.95,
             "Điểm thi đua": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 137,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Đào Thị Phương Lan",
+            "Lớp": "12A9",
+            "Môn": "Vật lý",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 7.39,
+            "Điểm kỳ trước": 5.32,
+            "Chỉ số tăng": 2.07,
+            "Điểm thi đua": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -5411,9 +5433,9 @@
             "teacher": "Đào Thị Phương Lan",
             "class": "12A9",
             "subject": "Vật lý",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 5.32,
-            "last_date": "04/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 7.39,
+            "last_date": "07/11/2026"
         },
         "Lê Anh Tuấn_12A3_Vật lý": {
             "teacher": "Lê Anh Tuấn",
@@ -8224,6 +8246,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A8 Môn Vật lý - Đào Thị Phương Lan",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A8 - Môn Vật lý (Kỳ trước 5.51 ➔ Kỳ này 7.46, Tăng 1.95 điểm (+10.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Đào Thị Phương Lan",
+            "Email cá nhân": "landtp.C3.25.001@phutho.edu.vn",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A9 Môn Vật lý - Đào Thị Phương Lan",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A9 - Môn Vật lý (Kỳ trước 5.32 ➔ Kỳ này 7.39, Tăng 2.07 điểm (+10.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
