@@ -4184,6 +4184,15 @@
             "Nội dung": "[KSCL Lần 0] Lớp 10A6 - Môn Vật lý: Lưu mốc điểm đầu vào S1 = 4.58",
             "Số điểm": 0.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Kim Thị Thu Hương",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 10A6 - Môn Vật lý (Kỳ trước 4.58 ➔ Kỳ này 4.58, Giữ nguyên điểm (0 điểm))",
+            "Số điểm": 0.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -6968,6 +6977,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 215,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Kim Thị Thu Hương",
+            "Lớp": "10A6",
+            "Môn": "Vật lý",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 4.58,
+            "Điểm kỳ trước": 4.58,
+            "Chỉ số tăng": 0.0,
+            "Điểm thi đua": 0.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -7831,7 +7853,7 @@
             "teacher": "Kim Thị Thu Hương",
             "class": "10A6",
             "subject": "Vật lý",
-            "last_exam": "KSCL Lần 0",
+            "last_exam": "KSCL Lần 1",
             "last_score": 4.58,
             "last_date": "07/11/2026"
         }
@@ -10659,6 +10681,15 @@
             "Phân loại": "ĐIỀU CHỈNH (THÔNG TIN MỐC KSCL)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] THÔNG BÁO ĐIỀU CHỈNH ngày 07/11/2026 - Kim Thị Thu Hương",
             "Nội dung ghi nhận": "[KSCL Lần 0] Lớp 10A6 - Môn Vật lý: Lưu mốc điểm đầu vào S1 = 4.58",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Kim Thị Thu Hương",
+            "Email cá nhân": "huongktt.C3.25.001@phutho.edu.vn",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A6 Môn Vật lý - Kim Thị Thu Hương",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A6 - Môn Vật lý (Kỳ trước 4.58 ➔ Kỳ này 4.58, Giữ nguyên điểm (0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
