@@ -3509,6 +3509,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A9 - Môn Hóa học (Kỳ trước 5.66 ➔ Kỳ này 6.74, Tăng 1.08 điểm (+10.0 điểm))",
             "Số điểm": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Tuyết Mai",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A5 - Môn Lịch sử (Kỳ trước 4.48 ➔ Kỳ này 6.60, Tăng 2.12 điểm (+10.0 điểm))",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -5318,6 +5327,19 @@
             "Chỉ số tăng": 1.08,
             "Điểm thi đua": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 140,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Tuyết Mai",
+            "Lớp": "12A5",
+            "Môn": "Lịch sử",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 6.6,
+            "Điểm kỳ trước": 4.48,
+            "Chỉ số tăng": 2.12,
+            "Điểm thi đua": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -5557,9 +5579,9 @@
             "teacher": "Nguyễn Tuyết Mai",
             "class": "12A5",
             "subject": "Lịch sử",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 4.48,
-            "last_date": "04/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 6.6,
+            "last_date": "07/11/2026"
         },
         "Nguyễn Tuyết Mai_12A6_Lịch sử": {
             "teacher": "Nguyễn Tuyết Mai",
@@ -8317,6 +8339,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A9 Môn Hóa học - Nguyễn Thị Mai",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A9 - Môn Hóa học (Kỳ trước 5.66 ➔ Kỳ này 6.74, Tăng 1.08 điểm (+10.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Nguyễn Tuyết Mai",
+            "Email cá nhân": "maint.c3.25.012@phutho.edu.vn",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A5 Môn Lịch sử - Nguyễn Tuyết Mai",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A5 - Môn Lịch sử (Kỳ trước 4.48 ➔ Kỳ này 6.60, Tăng 2.12 điểm (+10.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
