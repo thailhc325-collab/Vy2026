@@ -7165,6 +7165,19 @@
             "Chỉ số tăng": 0.0,
             "Điểm thi đua": 0.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 226,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Thị Lan Phương(H)",
+            "Lớp": "10A6",
+            "Môn": "Hóa học",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 5.43,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -8070,6 +8083,14 @@
             "subject": "Hóa học",
             "last_exam": "KSCL Lần 1",
             "last_score": 6.26,
+            "last_date": "07/11/2026"
+        },
+        "Nguyễn Thị Lan Phương(H)_10A6_Hóa học": {
+            "teacher": "Nguyễn Thị Lan Phương(H)",
+            "class": "10A6",
+            "subject": "Hóa học",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 5.43,
             "last_date": "07/11/2026"
         }
     },
@@ -10995,6 +11016,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A5 Môn Hóa học - Nguyễn Thị Lan Phương(H)",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A5 - Môn Hóa học (Kỳ trước 6.26 ➔ Kỳ này 6.26, Giữ nguyên điểm (0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Nguyễn Thị Lan Phương(H)",
+            "Email cá nhân": "phuongntl.c3.25.007@phutho.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A6 Môn Hóa học - Nguyễn Thị Lan Phương(H)",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A6 - Môn Hóa học: Lưu mốc điểm đầu vào S1 = 5.43",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
