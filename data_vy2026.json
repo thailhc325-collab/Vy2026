@@ -3806,6 +3806,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A8 - Môn Tiếng Anh (Kỳ trước 4.40 ➔ Kỳ này 4.69, Tăng 0.29 điểm (+4.0 điểm))",
             "Số điểm": 4.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Khổng Thị Thảo",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A5 - Môn Tiếng Anh (Kỳ trước 4.68 ➔ Kỳ này 4.63, Giảm 0.05 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -6044,6 +6053,19 @@
             "Chỉ số tăng": 0.29,
             "Điểm thi đua": 4.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 173,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Khổng Thị Thảo",
+            "Lớp": "11A5",
+            "Môn": "Tiếng Anh",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 4.63,
+            "Điểm kỳ trước": 4.68,
+            "Chỉ số tăng": -0.05,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -6715,9 +6737,9 @@
             "teacher": "Khổng Thị Thảo",
             "class": "11A5",
             "subject": "Tiếng Anh",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 4.68,
-            "last_date": "05/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 4.63,
+            "last_date": "07/11/2026"
         },
         "Khổng Thị Thảo_11A7_Tiếng Anh": {
             "teacher": "Khổng Thị Thảo",
@@ -9340,6 +9362,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A8 Môn Tiếng Anh - Nguyễn Thị Trang",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A8 - Môn Tiếng Anh (Kỳ trước 4.40 ➔ Kỳ này 4.69, Tăng 0.29 điểm (+4.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Khổng Thị Thảo",
+            "Email cá nhân": "Khongthaovp92@gmail.com",
+            "Phân loại": "KSCL (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A5 Môn Tiếng Anh - Khổng Thị Thảo",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A5 - Môn Tiếng Anh (Kỳ trước 4.68 ➔ Kỳ này 4.63, Giảm 0.05 điểm (Trừ 1 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
