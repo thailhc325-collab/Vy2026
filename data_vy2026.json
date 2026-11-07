@@ -7305,6 +7305,19 @@
             "Chỉ số tăng": 0.0,
             "Điểm thi đua": 0.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 234,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Lê Thị Thuý Oanh",
+            "Lớp": "10A2",
+            "Môn": "Địa lý",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 6.11,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -8242,6 +8255,14 @@
             "subject": "Lịch sử",
             "last_exam": "KSCL Lần 1",
             "last_score": 7.61,
+            "last_date": "07/11/2026"
+        },
+        "Lê Thị Thuý Oanh_10A2_Địa lý": {
+            "teacher": "Lê Thị Thuý Oanh",
+            "class": "10A2",
+            "subject": "Địa lý",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 6.11,
             "last_date": "07/11/2026"
         }
     },
@@ -11239,6 +11260,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A4 Môn Lịch sử - Nguyễn Thị Thu",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A4 - Môn Lịch sử (Kỳ trước 7.61 ➔ Kỳ này 7.61, Giữ nguyên điểm (0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Lê Thị Thuý Oanh",
+            "Email cá nhân": "oanhltt.C3.25.001@phutho.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A2 Môn Địa lý - Lê Thị Thuý Oanh",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A2 - Môn Địa lý: Lưu mốc điểm đầu vào S1 = 6.11",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
