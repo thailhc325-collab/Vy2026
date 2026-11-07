@@ -3581,6 +3581,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A7 - Môn Địa lý (Kỳ trước 7.41 ➔ Kỳ này 7.01, Giảm 0.40 điểm (Trừ 1 điểm))",
             "Số điểm": 1.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Trần Thanh Long",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A5 - Môn GDKTPL (Kỳ trước 7.04 ➔ Kỳ này 6.91, Giảm 0.13 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -5494,6 +5503,19 @@
             "Chỉ số tăng": -0.4,
             "Điểm thi đua": -1.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 148,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Trần Thanh Long",
+            "Lớp": "12A5",
+            "Môn": "GDKTPL",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 6.91,
+            "Điểm kỳ trước": 7.04,
+            "Chỉ số tăng": -0.13,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -5693,9 +5715,9 @@
             "teacher": "Trần Thanh Long",
             "class": "12A5",
             "subject": "GDKTPL",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 7.04,
-            "last_date": "04/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 6.91,
+            "last_date": "07/11/2026"
         },
         "Nguyễn Quỳnh Trang_12A6_GDKTPL": {
             "teacher": "Nguyễn Quỳnh Trang",
@@ -8565,6 +8587,15 @@
             "Phân loại": "KSCL (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A7 Môn Địa lý - Bùi Thị Thơm",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A7 - Môn Địa lý (Kỳ trước 7.41 ➔ Kỳ này 7.01, Giảm 0.40 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Trần Thanh Long",
+            "Email cá nhân": "tranlonggdctk56@gmail.com",
+            "Phân loại": "KSCL (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A5 Môn GDKTPL - Trần Thanh Long",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A5 - Môn GDKTPL (Kỳ trước 7.04 ➔ Kỳ này 6.91, Giảm 0.13 điểm (Trừ 1 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
