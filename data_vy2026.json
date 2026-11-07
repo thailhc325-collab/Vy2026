@@ -3365,6 +3365,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A8 - Môn Tiếng Anh (Kỳ trước 5.65 ➔ Kỳ này 6.50, Tăng 0.85 điểm (+10.0 điểm))",
             "Số điểm": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Triệu Thị Hằng",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A3 - Môn Tiếng Anh (Kỳ trước 4.06 ➔ Kỳ này 5.19, Tăng 1.13 điểm (+10.0 điểm))",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -4940,6 +4949,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 122,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Triệu Thị Hằng",
+            "Lớp": "12A3",
+            "Môn": "Tiếng Anh",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 5.19,
+            "Điểm kỳ trước": 4.06,
+            "Chỉ số tăng": 1.13,
+            "Điểm thi đua": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -5779,8 +5801,8 @@
             "teacher": "Triệu Thị Hằng",
             "class": "12A3",
             "subject": "Tiếng Anh",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 4.06,
+            "last_exam": "KSCL Lần 1",
+            "last_score": 5.19,
             "last_date": "07/11/2026"
         }
     },
@@ -7761,6 +7783,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A3 Môn Tiếng Anh - Triệu Thị Hằng",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A3 - Môn Tiếng Anh: Lưu mốc điểm đầu vào S1 = 4.06",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Triệu Thị Hằng",
+            "Email cá nhân": "hangtt.c3.25.010@phutho.edu.vn",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A3 Môn Tiếng Anh - Triệu Thị Hằng",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A3 - Môn Tiếng Anh (Kỳ trước 4.06 ➔ Kỳ này 5.19, Tăng 1.13 điểm (+10.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
