@@ -3437,6 +3437,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A8 - Môn Ngữ văn (Kỳ trước 6.14 ➔ Kỳ này 6.88, Tăng 0.74 điểm (+10.0 điểm))",
             "Số điểm": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Thị Thu Huyền",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A4 - Môn Ngữ văn (Kỳ trước 6.39 ➔ Kỳ này 6.78, Tăng 0.39 điểm (+8.0 điểm))",
+            "Số điểm": 8.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -5142,6 +5151,19 @@
             "Chỉ số tăng": 0.74,
             "Điểm thi đua": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 132,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Thị Thu Huyền",
+            "Lớp": "12A4",
+            "Môn": "Ngữ văn",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 6.78,
+            "Điểm kỳ trước": 6.39,
+            "Chỉ số tăng": 0.39,
+            "Điểm thi đua": 8.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -5253,9 +5275,9 @@
             "teacher": "Nguyễn Thị Thu Huyền",
             "class": "12A4",
             "subject": "Ngữ văn",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 6.39,
-            "last_date": "03/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 6.78,
+            "last_date": "07/11/2026"
         },
         "Trịnh Thị Hoài Giang_12A5_Ngữ văn": {
             "teacher": "Trịnh Thị Hoài Giang",
@@ -8069,6 +8091,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A8 Môn Ngữ văn - Nguyễn Quỳnh Ngân",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A8 - Môn Ngữ văn (Kỳ trước 6.14 ➔ Kỳ này 6.88, Tăng 0.74 điểm (+10.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Nguyễn Thị Thu Huyền",
+            "Email cá nhân": "huyenntt.c3.25.025@phutho.edu.vn",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A4 Môn Ngữ văn - Nguyễn Thị Thu Huyền",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A4 - Môn Ngữ văn (Kỳ trước 6.39 ➔ Kỳ này 6.78, Tăng 0.39 điểm (+8.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
