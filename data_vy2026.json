@@ -3959,6 +3959,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 10A5 - Môn Toán (Kỳ trước 7.21 ➔ Kỳ này 6.58, Giảm 0.63 điểm (Trừ 1 điểm))",
             "Số điểm": 1.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Thị Lan Phương(T)",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 10A1 - Môn Toán (Kỳ trước 6.09 ➔ Kỳ này 5.71, Giảm 0.38 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -6418,6 +6427,19 @@
             "Chỉ số tăng": -0.63,
             "Điểm thi đua": -1.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 190,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Thị Lan Phương(T)",
+            "Lớp": "10A1",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 5.71,
+            "Điểm kỳ trước": 6.09,
+            "Chỉ số tăng": -0.38,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -6753,9 +6775,9 @@
             "teacher": "Nguyễn Thị Lan Phương(T)",
             "class": "10A1",
             "subject": "Toán",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 6.09,
-            "last_date": "04/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 5.71,
+            "last_date": "07/11/2026"
         },
         "Nguyễn Thị Lan Phương(T)_10A4_Toán": {
             "teacher": "Nguyễn Thị Lan Phương(T)",
@@ -9867,6 +9889,15 @@
             "Phân loại": "KSCL (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A5 Môn Toán - Đỗ Mạnh Hà",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A5 - Môn Toán (Kỳ trước 7.21 ➔ Kỳ này 6.58, Giảm 0.63 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Nguyễn Thị Lan Phương(T)",
+            "Email cá nhân": "phuongntl.c3.25.005@phutho.edu.vn",
+            "Phân loại": "KSCL (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A1 Môn Toán - Nguyễn Thị Lan Phương(T)",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A1 - Môn Toán (Kỳ trước 6.09 ➔ Kỳ này 5.71, Giảm 0.38 điểm (Trừ 1 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
