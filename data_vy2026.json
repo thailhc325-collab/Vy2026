@@ -3833,6 +3833,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A8 - Môn Vật lý (Kỳ trước 4.34 ➔ Kỳ này 4.57, Tăng 0.23 điểm (+4.0 điểm))",
             "Số điểm": 4.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Lê Văn Tuệ",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A6 - Môn Vật lý (Kỳ trước 6.22 ➔ Kỳ này 5.85, Giảm 0.37 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -6110,6 +6119,19 @@
             "Chỉ số tăng": 0.23,
             "Điểm thi đua": 4.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 176,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Lê Văn Tuệ",
+            "Lớp": "11A6",
+            "Môn": "Vật lý",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 5.85,
+            "Điểm kỳ trước": 6.22,
+            "Chỉ số tăng": -0.37,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -6805,9 +6827,9 @@
             "teacher": "Lê Văn Tuệ",
             "class": "11A6",
             "subject": "Vật lý",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 6.22,
-            "last_date": "05/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 5.85,
+            "last_date": "07/11/2026"
         },
         "Lê Văn Tuệ_11A7_Vật lý": {
             "teacher": "Lê Văn Tuệ",
@@ -9433,6 +9455,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A8 Môn Vật lý - Đỗ Anh Toản",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A8 - Môn Vật lý (Kỳ trước 4.34 ➔ Kỳ này 4.57, Tăng 0.23 điểm (+4.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Lê Văn Tuệ",
+            "Email cá nhân": "levantuec3td@gmail.com",
+            "Phân loại": "KSCL (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A6 Môn Vật lý - Lê Văn Tuệ",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A6 - Môn Vật lý (Kỳ trước 6.22 ➔ Kỳ này 5.85, Giảm 0.37 điểm (Trừ 1 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
