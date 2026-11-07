@@ -3923,6 +3923,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A4 - Môn GDKTPL (Kỳ trước 6.66 ➔ Kỳ này 7.61, Tăng 0.95 điểm (+10.0 điểm))",
             "Số điểm": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Quỳnh Trang",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A5 - Môn GDKTPL (Kỳ trước 5.72 ➔ Kỳ này 5.98, Tăng 0.26 điểm (+6.0 điểm))",
+            "Số điểm": 6.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -6330,6 +6339,19 @@
             "Chỉ số tăng": 0.95,
             "Điểm thi đua": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 186,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Quỳnh Trang",
+            "Lớp": "11A5",
+            "Môn": "GDKTPL",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 5.98,
+            "Điểm kỳ trước": 5.72,
+            "Chỉ số tăng": 0.26,
+            "Điểm thi đua": 6.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -7097,9 +7119,9 @@
             "teacher": "Nguyễn Quỳnh Trang",
             "class": "11A5",
             "subject": "GDKTPL",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 5.72,
-            "last_date": "05/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 5.98,
+            "last_date": "07/11/2026"
         },
         "Nguyễn Quỳnh Trang_11A4_GDKTPL": {
             "teacher": "Nguyễn Quỳnh Trang",
@@ -9743,6 +9765,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A4 Môn GDKTPL - Nguyễn Quỳnh Trang",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A4 - Môn GDKTPL (Kỳ trước 6.66 ➔ Kỳ này 7.61, Tăng 0.95 điểm (+10.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Nguyễn Quỳnh Trang",
+            "Email cá nhân": "trangthptvy@gmail.com",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A5 Môn GDKTPL - Nguyễn Quỳnh Trang",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A5 - Môn GDKTPL (Kỳ trước 5.72 ➔ Kỳ này 5.98, Tăng 0.26 điểm (+6.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
