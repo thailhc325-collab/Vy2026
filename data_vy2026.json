@@ -7375,6 +7375,19 @@
             "Chỉ số tăng": 0.0,
             "Điểm thi đua": 0.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 238,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Quỳnh Trang",
+            "Lớp": "10A4",
+            "Môn": "GDKTPL",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 8.53,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -8328,6 +8341,14 @@
             "subject": "Địa lý",
             "last_exam": "KSCL Lần 1",
             "last_score": 6.69,
+            "last_date": "07/11/2026"
+        },
+        "Nguyễn Quỳnh Trang_10A4_GDKTPL": {
+            "teacher": "Nguyễn Quỳnh Trang",
+            "class": "10A4",
+            "subject": "GDKTPL",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 8.53,
             "last_date": "07/11/2026"
         }
     },
@@ -11361,6 +11382,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A3 Môn Địa lý - Lê Thị Thuý Oanh",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A3 - Môn Địa lý (Kỳ trước 6.69 ➔ Kỳ này 6.69, Giữ nguyên điểm (0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Nguyễn Quỳnh Trang",
+            "Email cá nhân": "trangthptvy@gmail.com",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A4 Môn GDKTPL - Nguyễn Quỳnh Trang",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A4 - Môn GDKTPL: Lưu mốc điểm đầu vào S1 = 8.53",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
