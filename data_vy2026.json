@@ -3527,6 +3527,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A6 - Môn Lịch sử (Kỳ trước 6.08 ➔ Kỳ này 7.77, Tăng 1.69 điểm (+10.0 điểm))",
             "Số điểm": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Đào Thị Huệ",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A1 - Môn Lịch sử (Kỳ trước 5.24 ➔ Kỳ này 7.04, Tăng 1.80 điểm (+10.0 điểm))",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -5362,6 +5371,19 @@
             "Chỉ số tăng": 1.69,
             "Điểm thi đua": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 142,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Đào Thị Huệ",
+            "Lớp": "12A1",
+            "Môn": "Lịch sử",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 7.04,
+            "Điểm kỳ trước": 5.24,
+            "Chỉ số tăng": 1.8,
+            "Điểm thi đua": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -5617,9 +5639,9 @@
             "teacher": "Đào Thị Huệ",
             "class": "12A1",
             "subject": "Lịch sử",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 5.24,
-            "last_date": "04/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 7.04,
+            "last_date": "07/11/2026"
         },
         "Đào Thị Huệ_12A3_Lịch sử": {
             "teacher": "Đào Thị Huệ",
@@ -8379,6 +8401,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A6 Môn Lịch sử - Nguyễn Tuyết Mai",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A6 - Môn Lịch sử (Kỳ trước 6.08 ➔ Kỳ này 7.77, Tăng 1.69 điểm (+10.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Đào Thị Huệ",
+            "Email cá nhân": "daothihue.c3vinhyen@vinhphuc.edu.vn",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A1 Môn Lịch sử - Đào Thị Huệ",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A1 - Môn Lịch sử (Kỳ trước 5.24 ➔ Kỳ này 7.04, Tăng 1.80 điểm (+10.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
