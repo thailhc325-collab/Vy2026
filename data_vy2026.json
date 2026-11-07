@@ -4927,6 +4927,19 @@
             "Chỉ số tăng": 0.85,
             "Điểm thi đua": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 121,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Triệu Thị Hằng",
+            "Lớp": "12A3",
+            "Môn": "Tiếng Anh",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 4.06,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -5760,6 +5773,14 @@
             "subject": "Tiếng Anh",
             "last_exam": "KSCL Lần 1",
             "last_score": 6.5,
+            "last_date": "07/11/2026"
+        },
+        "Triệu Thị Hằng_12A3_Tiếng Anh": {
+            "teacher": "Triệu Thị Hằng",
+            "class": "12A3",
+            "subject": "Tiếng Anh",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 4.06,
             "last_date": "07/11/2026"
         }
     },
@@ -7731,6 +7752,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A8 Môn Tiếng Anh - Đỗ Thị Thu Minh",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A8 - Môn Tiếng Anh (Kỳ trước 5.65 ➔ Kỳ này 6.50, Tăng 0.85 điểm (+10.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Triệu Thị Hằng",
+            "Email cá nhân": "hangtt.c3.25.010@phutho.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A3 Môn Tiếng Anh - Triệu Thị Hằng",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A3 - Môn Tiếng Anh: Lưu mốc điểm đầu vào S1 = 4.06",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
