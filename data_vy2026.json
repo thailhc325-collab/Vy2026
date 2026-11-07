@@ -3446,6 +3446,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A4 - Môn Ngữ văn (Kỳ trước 6.39 ➔ Kỳ này 6.78, Tăng 0.39 điểm (+8.0 điểm))",
             "Số điểm": 8.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Trịnh Thị Hoài Giang",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A5 - Môn Ngữ văn (Kỳ trước 6.79 ➔ Kỳ này 7.25, Tăng 0.46 điểm (+10.0 điểm))",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -5164,6 +5173,19 @@
             "Chỉ số tăng": 0.39,
             "Điểm thi đua": 8.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 133,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Trịnh Thị Hoài Giang",
+            "Lớp": "12A5",
+            "Môn": "Ngữ văn",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 7.25,
+            "Điểm kỳ trước": 6.79,
+            "Chỉ số tăng": 0.46,
+            "Điểm thi đua": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -5283,9 +5305,9 @@
             "teacher": "Trịnh Thị Hoài Giang",
             "class": "12A5",
             "subject": "Ngữ văn",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 6.79,
-            "last_date": "03/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 7.25,
+            "last_date": "07/11/2026"
         },
         "Trịnh Thị Hoài Giang_12A7_Ngữ văn": {
             "teacher": "Trịnh Thị Hoài Giang",
@@ -8100,6 +8122,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A4 Môn Ngữ văn - Nguyễn Thị Thu Huyền",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A4 - Môn Ngữ văn (Kỳ trước 6.39 ➔ Kỳ này 6.78, Tăng 0.39 điểm (+8.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Trịnh Thị Hoài Giang",
+            "Email cá nhân": "giangt1981@gmail.com",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A5 Môn Ngữ văn - Trịnh Thị Hoài Giang",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A5 - Môn Ngữ văn (Kỳ trước 6.79 ➔ Kỳ này 7.25, Tăng 0.46 điểm (+10.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
