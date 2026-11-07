@@ -4139,6 +4139,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 10A5 - Môn Tiếng Anh (Kỳ trước 7.39 ➔ Kỳ này 5.96, Giảm 1.43 điểm (Trừ 1 điểm))",
             "Số điểm": 1.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Triệu Thị Hằng",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 10A6 - Môn Tiếng Anh (Kỳ trước 6.70 ➔ Kỳ này 4.90, Giảm 1.80 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -6858,6 +6867,19 @@
             "Chỉ số tăng": -1.43,
             "Điểm thi đua": -1.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 210,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Triệu Thị Hằng",
+            "Lớp": "10A6",
+            "Môn": "Tiếng Anh",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 4.9,
+            "Điểm kỳ trước": 6.7,
+            "Chỉ số tăng": -1.8,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -7329,9 +7351,9 @@
             "teacher": "Triệu Thị Hằng",
             "class": "10A6",
             "subject": "Tiếng Anh",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 6.7,
-            "last_date": "04/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 4.9,
+            "last_date": "07/11/2026"
         },
         "Triệu Thị Hằng_10A7_Tiếng Anh": {
             "teacher": "Triệu Thị Hằng",
@@ -10487,6 +10509,15 @@
             "Phân loại": "KSCL (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A5 Môn Tiếng Anh - Phạm Minh Hằng",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A5 - Môn Tiếng Anh (Kỳ trước 7.39 ➔ Kỳ này 5.96, Giảm 1.43 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Triệu Thị Hằng",
+            "Email cá nhân": "hangtt.c3.25.010@phutho.edu.vn",
+            "Phân loại": "KSCL (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A6 Môn Tiếng Anh - Triệu Thị Hằng",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A6 - Môn Tiếng Anh (Kỳ trước 6.70 ➔ Kỳ này 4.90, Giảm 1.80 điểm (Trừ 1 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
