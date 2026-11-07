@@ -3554,6 +3554,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A4 - Môn Lịch sử (Kỳ trước 5.80 ➔ Kỳ này 7.46, Tăng 1.66 điểm (+10.0 điểm))",
             "Số điểm": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Bùi Thị Thơm",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A1 - Môn Địa lý (Kỳ trước 6.16 ➔ Kỳ này 5.97, Giảm 0.19 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -5428,6 +5437,19 @@
             "Chỉ số tăng": 1.66,
             "Điểm thi đua": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 145,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Bùi Thị Thơm",
+            "Lớp": "12A1",
+            "Môn": "Địa lý",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 5.97,
+            "Điểm kỳ trước": 6.16,
+            "Chỉ số tăng": -0.19,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -5643,9 +5665,9 @@
             "teacher": "Bùi Thị Thơm",
             "class": "12A1",
             "subject": "Địa lý",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 6.16,
-            "last_date": "04/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 5.97,
+            "last_date": "07/11/2026"
         },
         "Bùi Thị Thơm_12A2_Địa lý": {
             "teacher": "Bùi Thị Thơm",
@@ -8472,6 +8494,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A4 Môn Lịch sử - Đào Thị Huệ",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A4 - Môn Lịch sử (Kỳ trước 5.80 ➔ Kỳ này 7.46, Tăng 1.66 điểm (+10.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Bùi Thị Thơm",
+            "Email cá nhân": "thombt.c3.25.003@phutho.edu.vn",
+            "Phân loại": "KSCL (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A1 Môn Địa lý - Bùi Thị Thơm",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A1 - Môn Địa lý (Kỳ trước 6.16 ➔ Kỳ này 5.97, Giảm 0.19 điểm (Trừ 1 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
