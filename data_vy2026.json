@@ -3743,6 +3743,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A7 - Môn Ngữ văn (Kỳ trước 6.59 ➔ Kỳ này 6.27, Giảm 0.32 điểm (Trừ 1 điểm))",
             "Số điểm": 1.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Quỳnh Ngân",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A2 - Môn Ngữ văn (Kỳ trước 6.58 ➔ Kỳ này 6.62, Tăng 0.04 điểm (+4.0 điểm))",
+            "Số điểm": 4.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -5890,6 +5899,19 @@
             "Chỉ số tăng": -0.32,
             "Điểm thi đua": -1.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 166,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Quỳnh Ngân",
+            "Lớp": "11A2",
+            "Môn": "Ngữ văn",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 6.62,
+            "Điểm kỳ trước": 6.58,
+            "Chỉ số tăng": 0.04,
+            "Điểm thi đua": 4.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -6473,9 +6495,9 @@
             "teacher": "Nguyễn Quỳnh Ngân",
             "class": "11A2",
             "subject": "Ngữ văn",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 6.58,
-            "last_date": "05/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 6.62,
+            "last_date": "07/11/2026"
         },
         "Nguyễn Quỳnh Ngân_11A4_Ngữ văn": {
             "teacher": "Nguyễn Quỳnh Ngân",
@@ -9123,6 +9145,15 @@
             "Phân loại": "KSCL (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A7 Môn Ngữ văn - Đỗ Thị Hải Yến",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A7 - Môn Ngữ văn (Kỳ trước 6.59 ➔ Kỳ này 6.27, Giảm 0.32 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Nguyễn Quỳnh Ngân",
+            "Email cá nhân": "quynhngan.vp@gmail.com",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A2 Môn Ngữ văn - Nguyễn Quỳnh Ngân",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A2 - Môn Ngữ văn (Kỳ trước 6.58 ➔ Kỳ này 6.62, Tăng 0.04 điểm (+4.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
