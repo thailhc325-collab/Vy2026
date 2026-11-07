@@ -3644,6 +3644,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A4 - Môn Toán (Kỳ trước 5.58 ➔ Kỳ này 6.66, Tăng 1.08 điểm (+10.0 điểm))",
             "Số điểm": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Đỗ Mạnh Hà",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A9 - Môn Toán (Kỳ trước 3.45 ➔ Kỳ này 4.89, Tăng 1.44 điểm (+10.0 điểm))",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -5648,6 +5657,19 @@
             "Chỉ số tăng": 1.08,
             "Điểm thi đua": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 155,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Đỗ Mạnh Hà",
+            "Lớp": "11A9",
+            "Môn": "Toán",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 4.89,
+            "Điểm kỳ trước": 3.45,
+            "Chỉ số tăng": 1.44,
+            "Điểm thi đua": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -6175,9 +6197,9 @@
             "teacher": "Đỗ Mạnh Hà",
             "class": "11A9",
             "subject": "Toán",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 3.45,
-            "last_date": "05/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 4.89,
+            "last_date": "07/11/2026"
         },
         "Nguyễn Thị Tuyết_11A6_Toán": {
             "teacher": "Nguyễn Thị Tuyết",
@@ -8782,6 +8804,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A4 Môn Toán - Đỗ Mạnh Hà",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A4 - Môn Toán (Kỳ trước 5.58 ➔ Kỳ này 6.66, Tăng 1.08 điểm (+10.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Đỗ Mạnh Hà",
+            "Email cá nhân": "domanhha.c3vinhyen@vinhphuc.edu.vn",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A9 Môn Toán - Đỗ Mạnh Hà",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A9 - Môn Toán (Kỳ trước 3.45 ➔ Kỳ này 4.89, Tăng 1.44 điểm (+10.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
