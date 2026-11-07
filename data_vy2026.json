@@ -6946,6 +6946,19 @@
             "Chỉ số tăng": -2.64,
             "Điểm thi đua": -1.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 214,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Kim Thị Thu Hương",
+            "Lớp": "10A6",
+            "Môn": "Vật lý",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 6.5,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -7803,6 +7816,14 @@
             "subject": "Ngữ văn",
             "last_exam": "KSCL Lần 1",
             "last_score": 6.88,
+            "last_date": "07/11/2026"
+        },
+        "Kim Thị Thu Hương_10A6_Vật lý": {
+            "teacher": "Kim Thị Thu Hương",
+            "class": "10A6",
+            "subject": "Vật lý",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 6.5,
             "last_date": "07/11/2026"
         }
     },
@@ -10611,6 +10632,15 @@
             "Phân loại": "KSCL (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A9 Môn Tiếng Anh - Đỗ Thị Thu Minh",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A9 - Môn Tiếng Anh (Kỳ trước 8.28 ➔ Kỳ này 5.64, Giảm 2.64 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Kim Thị Thu Hương",
+            "Email cá nhân": "huongktt.C3.25.001@phutho.edu.vn",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A6 Môn Vật lý - Kim Thị Thu Hương",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A6 - Môn Vật lý: Lưu mốc điểm đầu vào S1 = 6.50",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
