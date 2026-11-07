@@ -3779,6 +3779,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A3 - Môn Tiếng Anh (Kỳ trước 4.69 ➔ Kỳ này 4.10, Giảm 0.59 điểm (Trừ 1 điểm))",
             "Số điểm": 1.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Phạm Minh Hằng",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A9 - Môn Tiếng Anh (Kỳ trước 4.16 ➔ Kỳ này 4.15, Giảm 0.01 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -5978,6 +5987,19 @@
             "Chỉ số tăng": -0.59,
             "Điểm thi đua": -1.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 170,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Phạm Minh Hằng",
+            "Lớp": "11A9",
+            "Môn": "Tiếng Anh",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 4.15,
+            "Điểm kỳ trước": 4.16,
+            "Chỉ số tăng": -0.01,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -6625,9 +6647,9 @@
             "teacher": "Phạm Minh Hằng",
             "class": "11A9",
             "subject": "Tiếng Anh",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 4.16,
-            "last_date": "05/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 4.15,
+            "last_date": "07/11/2026"
         },
         "Nguyễn Thị Trang_11A4_Tiếng Anh": {
             "teacher": "Nguyễn Thị Trang",
@@ -9247,6 +9269,15 @@
             "Phân loại": "KSCL (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A3 Môn Tiếng Anh - Phạm Minh Hằng",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A3 - Môn Tiếng Anh (Kỳ trước 4.69 ➔ Kỳ này 4.10, Giảm 0.59 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Phạm Minh Hằng",
+            "Email cá nhân": "minhhangvp6801@gmail.com",
+            "Phân loại": "KSCL (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A9 Môn Tiếng Anh - Phạm Minh Hằng",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A9 - Môn Tiếng Anh (Kỳ trước 4.16 ➔ Kỳ này 4.15, Giảm 0.01 điểm (Trừ 1 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
