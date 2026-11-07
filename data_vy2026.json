@@ -4103,6 +4103,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 10A3 - Môn Tiếng Anh (Kỳ trước 8.53 ➔ Kỳ này 6.42, Giảm 2.11 điểm (Trừ 1 điểm))",
             "Số điểm": 1.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Lê Thị Ánh Dương",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 10A2 - Môn Tiếng Anh (Kỳ trước 7.35 ➔ Kỳ này 4.56, Giảm 2.79 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -6770,6 +6779,19 @@
             "Chỉ số tăng": -2.11,
             "Điểm thi đua": -1.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 206,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Lê Thị Ánh Dương",
+            "Lớp": "10A2",
+            "Môn": "Tiếng Anh",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 4.56,
+            "Điểm kỳ trước": 7.35,
+            "Chỉ số tăng": -2.79,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -7225,9 +7247,9 @@
             "teacher": "Lê Thị Ánh Dương",
             "class": "10A2",
             "subject": "Tiếng Anh",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 7.35,
-            "last_date": "04/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 4.56,
+            "last_date": "07/11/2026"
         },
         "Lê Thị Ánh Dương_10A4_Tiếng Anh": {
             "teacher": "Lê Thị Ánh Dương",
@@ -10363,6 +10385,15 @@
             "Phân loại": "KSCL (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A3 Môn Tiếng Anh - Khổng Thị Thảo",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A3 - Môn Tiếng Anh (Kỳ trước 8.53 ➔ Kỳ này 6.42, Giảm 2.11 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Lê Thị Ánh Dương",
+            "Email cá nhân": "duong5967@gmail.com",
+            "Phân loại": "KSCL (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A2 Môn Tiếng Anh - Lê Thị Ánh Dương",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A2 - Môn Tiếng Anh (Kỳ trước 7.35 ➔ Kỳ này 4.56, Giảm 2.79 điểm (Trừ 1 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
