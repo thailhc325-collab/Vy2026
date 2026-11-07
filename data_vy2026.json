@@ -3689,6 +3689,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A9 - Môn Ngữ văn (Kỳ trước 5.85 ➔ Kỳ này 5.23, Giảm 0.62 điểm (Trừ 1 điểm))",
             "Số điểm": 1.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Lê Thu Hà",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A8 - Môn Ngữ văn (Kỳ trước 5.76 ➔ Kỳ này 5.33, Giảm 0.43 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -5758,6 +5767,19 @@
             "Chỉ số tăng": -0.62,
             "Điểm thi đua": -1.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 160,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Lê Thu Hà",
+            "Lớp": "11A8",
+            "Môn": "Ngữ văn",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 5.33,
+            "Điểm kỳ trước": 5.76,
+            "Chỉ số tăng": -0.43,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -6365,9 +6387,9 @@
             "teacher": "Lê Thu Hà",
             "class": "11A8",
             "subject": "Ngữ văn",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 5.76,
-            "last_date": "05/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 5.33,
+            "last_date": "07/11/2026"
         },
         "Nguyễn Cẩm Chi_11A9_Ngữ văn": {
             "teacher": "Nguyễn Cẩm Chi",
@@ -8937,6 +8959,15 @@
             "Phân loại": "KSCL (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A9 Môn Ngữ văn - Nguyễn Cẩm Chi",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A9 - Môn Ngữ văn (Kỳ trước 5.85 ➔ Kỳ này 5.23, Giảm 0.62 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Lê Thu Hà",
+            "Email cá nhân": "halt.c3.25.005@phutho.edu.vn",
+            "Phân loại": "KSCL (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A8 Môn Ngữ văn - Lê Thu Hà",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A8 - Môn Ngữ văn (Kỳ trước 5.76 ➔ Kỳ này 5.33, Giảm 0.43 điểm (Trừ 1 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
