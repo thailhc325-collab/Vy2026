@@ -4157,6 +4157,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 10A7 - Môn Tiếng Anh (Kỳ trước 7.34 ➔ Kỳ này 5.00, Giảm 2.34 điểm (Trừ 1 điểm))",
             "Số điểm": 1.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Đỗ Thị Thu Minh",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 10A8 - Môn Tiếng Anh (Kỳ trước 7.99 ➔ Kỳ này 5.45, Giảm 2.54 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -6902,6 +6911,19 @@
             "Chỉ số tăng": -2.34,
             "Điểm thi đua": -1.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 212,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Đỗ Thị Thu Minh",
+            "Lớp": "10A8",
+            "Môn": "Tiếng Anh",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 5.45,
+            "Điểm kỳ trước": 7.99,
+            "Chỉ số tăng": -2.54,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -7325,9 +7347,9 @@
             "teacher": "Đỗ Thị Thu Minh",
             "class": "10A8",
             "subject": "Tiếng Anh",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 7.99,
-            "last_date": "04/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 5.45,
+            "last_date": "07/11/2026"
         },
         "Đỗ Thị Thu Minh_10A9_Tiếng Anh": {
             "teacher": "Đỗ Thị Thu Minh",
@@ -10549,6 +10571,15 @@
             "Phân loại": "KSCL (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A7 Môn Tiếng Anh - Triệu Thị Hằng",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A7 - Môn Tiếng Anh (Kỳ trước 7.34 ➔ Kỳ này 5.00, Giảm 2.34 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Đỗ Thị Thu Minh",
+            "Email cá nhân": "minhdtt2@phutho.gov.vn",
+            "Phân loại": "KSCL (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A8 Môn Tiếng Anh - Đỗ Thị Thu Minh",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A8 - Môn Tiếng Anh (Kỳ trước 7.99 ➔ Kỳ này 5.45, Giảm 2.54 điểm (Trừ 1 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
