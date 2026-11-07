@@ -3392,6 +3392,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A1 - Môn Ngữ văn (Kỳ trước 6.12 ➔ Kỳ này 6.49, Tăng 0.37 điểm (+8.0 điểm))",
             "Số điểm": 8.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Lưu Thị Thúy Hồng",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A6 - Môn Ngữ văn (Kỳ trước 6.49 ➔ Kỳ này 6.94, Tăng 0.45 điểm (+8.0 điểm))",
+            "Số điểm": 8.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -5019,6 +5028,19 @@
             "Chỉ số tăng": 0.37,
             "Điểm thi đua": 8.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 126,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Lưu Thị Thúy Hồng",
+            "Lớp": "12A6",
+            "Môn": "Ngữ văn",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 6.94,
+            "Điểm kỳ trước": 6.49,
+            "Chỉ số tăng": 0.45,
+            "Điểm thi đua": 8.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -5106,9 +5128,9 @@
             "teacher": "Lưu Thị Thúy Hồng",
             "class": "12A6",
             "subject": "Ngữ văn",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 6.49,
-            "last_date": "03/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 6.94,
+            "last_date": "07/11/2026"
         },
         "Phùng Thị Hồng Minh_12A2_Ngữ văn": {
             "teacher": "Phùng Thị Hồng Minh",
@@ -7884,6 +7906,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A1 Môn Ngữ văn - Lưu Thị Thúy Hồng",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A1 - Môn Ngữ văn (Kỳ trước 6.12 ➔ Kỳ này 6.49, Tăng 0.37 điểm (+8.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Lưu Thị Thúy Hồng",
+            "Email cá nhân": "luuthuyhongnth@gmail.com",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A6 Môn Ngữ văn - Lưu Thị Thúy Hồng",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A6 - Môn Ngữ văn (Kỳ trước 6.49 ➔ Kỳ này 6.94, Tăng 0.45 điểm (+8.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
