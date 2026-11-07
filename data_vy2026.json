@@ -3356,6 +3356,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A7 - Môn Tiếng Anh (Kỳ trước 5.77 ➔ Kỳ này 7.37, Tăng 1.60 điểm (+10.0 điểm))",
             "Số điểm": 10.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Đỗ Thị Thu Minh",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 12A8 - Môn Tiếng Anh (Kỳ trước 5.65 ➔ Kỳ này 6.50, Tăng 0.85 điểm (+10.0 điểm))",
+            "Số điểm": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -4905,6 +4914,19 @@
             "Chỉ số tăng": "-",
             "Điểm thi đua": 0.0,
             "Ghi chú": "Lưu Mốc đầu vào (S1)"
+        },
+        {
+            "ID": 120,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Đỗ Thị Thu Minh",
+            "Lớp": "12A8",
+            "Môn": "Tiếng Anh",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 6.5,
+            "Điểm kỳ trước": 5.65,
+            "Chỉ số tăng": 0.85,
+            "Điểm thi đua": 10.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -5736,8 +5758,8 @@
             "teacher": "Đỗ Thị Thu Minh",
             "class": "12A8",
             "subject": "Tiếng Anh",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 5.65,
+            "last_exam": "KSCL Lần 1",
+            "last_score": 6.5,
             "last_date": "07/11/2026"
         }
     },
@@ -7700,6 +7722,15 @@
             "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 12A8 Môn Tiếng Anh - Đỗ Thị Thu Minh",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 12A8 - Môn Tiếng Anh: Lưu mốc điểm đầu vào S1 = 5.65",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Đỗ Thị Thu Minh",
+            "Email cá nhân": "minhdtt2@phutho.gov.vn",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 12A8 Môn Tiếng Anh - Đỗ Thị Thu Minh",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 12A8 - Môn Tiếng Anh (Kỳ trước 5.65 ➔ Kỳ này 6.50, Tăng 0.85 điểm (+10.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
