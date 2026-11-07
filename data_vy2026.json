@@ -3905,6 +3905,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A2 - Môn Địa lý (Kỳ trước 8.25 ➔ Kỳ này 6.74, Giảm 1.51 điểm (Trừ 1 điểm))",
             "Số điểm": 1.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Phan Thị Thu Hà",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A3 - Môn Địa lý (Kỳ trước 7.23 ➔ Kỳ này 5.94, Giảm 1.29 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -6286,6 +6295,19 @@
             "Chỉ số tăng": -1.51,
             "Điểm thi đua": -1.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 184,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Phan Thị Thu Hà",
+            "Lớp": "11A3",
+            "Môn": "Địa lý",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 5.94,
+            "Điểm kỳ trước": 7.23,
+            "Chỉ số tăng": -1.29,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -7045,9 +7067,9 @@
             "teacher": "Phan Thị Thu Hà",
             "class": "11A3",
             "subject": "Địa lý",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 7.23,
-            "last_date": "05/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 5.94,
+            "last_date": "07/11/2026"
         },
         "Nguyễn Quỳnh Trang_11A5_GDKTPL": {
             "teacher": "Nguyễn Quỳnh Trang",
@@ -9681,6 +9703,15 @@
             "Phân loại": "KSCL (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A2 Môn Địa lý - Phan Thị Thu Hà",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A2 - Môn Địa lý (Kỳ trước 8.25 ➔ Kỳ này 6.74, Giảm 1.51 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Phan Thị Thu Hà",
+            "Email cá nhân": "phanthuha.c3vinhyen@vinhphuc.edu.vn",
+            "Phân loại": "KSCL (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A3 Môn Địa lý - Phan Thị Thu Hà",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A3 - Môn Địa lý (Kỳ trước 7.23 ➔ Kỳ này 5.94, Giảm 1.29 điểm (Trừ 1 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
