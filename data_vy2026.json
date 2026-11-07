@@ -3860,6 +3860,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A6 - Môn Hóa học (Kỳ trước 5.11 ➔ Kỳ này 5.45, Tăng 0.34 điểm (+6.0 điểm))",
             "Số điểm": 6.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Thị Thu Hiền",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A6 - Môn Sinh học (Kỳ trước 4.26 ➔ Kỳ này 4.76, Tăng 0.50 điểm (+6.0 điểm))",
+            "Số điểm": 6.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -6176,6 +6185,19 @@
             "Chỉ số tăng": 0.34,
             "Điểm thi đua": 6.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 179,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Thị Thu Hiền",
+            "Lớp": "11A6",
+            "Môn": "Sinh học",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 4.76,
+            "Điểm kỳ trước": 4.26,
+            "Chỉ số tăng": 0.5,
+            "Điểm thi đua": 6.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -6895,9 +6917,9 @@
             "teacher": "Nguyễn Thị Thu Hiền",
             "class": "11A6",
             "subject": "Sinh học",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 4.26,
-            "last_date": "05/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 4.76,
+            "last_date": "07/11/2026"
         },
         "Lưu Thị Phương Loan_11A1_Lịch sử": {
             "teacher": "Lưu Thị Phương Loan",
@@ -9526,6 +9548,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A6 Môn Hóa học - Nguyễn Thị Lan Phương(H)",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A6 - Môn Hóa học (Kỳ trước 5.11 ➔ Kỳ này 5.45, Tăng 0.34 điểm (+6.0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Nguyễn Thị Thu Hiền",
+            "Email cá nhân": "nguyenthithuhien.c3vy@gmail.com",
+            "Phân loại": "KSCL (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A6 Môn Sinh học - Nguyễn Thị Thu Hiền",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A6 - Môn Sinh học (Kỳ trước 4.26 ➔ Kỳ này 4.76, Tăng 0.50 điểm (+6.0 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
