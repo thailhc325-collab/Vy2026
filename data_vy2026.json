@@ -3734,6 +3734,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A6 - Môn Ngữ văn (Kỳ trước 5.75 ➔ Kỳ này 5.73, Giảm 0.02 điểm (Trừ 1 điểm))",
             "Số điểm": 1.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Đỗ Thị Hải Yến",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 11A7 - Môn Ngữ văn (Kỳ trước 6.59 ➔ Kỳ này 6.27, Giảm 0.32 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -5868,6 +5877,19 @@
             "Chỉ số tăng": -0.02,
             "Điểm thi đua": -1.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 165,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Đỗ Thị Hải Yến",
+            "Lớp": "11A7",
+            "Môn": "Ngữ văn",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 6.27,
+            "Điểm kỳ trước": 6.59,
+            "Chỉ số tăng": -0.32,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -6443,9 +6465,9 @@
             "teacher": "Đỗ Thị Hải Yến",
             "class": "11A7",
             "subject": "Ngữ văn",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 6.59,
-            "last_date": "05/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 6.27,
+            "last_date": "07/11/2026"
         },
         "Nguyễn Quỳnh Ngân_11A2_Ngữ văn": {
             "teacher": "Nguyễn Quỳnh Ngân",
@@ -9092,6 +9114,15 @@
             "Phân loại": "KSCL (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A6 Môn Ngữ văn - Đỗ Thị Hải Yến",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A6 - Môn Ngữ văn (Kỳ trước 5.75 ➔ Kỳ này 5.73, Giảm 0.02 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Đỗ Thị Hải Yến",
+            "Email cá nhân": "dothihaiyen.c3vinhyen@vinhphuc.edu.vn",
+            "Phân loại": "KSCL (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 11A7 Môn Ngữ văn - Đỗ Thị Hải Yến",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 11A7 - Môn Ngữ văn (Kỳ trước 6.59 ➔ Kỳ này 6.27, Giảm 0.32 điểm (Trừ 1 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
