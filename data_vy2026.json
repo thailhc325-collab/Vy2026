@@ -4076,6 +4076,15 @@
             "Nội dung": "[KSCL KSCL Lần 1] Lớp 10A6 - Môn Ngữ văn (Kỳ trước 7.49 ➔ Kỳ này 5.64, Giảm 1.85 điểm (Trừ 1 điểm))",
             "Số điểm": 1.0,
             "Ghi chú": ""
+        },
+        {
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Cẩm Chi",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[KSCL KSCL Lần 1] Lớp 10A7 - Môn Ngữ văn (Kỳ trước 7.62 ➔ Kỳ này 6.28, Giảm 1.34 điểm (Trừ 1 điểm))",
+            "Số điểm": 1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_history": [
@@ -6704,6 +6713,19 @@
             "Chỉ số tăng": -1.85,
             "Điểm thi đua": -1.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 203,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Cẩm Chi",
+            "Lớp": "10A7",
+            "Môn": "Ngữ văn",
+            "Kỳ KSCL": "KSCL Lần 1",
+            "Điểm TB": 6.28,
+            "Điểm kỳ trước": 7.62,
+            "Chỉ số tăng": -1.34,
+            "Điểm thi đua": -1.0,
+            "Ghi chú": ""
         }
     ],
     "kscl_baselines": {
@@ -7103,9 +7125,9 @@
             "teacher": "Nguyễn Cẩm Chi",
             "class": "10A7",
             "subject": "Ngữ văn",
-            "last_exam": "KSCL Lần 0",
-            "last_score": 7.62,
-            "last_date": "04/11/2026"
+            "last_exam": "KSCL Lần 1",
+            "last_score": 6.28,
+            "last_date": "07/11/2026"
         },
         "Nguyễn Cẩm Chi_10A9_Ngữ văn": {
             "teacher": "Nguyễn Cẩm Chi",
@@ -10270,6 +10292,15 @@
             "Phân loại": "KSCL (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A6 Môn Ngữ văn - Nguyễn Cẩm Chi",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A6 - Môn Ngữ văn (Kỳ trước 7.49 ➔ Kỳ này 5.64, Giảm 1.85 điểm (Trừ 1 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Nguyễn Cẩm Chi",
+            "Email cá nhân": "chinc.C3.25@phutho.edu.vn",
+            "Phân loại": "KSCL (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A7 Môn Ngữ văn - Nguyễn Cẩm Chi",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A7 - Môn Ngữ văn (Kỳ trước 7.62 ➔ Kỳ này 6.28, Giảm 1.34 điểm (Trừ 1 điểm))",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
