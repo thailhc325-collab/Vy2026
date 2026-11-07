@@ -7235,6 +7235,19 @@
             "Chỉ số tăng": 0.0,
             "Điểm thi đua": 0.0,
             "Ghi chú": ""
+        },
+        {
+            "ID": 230,
+            "Ngày": "07/11/2026",
+            "Cán bộ": "Nguyễn Thị Thu",
+            "Lớp": "10A1",
+            "Môn": "Lịch sử",
+            "Kỳ KSCL": "KSCL Lần 0",
+            "Điểm TB": 8.02,
+            "Điểm kỳ trước": "-",
+            "Chỉ số tăng": "-",
+            "Điểm thi đua": 0.0,
+            "Ghi chú": "Lưu Mốc đầu vào (S1)"
         }
     ],
     "kscl_baselines": {
@@ -8156,6 +8169,14 @@
             "subject": "Sinh học",
             "last_exam": "KSCL Lần 1",
             "last_score": 5.41,
+            "last_date": "07/11/2026"
+        },
+        "Nguyễn Thị Thu_10A1_Lịch sử": {
+            "teacher": "Nguyễn Thị Thu",
+            "class": "10A1",
+            "subject": "Lịch sử",
+            "last_exam": "KSCL Lần 0",
+            "last_score": 8.02,
             "last_date": "07/11/2026"
         }
     },
@@ -11117,6 +11138,15 @@
             "Phân loại": "KSCL (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Kết quả KSCL Lớp 10A6 Môn Sinh học - Nguyễn Thị Phương Khanh",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 1] Lớp 10A6 - Môn Sinh học (Kỳ trước 5.41 ➔ Kỳ này 5.41, Giữ nguyên điểm (0 điểm))",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Nguyễn Thị Thu",
+            "Email cá nhân": "thusuhpu2@gmail.com",
+            "Phân loại": "MỐC DỮ LIỆU KSCL (S1)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A1 Môn Lịch sử - Nguyễn Thị Thu",
+            "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A1 - Môn Lịch sử: Lưu mốc điểm đầu vào S1 = 8.02",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
