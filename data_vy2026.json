@@ -10651,6 +10651,15 @@
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Mốc điểm KSCL S1 Lớp 10A6 Môn Vật lý - Kim Thị Thu Hương",
             "Nội dung ghi nhận": "[KSCL KSCL Lần 0] Lớp 10A6 - Môn Vật lý: Lưu mốc điểm đầu vào S1 = 6.50",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "07/11/2026",
+            "Người nhận": "Kim Thị Thu Hương",
+            "Email cá nhân": "huongktt.C3.25.001@phutho.edu.vn",
+            "Phân loại": "ĐIỀU CHỈNH (THÔNG TIN MỐC KSCL)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] THÔNG BÁO ĐIỀU CHỈNH ngày 07/11/2026 - Kim Thị Thu Hương",
+            "Nội dung ghi nhận": "[KSCL Lần 0] Lớp 10A6 - Môn Vật lý: Lưu mốc điểm đầu vào S1 = 4.58",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
     "accounts": [
