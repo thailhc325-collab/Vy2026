@@ -800,6 +800,15 @@
             "Điểm tối đa": 0.0,
             "Nội dung vi phạm": "Lỗi 1 nội dung (Phản biện)",
             "điểm trừ": 0.3
+        },
+        {
+            "STT": 24,
+            "Nhóm tiêu chí": "3. Thực hiện quy chế chuyên môn (70 điểm)",
+            "Mã TC": "TC3.4.4",
+            "Nội dung Tiêu chí": "Ghi đầy đủ các nội dung trong Sổ đầu bài: Họ tên HS vắng; tiết theo PPCT; tên bài dạy; ký xác nhận đã dạy.",
+            "Điểm tối đa": 10.0,
+            "Nội dung vi phạm": "Không điểm danh, tên HS vắng",
+            "điểm trừ": 1.0
         }
     ],
     "rewards": [
