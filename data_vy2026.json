@@ -11864,6 +11864,15 @@
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 09/11/2026 - Kim Thị Thu Hà",
             "Nội dung ghi nhận": "[TC3.4.2] Không ghi số tiết theo PPCT",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "09/11/2026",
+            "Người nhận": "Kim Thị Thu Hà",
+            "Email cá nhân": "haktt.C3.25.001@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 09/11/2026 - Kim Thị Thu Hà",
+            "Nội dung ghi nhận": "[TC3.4.3] Không ký xác nhận tiết dạy",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
     "accounts": [
