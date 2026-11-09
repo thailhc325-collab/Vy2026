@@ -4364,6 +4364,15 @@
             "Nội dung": "[TC3.4.4] Không điểm danh, tên HS vắng",
             "Số điểm": 1.0,
             "Ghi chú": "Sáng Thứ 2, ngày 02/11: GDTC-Tiết 5-11A4"
+        },
+        {
+            "Ngày": "09/11/2026",
+            "Cán bộ": "Nguyễn Thị Thu Hiền",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.4.1] Không ghi tên bài dạy",
+            "Số điểm": 1.0,
+            "Ghi chú": "Sáng Thứ 2, ngày 02/11: HNTN-Tiết 1-11A5"
         }
     ],
     "kscl_history": [
@@ -11575,6 +11584,15 @@
             "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 09/11/2026 - Nguyễn Hồng Quân",
             "Nội dung ghi nhận": "[TC3.4.4] Không điểm danh, tên HS vắng",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "09/11/2026",
+            "Người nhận": "Nguyễn Thị Thu Hiền",
+            "Email cá nhân": "nguyenthithuhien.c3vy@gmail.com",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 09/11/2026 - Nguyễn Thị Thu Hiền",
+            "Nội dung ghi nhận": "[TC3.4.1] Không ghi tên bài dạy",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
