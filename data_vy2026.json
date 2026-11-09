@@ -4832,6 +4832,15 @@
             "Nội dung": "[TC3.4.4] Không điểm danh, tên HS vắng",
             "Số điểm": 1.0,
             "Ghi chú": "Phục hồi tự động từ Lịch sử Email (Lượt #2)"
+        },
+        {
+            "Ngày": "10/11/2026",
+            "Cán bộ": "Nguyễn Thị Lan Phương(T)",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.4.1] Không ghi tên bài dạy",
+            "Số điểm": 1.0,
+            "Ghi chú": "Buổi sáng, Thứ 6, ngày 06/11/2026, Tiết 1, môn Toán, Lớp 10A4"
         }
     ],
     "kscl_history": [
@@ -12394,6 +12403,15 @@
             "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM TRỪ)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 09/11/2026 - Lê Hồng Thái",
             "Nội dung ghi nhận": "[ĐÃ XÓA] [TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "10/11/2026",
+            "Người nhận": "Nguyễn Thị Lan Phương(T)",
+            "Email cá nhân": "phuongntl.c3.25.005@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 10/11/2026 - Nguyễn Thị Lan Phương(T)",
+            "Nội dung ghi nhận": "[TC3.4.1] Không ghi tên bài dạy",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
