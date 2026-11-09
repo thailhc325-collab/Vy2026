@@ -4337,6 +4337,15 @@
             "Nội dung": "[TC3.4.1] Không ghi tên bài dạy",
             "Số điểm": 1.0,
             "Ghi chú": "Sáng Thứ 2, ngày 02/11: GDTC-Tiết 5-11A4"
+        },
+        {
+            "Ngày": "09/11/2026",
+            "Cán bộ": "Nguyễn Hồng Quân",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.4.2] Không ghi số tiết theo PPCT",
+            "Số điểm": 1.0,
+            "Ghi chú": "Sáng Thứ 2, ngày 02/11: GDTC-Tiết 5-11A4"
         }
     ],
     "kscl_history": [
@@ -11485,6 +11494,15 @@
             "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 09/11/2026 - Nguyễn Hồng Quân",
             "Nội dung ghi nhận": "[TC3.4.1] Không ghi tên bài dạy",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "09/11/2026",
+            "Người nhận": "Nguyễn Hồng Quân",
+            "Email cá nhân": "hongquantdntg@gmail.com",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 09/11/2026 - Nguyễn Hồng Quân",
+            "Nội dung ghi nhận": "[TC3.4.2] Không ghi số tiết theo PPCT",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
