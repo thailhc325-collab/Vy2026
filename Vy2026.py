@@ -19,6 +19,8 @@ DATA_FILE = "data_vy2026.json"
 st.set_page_config(page_title="QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN", page_icon="🏆", layout="wide")
 st.title("🏆 QUẢN LÝ-ĐÁNH GIÁ KPI TRƯỜNG THPT VĨNH YÊN")
 st.caption("Đường Trương Định, Phường Vĩnh Yên, Tỉnh Phú Thọ")
+
+
 # -----------------------------------------------------------------------------
 # HÀM HỖ TRỢ XỬ LÝ ÉP KIỂU AN TOÀN
 # -----------------------------------------------------------------------------
@@ -84,6 +86,18 @@ def calculate_kscl_points(s_prev, s_curr):
             pts = 4.0
 
     return delta, pts, f"Tăng {delta:.2f} điểm (+{pts:.1f} điểm)"
+
+
+def build_struct_note(buoi, thu_vn, date_str, tiet, mon, lop):
+    """Tạo chuỗi Ghi chú chi tiết tiết dạy vi phạm linh hoạt (cho phép bỏ trống Tiết, Môn, Lớp)"""
+    parts = [f"Buổi {str(buoi).lower()}, {thu_vn}, ngày {date_str}"]
+    if tiet and str(tiet).strip() not in ["", "--", "-- Trống --"]:
+        parts.append(f"Tiết {tiet}")
+    if mon and str(mon).strip() not in ["", "--", "-- Trống --"]:
+        parts.append(f"môn {mon}")
+    if lop and str(lop).strip() not in ["", "--", "-- Trống --"]:
+        parts.append(f"Lớp {lop}")
+    return ", ".join(parts)
 
 
 def safe_float(val, default=0.0):
@@ -485,6 +499,14 @@ def build_adjustment_email_html(teacher_name, old_log, new_log, vc_score, net_em
         "Loại") == "Điểm trừ" else f"+{safe_float(old_log.get('Số điểm'), 0.0):.1f}"
     new_pts_str = f"-{safe_float(new_log.get('Số điểm'), 0.0):.1f}" if new_log.get(
         "Loại") == "Điểm trừ" else f"+{safe_float(new_log.get('Số điểm'), 0.0):.1f}"
+    if vc_score >= 90.0:
+        calculated_vc_class = "HTXSNV 🥇"
+    elif vc_score >= 70.0:
+        calculated_vc_class = "HTTNV 🥈"
+    elif vc_score >= 50.0:
+        calculated_vc_class = "Hoàn thành 🥉"
+    else:
+        calculated_vc_class = "Chưa hoàn thành ⚠️"
     html = f"""<!DOCTYPE html>
 <html>
 <head>
@@ -564,12 +586,8 @@ def build_adjustment_email_html(teacher_name, old_log, new_log, vc_score, net_em
                         <td style="text-align: right;"><b style="color: #28A745; font-size: 15px;">{net_emulation_score:+.1f} điểm</b></td>
                     </tr>
                     <tr style="border-top: 1px solid #ddd;">
-                        <td style="padding: 8px 0;">📊 <b>Tổng điểm Thi đua Tổng hợp:</b></td>
-                        <td style="text-align: right;"><b style="color: #1F497D; font-size: 16px;">{total_gen_score:.1f} điểm</b></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 6px 0;">🏅 <b>Dự kiến Xếp loại Viên chức:</b></td>
-                        <td style="text-align: right;"><b style="color: #1F497D; font-size: 15px;">{vc_class}</b></td>
+                        <td style="padding: 8px 0;">🏅 <b>Dự kiến Xếp loại Viên chức:</b></td>
+                        <td style="text-align: right;"><b style="color: #1F497D; font-size: 15px;">{calculated_vc_class}</b></td>
                     </tr>
                 </table>
             </div>
@@ -588,8 +606,10 @@ def render_manage_logs_ui():
     sync_kscl_history_to_logs()
     st.subheader("📜 Sửa/Xóa thông tin")
     # 🔒 KIỂM TRA QUYỀN HẠN: BẮT BUỘC PHẢI LÀ ADMIN
-    curr_u = st.session_state.current_user if st.session_state.get("current_user") is not None else {
-        "role": "Giáo viên"}
+    curr_u = st.session_state.current_user if st.session_state.get("current_user") is not None else {"name": "Admin",
+                                                                                                     "role": "Admin",
+                                                                                                     "username": "admin",
+                                                                                                     "password": "123"}
     if curr_u.get("role") != "Admin":
         st.error("⛔ CẢNH BÁO QUYỀN HẠN: Chức năng Sửa và Xóa nhật ký thi đua chỉ dành riêng cho tài khoản Admin!")
         st.info(
@@ -811,6 +831,26 @@ def render_manage_logs_ui():
             else:
                 final_pts = float(new_pts)
                 st.info(f"📊 Số điểm tự động tính toán: **{final_pts:.2f} điểm**")
+            with st.expander("🛠️ Công cụ tạo Ghi chú chi tiết tiết dạy (Buổi, Thứ/Ngày, Tiết, Môn, Lớp)"):
+                c_en1, c_en2, c_en3, c_en4, c_en5 = st.columns(5)
+                with c_en1:
+                    e_buoi = st.selectbox("Buổi:", ["Sáng", "Chiều"], key="edit_buoi_sel")
+                with c_en2:
+                    e_viol_date = st.date_input("Ngày vi phạm:", value=e_date, format="DD/MM/YYYY",
+                                                key="edit_viol_date_sel")
+                with c_en3:
+                    e_tiet = st.selectbox("Tiết:", ["-- Trống --", 1, 2, 3, 4, 5], index=0, key="edit_tiet_sel")
+                with c_en4:
+                    e_mon_opts = ["-- Trống --", "Toán", "Văn", "Anh", "Lý", "Hóa", "Sinh", "Sử", "Địa", "GDKTPL",
+                                  "GDĐP", "GDQPAN", "GDTC", "Tin", "CNCN", "CNNN"]
+                    e_mon = st.selectbox("Môn:", e_mon_opts, key="edit_mon_sel")
+                with c_en5:
+                    e_class_27 = ["-- Trống --"] + [f"{g}A{i}" for g in [10, 11, 12] for i in range(1, 10)]
+                    e_lop = st.selectbox("Lớp:", e_class_27, key="edit_lop_sel")
+                e_thu_vn = ["Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7", "Chủ nhật"][e_viol_date.weekday()]
+                e_auto_note = build_struct_note(e_buoi, e_thu_vn, e_viol_date.strftime("%d/%m/%Y"), e_tiet, e_mon,
+                                                e_lop)
+                st.code(e_auto_note, language=None)
             e_note = st.text_input("Sửa Ghi chú / Lý do điều chỉnh bổ sung:",
                                    value=str(target_log.get("Ghi chú", "Điều chỉnh thông tin thi đua theo quy định")),
                                    key="e_note_in_v33")
@@ -834,15 +874,16 @@ def render_manage_logs_ui():
                     if c_staff == e_staff and c_cls == ks_cls and c_subj == ks_subj:
                         if c_exam == ks_exam or f"KSCL {c_exam}" == ks_exam or c_exam in ks_exam or ks_exam in c_exam:
                             kh["Điểm TB"] = safe_float(new_kscl_score, 0.0)
-                            kh["Điểm thi đua"] = new_pts if new_type == "Điểm cộng" else (-new_pts if new_type == "Điểm trừ" else 0.0)
+                            kh["Điểm thi đua"] = new_pts if new_type == "Điểm cộng" else (
+                                -new_pts if new_type == "Điểm trừ" else 0.0)
                             kh["Ghi chú"] = e_note.strip()
                             break
 
                 remaining_history = [
                     h for h in st.session_state.get("kscl_history", [])
                     if str(h.get("Cán bộ", "")).strip() == e_staff
-                    and str(h.get("Lớp", "")).strip() == ks_cls
-                    and str(h.get("Môn", "")).strip() == ks_subj
+                       and str(h.get("Lớp", "")).strip() == ks_cls
+                       and str(h.get("Môn", "")).strip() == ks_subj
                 ]
                 if remaining_history:
                     last_h = remaining_history[-1]
@@ -961,8 +1002,8 @@ def render_manage_logs_ui():
                         remaining_history = [
                             h for h in st.session_state.get("kscl_history", [])
                             if str(h.get("Cán bộ", "")).strip() == del_staff
-                            and str(h.get("Lớp", "")).strip() == cls_name
-                            and str(h.get("Môn", "")).strip() == subj_name
+                               and str(h.get("Lớp", "")).strip() == cls_name
+                               and str(h.get("Môn", "")).strip() == subj_name
                         ]
 
                         if remaining_history:
@@ -1027,27 +1068,29 @@ def render_manage_logs_ui():
 
 
 def deduplicate_logs():
-    """Xóa bỏ các dòng nhật ký KSCL bị trùng lặp trong st.session_state.logs, bảo toàn vi phạm & khen thưởng"""
+    """Xóa bỏ các dòng nhật ký KSCL bị trùng lặp trong st.session_state.logs, giữ nguyên 100% nhật ký vi phạm và khen thưởng do người dùng nhập"""
     if "logs" not in st.session_state or not st.session_state.logs:
         return
-    seen = set()
+    seen_kscl = set()
     unique_logs = []
     for log in st.session_state.logs:
-        l_type = str(log.get("Loại", "")).strip()
-        l_content = str(log.get("Nội dung", "")).strip()
-        is_kscl = l_type == "Thông tin Mốc KSCL" or l_content.startswith("[KSCL")
+        content_str = str(log.get("Nội dung", "")).strip()
+        is_kscl = log.get("Loại") == "Thông tin Mốc KSCL" or content_str.startswith(
+            "[KSCL") or "kscl" in content_str.lower()
         if is_kscl:
             key = (
                 str(log.get("Ngày", "")).strip(),
                 str(log.get("Cán bộ", "")).strip(),
-                l_type,
-                l_content,
-                f"{safe_float(log.get('Số điểm'), 0.0):.2f}"
+                str(log.get("Loại", "")).strip(),
+                content_str,
+                f"{safe_float(log.get('Số điểm'), 0.0):.2f}",
+                str(log.get("Ghi chú", "")).strip()
             )
-            if key not in seen:
-                seen.add(key)
+            if key not in seen_kscl:
+                seen_kscl.add(key)
                 unique_logs.append(log)
         else:
+            # Tất cả nhật ký Lỗi vi phạm và Khen thưởng do người dùng nhập đều được bảo lưu 100%
             unique_logs.append(log)
     st.session_state.logs = unique_logs
 
@@ -1118,7 +1161,7 @@ def sync_kscl_history_to_logs():
 
 
 def auto_restore_missing_logs_from_email_history():
-    """Tự động đối soát Lịch sử Email với Nhật ký thi đua và phục hồi các bản ghi vi phạm bị lọc thiếu"""
+    """Tự động đối soát Lịch sử Email với Nhật ký thi đua (có tính đến các lượt ĐÃ HỦY/XÓA) để phục hồi các bản ghi vi phạm bị lọc thiếu"""
     if not st.session_state.get("email_history") or "logs" not in st.session_state:
         return
     violation_emails = [e for e in st.session_state.email_history if "VI PHẠM" in str(e.get("Phân loại", "")).upper()]
@@ -1128,8 +1171,22 @@ def auto_restore_missing_logs_from_email_history():
     from collections import Counter
     email_counts = Counter()
     for e in violation_emails:
-        key = (str(e.get("Thời gian", "")).strip(), str(e.get("Người nhận", "")).strip(), str(e.get("Nội dung ghi nhận", "")).strip())
+        key = (str(e.get("Thời gian", "")).strip(), str(e.get("Người nhận", "")).strip(),
+               str(e.get("Nội dung ghi nhận", "")).strip())
         email_counts[key] += 1
+
+    # Đếm số lượt đã phát Email HỦY/XÓA để trừ đi, tránh phục hồi nhầm các vi phạm Admin đã cố tình xóa
+    deleted_emails = [e for e in st.session_state.email_history if
+                      "HỦY" in str(e.get("Phân loại", "")).upper() or "XÓA" in str(e.get("Phân loại", "")).upper()]
+    deleted_counts = Counter()
+    for e in deleted_emails:
+        del_content = str(e.get("Nội dung ghi nhận", "")).strip()
+        if del_content.startswith("[ĐÃ XÓA] "):
+            raw_content = del_content[len("[ĐÃ XÓA] "):].strip()
+        else:
+            raw_content = del_content
+        key = (str(e.get("Thời gian", "")).strip(), str(e.get("Người nhận", "")).strip(), raw_content)
+        deleted_counts[key] += 1
 
     log_counts = Counter()
     for l in st.session_state.logs:
@@ -1141,9 +1198,11 @@ def auto_restore_missing_logs_from_email_history():
     restored_any = False
 
     for key, e_count in email_counts.items():
+        d_count = deleted_counts[key]
+        net_expected = e_count - d_count
         l_count = log_counts[key]
-        if e_count > l_count:
-            needed = e_count - l_count
+        if net_expected > l_count:
+            needed = net_expected - l_count
             date_str, teacher_name, content_str = key
             dept = ""
             if isinstance(users_df, pd.DataFrame) and not users_df.empty:
@@ -1167,6 +1226,7 @@ def auto_restore_missing_logs_from_email_history():
     if restored_any:
         deduplicate_logs()
         save_data_to_disk()
+
 
 def load_data_from_disk():
     """Tải dữ liệu từ file JSON vào ứng dụng nếu file tồn tại"""
@@ -1585,12 +1645,13 @@ def convert_dfs_to_excel(df_dict):
 def filter_logs_by_timeframe(logs, time_frame):
     if not logs:
         return []
-    if time_frame == "Cả năm học 2026-2027":
+    if time_frame == "Cả năm học 2026-2027" or not time_frame:
         return logs
     filtered = []
     for log in logs:
-        d_str = log.get("Ngày", "")
+        d_str = str(log.get("Ngày", "")).strip()
         try:
+            d_obj = datetime.strptime(d_str, "%d/%m/%Y")
             m, y = d_obj.month, d_obj.year
             matched = False
             if time_frame == "Tháng 9/2026" and m == 9 and y == 2026:
@@ -1621,6 +1682,51 @@ def filter_logs_by_timeframe(logs, time_frame):
                 filtered.append(log)
         except Exception:
             filtered.append(log)
+    return filtered
+
+
+def filter_logs_up_to_timeframe(logs, time_frame):
+    """Lọc danh sách nhật ký thi đua từ đầu năm học cho đến hết mốc thời gian được chọn (lũy kế)"""
+    if not logs:
+        return []
+    if time_frame == "Cả năm học 2026-2027" or not time_frame:
+        return logs
+    filtered = []
+    for log in logs:
+        d_str = str(log.get("Ngày", "")).strip()
+        try:
+            d_obj = datetime.strptime(d_str, "%d/%m/%Y")
+            m, y = d_obj.month, d_obj.year
+            matched = False
+            if time_frame == "Tháng 9/2026" and (y == 2026 and m <= 9):
+                matched = True
+            elif time_frame == "Tháng 10/2026" and (y == 2026 and m <= 10):
+                matched = True
+            elif time_frame == "Tháng 11/2026" and (y == 2026 and m <= 11):
+                matched = True
+            elif time_frame == "Tháng 12/2026" and (y == 2026 and m <= 12):
+                matched = True
+            elif time_frame == "Tháng 1/2027" and (y == 2026 or (y == 2027 and m <= 1)):
+                matched = True
+            elif time_frame == "Tháng 2/2027" and (y == 2026 or (y == 2027 and m <= 2)):
+                matched = True
+            elif time_frame == "Tháng 3/2027" and (y == 2026 or (y == 2027 and m <= 3)):
+                matched = True
+            elif time_frame == "Tháng 4/2027" and (y == 2026 or (y == 2027 and m <= 4)):
+                matched = True
+            elif time_frame == "Tháng 5/2027" and (y == 2026 or (y == 2027 and m <= 5)):
+                matched = True
+            elif time_frame.startswith("Học kỳ I") or time_frame == "Học kỳ I":
+                if y == 2026 or (y == 2027 and m <= 1):
+                    matched = True
+            elif time_frame.startswith("Học kỳ II") or time_frame == "Học kỳ II":
+                if y == 2026 or (y == 2027 and m <= 5):
+                    matched = True
+            if matched:
+                filtered.append(log)
+        except Exception:
+            filtered.append(log)
+    return filtered
 
 
 # -----------------------------------------------------------------------------
@@ -1686,9 +1792,10 @@ if st.session_state.get("current_user") is None:
 # -----------------------------------------------------------------------------
 # THANH ĐIỀU HƯỚNG & THÔNG TIN TÀI KHOẢN DỰA TRÊN ROLE
 # -----------------------------------------------------------------------------
-curr_u = st.session_state.current_user if st.session_state.get("current_user") is not None else {"name": "GUEST",
-                                                                                                 "role": "Giáo viên",
-                                                                                                 "username": "guest"}
+curr_u = st.session_state.current_user if st.session_state.get("current_user") is not None else {"name": "Admin",
+                                                                                                 "role": "Admin",
+                                                                                                 "username": "admin",
+                                                                                                 "password": "123"}
 
 st.sidebar.markdown(f"""
 <div style="background-color:#F0F4F8; padding:12px; border-radius:8px; border-left:4px solid #1F497D; margin-bottom:15px;">
@@ -2554,7 +2661,41 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
                         selected_content = f"[KSCL {next_exam_name}] Lớp {kscl_class.strip()} - Môn {kscl_subject} (Kỳ trước {s_prev:.2f} ➔ Kỳ này {kscl_curr_score:.2f}, {desc_msg})"
                         points_val = abs(pts)
                         type_label = "Điểm cộng" if pts >= 0 else "Điểm trừ"
-                note = st.text_area("Ghi chú bổ sung (nếu có)")
+                st.markdown("---")
+                st.markdown("##### 📝 Ghi chú bổ sung:")
+                use_struct_note = st.checkbox("📌 Tạo Ghi chú chi tiết",
+                                              value=True, key="use_struct_note_chk")
+                if use_struct_note:
+                    cn1, cn2, cn3, cn4, cn5 = st.columns(5)
+                    with cn1:
+                        nb_buoi = st.selectbox("Buổi:", ["Sáng", "Chiều"], key="nb_buoi_sel")
+                    with cn2:
+                        nb_viol_date = st.date_input("Thứ, ngày, tháng vi phạm:", value=selected_date,
+                                                     format="DD/MM/YYYY", key="nb_viol_date_sel")
+                    with cn3:
+                        nb_tiet = st.selectbox("Tiết:", ["-- Trống --", 1, 2, 3, 4, 5], index=0, key="nb_tiet_sel")
+                    with cn4:
+                        nb_mon_list = ["-- Trống --", "Toán", "Văn", "Anh", "Lý", "Hóa", "Sinh", "Sử", "Địa", "GDKTPL",
+                                       "GDĐP", "GDQPAN", "GDTC", "Tin", "CNCN", "CNNN"]
+                        nb_mon = st.selectbox("Môn:", nb_mon_list, key="nb_mon_sel")
+                    with cn5:
+                        nb_class_27 = ["-- Trống --"] + [f"{g}A{i}" for g in [10, 11, 12] for i in range(1, 10)]
+                        nb_lop = st.selectbox("Lớp:", nb_class_27, key="nb_lop_sel")
+
+                    nb_thu_names = ["Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7", "Chủ nhật"]
+                    nb_thu_vn = nb_thu_names[nb_viol_date.weekday()]
+                    nb_date_str = nb_viol_date.strftime("%d/%m/%Y")
+
+                    struct_note = build_struct_note(nb_buoi, nb_thu_vn, nb_date_str, nb_tiet, nb_mon, nb_lop)
+
+                    nb_extra = st.text_input("Ghi chú bổ sung thêm (nếu có):", key="nb_extra_input").strip()
+                    if nb_extra:
+                        note = f"{struct_note} - {nb_extra}"
+                    else:
+                        note = struct_note
+                    st.info(f"💡 **Nội dung Ghi chú sẽ được lưu & gửi thông báo:** `{note}`")
+                else:
+                    note = st.text_area("Ghi chú bổ sung (nếu có)", key="nb_free_note_area")
             if st.button("💾 Lưu đánh giá & Tự động gửi thông báo"):
                 staff_matches = st.session_state.users[st.session_state.users["Họ và tên"] == selected_staff]
                 if not staff_matches.empty:
@@ -2703,7 +2844,9 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
 elif role.startswith("4. ĐIỂM CỦA CÁ NHÂN"):
     st.header("📊 Thông tin điểm đánh giá viên chức và điểm Thi đua của cá nhân")
     curr_u = st.session_state.current_user if st.session_state.get("current_user") is not None else {"name": "Admin",
-                                                                                                     "role": "Admin"}
+                                                                                                     "role": "Admin",
+                                                                                                     "username": "admin",
+                                                                                                     "password": "123"}
     if curr_u["role"] == "Giáo viên":
         target_staff_name = curr_u["name"]
         st.info(
@@ -2712,14 +2855,18 @@ elif role.startswith("4. ĐIỂM CỦA CÁ NHÂN"):
         staff_list = st.session_state.users["Họ và tên"].tolist() if not st.session_state.users.empty else [
             curr_u["name"]]
         target_staff_name = st.selectbox("🔍 Chọn Cán bộ / Giáo viên để xem Bảng tin Cá nhân:", staff_list)
-    user_logs = [l for l in st.session_state.logs if l.get("Cán bộ") == target_staff_name]
+    user_logs = [l for l in st.session_state.logs if str(l.get("Cán bộ", "")).strip() == str(target_staff_name).strip()]
     # 1. Lỗi vi phạm (Phụ lục 1)
-    u_infractions = [l for l in user_logs if l.get("Loại") == "Điểm trừ"]
+    u_infractions = [l for l in user_logs if
+                     l.get("Loại") == "Điểm trừ" and not str(l.get("Nội dung", "")).strip().startswith("[KSCL")]
     total_penalty = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_infractions])
     vc_score = 100.0 - total_penalty
     # 2. Khen thưởng & KSCL net (Phụ lục 2)
     u_bonuses = [l for l in user_logs if l.get("Loại") == "Điểm cộng"]
-    total_bonus = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_bonuses])
+    u_kscl_pens = [l for l in user_logs if
+                   l.get("Loại") == "Điểm trừ" and str(l.get("Nội dung", "")).strip().startswith("[KSCL")]
+    total_bonus = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_bonuses]) - sum(
+        [safe_float(l.get("Số điểm"), 0.0) for l in u_kscl_pens])
     final_gen_score = vc_score + total_bonus
     if vc_score >= 90.0:
         vc_class = "HTXSNV 🥇"
@@ -2730,12 +2877,12 @@ elif role.startswith("4. ĐIỂM CỦA CÁ NHÂN"):
     else:
         vc_class = "Chưa hoàn thành ⚠️"
     st.markdown("---")
-    m1, m2, m3, m4 = st.columns(4)
+    m1, m2, m3 = st.columns(3)
     m1.metric("📉 Điểm Đánh giá VC còn lại", f"{vc_score:.1f} đ",
               delta=f"-{total_penalty:.1f}đ vi phạm" if total_penalty > 0 else "0.0đ")
     m2.metric("🏆 Điểm Thi đua Tích lũy", f"{total_bonus:+.1f} đ", delta="Khen thưởng & KSCL")
-    m3.metric("📊 Tổng điểm Thi đua Tổng hợp", f"{final_gen_score:.1f} đ")
-    m4.metric("🏅 Dự kiến Xếp loại VC", vc_class)
+    #m3.metric("📊 Tổng điểm Thi đua Tổng hợp", f"{final_gen_score:.1f} đ")
+    m3.metric("🏅 Dự kiến Xếp loại VC", vc_class)
     st.markdown("---")
     p_tab1, p_tab2, p_tab3 = st.tabs([
         "📋 Lịch sử Lỗi vi phạm",
@@ -2792,6 +2939,7 @@ else:
             unique_depts = [d for d in st.session_state.users["Tổ chuyên môn"].unique() if d]
             dept_filter = st.selectbox("🏫 Chọn phạm vi đơn vị báo cáo:", ["Toàn đơn vị"] + unique_depts)
         filtered_logs = filter_logs_by_timeframe(st.session_state.logs, time_frame)
+        cumulative_logs = filter_logs_up_to_timeframe(st.session_state.logs, time_frame)
         st.subheader(f"📈 Hệ thống Báo cáo Thi đua & Đánh giá Viên chức - {time_frame} ({dept_filter})")
         # --- BÁO CÁO 1: TIÊU CHÍ ĐÁNH GIÁ VIÊN CHỨC (QĐ 292 - PHỤ LỤC 1) ---
         report_vc_summary = []
@@ -2810,23 +2958,39 @@ else:
             u_id = user["ID"]
             u_dob = user["Ngày sinh"]
             u_dept = user["Tổ chuyên môn"]
-            u_logs = [l for l in filtered_logs if l.get("Cán bộ") == u_name]
-            # Phân loại: Vi phạm Viên chức (Phụ lục 1) vs Thi đua Khen thưởng / KSCL (Phụ lục 2)
-            u_vc_infractions = [l for l in u_logs if
-                                l.get("Loại") == "Điểm trừ" and not l.get("Nội dung", "").startswith("[KSCL")]
-            total_penalty_vc = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_vc_infractions])
-            u_td_bonuses = [l for l in u_logs if l.get("Loại") == "Điểm cộng"]
-            u_td_kscl_penalties = [l for l in u_logs if
-                                   l.get("Loại") == "Điểm trừ" and l.get("Nội dung", "").startswith("[KSCL")]
-            total_bonus_td = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_td_bonuses])
-            total_penalty_kscl = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_td_kscl_penalties])
-            net_emulation_score = total_bonus_td - total_penalty_kscl
-            # 1. Báo cáo Viên chức Summary
-            if u_vc_infractions:
-                vc_contents = " ; ".join([f"{i + 1}. {l.get('Nội dung')}" for i, l in enumerate(u_vc_infractions)])
+
+            # 1. Lấy nhật ký phát sinh trong mốc thời gian báo cáo (Tháng n)
+            u_period_logs = [l for l in filtered_logs if str(l.get("Cán bộ", "")).strip() == str(u_name).strip()]
+            u_period_vc_infractions = [l for l in u_period_logs if
+                                       l.get("Loại") == "Điểm trừ" and not str(l.get("Nội dung", "")).startswith(
+                                           "[KSCL")]
+            total_penalty_vc_period = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_period_vc_infractions])
+            u_period_td_bonuses = [l for l in u_period_logs if l.get("Loại") == "Điểm cộng"]
+            u_period_td_kscl_penalties = [l for l in u_period_logs if
+                                          l.get("Loại") == "Điểm trừ" and str(l.get("Nội dung", "")).startswith(
+                                              "[KSCL")]
+            total_bonus_td_period = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_period_td_bonuses])
+            total_penalty_kscl_period = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_period_td_kscl_penalties])
+
+            # 2. Lấy nhật ký lũy kế từ đầu năm đến hết mốc thời gian báo cáo (Đến hết tháng n)
+            u_cum_logs = [l for l in cumulative_logs if str(l.get("Cán bộ", "")).strip() == str(u_name).strip()]
+            u_cum_vc_infractions = [l for l in u_cum_logs if
+                                    l.get("Loại") == "Điểm trừ" and not str(l.get("Nội dung", "")).startswith("[KSCL")]
+            total_penalty_vc_cum = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_cum_vc_infractions])
+            u_cum_td_bonuses = [l for l in u_cum_logs if l.get("Loại") == "Điểm cộng"]
+            u_cum_td_kscl_penalties = [l for l in u_cum_logs if
+                                       l.get("Loại") == "Điểm trừ" and str(l.get("Nội dung", "")).startswith("[KSCL")]
+            total_bonus_td_cum = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_cum_td_bonuses])
+            total_penalty_kscl_cum = sum([safe_float(l.get("Số điểm"), 0.0) for l in u_cum_td_kscl_penalties])
+            net_emulation_score_cum = total_bonus_td_cum - total_penalty_kscl_cum
+
+            # 计算 1. Báo cáo Viên chức Summary (Điểm còn lại = 100 - tổng số điểm trừ lũy kế đến hết tháng n)
+            if u_period_vc_infractions:
+                vc_contents = " ; ".join(
+                    [f"{i + 1}. {l.get('Nội dung')}" for i, l in enumerate(u_period_vc_infractions)])
             else:
                 vc_contents = "Không có vi phạm"
-            vc_score = 100.0 - total_penalty_vc
+            vc_score = 100.0 - total_penalty_vc_cum
             if vc_score >= 90.0:
                 vc_class = "HTXSNV 🥇"
             elif vc_score >= 70.0:
@@ -2842,12 +3006,12 @@ else:
                 "Tổ chuyên môn": u_dept,
                 "Điểm tối đa ban đầu": 100.0,
                 "Nội dung vi phạm": vc_contents,
-                "Tổng điểm trừ": total_penalty_vc,
+                "Tổng điểm trừ": total_penalty_vc_period,
                 "Điểm đánh giá còn lại": vc_score,
                 "Dự kiến Xếp loại VC": vc_class
             })
             # 1. Báo cáo Viên chức Details
-            for l in u_vc_infractions:
+            for l in u_period_vc_infractions:
                 report_vc_details.append({
                     "STT": detail_vc_counter,
                     "Mã NV": u_id,
@@ -2860,9 +3024,9 @@ else:
                 })
                 detail_vc_counter += 1
             # 2. Báo cáo Thi đua Khen thưởng Summary
-            u_td_all = u_td_bonuses + u_td_kscl_penalties
-            if u_td_all:
-                td_contents = " ; ".join([f"{i + 1}. {l.get('Nội dung')}" for i, l in enumerate(u_td_all)])
+            u_period_td_all = u_period_td_bonuses + u_period_td_kscl_penalties
+            if u_period_td_all:
+                td_contents = " ; ".join([f"{i + 1}. {l.get('Nội dung')}" for i, l in enumerate(u_period_td_all)])
             else:
                 td_contents = "Chưa có thành tích"
             report_td_summary.append({
@@ -2871,12 +3035,12 @@ else:
                 "Ngày sinh": u_dob,
                 "Tổ chuyên môn": u_dept,
                 "Nội dung cộng điểm / thi đua": td_contents,
-                "Tổng điểm cộng": total_bonus_td,
-                "Tổng điểm trừ KSCL": total_penalty_kscl,
-                "Điểm thi đua khen thưởng": net_emulation_score
+                "Tổng điểm cộng": total_bonus_td_period,
+                "Tổng điểm trừ KSCL": total_penalty_kscl_period,
+                "Điểm thi đua khen thưởng hiện có": net_emulation_score_cum
             })
             # 2. Báo cáo Thi đua Details
-            for l in u_td_bonuses:
+            for l in u_period_td_bonuses:
                 report_td_details.append({
                     "STT": detail_td_counter,
                     "Mã NV": u_id,
@@ -2888,7 +3052,7 @@ else:
                     "Ghi chú": l.get("Ghi chú", "")
                 })
                 detail_td_counter += 1
-            for l in u_td_kscl_penalties:
+            for l in u_period_td_kscl_penalties:
                 report_td_details.append({
                     "STT": detail_td_counter,
                     "Mã NV": u_id,
@@ -2900,27 +3064,17 @@ else:
                     "Ghi chú": l.get("Ghi chú", "")
                 })
                 detail_td_counter += 1
-            # 3. Báo cáo Tổng hợp
-            final_gen_score = vc_score + net_emulation_score
-            if final_gen_score >= 90.0:
-                gen_class = "HTXSNV 🥇"
-            elif final_gen_score >= 70.0:
-                gen_class = "HTTNV 🥈"
-            elif final_gen_score >= 50.0:
-                gen_class = "Hoàn thành nhiệm vụ 🥉"
-            else:
-                gen_class = "Không hoàn thành nhiệm vụ ⚠️"
+            # 3. Báo cáo Tổng hợp Thi đua & Đánh giá Toàn diện
             report_general.append({
                 "Mã NV": u_id,
                 "Họ và tên": u_name,
                 "Ngày sinh": u_dob,
                 "Tổ chuyên môn": u_dept,
                 "Điểm ban đầu (100)": 100.0,
-                "Tổng điểm trừ VC": total_penalty_vc,
+                "Tổng điểm trừ VC": total_penalty_vc_period,
                 "Điểm VC còn lại": vc_score,
-                "Điểm Thi đua Khen thưởng": net_emulation_score,
-                "Tổng điểm tổng hợp": final_gen_score,
-                "Dự kiến Xếp loại": gen_class
+                "Điểm Thi đua Khen thưởng hiện có": net_emulation_score_cum,
+                "Dự kiến Xếp loại VC": vc_class
             })
         df_vc_sum = pd.DataFrame(report_vc_summary)
         df_vc_det = pd.DataFrame(report_vc_details) if report_vc_details else pd.DataFrame(

@@ -4726,15 +4726,6 @@
             "Ghi chú": "Phục hồi tự động từ Lịch sử Email (Lượt #6)"
         },
         {
-            "Ngày": "03/11/2026",
-            "Cán bộ": "Lê Hồng Thái",
-            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
-            "Loại": "Điểm trừ",
-            "Nội dung": "[TC1.1.1] Trang phục không đúng quy định",
-            "Số điểm": 1.0,
-            "Ghi chú": "Phục hồi tự động từ Lịch sử Email (Lượt #1)"
-        },
-        {
             "Ngày": "09/11/2026",
             "Cán bộ": "Nguyễn Hồng Quân",
             "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
@@ -12242,19 +12233,181 @@
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 09/11/2026 - Kim Thị Thu Hà",
             "Nội dung ghi nhận": "[TC3.4.4] Không điểm danh, tên HS vắng",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM TRỪ)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 03/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[ĐÃ XÓA] [TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "03/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM TRỪ)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 03/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[ĐÃ XÓA] [TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "09/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 09/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC2.1.1] Nghỉ Họp không báo cáo",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "09/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM TRỪ)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 09/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[ĐÃ XÓA] [TC2.1.1] Nghỉ Họp không báo cáo",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "09/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 09/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "09/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM TRỪ)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 09/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[ĐÃ XÓA] [TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "09/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 09/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC3.4.1] Không ghi tên bài dạy",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "09/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 09/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "09/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 09/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "09/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 09/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC3.1.1] Muộn hơn 15 phút hoặc bỏ giờ dạy (coi kiểm tra)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "09/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM TRỪ)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 09/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[ĐÃ XÓA] [TC3.4.1] Không ghi tên bài dạy",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "09/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM TRỪ)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 09/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[ĐÃ XÓA] [TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "09/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM TRỪ)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 09/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[ĐÃ XÓA] [TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "09/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM TRỪ)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 09/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[ĐÃ XÓA] [TC3.1.1] Muộn hơn 15 phút hoặc bỏ giờ dạy (coi kiểm tra)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "09/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 09/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "09/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 09/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "09/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM TRỪ)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 09/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[ĐÃ XÓA] [TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "09/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "thailh.c3.25@phutho.edu.vn",
+            "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM TRỪ)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 09/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[ĐÃ XÓA] [TC1.1.1] Trang phục không đúng quy định",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
     "accounts": [
         {
             "username": "admin",
-            "password": "Kpi@vinhyen",
+            "password": "123",
             "role": "Admin",
             "name": "BGH",
             "email": "thptvinhyen.thidua@gmail.com"
         },
         {
             "username": "theodoi",
-            "password": "TdKpi@vinhyen",
+            "password": "123",
             "role": "Người theo dõi",
             "name": "Cán bộ Theo dõi",
             "email": "theodoi@vinhyen.edu.vn"
