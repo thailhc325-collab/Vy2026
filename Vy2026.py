@@ -1027,21 +1027,27 @@ def render_manage_logs_ui():
 
 
 def deduplicate_logs():
-    """Xóa bỏ các dòng nhật ký bị trùng lặp hoàn toàn trong st.session_state.logs"""
+    """Xóa bỏ các dòng nhật ký KSCL bị trùng lặp trong st.session_state.logs, bảo toàn vi phạm & khen thưởng"""
     if "logs" not in st.session_state or not st.session_state.logs:
         return
     seen = set()
     unique_logs = []
     for log in st.session_state.logs:
-        key = (
-            str(log.get("Ngày", "")).strip(),
-            str(log.get("Cán bộ", "")).strip(),
-            str(log.get("Loại", "")).strip(),
-            str(log.get("Nội dung", "")).strip(),
-            f"{safe_float(log.get('Số điểm'), 0.0):.2f}"
-        )
-        if key not in seen:
-            seen.add(key)
+        l_type = str(log.get("Loại", "")).strip()
+        l_content = str(log.get("Nội dung", "")).strip()
+        is_kscl = l_type == "Thông tin Mốc KSCL" or l_content.startswith("[KSCL")
+        if is_kscl:
+            key = (
+                str(log.get("Ngày", "")).strip(),
+                str(log.get("Cán bộ", "")).strip(),
+                l_type,
+                l_content,
+                f"{safe_float(log.get('Số điểm'), 0.0):.2f}"
+            )
+            if key not in seen:
+                seen.add(key)
+                unique_logs.append(log)
+        else:
             unique_logs.append(log)
     st.session_state.logs = unique_logs
 
@@ -1111,6 +1117,57 @@ def sync_kscl_history_to_logs():
     deduplicate_logs()
 
 
+def auto_restore_missing_logs_from_email_history():
+    """Tự động đối soát Lịch sử Email với Nhật ký thi đua và phục hồi các bản ghi vi phạm bị lọc thiếu"""
+    if not st.session_state.get("email_history") or "logs" not in st.session_state:
+        return
+    violation_emails = [e for e in st.session_state.email_history if "VI PHẠM" in str(e.get("Phân loại", "")).upper()]
+    if not violation_emails:
+        return
+
+    from collections import Counter
+    email_counts = Counter()
+    for e in violation_emails:
+        key = (str(e.get("Thời gian", "")).strip(), str(e.get("Người nhận", "")).strip(), str(e.get("Nội dung ghi nhận", "")).strip())
+        email_counts[key] += 1
+
+    log_counts = Counter()
+    for l in st.session_state.logs:
+        if l.get("Loại") == "Điểm trừ" and not str(l.get("Nội dung", "")).startswith("[KSCL"):
+            key = (str(l.get("Ngày", "")).strip(), str(l.get("Cán bộ", "")).strip(), str(l.get("Nội dung", "")).strip())
+            log_counts[key] += 1
+
+    users_df = st.session_state.get("users", pd.DataFrame())
+    restored_any = False
+
+    for key, e_count in email_counts.items():
+        l_count = log_counts[key]
+        if e_count > l_count:
+            needed = e_count - l_count
+            date_str, teacher_name, content_str = key
+            dept = ""
+            if isinstance(users_df, pd.DataFrame) and not users_df.empty:
+                matched = users_df[users_df["Họ và tên"] == teacher_name]
+                if not matched.empty:
+                    dept = str(matched.iloc[0].get("Tổ chuyên môn", "")).strip()
+            m_pts = re.search(r'Tổng trừ:\s*-([\d\.]+)đ', content_str)
+            pts = float(m_pts.group(1)) if m_pts else 1.0
+            for i in range(needed):
+                st.session_state.logs.append({
+                    "Ngày": date_str,
+                    "Cán bộ": teacher_name,
+                    "Tổ chuyên môn": dept,
+                    "Loại": "Điểm trừ",
+                    "Nội dung": content_str,
+                    "Số điểm": pts,
+                    "Ghi chú": f"Phục hồi tự động từ Lịch sử Email (Lượt #{l_count + i + 1})"
+                })
+                restored_any = True
+
+    if restored_any:
+        deduplicate_logs()
+        save_data_to_disk()
+
 def load_data_from_disk():
     """Tải dữ liệu từ file JSON vào ứng dụng nếu file tồn tại"""
     if os.path.exists(DATA_FILE):
@@ -1169,9 +1226,10 @@ def load_data_from_disk():
                 st.session_state.logs = data.get("logs", [])
                 st.session_state.kscl_history = data.get("kscl_history", [])
                 st.session_state.kscl_baselines = data.get("kscl_baselines", {})
-                sync_kscl_history_to_logs()
                 st.session_state.email_config = data.get("email_config", {})
                 st.session_state.email_history = data.get("email_history", [])
+                sync_kscl_history_to_logs()
+                auto_restore_missing_logs_from_email_history()
                 st.session_state.accounts = data.get("accounts", [])
                 if not st.session_state.accounts:
                     st.session_state.accounts = [
