@@ -4967,6 +4967,15 @@
             "Nội dung": "[TC3.4.4] Không điểm danh, tên HS vắng",
             "Số điểm": 1.0,
             "Ghi chú": "Buổi chiều, Thứ 6, ngày 06/11/2026, Tiết 2, môn Anh, Lớp 10A7"
+        },
+        {
+            "Ngày": "10/11/2026",
+            "Cán bộ": "Nguyễn Hồng Quân",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.4.1] Không ghi tên bài dạy",
+            "Số điểm": 1.0,
+            "Ghi chú": "Buổi sáng, Thứ 4, ngày 04/11/2026, Tiết 4, môn GDTC, Lớp 10A8"
         }
     ],
     "kscl_history": [
@@ -12664,6 +12673,15 @@
             "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 10/11/2026 - Triệu Thị Hằng",
             "Nội dung ghi nhận": "[TC3.4.4] Không điểm danh, tên HS vắng",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "10/11/2026",
+            "Người nhận": "Nguyễn Hồng Quân",
+            "Email cá nhân": "hongquantdntg@gmail.com",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 10/11/2026 - Nguyễn Hồng Quân",
+            "Nội dung ghi nhận": "[TC3.4.1] Không ghi tên bài dạy",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
