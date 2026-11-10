@@ -13502,6 +13502,15 @@
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 10/11/2026 - Lê Hồng Thái",
             "Nội dung ghi nhận": "[ĐÃ XÓA] [TC2.1.1] Nghỉ Họp không báo cáo",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "10/11/2026",
+            "Người nhận": "Lê Hồng Thái",
+            "Email cá nhân": "hungnm1182@gmail.com",
+            "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM CỘNG)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 10/11/2026 - Lê Hồng Thái",
+            "Nội dung ghi nhận": "[ĐÃ XÓA] Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
     "accounts": [
