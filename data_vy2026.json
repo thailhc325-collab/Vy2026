@@ -5129,6 +5129,15 @@
             "Nội dung": "[TC3.4.2] Không ghi số tiết theo PPCT",
             "Số điểm": 1.0,
             "Ghi chú": "Buổi sáng, Thứ 7, ngày 07/11/2026, Tiết 5, môn Toán, Lớp 12A8"
+        },
+        {
+            "Ngày": "10/11/2026",
+            "Cán bộ": "Nguyễn Đức Thịnh",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.4.3] Không ký xác nhận tiết dạy",
+            "Số điểm": 1.0,
+            "Ghi chú": "Buổi sáng, Thứ 7, ngày 07/11/2026, Tiết 5, môn Toán, Lớp 12A8"
         }
     ],
     "kscl_history": [
@@ -12988,6 +12997,15 @@
             "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 10/11/2026 - Nguyễn Đức Thịnh",
             "Nội dung ghi nhận": "[TC3.4.2] Không ghi số tiết theo PPCT",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "10/11/2026",
+            "Người nhận": "Nguyễn Đức Thịnh",
+            "Email cá nhân": "nguyenducthinhgv.c3songlo@vinhphuc.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 10/11/2026 - Nguyễn Đức Thịnh",
+            "Nội dung ghi nhận": "[TC3.4.3] Không ký xác nhận tiết dạy",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
