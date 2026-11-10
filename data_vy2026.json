@@ -5237,6 +5237,15 @@
             "Nội dung": "[TC3.4.1] Không ghi tên bài dạy",
             "Số điểm": 1.0,
             "Ghi chú": "Buổi sáng, Thứ 3, ngày 03/11/2026, Tiết 1, môn Sử, Lớp 12A6"
+        },
+        {
+            "Ngày": "10/11/2026",
+            "Cán bộ": "Nguyễn Tuyết Mai",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.4.2] Không ghi số tiết theo PPCT",
+            "Số điểm": 1.0,
+            "Ghi chú": "Buổi sáng, Thứ 3, ngày 03/11/2026, Tiết 1, môn Sử, Lớp 12A6"
         }
     ],
     "kscl_history": [
@@ -13204,6 +13213,15 @@
             "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 10/11/2026 - Nguyễn Tuyết Mai",
             "Nội dung ghi nhận": "[TC3.4.1] Không ghi tên bài dạy",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "10/11/2026",
+            "Người nhận": "Nguyễn Tuyết Mai",
+            "Email cá nhân": "maint.c3.25.012@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 10/11/2026 - Nguyễn Tuyết Mai",
+            "Nội dung ghi nhận": "[TC3.4.2] Không ghi số tiết theo PPCT",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
