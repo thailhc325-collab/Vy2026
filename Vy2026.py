@@ -2676,7 +2676,7 @@ elif role.startswith("2. NHẬP THÔNG TIN HẰNG NGÀY"):
                         nb_tiet = st.selectbox("Tiết:", ["-- Trống --", 1, 2, 3, 4, 5], index=0, key="nb_tiet_sel")
                     with cn4:
                         nb_mon_list = ["-- Trống --", "Toán", "Văn", "Anh", "Lý", "Hóa", "Sinh", "Sử", "Địa", "GDKTPL",
-                                       "GDĐP", "GDQPAN", "GDTC", "Tin", "CNCN", "CNNN"]
+                                       "GDĐP", "GDQPAN", "GDTC", "Tin", "CNCN", "CNNN", "TN-HN"]
                         nb_mon = st.selectbox("Môn:", nb_mon_list, key="nb_mon_sel")
                     with cn5:
                         nb_class_27 = ["-- Trống --"] + [f"{g}A{i}" for g in [10, 11, 12] for i in range(1, 10)]
