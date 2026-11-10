@@ -5192,6 +5192,15 @@
             "Nội dung": "[TC3.4.3] Không ký xác nhận tiết dạy",
             "Số điểm": 1.0,
             "Ghi chú": "Buổi sáng, Thứ 7, ngày 07/11/2026, Tiết 3, môn GDTC, Lớp 12A3"
+        },
+        {
+            "Ngày": "10/11/2026",
+            "Cán bộ": "Phùng Thị Hồng Minh",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.4.1] Không ghi tên bài dạy",
+            "Số điểm": 1.0,
+            "Ghi chú": "Buổi chiều, Thứ 3, ngày 03/11/2026, Tiết 1, môn Văn, Lớp 12A3"
         }
     ],
     "kscl_history": [
@@ -13114,6 +13123,15 @@
             "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 10/11/2026 - Lương Thị Bích Vân",
             "Nội dung ghi nhận": "[TC3.4.3] Không ký xác nhận tiết dạy",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "10/11/2026",
+            "Người nhận": "Phùng Thị Hồng Minh",
+            "Email cá nhân": "minhpth.C3.25.001@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 10/11/2026 - Phùng Thị Hồng Minh",
+            "Nội dung ghi nhận": "[TC3.4.1] Không ghi tên bài dạy",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
