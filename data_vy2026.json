@@ -5372,6 +5372,15 @@
             "Nội dung": "[TC3.4.4] Không điểm danh, tên HS vắng",
             "Số điểm": 1.0,
             "Ghi chú": "Buổi sáng, Thứ 6, ngày 06/11/2026, Tiết 1, môn TN-HN, Lớp 12A7"
+        },
+        {
+            "Ngày": "12/11/2026",
+            "Cán bộ": "Nguyễn Quỳnh Ngân",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Tham gia có chất lượng  các cuộc thi, phong trào phát động do BGH, BCH Đoàn tổ chức hoặc triển khai (Xếp thứ Nhất)",
+            "Số điểm": 10.0,
+            "Ghi chú": "Thi đua tháng 10:  Lớp xếp thứ Nhất về nền nếp."
         }
     ],
     "kscl_history": [
@@ -13510,6 +13519,15 @@
             "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM CỘNG)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 10/11/2026 - Lê Hồng Thái",
             "Nội dung ghi nhận": "[ĐÃ XÓA] Chất lượng ôn thi TN THPT (Xếp trong Top 30 toàn tỉnh)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "12/11/2026",
+            "Người nhận": "Nguyễn Quỳnh Ngân",
+            "Email cá nhân": "quynhngan.vp@gmail.com",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 12/11/2026 - Nguyễn Quỳnh Ngân",
+            "Nội dung ghi nhận": "Tham gia có chất lượng  các cuộc thi, phong trào phát động do BGH, BCH Đoàn tổ chức hoặc triển khai (Xếp thứ Nhất)",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
