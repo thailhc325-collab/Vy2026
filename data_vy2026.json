@@ -5552,6 +5552,15 @@
             "Nội dung": "Tham gia có chất lượng  các cuộc thi, phong trào phát động do BGH, BCH Đoàn tổ chức hoặc triển khai (Đạt Khuyến khích)",
             "Số điểm": 3.0,
             "Ghi chú": "Thi đua tháng 10: Lớp đạt KK cuộc thi \"Góc thư viện\""
+        },
+        {
+            "Ngày": "12/11/2026",
+            "Cán bộ": "Đào Thị Huệ",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "Tham gia có chất lượng  các cuộc thi, phong trào phát động do BGH, BCH Đoàn tổ chức hoặc triển khai (Xếp thứ Nhất)",
+            "Số điểm": 10.0,
+            "Ghi chú": "Thi đua tháng 10: Lớp đạt giải Nhất cuộc thi \"Thuyết trình sách\""
         }
     ],
     "kscl_history": [
@@ -13870,6 +13879,15 @@
             "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 12/11/2026 - Đào Thị Phương Lan",
             "Nội dung ghi nhận": "Tham gia có chất lượng  các cuộc thi, phong trào phát động do BGH, BCH Đoàn tổ chức hoặc triển khai (Đạt Khuyến khích)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "12/11/2026",
+            "Người nhận": "Đào Thị Huệ",
+            "Email cá nhân": "daothihue.c3vinhyen@vinhphuc.edu.vn",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 12/11/2026 - Đào Thị Huệ",
+            "Nội dung ghi nhận": "Tham gia có chất lượng  các cuộc thi, phong trào phát động do BGH, BCH Đoàn tổ chức hoặc triển khai (Xếp thứ Nhất)",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
