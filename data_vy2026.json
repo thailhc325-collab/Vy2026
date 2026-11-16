@@ -5696,6 +5696,15 @@
             "Nội dung": "[TC3.4.1] Không ghi tên bài dạy",
             "Số điểm": 1.0,
             "Ghi chú": "Buổi chiều, Thứ 6, ngày 13/11/2026, Tiết 2, môn Hóa, Lớp 10A7"
+        },
+        {
+            "Ngày": "16/11/2026",
+            "Cán bộ": "Nguyễn Thị Mai",
+            "Tổ chuyên môn": "Tổ Lý-Hóa-Sinh",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.4.2] Không ghi số tiết theo PPCT",
+            "Số điểm": 1.0,
+            "Ghi chú": "Buổi chiều, Thứ 6, ngày 13/11/2026, Tiết 2, môn Hóa, Lớp 10A7"
         }
     ],
     "kscl_history": [
@@ -14158,6 +14167,15 @@
             "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 16/11/2026 - Nguyễn Thị Mai",
             "Nội dung ghi nhận": "[TC3.4.1] Không ghi tên bài dạy",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "16/11/2026",
+            "Người nhận": "Nguyễn Thị Mai",
+            "Email cá nhân": "Mai1979vy@gmail.com",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 16/11/2026 - Nguyễn Thị Mai",
+            "Nội dung ghi nhận": "[TC3.4.2] Không ghi số tiết theo PPCT",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
