@@ -5678,6 +5678,15 @@
             "Nội dung": "[TC3.4.3] Không ký xác nhận tiết dạy",
             "Số điểm": 1.0,
             "Ghi chú": "Buổi chiều, Thứ 4, ngày 11/11/2026, Tiết 3, môn TN-HN, Lớp 10A9"
+        },
+        {
+            "Ngày": "16/11/2026",
+            "Cán bộ": "Lưu Thị Phương Loan",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.4.4] Không điểm danh, tên HS vắng",
+            "Số điểm": 1.0,
+            "Ghi chú": "Buổi chiều, Thứ 4, ngày 11/11/2026, Tiết 3, môn TN-HN, Lớp 10A9"
         }
     ],
     "kscl_history": [
@@ -14122,6 +14131,15 @@
             "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 16/11/2026 - Lưu Thị Phương Loan",
             "Nội dung ghi nhận": "[TC3.4.3] Không ký xác nhận tiết dạy",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "16/11/2026",
+            "Người nhận": "Lưu Thị Phương Loan",
+            "Email cá nhân": "luuphuongloan102@gmail.com",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 16/11/2026 - Lưu Thị Phương Loan",
+            "Nội dung ghi nhận": "[TC3.4.4] Không điểm danh, tên HS vắng",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
