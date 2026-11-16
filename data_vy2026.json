@@ -5633,6 +5633,33 @@
             "Nội dung": "Tham gia có chất lượng  các cuộc thi, phong trào phát động do BGH, BCH Đoàn tổ chức hoặc triển khai (Đạt Khuyến khích)",
             "Số điểm": 3.0,
             "Ghi chú": "Thi đua tháng 10: Lớp đạt giải KK cuộc thi \"Đồng diễn Võ nhạc\""
+        },
+        {
+            "Ngày": "16/11/2026",
+            "Cán bộ": "Trần Thanh Long",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "HD học sinh tham gia cuộc thi về kỹ năng sống, hiểu biết pháp luật, phòng chống các vấn đề tiêu cực và được sự phân công của BGH (Giải Khuyến khích)",
+            "Số điểm": 10.0,
+            "Ghi chú": "Giải KK cuộc thi \"Phòng, chống ma túy\" (Sở GD&ĐT tổ chức)"
+        },
+        {
+            "Ngày": "16/11/2026",
+            "Cán bộ": "Trần Thị Thùy Linh",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.4.3] Không ký xác nhận tiết dạy",
+            "Số điểm": 1.0,
+            "Ghi chú": "Buổi sáng, Thứ 6, ngày 13/11/2026, Tiết 1, môn Anh, Lớp 10A2"
+        },
+        {
+            "Ngày": "16/11/2026",
+            "Cán bộ": "Lưu Thị Phương Loan",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.4.1] Không ghi tên bài dạy",
+            "Số điểm": 1.0,
+            "Ghi chú": "Buổi chiều, Thứ 4, ngày 11/11/2026, Tiết 3, môn TN-HN, Lớp 10A9"
         }
     ],
     "kscl_history": [
@@ -14032,6 +14059,33 @@
             "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 12/11/2026 - Đỗ Thị Thu Minh",
             "Nội dung ghi nhận": "Tham gia có chất lượng  các cuộc thi, phong trào phát động do BGH, BCH Đoàn tổ chức hoặc triển khai (Đạt Khuyến khích)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "16/11/2026",
+            "Người nhận": "Trần Thanh Long",
+            "Email cá nhân": "tranlonggdctk56@gmail.com",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 16/11/2026 - Trần Thanh Long",
+            "Nội dung ghi nhận": "HD học sinh tham gia cuộc thi về kỹ năng sống, hiểu biết pháp luật, phòng chống các vấn đề tiêu cực và được sự phân công của BGH (Giải Khuyến khích)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "16/11/2026",
+            "Người nhận": "Trần Thị Thùy Linh",
+            "Email cá nhân": "linhttt.c3.25.004@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 16/11/2026 - Trần Thị Thùy Linh",
+            "Nội dung ghi nhận": "[TC3.4.3] Không ký xác nhận tiết dạy",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "16/11/2026",
+            "Người nhận": "Lưu Thị Phương Loan",
+            "Email cá nhân": "luuphuongloan102@gmail.com",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 16/11/2026 - Lưu Thị Phương Loan",
+            "Nội dung ghi nhận": "[TC3.4.1] Không ghi tên bài dạy",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
