@@ -14213,6 +14213,15 @@
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 16/11/2026 - Nguyễn Thị Mai",
             "Nội dung ghi nhận": "[TC3.4.4] Không điểm danh, tên HS vắng",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "18/11/2026",
+            "Người nhận": "Lương Thị Bích Vân",
+            "Email cá nhân": "bichvanvy2011@gmail.com",
+            "Phân loại": "ĐIỀU CHỈNH (ĐIỂM TRỪ)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] THÔNG BÁO ĐIỀU CHỈNH ngày 18/11/2026 - Lương Thị Bích Vân",
+            "Nội dung ghi nhận": "[TC3.3.2] Không nhập thông tin đổi giờ, dạy thay trên trang tính",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
     "accounts": [
