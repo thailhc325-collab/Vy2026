@@ -14213,6 +14213,15 @@
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 10/11/2026 - Lương Thị Bích Vân",
             "Nội dung ghi nhận": "[ĐÃ XÓA] [TC3.4.2] Không ghi số tiết theo PPCT",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "10/11/2026",
+            "Người nhận": "Lương Thị Bích Vân",
+            "Email cá nhân": "bichvanvy2011@gmail.com",
+            "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM TRỪ)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 10/11/2026 - Lương Thị Bích Vân",
+            "Nội dung ghi nhận": "[ĐÃ XÓA] [TC3.4.3] Không ký xác nhận tiết dạy",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
     "accounts": [
