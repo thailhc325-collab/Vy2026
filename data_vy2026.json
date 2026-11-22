@@ -14258,6 +14258,15 @@
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 22/11/2026 - Lưu Thị Phương Loan",
             "Nội dung ghi nhận": "HD học sinh tham gia cuộc thi sáng tạo KHKT cấp tỉnh; cuộc thi ý tưởng khởi nghiệp (Giải Nhì)",
             "Trạng thái Email": "Lỗi kết nối Email SMTP: Connection unexpectedly closed"
+        },
+        {
+            "Thời gian": "22/11/2026",
+            "Người nhận": "Lưu Thị Phương Loan",
+            "Email cá nhân": "luuphuongloan102@gmail.com",
+            "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM CỘNG)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 22/11/2026 - Lưu Thị Phương Loan",
+            "Nội dung ghi nhận": "[ĐÃ XÓA] HD học sinh tham gia cuộc thi sáng tạo KHKT cấp tỉnh; cuộc thi ý tưởng khởi nghiệp (Giải Nhì)",
+            "Trạng thái Email": "Lỗi kết nối Email SMTP: Connection unexpectedly closed"
         }
     ],
     "accounts": [
