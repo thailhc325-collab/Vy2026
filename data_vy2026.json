@@ -5705,6 +5705,15 @@
             "Nội dung": "[TC3.1.3] Muộn từ 6 đến 10 phút",
             "Số điểm": 1.0,
             "Ghi chú": "Buổi sáng, Thứ 2, ngày 23/11/2026"
+        },
+        {
+            "Ngày": "23/11/2026",
+            "Cán bộ": "Lưu Thị Phương Loan",
+            "Tổ chuyên môn": "Tổ Sử-Địa-GDTC-GDKTPL-GDQPAN",
+            "Loại": "Điểm cộng",
+            "Nội dung": "HD học sinh tham gia cuộc thi sáng tạo KHKT cấp tỉnh; cuộc thi ý tưởng khởi nghiệp (Giải Nhì)",
+            "Số điểm": 60.0,
+            "Ghi chú": "Buổi sáng, Thứ 2, ngày 23/11/2026 - Chúc mừng Đ/C!"
         }
     ],
     "kscl_history": [
@@ -14285,6 +14294,15 @@
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 23/11/2026 - Nguyễn Thị Trang",
             "Nội dung ghi nhận": "[TC3.1.3] Muộn từ 6 đến 10 phút",
             "Trạng thái Email": "Lỗi kết nối Email SMTP: Connection unexpectedly closed"
+        },
+        {
+            "Thời gian": "23/11/2026",
+            "Người nhận": "Lưu Thị Phương Loan",
+            "Email cá nhân": "luuphuongloan102@gmail.com",
+            "Phân loại": "KHEN THƯỞNG (CỘNG ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo điểm Thi đua ngày 23/11/2026 - Lưu Thị Phương Loan",
+            "Nội dung ghi nhận": "HD học sinh tham gia cuộc thi sáng tạo KHKT cấp tỉnh; cuộc thi ý tưởng khởi nghiệp (Giải Nhì)",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
     "accounts": [
