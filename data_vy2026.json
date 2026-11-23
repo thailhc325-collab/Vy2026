@@ -5696,6 +5696,15 @@
             "Nội dung": "[TC3.4.4] Không điểm danh, tên HS vắng",
             "Số điểm": 1.0,
             "Ghi chú": "Buổi chiều, Thứ 6, ngày 13/11/2026, Tiết 2, môn Hóa, Lớp 10A7"
+        },
+        {
+            "Ngày": "23/11/2026",
+            "Cán bộ": "Nguyễn Thị Trang",
+            "Tổ chuyên môn": "Tổ Ngữ văn-Tiếng anh",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.1.3] Muộn từ 6 đến 10 phút",
+            "Số điểm": 1.0,
+            "Ghi chú": "Buổi sáng, Thứ 2, ngày 23/11/2026"
         }
     ],
     "kscl_history": [
@@ -14266,6 +14275,15 @@
             "Phân loại": "ĐÃ HỦY/XÓA (ĐIỂM CỘNG)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo HỦY/XÓA ghi nhận Thi đua ngày 22/11/2026 - Lưu Thị Phương Loan",
             "Nội dung ghi nhận": "[ĐÃ XÓA] HD học sinh tham gia cuộc thi sáng tạo KHKT cấp tỉnh; cuộc thi ý tưởng khởi nghiệp (Giải Nhì)",
+            "Trạng thái Email": "Lỗi kết nối Email SMTP: Connection unexpectedly closed"
+        },
+        {
+            "Thời gian": "23/11/2026",
+            "Người nhận": "Nguyễn Thị Trang",
+            "Email cá nhân": "trangnt.c3.25.005@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 23/11/2026 - Nguyễn Thị Trang",
+            "Nội dung ghi nhận": "[TC3.1.3] Muộn từ 6 đến 10 phút",
             "Trạng thái Email": "Lỗi kết nối Email SMTP: Connection unexpectedly closed"
         }
     ],
