@@ -5786,6 +5786,15 @@
             "Nội dung": "[TC3.4.4] Không điểm danh, tên HS vắng",
             "Số điểm": 1.0,
             "Ghi chú": "Buổi sáng, Thứ 5, ngày 19/11/2026, Tiết 2, môn Toán, Lớp 10A1"
+        },
+        {
+            "Ngày": "27/11/2026",
+            "Cán bộ": "Đỗ Anh Toản",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.4.3] Không ký xác nhận tiết dạy",
+            "Số điểm": 1.0,
+            "Ghi chú": "Buổi chiều, Thứ 4, ngày 18/11/2026, Tiết 1, môn Lý, Lớp 11A9"
         }
     ],
     "kscl_history": [
@@ -14464,6 +14473,15 @@
             "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 27/11/2026 - Nguyễn Thị Lan Phương(T)",
             "Nội dung ghi nhận": "[TC3.4.4] Không điểm danh, tên HS vắng",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "27/11/2026",
+            "Người nhận": "Đỗ Anh Toản",
+            "Email cá nhân": "toanda.C3.25.001@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 27/11/2026 - Đỗ Anh Toản",
+            "Nội dung ghi nhận": "[TC3.4.3] Không ký xác nhận tiết dạy",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
