@@ -5714,6 +5714,15 @@
             "Nội dung": "HD học sinh tham gia cuộc thi sáng tạo KHKT cấp tỉnh; cuộc thi ý tưởng khởi nghiệp (Giải Nhì)",
             "Số điểm": 60.0,
             "Ghi chú": "Buổi sáng, Thứ 2, ngày 23/11/2026 - Chúc mừng Đ/C!"
+        },
+        {
+            "Ngày": "27/11/2026",
+            "Cán bộ": "Nguyễn Thị Lan Phương(T)",
+            "Tổ chuyên môn": "Tổ Toán-Tin-CN",
+            "Loại": "Điểm trừ",
+            "Nội dung": "[TC3.4.1] Không ghi tên bài dạy",
+            "Số điểm": 1.0,
+            "Ghi chú": "Buổi sáng, Thứ 4, ngày 18/11/2026, Tiết 4, môn Tin, Lớp 10A1"
         }
     ],
     "kscl_history": [
@@ -14320,6 +14329,15 @@
             "Phân loại": "ĐIỀU CHỈNH (ĐIỂM TRỪ)",
             "Tiêu đề Email": "[THPT VĨNH YÊN] THÔNG BÁO ĐIỀU CHỈNH ngày 23/11/2026 - Nguyễn Thị Trang",
             "Nội dung ghi nhận": "[TC3.1.3] Muộn từ 6 đến 10 phút",
+            "Trạng thái Email": "Đã gửi thành công (200 OK)"
+        },
+        {
+            "Thời gian": "27/11/2026",
+            "Người nhận": "Nguyễn Thị Lan Phương(T)",
+            "Email cá nhân": "phuongntl.c3.25.005@phutho.edu.vn",
+            "Phân loại": "VI PHẠM (TRỪ ĐIỂM)",
+            "Tiêu đề Email": "[THPT VĨNH YÊN] Thông báo Lỗi vi phạm ngày 27/11/2026 - Nguyễn Thị Lan Phương(T)",
+            "Nội dung ghi nhận": "[TC3.4.1] Không ghi tên bài dạy",
             "Trạng thái Email": "Đã gửi thành công (200 OK)"
         }
     ],
